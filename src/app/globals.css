@@ -336,6 +336,14 @@ img {
   }
 }
 
+/* Let full-bleed sections escape main-content padding on mobile */
+@media (max-width: 767px) {
+  .hero {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
 /* Mobile Nav */
 @media (max-width: 900px) {
   .desktop-nav {
