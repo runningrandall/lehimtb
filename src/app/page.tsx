@@ -174,7 +174,7 @@ export default function Home() {
                     alt={name}
                     width={110}
                     height={110}
-                    style={{ objectFit: 'cover', width: '100%', height: '100%', objectPosition: 'center 30%' }}
+                    style={{ objectFit: 'cover', width: '100%', height: '100%', objectPosition: 'center top' }}
                   />
                 </div>
                 <p style={{ fontWeight: 700, fontSize: '0.95rem' }}>{name}</p>

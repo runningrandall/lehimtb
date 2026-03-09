@@ -10,14 +10,17 @@ const navGroups = [
         links: [
             { href: '/', label: 'Home' },
             { href: '/join', label: 'Join / FAQ' },
+            { href: '/glossary', label: 'MTB Glossary' },
             { href: '/coaches', label: 'Coaches' },
-            { href: '/kickoff', label: 'Kickoff Meeting 🗓️' },
+            { href: '/kickoff', label: 'Kickoff Meeting' },
+            { href: '/sponsors', label: 'Sponsors' },
         ]
     },
     {
         label: 'Events',
         links: [
             { href: '/events', label: 'Race Schedule' },
+            { href: '/gallery', label: 'Gallery' },
             { href: '/blog', label: 'Blog & News' },
         ]
     },
