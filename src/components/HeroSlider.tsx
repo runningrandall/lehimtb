@@ -63,8 +63,8 @@ export default function HeroSlider() {
             </div>
 
             {/* ── Slide 2 & 3 shared dark BG ── */}
-            <div style={{ position: 'absolute', inset: 0, opacity: active > 0 ? 1 : 0, transition: 'opacity 0.8s ease', zIndex: 0, background: 'linear-gradient(135deg, rgba(12,8,24,0.97) 0%, rgba(87,43,158,0.85) 60%, rgba(12,8,24,0.97) 100%)' }}>
-                <Image src="/images/LEHI MTB 2026 team-41.jpg" alt="" fill style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.12 }} />
+            <div style={{ position: 'absolute', inset: 0, opacity: active > 0 ? 1 : 0, transition: 'opacity 0.8s ease', zIndex: 0, background: 'rgba(12,8,24,0.7)' }}>
+                <Image src="/images/state_tent_dinner.jpg" alt="" fill style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.45, mixBlendMode: 'luminosity' }} />
             </div>
 
             {/* ── Content ── */}
@@ -79,9 +79,11 @@ export default function HeroSlider() {
                     <p style={{ fontSize: '1.25rem', maxWidth: '650px', marginBottom: '1.5rem', opacity: 0.9, lineHeight: 1.6 }}>
                         We build community through mountain biking — training hard, racing well, and creating lifelong friendships. Open to 9th–12th graders.
                     </p>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
-                        {['Strong Body', 'Strong Mind', 'Strong Character', 'All Inclusive', 'Total Equality'].map(v => (
-                            <span key={v} style={{ padding: '0.3rem 0.85rem', borderRadius: 'var(--radius-full)', border: '1px solid rgba(255,255,255,0.4)', fontSize: '0.85rem', fontWeight: 600, backgroundColor: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(4px)' }}>{v}</span>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0', marginBottom: '2rem', opacity: 0.8 }}>
+                        {['Strong Body', 'Strong Mind', 'Strong Character', 'All Inclusive', 'Total Equality'].map((v, i, arr) => (
+                            <span key={v} style={{ fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.02em', color: 'white' }}>
+                                {v}{i < arr.length - 1 && <span style={{ margin: '0 0.6rem', opacity: 0.4 }}>·</span>}
+                            </span>
                         ))}
                     </div>
                     <div style={{ display: 'flex', gap: 'var(--spacing-sm)', flexWrap: 'wrap' }}>
