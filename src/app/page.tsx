@@ -2,48 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SponsorCarousel from '@/components/SponsorCarousel';
 import HomePageNav from '@/components/HomePageNav';
+import HeroSlider from '@/components/HeroSlider';
+import TeamStoreSection from '@/components/TeamStoreSection';
 
 export default function Home() {
   return (
     <div className="animate-fade-in">
-      {/* Hero Section */}
-      <section id="why" className="hero" style={{ position: 'relative', overflow: 'hidden', padding: 'var(--spacing-xl) 0', color: 'white', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
-        <div style={{ position: 'absolute', inset: 0, zIndex: -2 }}>
-          <Image
-            src="/images/LEHI MTB 2026 team-41.jpg"
-            alt="Lehi MTB Team Hero"
-            fill
-            style={{ objectFit: 'cover', objectPosition: 'center' }}
-            priority
-          />
-        </div>
-        <div style={{ position: 'absolute', inset: 0, zIndex: -1, background: 'linear-gradient(to right, rgba(12,8,24,0.92), rgba(87,43,158,0.35))' }}></div>
-
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <h1 style={{ fontSize: 'clamp(2.5rem, 7vw, 5rem)', marginBottom: '1rem', lineHeight: 1.1 }}>
-            Friends. Fun. <br />
-            <span style={{
-              background: 'linear-gradient(90deg, #a855f7 0%, #faff38 45%, #c084fc 75%, #7c3aed 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}>Riding Together.</span>
-          </h1>
-          <p style={{ fontSize: '1.25rem', maxWidth: '650px', marginBottom: '1.5rem', opacity: 0.9, lineHeight: 1.6 }}>
-            We build community through mountain biking — training hard, racing well, and creating lifelong friendships. Open to 9th–12th graders.
-          </p>
-          {/* Core values pill row */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
-            {['Strong Body', 'Strong Mind', 'Strong Character', 'All Inclusive', 'Total Equality'].map(v => (
-              <span key={v} style={{ padding: '0.3rem 0.85rem', borderRadius: 'var(--radius-full)', border: '1px solid rgba(255,255,255,0.4)', fontSize: '0.85rem', fontWeight: 600, color: 'white', backgroundColor: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(4px)' }}>{v}</span>
-            ))}
-          </div>
-          <div style={{ display: 'flex', gap: 'var(--spacing-sm)', flexWrap: 'wrap' }}>
-            <Link href="https://registration.teamsnap.com/form/47629" target="_blank" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Join the Team</Link>
-            <Link href="/join" className="btn-silver" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Parent Info &amp; FAQ</Link>
-          </div>
-        </div>
-      </section>
+      <HeroSlider />
 
       {/* Sticky In-Page Nav */}
       <HomePageNav />
@@ -208,6 +173,8 @@ export default function Home() {
           <SponsorCarousel />
         </div>
       </section>
+
+      <TeamStoreSection />
 
       {/* Inline Quick FAQ Section */}
       <section id="faq" style={{ padding: 'var(--spacing-xl) 0', backgroundColor: 'rgb(var(--surface-main))' }}>

@@ -14,6 +14,7 @@ const navGroups = [
             { href: '/coaches', label: 'Coaches' },
             { href: '/kickoff', label: 'Kickoff Meeting' },
             { href: '/sponsors', label: 'Sponsors' },
+            { href: 'https://voltcyclewear.com/pages/lehi-high-school', label: 'Team Store', external: true },
         ]
     },
     {
@@ -35,7 +36,6 @@ const navGroups = [
     {
         label: 'More',
         links: [
-            { href: 'https://voltcyclewear.com/pages/lehi-high-school', label: 'Team Store', external: true },
             { href: '/brand', label: 'Brand Book' },
         ]
     }

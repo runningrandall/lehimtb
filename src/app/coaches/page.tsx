@@ -10,12 +10,13 @@ export const metadata: Metadata = {
 const coaches = [
     {
         name: 'Steve Stringham',
-        role: 'Co-Head Coach',
+        role: 'Head Coach',
         program: 'Lehi High School MTB',
         phone: '801-400-7886',
         email: 'spinordie@gmail.com',
         photo: '/images/coaches/steve_stringham.jpg',
-        bio: 'Steve brings years of mountain biking experience and a deep passion for youth development. As Co-Head Coach he leads our team, team management, mentors and trains athletes, and sets the tone for the entire team.',
+        bio: 'Steve is the heart of Lehi MTB. With years of riding and coaching under his belt, he genuinely cares about every single kid on this team — not just how fast they ride, but who they\'re becoming. If you ever have a question or concern, Steve\'s your guy.',
+
         accent: 'rgb(var(--color-primary))',
     },
     {
@@ -25,7 +26,8 @@ const coaches = [
         phone: '801-837-2016',
         email: 'rjadams96@gmail.com',
         photo: '/images/coaches/randall_adams.jpg',
-        bio: 'Randall co-leads the team with a focus on practices, training, logistics, and ensuring every rider has what they need to succeed on and off the trail.',
+        bio: 'Randall keeps the wheels turning behind the scenes — everything from practice planning and training structure to making sure every rider has what they need to succeed. He loves this sport and loves this team.',
+
         accent: 'rgb(var(--color-primary))',
     },
     {
@@ -35,7 +37,8 @@ const coaches = [
         phone: '801-427-2998',
         email: 'aaron.a.wilkinson@gmail.com',
         photo: '/images/coaches/aaron_wilkonson.jpg',
-        bio: 'Aaron is an invaluable part of the coaching staff, helping run practices, maintain sponsor relationships, mentoring riders, and make sure every athlete keeps progressing and having fun.',
+        bio: 'Aaron brings great energy to every practice. He\'s out there in the dirt with the riders, helping them push past their limits while keeping things fun. Ask him anything — he gives great advice and never makes you feel dumb for asking.',
+
         accent: 'rgb(var(--color-primary-light))',
     },
     {
@@ -45,7 +48,8 @@ const coaches = [
         phone: '801-884-2288',
         email: 'andrefuscoborba@gmail.com',
         photo: '/images/coaches/andre_borba.jpg',
-        bio: 'Andre supports the team with coaching expertise and helps riders helps us plan and organize our events. Lehi MTB is a community and our family camp and other events are the heart of the team.',
+        bio: 'Andre is the fun engine of this team. He\'s the one dreaming up and running our special events — including the beloved family camp that brings riders and families together off the bike. Lehi MTB is a community, and Andre makes sure it feels like one.',
+
         accent: 'rgb(var(--color-primary-light))',
     },
     {
@@ -55,7 +59,8 @@ const coaches = [
         phone: '435-881-4992',
         email: 'demmahowell99@gmail.com',
         photo: '/images/coaches/Devin_Howell.jpg',
-        bio: 'Devin leads our GRiT program — a NICA initiative dedicated to getting more girls on bikes. She creates a supportive, empowering environment for female riders of all abilities.',
+        bio: 'Devin leads our GRiT program and is an absolute champion for girls in the sport. She creates a space where every girl feels welcome, capable, and excited to ride — whether it\'s your first time on a trail or you\'re racing varsity.',
+
         accent: 'rgb(192, 150, 240)',
     },
 ];

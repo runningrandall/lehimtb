@@ -85,10 +85,14 @@ export default function Kickoff() {
                 <h2 style={{ marginBottom: 'var(--spacing-md)', color: 'rgb(var(--color-primary))' }}>What to Expect at the Meeting</h2>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--spacing-md)' }}>
                     {[
-                        { emoji: '📋', title: 'Registration Info', desc: 'Walk through the TeamSnap registration process and important deadlines.' },
-                        { emoji: '👋', title: 'Meet the Coaches', desc: 'Get introduced to the full coaching staff and ride leaders.' },
-                        { emoji: '🗓️', title: 'Practice Schedule', desc: 'Learn when, where, and how practices are run throughout the season.' },
-                        { emoji: '💰', title: 'Fees & Costs', desc: "Full breakdown of team dues, NICA fees, and what's included." },
+                        { emoji: '📋', title: 'Registration Info', desc: 'Walk through the TeamSnap and PitZone registration process and important deadlines.' },
+                        { emoji: '👋', title: 'Meet the Coaches', desc: 'Get introduced to the full coaching staff and ride leaders for the 2026 season.' },
+                        { emoji: '🗓️', title: 'Practice Schedule', desc: 'Learn when, where, and how practices are run — Monday & Thursday evenings plus select Saturdays.' },
+                        { emoji: '💰', title: 'Fees & Costs', desc: 'Full breakdown of team dues ($350), NICA league fees ($390), and what\'s included in each.' },
+                        { emoji: '🏁', title: 'Races Overview', desc: '5 races across the season. We\'ll cover the schedule, locations, and what to expect at each event.' },
+                        { emoji: '⏱️', title: 'Race Day Schedule', desc: 'What a race day looks like — arrival times, warm-up, staging, the race itself, and post-race.' },
+                        { emoji: '🌲', title: 'Trail Work & Volunteering', desc: 'Riders need 3+ volunteer hours on trails to race, and parents must volunteer at league and team events.' },
+                        { emoji: '❓', title: 'Open Q&A', desc: 'We\'ll open the floor for any questions from riders and parents before wrapping up.' },
                     ].map((item) => (
                         <div key={item.title} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                             <span style={{ fontSize: '1.75rem' }}>{item.emoji}</span>
