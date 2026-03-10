@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
     title: 'Media Gallery | Lehi MTB Hub',
@@ -89,11 +90,12 @@ export default function Gallery() {
                     marginBottom: 'var(--spacing-xl)',
                     flexWrap: 'wrap',
                 }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                         src="/images/sponsors/e-adams-media_orig.png"
                         alt="E.Adams Media"
-                        style={{ height: '50px', objectFit: 'contain' }}
+                        width={120}
+                        height={50}
+                        style={{ height: '50px', width: 'auto', objectFit: 'contain' }}
                     />
                     <div>
                         <p style={{ fontWeight: 700, marginBottom: '0.2rem' }}>Videos proudly produced by E.Adams Media</p>
