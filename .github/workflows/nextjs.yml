@@ -48,8 +48,6 @@ jobs:
 
       - name: Build with Next.js
         run: pnpm next build
-        env:
-          NEXT_PUBLIC_BASE_PATH: /lehimtb
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
