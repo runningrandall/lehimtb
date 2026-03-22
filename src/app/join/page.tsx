@@ -30,7 +30,7 @@ const faqs = [
     },
     {
         q: 'What does it cost?',
-        a: 'Team Fees: $350 (includes team kit, skilled instruction, 1 practice/week thru May 31, then 2–3/week June 1–Nov 5, team registration fees, equipment and supplies, team banquet main course, race day food, and shop discounts). NICA & Utah League fees: $390/HS (covers 5 races, paid in PitZone). Total: approximately $740/HS, not including travel, bike, and gear.',
+        a: 'Team Fees: $350 (includes team kit, skilled instruction, 1 practice/week thru May 31, then 2–3/week June 1–Nov 5, team registration fees, equipment and supplies, team banquet main course, race day food, and shop discounts). NICA & Utah League fees: $400/HS (covers 5 races, paid in PitZone). Total: approximately $750/HS, not including travel, bike, and gear.',
     },
     {
         q: 'Are there bike discounts or scholarships?',
@@ -80,7 +80,7 @@ export default function JoinAndFAQ() {
                     <ol style={{ paddingLeft: '1.5rem', marginTop: 'var(--spacing-sm)', color: 'rgb(var(--text-muted))', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                         <li>Attend the kickoff meeting to get questions answered.</li>
                         <li>Complete Team online registration by April 13 (<a href="https://registration.teamsnap.com/form/47629" target="_blank" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600 }}>TeamSnap</a>).</li>
-                        <li><a href="https://pitzone.nationalmtb.org/" target="_blank" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600 }}>Register with the Utah NICA League PitZone</a> by April 13 and pay $390 league fee.</li>
+                        <li><a href="https://pitzone.nationalmtb.org/" target="_blank" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600 }}>Register with the Utah NICA League PitZone</a> by April 13 and pay $400 league fee.</li>
                         <li>Accept TeamSnap invite and download the app.</li>
                         <li>Pay $350 Team Dues by April 13 via Venmo @lehimtb or check to Lehi MTB.</li>
                         <li>Get fitted for a team kit (jersey, shorts, etc.).</li>

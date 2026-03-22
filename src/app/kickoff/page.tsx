@@ -88,7 +88,7 @@ export default function Kickoff() {
                         { emoji: '📋', title: 'Registration Info', desc: 'Walk through the TeamSnap and PitZone registration process and important deadlines.' },
                         { emoji: '👋', title: 'Meet the Coaches', desc: 'Get introduced to the full coaching staff and ride leaders for the 2026 season.' },
                         { emoji: '🗓️', title: 'Practice Schedule', desc: 'Learn when, where, and how practices are run — Monday & Thursday evenings plus select Saturdays.' },
-                        { emoji: '💰', title: 'Fees & Costs', desc: 'Full breakdown of team dues ($350), NICA league fees ($390), and what\'s included in each.' },
+                        { emoji: '💰', title: 'Fees & Costs', desc: 'Full breakdown of team dues ($350), NICA league fees ($400), and what\'s included in each.' },
                         { emoji: '🏁', title: 'Races Overview', desc: '5 races across the season. We\'ll cover the schedule, locations, and what to expect at each event.' },
                         { emoji: '⏱️', title: 'Race Day Schedule', desc: 'What a race day looks like — arrival times, warm-up, staging, the race itself, and post-race.' },
                         { emoji: '🌲', title: 'Trail Work & Volunteering', desc: 'Riders need 3+ volunteer hours on trails to race, and parents must volunteer at league and team events.' },

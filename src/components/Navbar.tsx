@@ -22,7 +22,7 @@ const navGroups = [
         links: [
             { href: '/events', label: 'Race Schedule' },
             { href: '/gallery', label: 'Gallery' },
-            { href: '/blog', label: 'Blog & News' },
+            { href: 'https://lehimtb.substack.com/', label: 'Blog', external: true },
         ]
     },
     {
@@ -114,6 +114,9 @@ export default function Navbar() {
                                 )}
                             </li>
                         ))}
+                        <li>
+                            <Link href="https://lehimtb.substack.com/" target="_blank" className="nav-link" style={{ fontWeight: 600 }}>Blog</Link>
+                        </li>
                         <li>
                             <Link href="/sponsors" className="nav-link" style={{ fontWeight: 600 }}>Sponsors</Link>
                         </li>

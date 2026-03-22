@@ -20,7 +20,7 @@ const sections = [
         title: 'Registration & Admin',
         accent: 'rgb(var(--color-primary-light))',
         terms: [
-            { term: 'PitZone', def: 'The web portal (pitzone.nationalmtb.org) for parents, coaches, and riders to register and access resources provided by the league. Coaches can invite you to the PitZone after you register with the team. You pay your $390 league fee here.' },
+            { term: 'PitZone', def: 'The web portal (pitzone.nationalmtb.org) for parents, coaches, and riders to register and access resources provided by the league. Coaches can invite you to the PitZone after you register with the team. You pay your $400 league fee here.' },
             { term: 'TeamSnap', def: 'The app used for team event calendar, communications, attendance, and more. VERY IMPORTANT — you will get all practice times, cancellations, and news through TeamSnap. Download it on your phone.' },
             { term: 'Registration', def: 'You must register with both the team and the league. Team registration is completed via the TeamSnap web link. League registration is completed within PitZone.' },
         ],
@@ -30,7 +30,7 @@ const sections = [
         accent: 'rgb(192, 150, 240)',
         terms: [
             { term: 'Team Fees', def: '$350. Includes: team kit (jersey, bib short, t-shirt, hat), skilled instruction, 1 practice/week through May 31 then 2–3 practices/week from June 1–November 5, team registration fees, equipment and supplies, team banquet (main course), race day food, and shop discounts.' },
-            { term: 'League Fees', def: '$390/HS, paid in PitZone. Goes to NICA for races and running the league. Covers all 5 races for the season.' },
+            { term: 'League Fees', def: '$400/HS, paid in PitZone. Goes to NICA for races and running the league. Covers all 5 races for the season.' },
             { term: 'Sponsorship & Fundraising', def: 'Sponsorship involves securing financial or in-kind support from local businesses or individuals. For every $1 a student-athlete brings in, they receive a 20% discount on team fees. A $1,000 sponsorship = $200 off team fees, up to your total team fee amount. Sponsors receive logo placement on jerseys and banners, team picture, year-end banquet invite, and more.' },
         ],
     },
