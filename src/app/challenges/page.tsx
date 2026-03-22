@@ -11,8 +11,11 @@ type Challenge = {
     rules: string;
     tier: 'bronze' | 'silver' | 'gold' | 'legendary';
     scope: 'single-practice' | 'multi-session';
-    category: 'laps' | 'climbing' | 'trail' | 'endurance';
+    category: 'laps' | 'climbing' | 'trail' | 'routes' | 'endurance';
+    trailforksUrl?: string;
 };
+
+const TRAILFORKS_REGION = 'https://www.trailforks.com/region/eagle-mountain-13896/';
 
 const challenges: Challenge[] = [
     // — Lap Challenges —
@@ -23,6 +26,7 @@ const challenges: Challenge[] = [
         tier: 'bronze',
         scope: 'single-practice',
         category: 'laps',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'The Hat Trick',
@@ -31,6 +35,7 @@ const challenges: Challenge[] = [
         tier: 'bronze',
         scope: 'single-practice',
         category: 'laps',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'The Quad Crusher',
@@ -39,6 +44,7 @@ const challenges: Challenge[] = [
         tier: 'silver',
         scope: 'single-practice',
         category: 'laps',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Famous Five',
@@ -47,6 +53,7 @@ const challenges: Challenge[] = [
         tier: 'gold',
         scope: 'single-practice',
         category: 'laps',
+        trailforksUrl: TRAILFORKS_REGION,
     },
 
     // — Beginner Trail Laps (Radio Free Europe) —
@@ -57,6 +64,7 @@ const challenges: Challenge[] = [
         tier: 'silver',
         scope: 'single-practice',
         category: 'laps',
+        trailforksUrl: 'https://www.trailforks.com/trails/radio-free-europe/',
     },
     {
         name: 'Broadcast Legend',
@@ -65,6 +73,7 @@ const challenges: Challenge[] = [
         tier: 'legendary',
         scope: 'single-practice',
         category: 'laps',
+        trailforksUrl: 'https://www.trailforks.com/trails/radio-free-europe/',
     },
 
     // — Climbing Challenges —
@@ -75,6 +84,7 @@ const challenges: Challenge[] = [
         tier: 'bronze',
         scope: 'single-practice',
         category: 'climbing',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Oxygen Thief',
@@ -83,6 +93,7 @@ const challenges: Challenge[] = [
         tier: 'silver',
         scope: 'single-practice',
         category: 'climbing',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Thin Air Society',
@@ -91,6 +102,7 @@ const challenges: Challenge[] = [
         tier: 'gold',
         scope: 'single-practice',
         category: 'climbing',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Everesting the Eagle',
@@ -99,6 +111,7 @@ const challenges: Challenge[] = [
         tier: 'legendary',
         scope: 'multi-session',
         category: 'climbing',
+        trailforksUrl: TRAILFORKS_REGION,
     },
 
     // — Trail Feature Challenges —
@@ -109,6 +122,16 @@ const challenges: Challenge[] = [
         tier: 'bronze',
         scope: 'single-practice',
         category: 'trail',
+        trailforksUrl: TRAILFORKS_REGION,
+    },
+    {
+        name: 'The Snake Charmer',
+        description: 'Complete Jake the Snake end-to-end. 3 miles of upper-intermediate singletrack along the southern ridge.',
+        rules: 'Ride the full trail with your ride group in a single practice. Ride leader confirms completion.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'trail',
+        trailforksUrl: 'https://www.trailforks.com/trails/jake-the-snake/',
     },
     {
         name: 'Living on the Edge',
@@ -117,6 +140,16 @@ const challenges: Challenge[] = [
         tier: 'silver',
         scope: 'single-practice',
         category: 'trail',
+        trailforksUrl: TRAILFORKS_REGION,
+    },
+    {
+        name: 'Fistful of Guts',
+        description: 'Ride Fistful of Dollars — expert-level rock steeps that\'ll test your nerve.',
+        rules: 'Complete the full trail with your ride group. Ride leader confirms. Walk sections are OK but you must attempt every feature.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'trail',
+        trailforksUrl: 'https://www.trailforks.com/trails/fistful-of-dollars/',
     },
     {
         name: 'The Rattlesnake Run',
@@ -125,6 +158,25 @@ const challenges: Challenge[] = [
         tier: 'silver',
         scope: 'single-practice',
         category: 'trail',
+        trailforksUrl: TRAILFORKS_REGION,
+    },
+    {
+        name: 'Cow Tracks to the Top',
+        description: 'Clear Cow Tracks and the Ridgeline climb without putting a foot down. Pure pedal power.',
+        rules: 'No foot dabs on either trail. Both must be ridden back-to-back with your ride group in a single practice. Ride leader confirms a clean run.',
+        tier: 'gold',
+        scope: 'single-practice',
+        category: 'trail',
+        trailforksUrl: 'https://www.trailforks.com/trails/cow-tracks/',
+    },
+    {
+        name: 'The Triple Threat',
+        description: 'Fistful of Dollars, Big Thunder, and 220 Loop — all in one practice. Three trails, zero quit.',
+        rules: 'All three trails must be completed with your ride group during one practice session. Coach or ride leader verifies.',
+        tier: 'gold',
+        scope: 'single-practice',
+        category: 'trail',
+        trailforksUrl: 'https://www.trailforks.com/trails/fistful-of-dollars/',
     },
     {
         name: 'Summit Collector',
@@ -133,6 +185,7 @@ const challenges: Challenge[] = [
         tier: 'gold',
         scope: 'single-practice',
         category: 'trail',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'The Full Eagle',
@@ -141,6 +194,197 @@ const challenges: Challenge[] = [
         tier: 'legendary',
         scope: 'single-practice',
         category: 'trail',
+        trailforksUrl: TRAILFORKS_REGION,
+    },
+
+    // — Route Challenges (8–16 miles) —
+
+    // Bronze (8–10 mi, intro routes)
+    {
+        name: 'Hidden Hollow Explorer',
+        description: 'Ride the full Hidden Hollow loop — 10 miles and 930 feet of climbing through the northern trail system.',
+        rules: 'Complete the full Hidden Hollow recommended route with your ride group. GPS-verified distance.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/hidden-hollow/',
+    },
+    {
+        name: 'Space Dust Sampler',
+        description: 'An easy-going ~8 mile intro route through the middle zone — Space Dust, Deer Tracks, Cracker Jack, and Supersonic.',
+        rules: 'Complete the full route with your ride group. GPS-verified. Great for newer riders building confidence.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/space-dust/',
+    },
+    {
+        name: 'Hickman Hill Repeater',
+        description: 'Warm up with 5–6 laps of the Hickman Hill beginner loops, then ride Creed south and Brass Monkey back. ~8 miles.',
+        rules: 'Complete the full route with your ride group. GPS-verified.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/creed/',
+    },
+    {
+        name: 'Race Course Plus',
+        description: 'The standard race course extended with Hidden Canyon and Cow Tracks access trails — ~9 miles as a full lariat from the parking area.',
+        rules: 'Complete the full lariat route with your ride group. GPS-verified.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/route/eagle-mountain-uhscl-course/',
+    },
+    {
+        name: 'The Prayer Flags Circuit',
+        description: 'A loop centered on Prayer Flags hill — Deer Tracks, Treadstone, Backspacer, Cropduster, Roadrunner, and Bugs Bunny. ~8–9 miles.',
+        rules: 'Complete the full circuit with your ride group. GPS-verified.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/treadstone-prayer-flags/',
+    },
+
+    // Silver (10–12 mi, solid rides)
+    {
+        name: 'The Clockwise Sampler',
+        description: 'The Eagle Mountain XC Sampler — 10.8 miles clockwise hitting a little bit of everything. 1,178 feet of climbing.',
+        rules: 'Complete the full clockwise XC Sampler route with your ride group. GPS-verified.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: TRAILFORKS_REGION,
+    },
+    {
+        name: 'The Looney Tunes Loop',
+        description: 'Hit all the cartoon-named trails in one loop — Bugs Bunny, Roadrunner, Wile E Coyote, Jackrabbit, plus a Cropduster/Gunslinger side trip. ~10 miles.',
+        rules: 'Must ride all five named trails with your ride group. GPS-verified.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/bugs-bunny-627698/',
+    },
+    {
+        name: 'Deadwood Double',
+        description: 'Two laps of Deadwood with different return routes each time — first via Treadstone, second via Wile E Coyote. ~10 miles.',
+        rules: 'Both full Deadwood laps must be completed with your ride group in a single practice. GPS-verified.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/deadwood-27108/',
+    },
+    {
+        name: 'The Creed-Nirvana Figure 8',
+        description: 'A figure-8 through the northern trails — Hidden Canyon, Creed, Brass Monkey, Nirvana, Given to Fly, Supersonic, and Cracker Jack. ~9 miles.',
+        rules: 'Complete the full figure-8 with your ride group. GPS-verified.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/nirvana-111485/',
+    },
+    {
+        name: 'The Nirvana Express',
+        description: 'Hidden Hollow to Nirvana to Given to Fly and back — roughly 12 miles through the best of the northern trails.',
+        rules: 'Must hit Hidden Hollow, Nirvana, and Given to Fly in a single practice with your ride group. GPS-verified.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/given-to-fly/',
+    },
+    {
+        name: 'Jake the Snake Explorer',
+        description: 'Ride out to Jake the Snake (3 mi one-way) and back through the Prayer Flags connector trails. ~10 miles round trip.',
+        rules: 'Must ride the full Jake the Snake trail with your ride group. GPS-verified.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/jake-the-snake/',
+    },
+    {
+        name: 'The Eastwood Explorer',
+        description: 'A full tour of the south — Treadstone, Deadwood, the 411 climb, Eastwood descent, Wile E Coyote, and Jackrabbit. ~11 miles.',
+        rules: 'Must ride 411 and Eastwood with your ride group. GPS-verified.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/eastwood/',
+    },
+    {
+        name: 'The Ridgeline Rambler',
+        description: 'Hidden Canyon to Rock-a-Billy, Cow Tracks, Ridgeline, Big Thunder, then out through Bugs Bunny and Roadrunner. ~8 miles of rolling Lake Mountain terrain.',
+        rules: 'Complete the full route with your ride group. GPS-verified.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/ridgeline-hidden-hollow/',
+    },
+    {
+        name: 'The Backspacer Express',
+        description: 'Supersonic up to Prayer Flags, Backspacer and Cropduster corridor south, Gunslinger, then return through Given to Fly and Creed. ~10 miles.',
+        rules: 'Complete the full route with your ride group. GPS-verified.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/crop-duster/',
+    },
+
+    // Gold (12–16 mi, big days)
+    {
+        name: 'The Cropduster Corridor',
+        description: 'Supersonic to Prayer Flags, Backspacer-Cropduster-Gunslinger corridor, through the race course trails, return via Deadwood and Treadstone. ~12 miles.',
+        rules: 'Must hit Cropduster, Gunslinger, and Deadwood with your ride group. GPS-verified.',
+        tier: 'gold',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/gunslinger-155374/',
+    },
+    {
+        name: 'The Wile E Coyote Connector',
+        description: 'A big clockwise loop — Cow Tracks, Bugs Bunny, Roadrunner, Wile E Coyote, Deadwood, Treadstone, Prayer Flags, Nirvana back north. ~12 miles.',
+        rules: 'Must hit Wile E Coyote and Nirvana with your ride group. GPS-verified.',
+        tier: 'gold',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/wile-e-coyote/',
+    },
+    {
+        name: 'Beggar\'s Canyon Run',
+        description: 'Venture into the less-traveled Beggar\'s Canyon, then loop through Deadwood, Treadstone, Supersonic, and Cropduster. ~11 miles of adventure.',
+        rules: 'Must ride Beggar\'s Canyon with your ride group. GPS-verified.',
+        tier: 'gold',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/beggar-s-canyon-585622/',
+    },
+    {
+        name: 'The North-South Traverse',
+        description: 'Hidden Hollow to Treadstone to Deadwood and back — roughly 14 miles connecting the northern and southern trail systems.',
+        rules: 'Must ride through Hidden Hollow, Treadstone, and Deadwood areas in a single practice. GPS-verified.',
+        tier: 'gold',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/trails/deadwood-27108/',
+    },
+    {
+        name: 'The Grand Tour',
+        description: 'Hidden Hollow through Treadstone and out to the Lake Mountain trails — 16+ miles connecting three trail zones.',
+        rules: 'Must pass through all three zones (Hidden Hollow, Treadstone/Prayer Flags, Lake Mountain) in a single practice. GPS-verified.',
+        tier: 'gold',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: TRAILFORKS_REGION,
+    },
+
+    // Legendary (15+ mi, all-in)
+    {
+        name: 'The Full Monty',
+        description: 'Hit every major XC trail zone in one ride — Lake Mountain slopes, race course trails, 411/Eastwood, full Deadwood-Treadstone spine, Prayer Flags, and the Nirvana/Creed corridor. ~15–16 miles.',
+        rules: 'Must pass through all major zones with your ride group. Coach verifies. GPS-verified.',
+        tier: 'legendary',
+        scope: 'single-practice',
+        category: 'routes',
+        trailforksUrl: 'https://www.trailforks.com/route/the-best-of-eagle-mountain/',
     },
 
     // — Endurance Challenges (Season-Long, Cumulative Group Miles) —
@@ -151,6 +395,7 @@ const challenges: Challenge[] = [
         tier: 'bronze',
         scope: 'multi-session',
         category: 'endurance',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Century Club',
@@ -159,6 +404,7 @@ const challenges: Challenge[] = [
         tier: 'silver',
         scope: 'multi-session',
         category: 'endurance',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Soaring Eagle',
@@ -167,6 +413,7 @@ const challenges: Challenge[] = [
         tier: 'gold',
         scope: 'multi-session',
         category: 'endurance',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Iron Eagle',
@@ -175,6 +422,7 @@ const challenges: Challenge[] = [
         tier: 'legendary',
         scope: 'multi-session',
         category: 'endurance',
+        trailforksUrl: TRAILFORKS_REGION,
     },
 ];
 
@@ -189,6 +437,7 @@ const categoryLabels: Record<Challenge['category'], string> = {
     laps: 'Lap Challenges',
     climbing: 'Climbing Challenges',
     trail: 'Trail Challenges',
+    routes: 'Route Challenges',
     endurance: 'Endurance Challenges',
 };
 
@@ -196,10 +445,11 @@ const categoryDescriptions: Record<Challenge['category'], string> = {
     laps: 'How many laps can your group crush in one practice?',
     climbing: 'Earn your elevation. Every foot counts.',
     trail: 'Specific trails and features to conquer.',
+    routes: 'Longer rides in the 8–16 mile range. Explore the full trail system.',
     endurance: 'Season-long cumulative group miles. Each practice counts once — your group\'s total mileage for that ride.',
 };
 
-const categories: Challenge['category'][] = ['laps', 'climbing', 'trail', 'endurance'];
+const categories: Challenge['category'][] = ['laps', 'climbing', 'trail', 'routes', 'endurance'];
 
 export default function Challenges() {
     return (
@@ -287,18 +537,16 @@ export default function Challenges() {
                                                     }}>
                                                         {tier.label}
                                                     </span>
-                                                    {challenge.scope === 'multi-session' && (
-                                                        <span style={{
-                                                            padding: '0.2rem 0.6rem',
-                                                            fontSize: '0.7rem',
-                                                            fontWeight: 700,
-                                                            borderRadius: 'var(--radius-sm)',
-                                                            background: 'rgba(var(--text-muted), 0.1)',
-                                                            color: 'rgb(var(--text-muted))',
-                                                        }}>
-                                                            Season-Long
-                                                        </span>
-                                                    )}
+                                                    <span style={{
+                                                        padding: '0.2rem 0.6rem',
+                                                        fontSize: '0.7rem',
+                                                        fontWeight: 700,
+                                                        borderRadius: 'var(--radius-sm)',
+                                                        background: 'rgba(var(--text-muted), 0.1)',
+                                                        color: 'rgb(var(--text-muted))',
+                                                    }}>
+                                                        {challenge.scope === 'multi-session' ? 'Season' : 'Single Practice'}
+                                                    </span>
                                                 </div>
                                                 <h3 style={{ marginBottom: '0.35rem' }}>{challenge.name}</h3>
                                                 <p className="text-muted" style={{ fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '0.5rem' }}>
@@ -307,6 +555,16 @@ export default function Challenges() {
                                                 <p style={{ fontSize: '0.8rem', color: 'rgb(var(--text-muted))', fontStyle: 'italic' }}>
                                                     {challenge.rules}
                                                 </p>
+                                                {challenge.trailforksUrl && (
+                                                    <a
+                                                        href={challenge.trailforksUrl}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        style={{ display: 'inline-block', marginTop: '0.5rem', fontSize: '0.8rem', fontWeight: 600, color: 'rgb(var(--color-primary))' }}
+                                                    >
+                                                        View on Trailforks →
+                                                    </a>
+                                                )}
                                             </div>
                                         </div>
                                     );
