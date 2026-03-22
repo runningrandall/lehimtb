@@ -23,7 +23,7 @@ export default function Blog() {
                     </div>
                     <p className="text-muted" style={{ marginBottom: '1.5rem', lineHeight: '1.6' }}>
                         It's that time of year again! We are gearing up for the 2026 NICA season and couldn't be more excited.
-                        Our kickoff meeting will be held on March 25th in the High School auditorium. Returning riders meet at 6:00 PM, and new riders meet at 7:15 PM.
+                        Our kickoff meeting will be held on March 25th in the High School auditorium. Returning riders meet at 6:15 PM, and new riders meet at 7:15 PM.
                         We will cover registration, essential gear, practice schedules, and introduce the coaching staff. See you there!
                     </p>
                     <Link href="#" className="btn-accent" style={{ padding: '0.5rem 1rem', fontSize: '0.875rem' }}>Read More</Link>

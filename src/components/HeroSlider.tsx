@@ -101,7 +101,7 @@ export default function HeroSlider() {
                     </h1>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.75rem' }}>
                         {[
-                            { color: 'rgb(var(--color-primary))', text: '6:00 PM — Returning Riders' },
+                            { color: 'rgb(var(--color-primary))', text: '6:15 PM — Returning Riders' },
                             { color: 'rgb(var(--color-tertiary))', text: '7:15 PM — New Riders' },
                             { color: 'rgba(255,255,255,0.4)', text: 'Lehi High School Auditorium · 180 N 400 E' },
                         ].map(row => (

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 // We define the banner content and expiration date here
 const BANNER_CONFIG = {
-    text: "🗓️ Season Kickoff Meeting — March 25th at Lehi HS Auditorium (6pm Returning / 7:15pm New Riders)",
+    text: "🗓️ Season Kickoff Meeting — March 25th at Lehi HS Auditorium (6:15pm Returning / 7:15pm New Riders)",
     expirationDate: new Date('2026-03-26T00:00:00') // Disappears the day after the meeting
 };
 

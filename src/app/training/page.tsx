@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const plans = [
     {
+        name: '2026 NICA Season Training Plan - Region 5',
+        url: 'https://www.trainingpeaks.com/training-plans/cycling/mountain-biking/tp-631515/2026-utah-nica-mtb-season-training-plan',
+        description: 'The full 21 week season, from June 1st to the State race in October. Structured to peak for the Region 5 championship and Utah State Championship.',
+        tag: 'In-Season',
+        tagColor: 'rgb(var(--color-primary-light))',
+    },
+    {
         name: 'NICA Off-Season Training Plan',
         url: 'https://www.trainingpeaks.com/training-plans/cycling/mountain-biking/tp-594610/nica-off-season-training-plan',
         description: 'Keep fitness sharp between seasons. Structured off-season work to build an aerobic base and maintain strength heading into the new year.',
@@ -71,7 +78,7 @@ export default function Training() {
                         <p style={{ fontWeight: 800, fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgb(140,120,0)', marginBottom: '0.75rem' }}>Free for Lehi Riders</p>
                         <h2 style={{ marginBottom: '0.75rem', fontSize: '1.75rem' }}>Get the Plan Free</h2>
                         <p className="text-muted" style={{ marginBottom: '1.5rem', lineHeight: 1.7 }}>
-                            Use coupon code <strong style={{ color: 'rgb(var(--color-secondary))' }}>LEHIMTB</strong> at checkout on any of the plans below to get it at no cost. Plans are normally $10–$20 — the code makes them free for our riders.
+                            Use coupon code <strong style={{ color: 'rgb(var(--color-secondary))' }}>LEHIMTB</strong> at checkout on any of the plans below to get it at no cost. Plans are normally over $50 — the code makes them free for our riders.
                         </p>
                         <div style={{
                             display: 'inline-block',

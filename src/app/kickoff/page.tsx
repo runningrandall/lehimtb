@@ -32,7 +32,7 @@ export default function Kickoff() {
                     <h2 style={{ marginBottom: 'var(--spacing-md)', color: 'rgb(var(--color-primary))' }}>📅 Schedule</h2>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                         <div style={{ padding: '1rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87, 43, 158, 0.08)', borderLeft: '4px solid rgb(var(--color-primary))' }}>
-                            <p style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.25rem' }}>6:00 PM — Returning Riders</p>
+                            <p style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.25rem' }}>6:15 PM — Returning Riders</p>
                             <p className="text-muted" style={{ fontSize: '0.9rem' }}>Check-in opens for all riders who were on the team last season.</p>
                         </div>
                         <div style={{ padding: '1rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250, 255, 56, 0.15)', borderLeft: '4px solid rgb(var(--color-tertiary))' }}>
