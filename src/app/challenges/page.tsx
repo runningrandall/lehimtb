@@ -11,9 +11,10 @@ type Challenge = {
     rules: string;
     tier: 'bronze' | 'silver' | 'gold' | 'legendary';
     scope: 'single-practice' | 'multi-session';
-    category: 'laps' | 'climbing' | 'trail' | 'routes' | 'endurance';
+    category: 'laps' | 'climbing' | 'trail' | 'routes' | 'endurance' | 'skills';
     trailforksUrl?: string;
     trailforksRouteId?: number;
+    trailforksTrailId?: number;
 };
 
 const TRAILFORKS_REGION = 'https://www.trailforks.com/region/eagle-mountain-13896/';
@@ -21,13 +22,20 @@ const TRAILFORKS_REGION = 'https://www.trailforks.com/region/eagle-mountain-1389
 const challenges: Challenge[] = [
     // — Lap Challenges —
     {
+        name: 'First Lap',
+        description: 'Complete 1 full lap of the Eagle Mountain race course. Your first lap is a big deal.',
+        rules: 'Must be completed with your ride group during one practice session. No shortcuts.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'laps',
+    },
+    {
         name: 'The Warm-Up',
-        description: '2 laps of the race course in a single practice. Just getting started.',
+        description: '2 laps of the race course in a single practice. Building that race day rhythm.',
         rules: 'Both laps must be completed with your ride group during one practice session. No shortcuts.',
         tier: 'bronze',
         scope: 'single-practice',
         category: 'laps',
-        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'The Hat Trick',
@@ -36,7 +44,6 @@ const challenges: Challenge[] = [
         tier: 'silver',
         scope: 'single-practice',
         category: 'laps',
-        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Radio Star',
@@ -45,16 +52,14 @@ const challenges: Challenge[] = [
         tier: 'silver',
         scope: 'single-practice',
         category: 'laps',
-        trailforksUrl: 'https://www.trailforks.com/trails/radio-free-europe/',
     },
     {
         name: 'The Quad Crusher',
-        description: 'Survive 4 full laps of the race course in one practice. Your quads will remember this.',
+        description: 'Take on 4 full laps of the race course in one practice. Your quads will remember this.',
         rules: 'All 4 laps completed with your ride group in a single practice. Walk breaks are allowed, but you must finish every lap.',
         tier: 'gold',
         scope: 'single-practice',
         category: 'laps',
-        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Famous Five',
@@ -63,7 +68,6 @@ const challenges: Challenge[] = [
         tier: 'legendary',
         scope: 'single-practice',
         category: 'laps',
-        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Broadcast Legend',
@@ -72,10 +76,17 @@ const challenges: Challenge[] = [
         tier: 'legendary',
         scope: 'single-practice',
         category: 'laps',
-        trailforksUrl: 'https://www.trailforks.com/trails/radio-free-europe/',
     },
 
     // — Climbing Challenges —
+    {
+        name: 'First Ascent',
+        description: '500 feet of climbing in a single practice at Eagle Mountain. Your legs are warming up.',
+        rules: 'Must be done with your ride group. Ride leader verifies.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'climbing',
+    },
     {
         name: 'Cloud Chaser',
         description: 'Rack up 1,000 feet of climbing in a single practice at Eagle Mountain.',
@@ -83,7 +94,6 @@ const challenges: Challenge[] = [
         tier: 'bronze',
         scope: 'single-practice',
         category: 'climbing',
-        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Oxygen Thief',
@@ -92,16 +102,14 @@ const challenges: Challenge[] = [
         tier: 'silver',
         scope: 'single-practice',
         category: 'climbing',
-        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Thin Air Society',
-        description: '3,000 feet of vertical in a single practice. Welcome to the elite.',
+        description: '3,000 feet of vertical in a single practice. You\'ve earned every foot of this.',
         rules: 'Must be completed with your ride group in a single practice session. Ride leader verifies.',
         tier: 'gold',
         scope: 'single-practice',
         category: 'climbing',
-        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Above the Clouds',
@@ -110,7 +118,6 @@ const challenges: Challenge[] = [
         tier: 'legendary',
         scope: 'single-practice',
         category: 'climbing',
-        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Everesting the Eagle',
@@ -130,6 +137,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'trail',
         trailforksUrl: 'https://www.trailforks.com/trails/jake-the-snake/',
+        trailforksTrailId: 7101,
     },
     {
         name: 'Deadwood Drifter',
@@ -139,6 +147,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'trail',
         trailforksUrl: 'https://www.trailforks.com/trails/deadwood-27108/',
+        trailforksTrailId: 27108,
     },
     {
         name: 'Cracker Jack Snack',
@@ -148,11 +157,12 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'trail',
         trailforksUrl: 'https://www.trailforks.com/trails/cracker-jack-353346/',
+        trailforksTrailId: 353346,
     },
     {
         name: 'Turtle Power',
-        description: 'Conquer Turtle Hill. Slow and steady doesn\'t apply here — just get to the top.',
-        rules: 'Ride (not walk) the full Turtle Hill climb with your ride group. Ride leader verifies.',
+        description: 'Take on the full Turtle Hill climb. Keep those pedals turning all the way to the top.',
+        rules: 'Ride the full Turtle Hill climb with your ride group. Ride leader verifies.',
         tier: 'silver',
         scope: 'single-practice',
         category: 'trail',
@@ -160,7 +170,7 @@ const challenges: Challenge[] = [
     },
     {
         name: 'Living on the Edge',
-        description: 'Complete the full Cliffside trail. Don\'t look down.',
+        description: 'Complete the full Cliffside trail. Great views along the way.',
         rules: 'Ride the entirety of Cliffside with your ride group in a single practice.',
         tier: 'silver',
         scope: 'single-practice',
@@ -175,6 +185,16 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'trail',
         trailforksUrl: 'https://www.trailforks.com/trails/fistful-of-dollars/',
+        trailforksTrailId: 210160,
+    },
+    {
+        name: 'Thunder Road',
+        description: 'Climb the entire doubletrack to Big Thunder without putting a foot down. Steady effort, big payoff.',
+        rules: 'No foot dabs on the full doubletrack climb. Must be completed with your ride group in a single practice. Ride leader confirms a clean run.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'trail',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'Cow Tracks to the Top',
@@ -184,6 +204,16 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'trail',
         trailforksUrl: 'https://www.trailforks.com/trails/cow-tracks/',
+        trailforksTrailId: 25499,
+    },
+    {
+        name: 'Ridgeline Runner',
+        description: 'Ride the entire Ridgeline trail without putting a foot down. Every pedal stroke counts.',
+        rules: 'No foot dabs on the full Ridgeline trail. Must be completed with your ride group in a single practice. Ride leader confirms a clean run.',
+        tier: 'gold',
+        scope: 'single-practice',
+        category: 'trail',
+        trailforksUrl: TRAILFORKS_REGION,
     },
     {
         name: 'The Triple Threat',
@@ -193,6 +223,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'trail',
         trailforksUrl: 'https://www.trailforks.com/trails/fistful-of-dollars/',
+        trailforksTrailId: 210160,
     },
     {
         name: 'Summit Collector',
@@ -404,6 +435,128 @@ const challenges: Challenge[] = [
         trailforksRouteId: 18903,
     },
 
+    // — Skills Challenges —
+    {
+        name: 'Pump It Up',
+        description: 'Complete a full paved pump track session. Generate speed without pedaling.',
+        rules: 'Attend an organized pump track session with your ride group. Ride leader verifies.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Corner Pocket',
+        description: 'Complete a cornering clinic. Flat turns, berms, off-camber — rail them all.',
+        rules: 'Attend a coach-led cornering clinic with your ride group. Ride leader verifies.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Brake Check',
+        description: 'Complete a braking skills session. Front/rear balance, modulation, and emergency stops.',
+        rules: 'Attend a coach-led braking clinic with your ride group. Ride leader verifies.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Pace Setter',
+        description: 'Lead your ride group for a full trail segment. Set the pace, pick the lines, keep it smooth.',
+        rules: 'Must lead from the front for an entire trail segment during practice. Ride leader verifies.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Body English',
+        description: 'Complete an attack position clinic. Heels down, elbows out, eyes forward.',
+        rules: 'Attend a coach-led body position clinic with your ride group. Ride leader verifies.',
+        tier: 'bronze',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Switchback Ninja',
+        description: 'Clean 10 switchbacks in a row without dabbing. Tight turns, smooth exits.',
+        rules: 'Must be consecutive switchbacks on a single trail with your ride group. Ride leader verifies a clean run.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Rock Steady',
+        description: 'Complete a rock garden skills session. Pick your line and commit.',
+        rules: 'Attend a coach-led rock garden clinic with your ride group. Ride leader verifies.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Fix It Yourself',
+        description: 'Fix a flat trailside during a practice. Tube or plug — either counts.',
+        rules: 'Must be done during a practice ride with your ride group. Ride leader confirms you handled it.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Trackstand',
+        description: 'Hold a trackstand for 10 seconds. Balance, focus, zero movement.',
+        rules: 'Must be demonstrated during a practice with your ride group. Ride leader verifies.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Statue',
+        description: 'Hold a trackstand for 1 full minute. Total control.',
+        rules: 'Must be demonstrated during a practice with your ride group. Ride leader times and verifies.',
+        tier: 'gold',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Snack Captain',
+        description: 'Bring a trail snack to share with your ride group at a practice. Fueling the team is a skill too.',
+        rules: 'Bring enough for your whole ride group. Ride leader verifies the good vibes.',
+        tier: 'silver',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Trail Boss',
+        description: 'Complete 3 hours of trail building or maintenance. Give back to the trails you ride.',
+        rules: 'Must be an organized trail day. Ride leader or trail day coordinator verifies hours.',
+        tier: 'gold',
+        scope: 'multi-session',
+        category: 'skills',
+    },
+    {
+        name: 'Wrench Time',
+        description: 'Complete a bike maintenance clinic — chain care, brake adjustment, or wheel truing.',
+        rules: 'Attend a coach-led or shop-led maintenance session. Ride leader verifies.',
+        tier: 'gold',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Teammate Assist',
+        description: 'Help a teammate fix a mechanical issue on the trail. Flats, chains, derailleurs — whatever it takes.',
+        rules: 'Must be during a practice ride with your ride group. Ride leader confirms you helped.',
+        tier: 'gold',
+        scope: 'single-practice',
+        category: 'skills',
+    },
+    {
+        name: 'Skills Master',
+        description: 'Complete all bronze and silver skills challenges in a single season. The complete rider.',
+        rules: 'All bronze and silver skills challenges must be verified by ride leaders during the same season.',
+        tier: 'legendary',
+        scope: 'multi-session',
+        category: 'skills',
+    },
+
     // — Endurance Challenges (Season-Long, Cumulative Group Miles) —
     {
         name: 'Fledgling',
@@ -415,7 +568,7 @@ const challenges: Challenge[] = [
     },
     {
         name: 'Century Club',
-        description: '150 cumulative group miles at Eagle Mountain. Your group is pushing past the average.',
+        description: '150 cumulative group miles at Eagle Mountain. Your group is building serious mileage.',
         rules: 'Each practice counts once as the group\'s mileage. ~12 practices averaging 12–13 miles each. Ride leader tracks.',
         tier: 'silver',
         scope: 'multi-session',
@@ -423,7 +576,7 @@ const challenges: Challenge[] = [
     },
     {
         name: 'Soaring Eagle',
-        description: '200 cumulative group miles. Your ride group doesn\'t do short days.',
+        description: '200 cumulative group miles. Your ride group goes big every practice.',
         rules: 'Each practice counts once as the group\'s mileage. Requires consistently pushing into 16+ mile practices. Ride leader tracks.',
         tier: 'gold',
         scope: 'multi-session',
@@ -451,6 +604,7 @@ const categoryLabels: Record<Challenge['category'], string> = {
     climbing: 'Climbing Challenges',
     trail: 'Trail Challenges',
     routes: 'Route Challenges',
+    skills: 'Skills Challenges',
     endurance: 'Endurance Challenges',
 };
 
@@ -459,10 +613,11 @@ const categoryDescriptions: Record<Challenge['category'], string> = {
     climbing: 'Earn your elevation. Every foot counts.',
     trail: 'Specific trails and features to conquer.',
     routes: 'Longer rides in the 4–29 mile range. Explore the full trail system.',
+    skills: 'Clinics, maintenance, teamwork, and giving back. Become a complete rider.',
     endurance: 'Season-long cumulative group miles. Each practice counts once — your group\'s total mileage for that ride.',
 };
 
-const categories: Challenge['category'][] = ['laps', 'climbing', 'trail', 'routes', 'endurance'];
+const categories: Challenge['category'][] = ['laps', 'climbing', 'trail', 'routes', 'skills', 'endurance'];
 
 export default function Challenges() {
     return (
@@ -478,7 +633,7 @@ export default function Challenges() {
                     <p style={{ fontWeight: 800, fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', opacity: 0.75, marginBottom: '0.5rem' }}>Eagle Mountain</p>
                     <h1 style={{ marginBottom: '0.75rem' }}>Trail Challenges</h1>
                     <p style={{ opacity: 0.9, fontSize: '1.125rem', maxWidth: '640px', lineHeight: 1.6 }}>
-                        Push your limits with your ride group. Complete challenges, earn tiers, and prove you&apos;ve got what it takes. Every challenge must be completed with your ride group — no solo runs count.
+                        Challenge yourself and your ride group. Complete challenges, earn tiers, and see what you can accomplish together. Every challenge is completed with your ride group.
                     </p>
                 </div>
             </div>
@@ -568,7 +723,7 @@ export default function Challenges() {
                                                 <p style={{ fontSize: '0.8rem', color: 'rgb(var(--text-muted))', fontStyle: 'italic' }}>
                                                     {challenge.rules}
                                                 </p>
-                                                {(challenge.trailforksUrl || challenge.trailforksRouteId) && (
+                                                {(challenge.trailforksUrl || challenge.trailforksRouteId || challenge.trailforksTrailId) && (
                                                     <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginTop: '0.5rem', flexWrap: 'wrap' }}>
                                                         {challenge.trailforksUrl && (
                                                             <a
@@ -583,6 +738,14 @@ export default function Challenges() {
                                                         {challenge.trailforksRouteId && (
                                                             <a
                                                                 href={`trailforks://goto/route/${challenge.trailforksRouteId}`}
+                                                                style={{ fontSize: '0.8rem', fontWeight: 600, color: 'rgb(var(--color-primary))' }}
+                                                            >
+                                                                Open in App →
+                                                            </a>
+                                                        )}
+                                                        {challenge.trailforksTrailId && (
+                                                            <a
+                                                                href={`trailforks://goto/trail/${challenge.trailforksTrailId}`}
                                                                 style={{ fontSize: '0.8rem', fontWeight: 600, color: 'rgb(var(--color-primary))' }}
                                                             >
                                                                 Open in App →
