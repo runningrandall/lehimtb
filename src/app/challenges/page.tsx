@@ -13,6 +13,7 @@ type Challenge = {
     scope: 'single-practice' | 'multi-session';
     category: 'laps' | 'climbing' | 'trail' | 'routes' | 'endurance';
     trailforksUrl?: string;
+    trailforksRouteId?: number;
 };
 
 const TRAILFORKS_REGION = 'https://www.trailforks.com/region/eagle-mountain-13896/';
@@ -224,15 +225,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/up-down-around-loop/',
-    },
-    {
-        name: 'Green Machine',
-        description: 'The Eagle Mountain Green 5-mile loop — beginner-friendly trails including Roadrunner, Wile E Coyote, and Deadwood. 443 feet of climbing.',
-        rules: 'Complete the full route with your ride group. Ride leader verifies.',
-        tier: 'bronze',
-        scope: 'single-practice',
-        category: 'routes',
-        trailforksUrl: 'https://www.trailforks.com/route/eagle-mt-green-5-mile-loop/',
+        trailforksRouteId: 7138,
     },
     {
         name: 'Best Short Loop',
@@ -242,6 +235,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/best-short-loop-from-bike-park/',
+        trailforksRouteId: 25322,
     },
     {
         name: 'Scout\'s Honor',
@@ -251,6 +245,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/boy-scout-merit-badge-8-mile-uc/',
+        trailforksRouteId: 3216,
     },
     {
         name: 'Winter Blues Buster',
@@ -260,6 +255,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/eamo-winter-blues/',
+        trailforksRouteId: 26097,
     },
     {
         name: 'EaMo 8 Miler',
@@ -269,6 +265,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/eamo-8-miler-from-bike-park/',
+        trailforksRouteId: 18513,
     },
 
     // Silver (10–12 mi)
@@ -280,15 +277,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/alta-mtb-purple/',
-    },
-    {
-        name: 'Brass Monkey\'s Creed',
-        description: 'Brass Monkey\'s Creed to Dust Crops while going Supersonic — 10 miles, 1,394 feet of climbing. A great mix of northern and southern trails.',
-        rules: 'Complete the full route with your ride group. Ride leader verifies.',
-        tier: 'silver',
-        scope: 'single-practice',
-        category: 'routes',
-        trailforksUrl: 'https://www.trailforks.com/route/brass-monkeys-creed-to-dust-crops-while-going-supersonic/',
+        trailforksRouteId: 3730,
     },
     {
         name: 'Purple Mountains Majesty',
@@ -298,6 +287,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/purple-mountains-majesty/',
+        trailforksRouteId: 6424,
     },
     {
         name: 'No Eagles Were Found',
@@ -307,6 +297,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/no-eagles-were-found/',
+        trailforksRouteId: 9974,
     },
     {
         name: 'The Highlight Reel',
@@ -316,6 +307,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/12-mile-highlight-of-eagle-mountain-minus-the-blacks/',
+        trailforksRouteId: 21697,
     },
     {
         name: 'Triple Race',
@@ -325,6 +317,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/eamo-nica-race-course/',
+        trailforksRouteId: 38682,
     },
 
     // Gold (13–16 mi)
@@ -336,6 +329,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/the-best-of/',
+        trailforksRouteId: 17070,
     },
     {
         name: 'Tour of Eagle Mnt',
@@ -345,6 +339,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/tour-of-eagle-mnt/',
+        trailforksRouteId: 32889,
     },
     {
         name: 'Nirvana, Back, Race and Coyote',
@@ -354,6 +349,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/nirvana-back-race-and-coyote-with-tread-and-supersonic-back/',
+        trailforksRouteId: 10117,
     },
     {
         name: 'Save the Clock Tower',
@@ -363,6 +359,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/save-the-clock-tower/',
+        trailforksRouteId: 6441,
     },
     {
         name: 'Tour De Emo',
@@ -372,6 +369,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/tour-de-emo/',
+        trailforksRouteId: 56300,
     },
 
     // Legendary (19+ mi)
@@ -383,6 +381,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/the-best-of-eagle-mountain/',
+        trailforksRouteId: 6453,
     },
     {
         name: 'Tour of Eagle Mountain',
@@ -392,6 +391,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/tour-of-eagle-mountain/',
+        trailforksRouteId: 22151,
     },
     {
         name: 'Eagle Mountain 29er',
@@ -401,6 +401,7 @@ const challenges: Challenge[] = [
         scope: 'single-practice',
         category: 'routes',
         trailforksUrl: 'https://www.trailforks.com/route/eagle-mountain-29er/',
+        trailforksRouteId: 18903,
     },
 
     // — Endurance Challenges (Season-Long, Cumulative Group Miles) —
@@ -567,15 +568,27 @@ export default function Challenges() {
                                                 <p style={{ fontSize: '0.8rem', color: 'rgb(var(--text-muted))', fontStyle: 'italic' }}>
                                                     {challenge.rules}
                                                 </p>
-                                                {challenge.trailforksUrl && (
-                                                    <a
-                                                        href={challenge.trailforksUrl}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        style={{ display: 'inline-block', marginTop: '0.5rem', fontSize: '0.8rem', fontWeight: 600, color: 'rgb(var(--color-primary))' }}
-                                                    >
-                                                        View on Trailforks →
-                                                    </a>
+                                                {(challenge.trailforksUrl || challenge.trailforksRouteId) && (
+                                                    <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginTop: '0.5rem', flexWrap: 'wrap' }}>
+                                                        {challenge.trailforksUrl && (
+                                                            <a
+                                                                href={challenge.trailforksUrl}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                style={{ fontSize: '0.8rem', fontWeight: 600, color: 'rgb(var(--color-primary))' }}
+                                                            >
+                                                                View on Trailforks →
+                                                            </a>
+                                                        )}
+                                                        {challenge.trailforksRouteId && (
+                                                            <a
+                                                                href={`trailforks://goto/route/${challenge.trailforksRouteId}`}
+                                                                style={{ fontSize: '0.8rem', fontWeight: 600, color: 'rgb(var(--color-primary))' }}
+                                                            >
+                                                                Open in App →
+                                                            </a>
+                                                        )}
+                                                    </div>
                                                 )}
                                             </div>
                                         </div>
