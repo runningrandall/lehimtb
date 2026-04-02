@@ -13,7 +13,7 @@
  *   npx tsx scripts/processSchedule.ts scripts/schedule.csv
  *
  * CSV FORMAT (see scripts/schedule.example.csv):
- *   groupName,venueName,date,startTime,endTime,participants
+ *   groupName,venueName,date,startTime,endTime,participants,notes
  *
  *   - groupName: one or more group names, pipe-separated (e.g. "Group 1|Group 2")
  *                must match a group name in groups.json
@@ -22,6 +22,7 @@
  *   - startTime: HH:MM (24h)
  *   - endTime: HH:MM (24h)
  *   - participants: pipe-separated counts matching groupName (e.g. "15|10")
+ *   - notes: optional free-text notes for the booking
  *
  * ENVIRONMENT VARIABLES (set in .env or shell):
  *   TRAILSYNC_TOKEN  – JWT bearer token (required)
@@ -44,7 +45,6 @@ const API_URL =
 const APP_ID = "69051b19f08a573cee1507dd";
 const TEAM_ID = "690623583060a2598188b121";
 const TEAM_NAME = "Lehi HS";
-const NOTES = "";
 const STATUS = "confirmed";
 const THROTTLE_MS = parseInt(process.env.THROTTLE_MS ?? "1000", 10);
 
@@ -161,7 +161,7 @@ interface Booking {
 }
 
 function buildBookings(row: string[]): Booking[] {
-  const [groupNameRaw, venueName, date, startTime, endTime, participantsRaw] = row;
+  const [groupNameRaw, venueName, date, startTime, endTime, participantsRaw, notes = ""] = row;
 
   if (!groupNameRaw || !venueName || !date || !startTime || !endTime) {
     throw new Error(`Missing required fields in row: ${row.join(",")}`);
@@ -201,7 +201,7 @@ function buildBookings(row: string[]): Booking[] {
     startTime,
     endTime,
     participants: participantsList.length === 1 ? participantsList[0] : participantsList[idx],
-    notes: NOTES,
+    notes,
     teamName: TEAM_NAME,
     groupName,
     venueName,

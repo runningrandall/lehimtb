@@ -1,4 +1,6 @@
-groupName,venueName,date,startTime,endTime,participants
-Lehi HS,Eagle Mountain,2026-04-03,18:00,20:00,109
-Lehi HS - Groups 1 - 6,Corner Canyon (Peak View),2026-04-04,8:00,10:00,50
-Lehi HS - Groups 7 - 12,Corner Canyon (Potato Hill),2026-04-04,8:00,10:00,50
+groupName,venueName,date,startTime,endTime,participants,notes
+Lehi HS,Eagle Mountain,2026-04-27,17:30,19:30,30,Ride Leader Ride
+Lehi HS,Corner Canyon (Potato Hill),2026-05-02,8:00,10:00,30,Ride Leader Ride
+Lehi HS,Herriman (Butterfield Canyon Trails),2026-05-04,17:30,19:30,30,Ride Leader Ride
+Lehi HS,Valley Vista/PG Bench,2026-05-11,17:30,19:30,30,Ride Leader Ride
+Lehi HS,Eagle Mountain,2026-05-16,8:00,10:00,100,On Trail Skills

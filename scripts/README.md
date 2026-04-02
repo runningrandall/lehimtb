@@ -51,7 +51,7 @@ npx tsx scripts/processSchedule.ts scripts/schedule.csv
 See `schedule.example.csv` for a working example.
 
 ```
-groupName,venueName,date,startTime,endTime,participants
+groupName,venueName,date,startTime,endTime,participants,notes
 ```
 
 | Column | Format | Example |
@@ -62,6 +62,7 @@ groupName,venueName,date,startTime,endTime,participants
 | `startTime` | `HH:MM` (24h) | `18:00` |
 | `endTime` | `HH:MM` (24h) | `20:00` |
 | `participants` | Pipe-separated counts matching `groupName` | `30\|30` |
+| `notes` | Optional free text | `Full team practice` |
 
 When multiple groups are pipe-separated, each group becomes its own booking. If a single participant count is given, it applies to all groups in that row. If multiple counts are given, they must match the number of groups.
 
