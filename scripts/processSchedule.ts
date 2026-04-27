@@ -7,10 +7,16 @@
  * TrailSync Booking API, throttled to 1 request per second.
  *
  * USAGE:
- *   npx tsx scripts/processSchedule.ts <path-to-csv>
+ *   npx tsx scripts/processSchedule.ts <path-to-csv> [--validate]
  *
  * EXAMPLE:
  *   npx tsx scripts/processSchedule.ts scripts/schedule.csv
+ *   npx tsx scripts/processSchedule.ts scripts/schedule.csv --validate
+ *
+ * FLAGS:
+ *   --validate  Parse the CSV and confirm every groupName and venueName
+ *               resolves against groups.json / venues.json. No API calls
+ *               are made and TRAILSYNC_TOKEN is not required.
  *
  * CSV FORMAT (see scripts/schedule.example.csv):
  *   groupName,venueName,date,startTime,endTime,participants,notes
@@ -229,22 +235,104 @@ async function submitBooking(booking: Booking): Promise<void> {
   }
 }
 
+// ─── Validation ──────────────────────────────────────────────────────────────
+
+function runValidation(rows: string[][]): void {
+  const missingGroups = new Set<string>();
+  const missingVenues = new Set<string>();
+  const rowErrors: { rowNum: number; message: string }[] = [];
+  let bookingCount = 0;
+
+  rows.forEach((row, idx) => {
+    const rowNum = idx + 2; // +2 to account for header + 1-based numbering
+    const [groupNameRaw, venueName, date, startTime, endTime, participantsRaw] = row;
+
+    if (!groupNameRaw || !venueName || !date || !startTime || !endTime) {
+      rowErrors.push({ rowNum, message: `Missing required fields: ${row.join(",")}` });
+      return;
+    }
+
+    if (!resolveVenueId(venueName)) {
+      missingVenues.add(venueName);
+    }
+
+    const groupNames = groupNameRaw.split("|").map((g) => g.trim());
+    const participantsList = (participantsRaw ?? "")
+      .split("|")
+      .map((p) => p.trim())
+      .filter((p) => p.length > 0);
+
+    if (participantsList.length > 1 && participantsList.length !== groupNames.length) {
+      rowErrors.push({
+        rowNum,
+        message: `Participant count mismatch: ${groupNames.length} group(s) but ${participantsList.length} participant value(s)`,
+      });
+    }
+
+    for (const groupName of groupNames) {
+      if (!resolveGroupId(groupName)) {
+        missingGroups.add(groupName);
+      }
+    }
+
+    bookingCount += groupNames.length;
+  });
+
+  console.log(
+    `Validated ${rows.length} CSV row(s) → ${bookingCount} booking(s) would be submitted.\n`
+  );
+
+  if (missingVenues.size > 0) {
+    console.log(`Unknown venues (${missingVenues.size}):`);
+    for (const v of [...missingVenues].sort()) console.log(`  - "${v}"`);
+    console.log("  Fix: add to scripts/venues.json or update its aliases.\n");
+  }
+
+  if (missingGroups.size > 0) {
+    console.log(`Unknown groups (${missingGroups.size}):`);
+    for (const g of [...missingGroups].sort()) console.log(`  - "${g}"`);
+    console.log("  Fix: add to scripts/groups.json.\n");
+  }
+
+  if (rowErrors.length > 0) {
+    console.log(`Row errors (${rowErrors.length}):`);
+    for (const e of rowErrors) console.log(`  - row ${e.rowNum}: ${e.message}`);
+    console.log();
+  }
+
+  const ok = missingVenues.size === 0 && missingGroups.size === 0 && rowErrors.length === 0;
+  if (ok) {
+    console.log("All groups and venues resolved. Schedule is ready to process.");
+  } else {
+    console.log("Validation failed. Fix the issues above before running without --validate.");
+    process.exit(1);
+  }
+}
+
 // ─── Main ────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const csvPath = process.argv[2];
+  const args = process.argv.slice(2);
+  const validateOnly = args.includes("--validate");
+  const csvPath = args.find((a) => !a.startsWith("--"));
+
   if (!csvPath) {
-    console.error("Usage: npx tsx scripts/processSchedule.ts <path-to-csv>");
+    console.error("Usage: npx tsx scripts/processSchedule.ts <path-to-csv> [--validate]");
     process.exit(1);
   }
 
-  if (!TOKEN) {
+  if (!validateOnly && !TOKEN) {
     console.error("Error: Set TRAILSYNC_TOKEN environment variable.");
     process.exit(1);
   }
 
   const raw = readFileSync(resolve(csvPath), "utf-8");
   const rows = parseCSV(raw);
+
+  if (validateOnly) {
+    runValidation(rows);
+    return;
+  }
 
   // Expand rows into individual bookings (one per group)
   const bookings: Booking[] = [];

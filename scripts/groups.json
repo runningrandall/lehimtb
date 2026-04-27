@@ -1,23 +1,23 @@
 [
-  {
-    "name": "Lehi HS",
-    "ageRange": "HS",
-    "id": "lehi-hs",
-    "isActive": true,
-    "maxParticipants": 109
+   {
+      "name": "Lehi HS",
+      "ageRange": "HS",
+      "id": "lehi-hs",
+      "isActive": true,
+      "maxParticipants": 120
   },
   {
-    "name": "Lehi HS - Groups 1 - 6",
-    "ageRange": "HS",
-    "id": "lehi-hs-group-1",
-    "isActive": true,
-    "maxParticipants": 50
+      "name": "Lehi HS - Groups 1 - 6",
+      "ageRange": "HS",
+      "id": "lehi-hs-group-1",
+      "isActive": true,
+      "maxParticipants": 60
   },
   {
-    "name": "Lehi HS - Groups 7 - 12",
-    "ageRange": "HS",
-    "id": "lehi-hs-group-2",
-    "isActive": true,
-    "maxParticipants": 50
+      "name": "Lehi HS - Groups 7 - 12",
+      "ageRange": "HS",
+      "id": "lehi-hs-group-2",
+      "isActive": true,
+      "maxParticipants": 60
   }
 ]
