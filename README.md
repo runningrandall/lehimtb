@@ -27,7 +27,7 @@ Our 5 Core Values: **Strong Body · Strong Mind · Strong Character · All Inclu
 
 | Tool | Purpose |
 |---|---|
-| [Next.js 15](https://nextjs.org/) | Framework (App Router, static export) |
+| [Next.js 16](https://nextjs.org/) | Framework (App Router, static export) |
 | [pnpm](https://pnpm.io/) | Package manager |
 | Vanilla CSS | Custom design system |
 | GitHub Pages | Free static hosting |
