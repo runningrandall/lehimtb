@@ -37,6 +37,63 @@ const plans = [
     },
 ];
 
+const trainingTipsData = [
+    {
+        title: '01 Why We Train',
+        items: [
+            { title: 'Training beats talent.', desc: 'Consistent riders pass naturally fast riders by mid-season.' },
+            { title: 'Train smart, race well.', desc: 'The goal isn\'t to suffer the most — it\'s to be ready when it counts.' },
+            { title: 'Build the engine now.', desc: 'The fitness you build all summer is the fitness you race on in fall.' }
+        ]
+    },
+    {
+        title: '02 The Three Training Zones',
+        items: [
+            { title: 'Easy (Zone 2):', desc: 'Can hold a full conversation. Builds your aerobic base. This is most of your riding.' },
+            { title: 'Medium (Tempo/Threshold):', desc: 'Short sentences only. Builds race-pace strength.' },
+            { title: 'Hard (Intervals):', desc: 'One or two words. Builds top-end power. Short doses, big effect.' },
+            { title: 'Easy days easy, hard days hard.', desc: 'Mushy middle = slow gains and burnout.' }
+        ]
+    },
+    {
+        title: '03 Building a Week',
+        items: [
+            { title: '2–3 team rides + 1–2 solo rides.', desc: 'Mix of easy spins, skill work, and one harder session.' },
+            { title: 'One real rest day.', desc: 'Adaptation happens when you rest, not when you ride.' },
+            { title: 'Skills count as training.', desc: 'Cornering, braking, and line choice make you faster than fitness alone.' },
+            { title: '10% rule:', desc: 'Don\'t jump weekly volume by more than ~10% — that\'s how injuries start.' }
+        ]
+    },
+    {
+        title: '04 Fuel, Sleep, Recover',
+        items: [
+            { title: 'Eat before you ride.', desc: 'Skipping breakfast = bonking by mile 8.' },
+            { title: 'Carbs on the bike.', desc: 'Anything over 75 minutes? Bring food. 30–60g carbs/hour.' },
+            { title: 'Hydrate early.', desc: 'If you\'re thirsty, you\'re already behind. Add electrolytes when it\'s hot.' },
+            { title: 'Sleep is free watts.', desc: '8–9 hours. No exceptions in race weeks.' },
+            { title: 'Refuel within 30 min', desc: 'after hard rides — protein + carbs.' }
+        ]
+    },
+    {
+        title: '05 Head Game',
+        items: [
+            { title: 'Process over outcome.', desc: 'Focus on the next corner, not the finish line.' },
+            { title: 'Bad days happen.', desc: 'One ugly workout doesn\'t define your season.' },
+            { title: 'Compare to yesterday\'s you,', desc: 'not the rider next to you.' },
+            { title: 'Have fun.', desc: 'Riders who enjoy training keep training. That\'s the whole game.' }
+        ]
+    },
+    {
+        title: '06 Action Items',
+        items: [
+            { title: 'Pick a consistent bedtime', desc: 'and stick to it each night.' },
+            { title: 'Do one ride at a true easy pace', desc: '— fully conversational the whole time.' },
+            { title: 'Practice one skill', desc: 'for 10 minutes before or after a team ride.' },
+            { title: 'Check in with a coach', desc: 'if something feels off — pain, fatigue, or burnout.' }
+        ]
+    }
+];
+
 export default function Training() {
     return (
         <div className="animate-fade-in">
@@ -58,25 +115,34 @@ export default function Training() {
 
             <div className="container" style={{ padding: 'var(--spacing-xl) 0' }}>
 
-                {/* Training Tips PDF */}
+                {/* Training Tips */}
                 <h2 style={{ marginBottom: 'var(--spacing-md)', paddingBottom: '0.5rem', borderBottom: '1px solid var(--border-color)' }}>Training Tips</h2>
                 <div style={{ marginBottom: 'var(--spacing-xl)' }}>
                     <p className="text-muted" style={{ fontSize: '1.05rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
                         Review our essential training tips, covering off-season strategies, expectations, and nutrition to help you prepare for the upcoming season.
                         <br />
-                        <Link href="/lehi-mtb-training-talk.pdf" target="_blank" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.25rem', marginTop: '0.5rem' }}>
-                            Open PDF in new tab
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                        </Link>
+                        <a href="/lehi-mtb-training-talk.pdf" download="Lehi_MTB_Training_101.pdf" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.25rem', marginTop: '0.5rem' }}>
+                            Download as PDF
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </a>
                     </p>
-                    <div className="glass-panel" style={{ padding: '0.5rem', height: '600px', overflow: 'hidden' }}>
-                        <iframe 
-                            src="/lehi-mtb-training-talk.pdf" 
-                            width="100%" 
-                            height="100%" 
-                            style={{ border: 'none', borderRadius: 'var(--radius-sm)' }}
-                            title="Training Tips PDF"
-                        />
+                    
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'var(--spacing-md)' }}>
+                        {trainingTipsData.map((section) => (
+                            <div key={section.title} className="glass-panel" style={{ padding: 'var(--spacing-lg)' }}>
+                                <h3 style={{ marginBottom: '1rem', color: 'rgb(var(--color-secondary))', fontSize: '1.2rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem' }}>
+                                    {section.title}
+                                </h3>
+                                <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                                    {section.items.map((item, index) => (
+                                        <li key={index} style={{ fontSize: '0.95rem', lineHeight: 1.6 }}>
+                                            <strong style={{ color: 'rgb(var(--text-color))' }}>{item.title}</strong>{' '}
+                                            <span className="text-muted">{item.desc}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
                 </div>
 
