@@ -49,7 +49,7 @@ const trainingTipsData = [
     },
     {
         title: 'The Three Training Zones',
-        color: 'rgb(var(--color-secondary))',
+        color: 'rgb(var(--color-primary))',
         items: [
             { title: 'Easy (Zone 2):', desc: 'Can hold a full conversation. Builds your aerobic base. This is most of your riding.' },
             { title: 'Medium (Tempo/Threshold):', desc: 'Short sentences only. Builds race-pace strength.' },
@@ -59,7 +59,7 @@ const trainingTipsData = [
     },
     {
         title: 'Building a Week',
-        color: 'rgb(192, 150, 240)',
+        color: 'rgb(var(--color-primary))',
         items: [
             { title: '2–3 team rides + 1–2 solo rides.', desc: 'Mix of easy spins, skill work, and one harder session.' },
             { title: 'One real rest day.', desc: 'Adaptation happens when you rest, not when you ride.' },
@@ -69,7 +69,7 @@ const trainingTipsData = [
     },
     {
         title: 'Fuel, Sleep, Recover',
-        color: 'rgb(var(--color-tertiary))',
+        color: 'rgb(var(--color-primary))',
         items: [
             { title: 'Eat before you ride.', desc: 'Skipping breakfast = bonking by mile 8.' },
             { title: 'Carbs on the bike.', desc: 'Anything over 75 minutes? Bring food. 30–60g carbs/hour.' },
@@ -80,7 +80,7 @@ const trainingTipsData = [
     },
     {
         title: 'Head Game',
-        color: 'rgb(var(--color-primary-light))',
+        color: 'rgb(var(--color-primary))',
         items: [
             { title: 'Process over outcome.', desc: 'Focus on the next corner, not the finish line.' },
             { title: 'Bad days happen.', desc: 'One ugly workout doesn\'t define your season.' },
