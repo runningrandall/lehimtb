@@ -58,6 +58,28 @@ export default function Training() {
 
             <div className="container" style={{ padding: 'var(--spacing-xl) 0' }}>
 
+                {/* Training Tips PDF */}
+                <h2 style={{ marginBottom: 'var(--spacing-md)', paddingBottom: '0.5rem', borderBottom: '1px solid var(--border-color)' }}>Training Tips</h2>
+                <div style={{ marginBottom: 'var(--spacing-xl)' }}>
+                    <p className="text-muted" style={{ fontSize: '1.05rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+                        Review our essential training tips, covering off-season strategies, expectations, and nutrition to help you prepare for the upcoming season.
+                        <br />
+                        <Link href="/lehi-mtb-training-talk.pdf" target="_blank" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.25rem', marginTop: '0.5rem' }}>
+                            Open PDF in new tab
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </Link>
+                    </p>
+                    <div className="glass-panel" style={{ padding: '0.5rem', height: '600px', overflow: 'hidden' }}>
+                        <iframe 
+                            src="/lehi-mtb-training-talk.pdf" 
+                            width="100%" 
+                            height="100%" 
+                            style={{ border: 'none', borderRadius: 'var(--radius-sm)' }}
+                            title="Training Tips PDF"
+                        />
+                    </div>
+                </div>
+
                 {/* What is Training Peaks */}
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: 'var(--spacing-xl)', marginBottom: 'var(--spacing-xl)', alignItems: 'start' }}>
                     <div>
