@@ -39,7 +39,8 @@ const plans = [
 
 const trainingTipsData = [
     {
-        title: '01 Why We Train',
+        title: 'Why We Train',
+        color: 'rgb(var(--color-primary))',
         items: [
             { title: 'Training beats talent.', desc: 'Consistent riders pass naturally fast riders by mid-season.' },
             { title: 'Train smart, race well.', desc: 'The goal isn\'t to suffer the most — it\'s to be ready when it counts.' },
@@ -47,7 +48,8 @@ const trainingTipsData = [
         ]
     },
     {
-        title: '02 The Three Training Zones',
+        title: 'The Three Training Zones',
+        color: 'rgb(var(--color-secondary))',
         items: [
             { title: 'Easy (Zone 2):', desc: 'Can hold a full conversation. Builds your aerobic base. This is most of your riding.' },
             { title: 'Medium (Tempo/Threshold):', desc: 'Short sentences only. Builds race-pace strength.' },
@@ -56,7 +58,8 @@ const trainingTipsData = [
         ]
     },
     {
-        title: '03 Building a Week',
+        title: 'Building a Week',
+        color: 'rgb(192, 150, 240)',
         items: [
             { title: '2–3 team rides + 1–2 solo rides.', desc: 'Mix of easy spins, skill work, and one harder session.' },
             { title: 'One real rest day.', desc: 'Adaptation happens when you rest, not when you ride.' },
@@ -65,7 +68,8 @@ const trainingTipsData = [
         ]
     },
     {
-        title: '04 Fuel, Sleep, Recover',
+        title: 'Fuel, Sleep, Recover',
+        color: 'rgb(var(--color-tertiary))',
         items: [
             { title: 'Eat before you ride.', desc: 'Skipping breakfast = bonking by mile 8.' },
             { title: 'Carbs on the bike.', desc: 'Anything over 75 minutes? Bring food. 30–60g carbs/hour.' },
@@ -75,7 +79,8 @@ const trainingTipsData = [
         ]
     },
     {
-        title: '05 Head Game',
+        title: 'Head Game',
+        color: 'rgb(var(--color-primary-light))',
         items: [
             { title: 'Process over outcome.', desc: 'Focus on the next corner, not the finish line.' },
             { title: 'Bad days happen.', desc: 'One ugly workout doesn\'t define your season.' },
@@ -84,7 +89,8 @@ const trainingTipsData = [
         ]
     },
     {
-        title: '06 Action Items',
+        title: 'Start Doing',
+        color: 'rgb(var(--color-primary))',
         items: [
             { title: 'Pick a consistent bedtime', desc: 'and stick to it each night.' },
             { title: 'Do one ride at a true easy pace', desc: '— fully conversational the whole time.' },
@@ -127,17 +133,20 @@ export default function Training() {
                         </a>
                     </p>
                     
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'var(--spacing-md)' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: 'var(--spacing-md)' }}>
                         {trainingTipsData.map((section) => (
-                            <div key={section.title} className="glass-panel" style={{ padding: 'var(--spacing-lg)' }}>
-                                <h3 style={{ marginBottom: '1rem', color: 'rgb(var(--color-secondary))', fontSize: '1.2rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem' }}>
+                            <div key={section.title} className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderLeft: `4px solid ${section.color}` }}>
+                                <h3 style={{ marginBottom: '1rem', color: section.color, fontSize: '1.2rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.5rem' }}>
                                     {section.title}
                                 </h3>
                                 <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                                     {section.items.map((item, index) => (
-                                        <li key={index} style={{ fontSize: '0.95rem', lineHeight: 1.6 }}>
-                                            <strong style={{ color: 'rgb(var(--text-color))' }}>{item.title}</strong>{' '}
-                                            <span className="text-muted">{item.desc}</span>
+                                        <li key={index} style={{ fontSize: '0.95rem', lineHeight: 1.6, display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
+                                            <span style={{ color: section.color, marginTop: '2px', fontSize: '1.1rem' }}>✦</span>
+                                            <div>
+                                                <strong style={{ color: 'rgb(var(--text-color))' }}>{item.title}</strong>{' '}
+                                                <span className="text-muted">{item.desc}</span>
+                                            </div>
                                         </li>
                                     ))}
                                 </ul>
