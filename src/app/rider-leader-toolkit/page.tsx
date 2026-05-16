@@ -178,6 +178,68 @@ const levelStyles: Record<RouteLevel, { bg: string; fg: string; label: string }>
     Black: { bg: 'rgba(30, 30, 30, 0.12)', fg: 'rgb(20, 20, 20)', label: 'Black' },
 };
 
+type Tool = {
+    name: string;
+    url: string;
+    category: 'Safety' | 'Maps' | 'Weather' | 'League' | 'Races' | 'Communication' | 'Logistics';
+    description: string;
+};
+
+const tools: Tool[] = [
+    {
+        name: 'what3words',
+        url: 'https://what3words.com/',
+        category: 'Safety',
+        description: 'Every 3 m × 3 m square in the world has a unique three-word address. Use it to share your exact location with 911 or another coach when there is no street address — invaluable on trails.',
+    },
+    {
+        name: 'Trailforks',
+        url: 'https://www.trailforks.com/apps/',
+        category: 'Maps',
+        description: 'Trail maps, GPS navigation, route library, and trail status. The Pro tier unlocks offline maps — worth it before any AF Canyon, Park City, or Lambert Park ride.',
+    },
+    {
+        name: 'OpenSnow',
+        url: 'https://opensnow.com/',
+        category: 'Weather',
+        description: 'Hyper-local mountain weather, hourly forecasts, and lightning. Coaches use it before every practice — if conditions look unsafe, we will cancel and announce on TeamSnap. Riders, watch your notifications.',
+    },
+    {
+        name: 'TrailSync',
+        url: 'https://trailsync.org/',
+        category: 'Logistics',
+        description: 'Ride leader check-in and team ride log. Used to track who is leading, who showed up, and where each group rode.',
+    },
+    {
+        name: 'NICA PitZone',
+        url: 'https://pitzone.nationalmtb.org/',
+        category: 'League',
+        description: 'NICA registration, waivers, coach licensing, SafeSport, and team rosters. Keep your coach status current — you can\'t lead a sanctioned ride if it lapses.',
+    },
+    {
+        name: 'Utah League — Region 5',
+        url: 'https://utahmtb.org/region-races/',
+        category: 'Races',
+        description: 'Utah League race schedule, race courses, and results. Subscribe to the Region 5 calendar feed from the events page to stay current on race dates and venues.',
+    },
+    {
+        name: 'TeamSnap',
+        url: 'https://www.teamsnap.com/',
+        category: 'Communication',
+        description: 'Practice schedules, attendance, and team messaging. Where riders and parents see ride times, meeting locations, and last-minute changes.',
+    },
+];
+
+const toolCategoryColor: Record<Tool['category'], string> = {
+    Safety: 'rgb(180, 30, 50)',
+    Maps: 'rgb(28, 120, 65)',
+    Weather: 'rgb(35, 80, 160)',
+    League: 'rgb(var(--color-primary))',
+    Races: 'rgb(var(--color-primary))',
+    Communication: 'rgb(var(--color-primary-light))',
+    Logistics: 'rgb(120, 90, 30)',
+};
+
 const abcdeChecklist = [
     { letter: 'A', word: 'Air', description: 'Check tire pressure. Squeeze each tire — should feel firm. Top off with a pump if needed.' },
     { letter: 'B', word: 'Brakes', description: 'Squeeze both levers. Pads should engage well before the lever hits the bar. Spin each wheel — no rub.' },
@@ -278,6 +340,7 @@ export default function RiderLeaderToolkit() {
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginBottom: 'var(--spacing-xl)' }}>
                     <a href="#emergency-action-plans" className="btn-silver" style={{ fontSize: '0.875rem' }}>Emergency Action Plans</a>
                     <a href="#routes" className="btn-silver" style={{ fontSize: '0.875rem' }}>Common Routes</a>
+                    <a href="#tools" className="btn-silver" style={{ fontSize: '0.875rem' }}>Tools & Apps</a>
                     <a href="#best-practices" className="btn-silver" style={{ fontSize: '0.875rem' }}>Best Practices</a>
                     <a href="#abcde" className="btn-silver" style={{ fontSize: '0.875rem' }}>ABCDE Bike Check</a>
                 </div>
@@ -366,6 +429,36 @@ export default function RiderLeaderToolkit() {
 
                     <p className="text-muted" style={{ fontSize: '0.9rem', lineHeight: 1.7, marginTop: 'var(--spacing-md)', fontStyle: 'italic' }}>
                         Routes are suggestions, not prescriptions. Adapt to weather, group skill, and how riders are feeling that day. Distances and difficulty pulled from Trailforks; verify trail status before you ride.
+                    </p>
+                </section>
+
+                {/* Tools & Apps */}
+                <section id="tools" style={{ marginBottom: 'var(--spacing-xl)', scrollMarginTop: '5rem' }}>
+                    <h2 style={{ marginBottom: 'var(--spacing-md)', paddingBottom: '0.5rem', borderBottom: '1px solid var(--border-color)' }}>Tools & Apps</h2>
+                    <p className="text-muted" style={{ fontSize: '1.05rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+                        The handful of apps and sites every ride leader should have installed and bookmarked. Set these up before your first practice — not on the trailhead.
+                    </p>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--spacing-md)' }}>
+                        {tools.map((tool) => {
+                            const catColor = toolCategoryColor[tool.category];
+                            return (
+                                <div key={tool.url} className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderLeft: `4px solid ${catColor}`, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: '0.5rem' }}>
+                                        <h3 style={{ margin: 0, fontSize: '1.1rem' }}>{tool.name}</h3>
+                                        <span style={{ fontSize: '0.65rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', color: catColor, padding: '0.2rem 0.55rem', borderRadius: 'var(--radius-sm)', background: 'rgba(87,43,158,0.06)', whiteSpace: 'nowrap' }}>{tool.category}</span>
+                                    </div>
+                                    <p className="text-muted" style={{ fontSize: '0.9rem', lineHeight: 1.6, margin: 0, flex: 1 }}>{tool.description}</p>
+                                    <Link href={tool.url} target="_blank" rel="noopener noreferrer" style={{ alignSelf: 'flex-start', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', color: catColor, textDecoration: 'none' }}>
+                                        Open →
+                                    </Link>
+                                </div>
+                            );
+                        })}
+                    </div>
+
+                    <p className="text-muted" style={{ fontSize: '0.9rem', lineHeight: 1.7, marginTop: 'var(--spacing-md)', fontStyle: 'italic' }}>
+                        Bonus: keep a basic first-aid reference (Red Cross First Aid app or saved PDF), the EAP for your trail downloaded, and your phone charged before every ride.
                     </p>
                 </section>
 
