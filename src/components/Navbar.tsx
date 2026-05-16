@@ -37,6 +37,7 @@ const navGroups = [
     {
         label: 'More',
         links: [
+            { href: '/rider-leader-toolkit', label: 'Rider Leader Toolkit' },
             { href: '/brand', label: 'Brand Book' },
         ]
     }
