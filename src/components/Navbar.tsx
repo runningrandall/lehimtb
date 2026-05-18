@@ -21,6 +21,7 @@ const navGroups = [
         label: 'Events',
         links: [
             { href: '/events', label: 'Race Schedule' },
+            { href: '/events/family-camp-2026', label: 'Family Camp 2026' },
             { href: '/gallery', label: 'Gallery' },
             { href: 'https://lehimtb.substack.com/', label: 'Blog', external: true },
         ]
