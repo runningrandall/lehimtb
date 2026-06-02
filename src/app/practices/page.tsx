@@ -41,7 +41,7 @@ const practiceRegions: Region[] = [
                 name: 'The Rock Pile',
                 googleMapsUrl: 'https://maps.app.goo.gl/sU2gZLD4M4zxzjE47',
                 appleMapsUrl: 'https://maps.apple.com/frame?center=40.343001,-111.976514&distance=564.181297&map=hybrid&span=0.002695,0.003796',
-                directions: 'Head west on Pioneer Crossing, continuing onto Pony Express Pkwy. Turn left onto Golden Eagle Rd, then turn left at the Rock Pile parking area.',
+                directions: 'Head west on Pioneer Crossing, continuing onto Pony Express Pkwy. Turn left onto Hidden Hollow Dr, pass the elementary school. Continue on the dirt road up the hill until you get to a large flat area with a large pile of rocks.',
             }
         ]
     },
@@ -175,7 +175,7 @@ export default function PracticeLocations() {
                     <p style={{ fontWeight: 800, fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', opacity: 0.75, marginBottom: '0.5rem' }}>Where We Ride</p>
                     <h1 style={{ marginBottom: '0.75rem' }}>Practice Locations</h1>
                     <p style={{ opacity: 0.9, fontSize: '1.125rem', maxWidth: '640px', lineHeight: 1.6 }}>
-                        A complete guide to our meeting spots and trailheads. Driving directions are general guides starting from Lehi High School. 
+                        A complete guide to our meeting spots and trailheads. Driving directions are general guides starting from Lehi High School.
                     </p>
                 </div>
             </div>
@@ -195,7 +195,7 @@ export default function PracticeLocations() {
                                 {region.locations.map((loc) => (
                                     <div key={loc.name} className="glass-panel" style={{ padding: 'var(--spacing-lg)', display: 'flex', flexDirection: 'column' }}>
                                         <h3 style={{ marginBottom: '1rem', fontSize: '1.25rem' }}>{loc.name}</h3>
-                                        
+
                                         {loc.description && (
                                             <p className="text-muted" style={{ fontSize: '0.9rem', marginBottom: '1rem', fontStyle: 'italic' }}>
                                                 {loc.description}
