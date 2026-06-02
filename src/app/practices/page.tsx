@@ -53,31 +53,31 @@ const practiceRegions: Region[] = [
                 name: 'Potato Hill',
                 googleMapsUrl: 'https://maps.app.goo.gl/Ki7YJGvTqH7Xegji9',
                 appleMapsUrl: 'https://maps.apple/p/WIXJtJnDmcu-kN',
-                directions: 'Take I-15 N to exit 288 (14600 S). Turn right (east) onto 14600 S, which becomes Traverse Ridge Rd. Follow Traverse Ridge Rd up the mountain, then turn right onto Suncrest Dr and immediately right into the Potato Hill Trailhead parking lot.',
+                directions: 'From the North Side: Take I-15 N to exit 288 (14600 S). Turn right (east) onto 14600 S, which becomes Traverse Ridge Rd. Follow Traverse Ridge Rd up the mountain, then turn right onto Suncrest Dr and immediately right into the Potato Hill Trailhead parking lot. From the south side: head east on Timpanogos Highway until you get to Suncrest Drive and turn left. Follow Suncrest Dr to the top of the hill. Turn right onto Traverse Ridge Rd. and go down the hill to the parking lot.',
             },
             {
                 name: 'Peak View',
                 googleMapsUrl: 'https://maps.app.goo.gl/fAyVQ6Tew6GsTGB96',
                 appleMapsUrl: 'https://maps.apple/p/Irkp10nkfxTF_6',
-                directions: 'Take I-15 N to exit 288 (14600 S). Head east on Traverse Ridge Rd. Turn left onto Suncrest Dr, then left onto Traverse Terrace Dr. Turn right onto Deer Ridge Dr and follow it to the end where you\'ll find the Peak View Trailhead.',
+                directions: 'Head east on Timpanogos Highway. Turn left onto Suncrest Dr, Turn right onto Canyon Pointe Rd. Head all the way down the hill to the trailhead.',
             },
             {
                 name: 'Hogs Hollow (Angels Gate)',
                 googleMapsUrl: 'https://maps.app.goo.gl/5JSuXxhLJGjTD5ti9',
                 appleMapsUrl: 'https://maps.apple.com/frame?center=40.464903,-111.805844&distance=1684.440043&map=hybrid&span=0.008045,0.011353',
-                directions: 'Take I-15 N to exit 291 (12300 S). Head east on 12300 S, which turns into 1300 E. Continue south, turn left onto Pioneer Rd. Turn right onto 2000 E, follow it south, and turn left onto Hogs Hollow Rd to reach the trailhead.',
+                directions: 'Head east on Timpanogos Highway. Turn left on 6000 W. Turn right at the 4-way stop. Take your next left on N. Beacon Hill Blvd. Turn left on Light House Drive. Continue up the hill to the parking lot.',
             },
             {
                 name: 'Deer Ridge',
                 googleMapsUrl: 'https://maps.app.goo.gl/7HmvynNjeNA97raF6',
                 appleMapsUrl: 'https://maps.apple/p/UEr2GavbFPLQKX',
-                directions: 'Take I-15 N to exit 288 (14600 S). Head east up Traverse Ridge Rd. Turn left onto Suncrest Dr, left onto Traverse Terrace Dr, and right onto Deer Ridge Dr. The Deer Ridge Trailhead will be on your left before reaching Peak View.',
+                directions: 'Head east on Timpanogos Highway. Turn left onto Suncrest Dr, at the top of Suncrest Dr. at the 4-way stop continue straight onto Deer Ridge Dr. The Deer Ridge Trailhead will be straight ahead at the end of the road.',
             },
             {
                 name: 'Hidden Canyon',
                 googleMapsUrl: 'https://maps.app.goo.gl/PipSLV1FZCNwyameA',
                 appleMapsUrl: 'https://maps.apple.com/frame?center=40.466102,-111.875299&distance=537.173932&map=hybrid&span=0.002565,0.003621',
-                directions: 'Take I-15 N to exit 288 (14600 S). Head east onto Traverse Ridge Rd. Turn left onto Bangerter Pkwy, then right onto Highland Dr. Turn right into the Hidden Canyon parking area.',
+                directions: 'Head north on 1200 W in Lehi. Go past Timpanogos Highway and the road turns into Morning Vista Rd. Take the second right at the roundabout onto Chapel Ridge Rd., turn right onto Traverse Mountain Blvd, Turn right onto Fox Canyon Rd. Take the road all the way up the hill until the road ends at the trailhead.',
             }
         ]
     },
