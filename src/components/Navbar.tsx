@@ -30,7 +30,7 @@ const navGroups = [
         label: 'Training',
         links: [
             { href: '/training', label: 'Training Plans' },
-            { href: '/join#practices', label: 'Practices' },
+            { href: '/practices', label: 'Practices' },
             { href: '/join#faq', label: 'FAQs' },
             { href: '/challenges', label: 'Challenges' },
         ]
