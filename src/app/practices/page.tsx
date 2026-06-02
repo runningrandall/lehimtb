@@ -23,25 +23,89 @@ type Region = {
 const practiceRegions: Region[] = [
     {
         region: 'Eagle Mountain',
-        description: 'We ride here frequently, especially leading up to our home race. Most practices start from Hidden Hollow Elementary, but occasionally we use alternate trailheads.',
+        description: 'We ride here frequently. Most practices start from Hidden Hollow Elementary, but occasionally we use alternate trailheads.',
         locations: [
             {
                 name: 'Hidden Hollow Elementary',
                 googleMapsUrl: 'https://maps.app.goo.gl/tJJXSjfRFh6F7dGS7',
                 appleMapsUrl: 'https://maps.apple/p/Z83ykMYjT0dWDG',
-                directions: 'Head west on Pioneer Crossing toward Eagle Mountain. Continue straight as it becomes Pony Express Pkwy. Turn left onto Hidden Hollow Dr and arrive at Hidden Hollow Elementary.',
+                directions: `Take Pony Express Parkway and Lehi-Fairfield Rd/E Pony Express Pkwy to Hidden Valley Pkwy in Eagle Mountain
+12 min (6.0 mi)
+
+Continue onto Saratoga Rd
+0.9 mi
+
+Continue onto Pony Express Parkway
+0.6 mi
+
+At the traffic circle, take the 2nd exit and stay on Pony Express Parkway
+2.2 mi
+
+Continue onto W 7200 N/Lehi-Fairfield Rd/E Pony Express Pkwy
+Continue to follow Lehi-Fairfield Rd/E Pony Express Pkwy
+2.3 mi
+
+Drive to your destination
+1 min (0.2 mi)
+
+Turn left onto Hidden Valley Pkwy
+240 ft
+
+Turn right`,
             },
             {
                 name: 'Hidden Hollow Trailhead',
                 googleMapsUrl: 'https://maps.app.goo.gl/Dt3c69aMNeUmUccq8',
                 appleMapsUrl: 'https://maps.apple.com/frame?center=40.351526,-111.988386&distance=488.744275&map=explore&span=0.002334,0.003289',
-                directions: 'Head west on Pioneer Crossing, continuing onto Pony Express Pkwy. Turn left onto Hidden Hollow Dr, pass the elementary school, and continue to the dirt parking area at the trailhead.',
+                directions: `Take Pony Express Parkway and Lehi-Fairfield Rd/E Pony Express Pkwy to Hidden Valley Pkwy in Eagle Mountain
+12 min (6.0 mi)
+
+Continue onto Saratoga Rd
+0.9 mi
+
+Continue onto Pony Express Parkway
+0.6 mi
+
+At the traffic circle, take the 2nd exit and stay on Pony Express Parkway
+2.2 mi
+
+Continue onto W 7200 N/Lehi-Fairfield Rd/E Pony Express Pkwy
+Continue to follow Lehi-Fairfield Rd/E Pony Express Pkwy
+2.3 mi
+
+Drive to your destination
+1 min (0.2 mi)
+
+Turn left onto Hidden Valley Pkwy
+0.1 mi
+
+Continue past the school to the dirt parking area`,
             },
             {
                 name: 'The Rock Pile',
                 googleMapsUrl: 'https://maps.app.goo.gl/sU2gZLD4M4zxzjE47',
                 appleMapsUrl: 'https://maps.apple.com/frame?center=40.343001,-111.976514&distance=564.181297&map=hybrid&span=0.002695,0.003796',
-                directions: 'Head west on Pioneer Crossing, continuing onto Pony Express Pkwy. Turn left onto Golden Eagle Rd, then turn left at the Rock Pile parking area.',
+                directions: `Take Pony Express Parkway and Lehi-Fairfield Rd/E Pony Express Pkwy to Golden Eagle Rd in Eagle Mountain
+15 min (7.5 mi)
+
+Continue onto Saratoga Rd
+0.9 mi
+
+Continue onto Pony Express Parkway
+0.6 mi
+
+At the traffic circle, take the 2nd exit and stay on Pony Express Parkway
+2.2 mi
+
+Continue onto W 7200 N/Lehi-Fairfield Rd/E Pony Express Pkwy
+Continue to follow Lehi-Fairfield Rd/E Pony Express Pkwy
+3.8 mi
+
+Turn left onto Golden Eagle Rd
+0.2 mi
+
+Turn left
+250 ft`,
             }
         ]
     },
@@ -53,31 +117,138 @@ const practiceRegions: Region[] = [
                 name: 'Potato Hill',
                 googleMapsUrl: 'https://maps.app.goo.gl/Ki7YJGvTqH7Xegji9',
                 appleMapsUrl: 'https://maps.apple/p/WIXJtJnDmcu-kN',
-                directions: 'Take I-15 N to exit 288 (14600 S). Turn right (east) onto 14600 S, which becomes Traverse Ridge Rd. Follow Traverse Ridge Rd up the mountain, then turn right onto Suncrest Dr and immediately right into the Potato Hill Trailhead parking lot.',
+                directions: `Take I-15 N to UT-140 E/14600 S in Bluffdale. Take exit 288 from I-15 N
+8 min (8.2 mi)
+
+Head north on I-15 N
+7.9 mi
+
+Take exit 288 for UT-140/14600 S
+0.3 mi
+
+Take Traverse Ridge Rd to your destination in Draper
+8 min (4.3 mi)
+
+Keep right at the fork, follow signs for Draper and merge onto UT-140 E/14600 S
+1.8 mi
+
+Continue onto Traverse Ridge Rd
+2.4 mi
+
+Turn right onto Suncrest Dr
+0.1 mi
+
+Turn right
+157 ft`,
             },
             {
                 name: 'Peak View',
                 googleMapsUrl: 'https://maps.app.goo.gl/fAyVQ6Tew6GsTGB96',
                 appleMapsUrl: 'https://maps.apple/p/Irkp10nkfxTF_6',
-                directions: 'Take I-15 N to exit 288 (14600 S). Head east on Traverse Ridge Rd. Turn left onto Suncrest Dr, then left onto Traverse Terrace Dr. Turn right onto Deer Ridge Dr and follow it to the end where you\'ll find the Peak View Trailhead.',
+                directions: `Take I-15 N to UT-140 E/14600 S in Bluffdale. Take exit 288 from I-15 N
+8 min (8.2 mi)
+
+Take Traverse Ridge Rd and Suncrest Dr to your destination in Draper
+11 min (5.3 mi)
+
+Merge onto UT-140 E/14600 S
+1.8 mi
+
+Continue onto Traverse Ridge Rd
+2.3 mi
+
+Turn left onto Suncrest Dr
+0.4 mi
+
+Turn left onto Traverse Terrace Dr
+0.3 mi
+
+Turn right onto Deer Ridge Dr
+0.5 mi
+
+Turn left
+120 ft`,
             },
             {
                 name: 'Hogs Hollow (Angels Gate)',
                 googleMapsUrl: 'https://maps.app.goo.gl/5JSuXxhLJGjTD5ti9',
                 appleMapsUrl: 'https://maps.apple.com/frame?center=40.464903,-111.805844&distance=1684.440043&map=hybrid&span=0.008045,0.011353',
-                directions: 'Take I-15 N to exit 291 (12300 S). Head east on 12300 S, which turns into 1300 E. Continue south, turn left onto Pioneer Rd. Turn right onto 2000 E, follow it south, and turn left onto Hogs Hollow Rd to reach the trailhead.',
+                directions: `Take I-15 N to 12300 S in Draper. Take exit 291 from I-15 N
+11 min (11.5 mi)
+
+Head north on I-15 N
+11.2 mi
+
+Take exit 291 for 12300 S
+0.3 mi
+
+Take 1300 E and Pioneer Rd to your destination
+8 min (3.6 mi)
+
+Keep right at the fork, follow signs for Draper and merge onto 12300 S
+1.0 mi
+
+Turn right onto 1300 E
+0.8 mi
+
+Turn left onto Pioneer Rd
+1.1 mi
+
+Turn right onto 2000 E
+0.5 mi
+
+Turn left onto Hogs Hollow Rd
+0.2 mi`,
             },
             {
                 name: 'Deer Ridge',
                 googleMapsUrl: 'https://maps.app.goo.gl/7HmvynNjeNA97raF6',
                 appleMapsUrl: 'https://maps.apple/p/UEr2GavbFPLQKX',
-                directions: 'Take I-15 N to exit 288 (14600 S). Head east up Traverse Ridge Rd. Turn left onto Suncrest Dr, left onto Traverse Terrace Dr, and right onto Deer Ridge Dr. The Deer Ridge Trailhead will be on your left before reaching Peak View.',
+                directions: `Take I-15 N to UT-140 E/14600 S in Bluffdale. Take exit 288 from I-15 N
+8 min (8.2 mi)
+
+Take Traverse Ridge Rd and Suncrest Dr to Deer Ridge Dr in Draper
+10 min (5.1 mi)
+
+Merge onto UT-140 E/14600 S
+1.8 mi
+
+Continue onto Traverse Ridge Rd
+2.3 mi
+
+Turn left onto Suncrest Dr
+0.4 mi
+
+Turn left onto Traverse Terrace Dr
+0.3 mi
+
+Turn right onto Deer Ridge Dr
+0.3 mi`,
             },
             {
                 name: 'Hidden Canyon',
                 googleMapsUrl: 'https://maps.app.goo.gl/PipSLV1FZCNwyameA',
                 appleMapsUrl: 'https://maps.apple.com/frame?center=40.466102,-111.875299&distance=537.173932&map=hybrid&span=0.002565,0.003621',
-                directions: 'Take I-15 N to exit 288 (14600 S). Head east onto Traverse Ridge Rd. Turn left onto Bangerter Pkwy, then right onto Highland Dr. Turn right into the Hidden Canyon parking area.',
+                directions: `Take I-15 N to UT-140 E/14600 S in Bluffdale. Take exit 288 from I-15 N
+8 min (8.2 mi)
+
+Take Traverse Ridge Rd and Bangerter Pkwy to your destination in Draper
+7 min (3.2 mi)
+
+Merge onto UT-140 E/14600 S
+1.8 mi
+
+Continue onto Traverse Ridge Rd
+0.6 mi
+
+Turn left onto Bangerter Pkwy
+0.6 mi
+
+Turn right onto Highland Dr
+0.2 mi
+
+Turn right
+150 ft`,
             }
         ]
     },
@@ -89,19 +260,76 @@ const practiceRegions: Region[] = [
                 name: 'Butterfield Canyon',
                 googleMapsUrl: 'https://maps.app.goo.gl/yn8wacGBKaM34Td5A',
                 appleMapsUrl: 'https://maps.apple/p/8AA5uXcce_eS0Y',
-                directions: 'Head north on Redwood Rd (UT-68), turn left (west) onto 2100 N. Connect to Mountain View Corridor heading north. Exit onto Herriman Hwy heading west. Continue straight as it becomes Butterfield Canyon Rd to the parking area.',
+                directions: `Take Redwood Rd to 2100 N/Mountain View Corridor
+10 min (6.5 mi)
+
+Head north on Redwood Rd
+4.5 mi
+
+Turn left onto 2100 N
+2.0 mi
+
+Follow Mountain View Corridor to Herriman Hwy in Herriman
+12 min (9.2 mi)
+
+Turn right onto Mountain View Corridor
+9.2 mi
+
+Turn left onto Herriman Hwy
+0.8 mi
+
+Continue onto Butterfield Canyon Rd
+1.5 mi`,
             },
             {
                 name: 'Yellow Fork',
                 googleMapsUrl: 'https://maps.app.goo.gl/3xbmbLzhM5zZfJG69',
                 appleMapsUrl: 'https://maps.apple/p/0Wm9JZ9wsPqz81',
-                directions: 'Head north on Redwood Rd, turn left on 2100 N to Mountain View Corridor. Head north and exit at Herriman Hwy. Turn left (west) onto Herriman Hwy, then turn left onto Rose Canyon Rd. Follow Rose Canyon Rd up to the Yellow Fork Trailhead parking lot.',
+                directions: `Take Redwood Rd to 2100 N/Mountain View Corridor
+10 min (6.5 mi)
+
+Head north on Redwood Rd
+4.5 mi
+
+Turn left onto 2100 N
+2.0 mi
+
+Follow Mountain View Corridor to Herriman Hwy in Herriman
+12 min (9.2 mi)
+
+Turn right onto Mountain View Corridor
+9.2 mi
+
+Turn left onto Herriman Hwy
+0.8 mi
+
+Turn left onto Rose Canyon Rd
+2.5 mi`,
             },
             {
                 name: 'Blackridge Reservoir',
                 googleMapsUrl: 'https://maps.app.goo.gl/2EqpWbHYVJPydDir9',
                 appleMapsUrl: 'https://maps.apple/p/9-GGTI7bGghjyZ',
-                directions: 'Head north on Redwood Rd, left on 2100 N to Mountain View Corridor. Head north to 13400 S and turn left (west). Turn left onto Rosecrest Rd, right onto Ashland Ridge Dr, and follow the signs to Blackridge Reservoir parking.',
+                directions: `Take Redwood Rd to 2100 N/Mountain View Corridor
+10 min (6.5 mi)
+
+Follow Mountain View Corridor to 13400 S in Herriman
+10 min (7.5 mi)
+
+Turn right onto Mountain View Corridor
+7.5 mi
+
+Take Rosecrest Rd and Ashland Ridge Dr to your destination
+5 min (2.0 mi)
+
+Turn left onto 13400 S
+0.5 mi
+
+Turn left onto Rosecrest Rd
+1.0 mi
+
+Turn right onto Ashland Ridge Dr
+0.5 mi`,
             }
         ]
     },
@@ -113,13 +341,47 @@ const practiceRegions: Region[] = [
                 name: 'South Trailhead',
                 googleMapsUrl: 'https://maps.app.goo.gl/1QmGffxJb3vhp6yW9',
                 appleMapsUrl: 'https://maps.apple/p/gxU6fKZyfM.IEb',
-                directions: 'Head east on State St (US-89) into American Fork, then turn left (north) onto Alpine Hwy (UT-74) into Alpine. Turn right onto 100 S, then turn left onto Grove Dr. Follow Grove Dr north to the dirt road entrance for the South Trailhead.',
+                directions: `Head east on Main St toward Center St
+0.5 mi
+
+Continue onto State St
+1.2 mi
+
+Continue onto US-89 S/State St
+2.0 mi
+
+Turn left onto UT-74 N/Alpine Hwy
+2.5 mi
+
+Turn right onto 100 S
+0.5 mi
+
+Turn left onto Grove Dr
+1.0 mi
+
+Continue straight onto dirt road to the trailhead`,
             },
             {
                 name: 'Rodeo Grounds',
                 googleMapsUrl: 'https://maps.app.goo.gl/uzD8kiTQe7TXVez16',
                 appleMapsUrl: 'https://maps.apple.com/frame?center=40.478524,-111.750180&distance=531.400910&map=hybrid&span=0.002538,0.003582',
-                directions: 'Head north on Alpine Hwy (UT-74) into Alpine. Turn right onto Main St, follow it as it curves, then turn left onto Healy Blvd. Continue straight to the Alpine Rodeo Grounds parking lot.',
+                directions: `Head east on Main St toward Center St
+0.5 mi
+
+Continue onto State St
+1.2 mi
+
+Continue onto US-89 S/State St
+2.0 mi
+
+Turn left onto UT-74 N/Alpine Hwy
+3.5 mi
+
+Turn right onto Main St
+0.5 mi
+
+Turn left onto Healy Blvd
+0.3 mi`,
             }
         ]
     },
@@ -131,14 +393,44 @@ const practiceRegions: Region[] = [
                 name: 'Wade Springs (Groups 7-12)',
                 googleMapsUrl: 'https://maps.app.goo.gl/MFDWA8HksXskoT8c9',
                 appleMapsUrl: 'https://maps.apple.com/frame?center=40.378603,-111.727377&distance=1570.057836&map=hybrid&span=0.007499,0.010569',
-                directions: 'Park at the LDS Church located at 1136 W 700 S, Pleasant Grove. Head east on State St (US-89), turn left onto 1300 W, then right onto 700 S to reach the church parking lot. We ride from the church to the Wade Springs trailhead.',
+                directions: `Head east on Main St toward Center St
+0.5 mi
+
+Continue onto State St
+1.2 mi
+
+Continue onto US-89 S/State St
+6.5 mi
+
+Turn left onto 1300 W in Pleasant Grove
+0.5 mi
+
+Turn right onto 700 S
+0.2 mi
+
+Arrive at LDS Church parking lot`,
                 description: 'We park at the nearby Church to avoid overcrowding the small trailhead parking.'
             },
             {
                 name: 'Canyon Road Trailhead (Groups 1-6)',
                 googleMapsUrl: 'https://maps.app.goo.gl/mCVwaKGFHYmQYYSE7',
                 appleMapsUrl: 'https://maps.apple/p/dGc7.qQXk61TAU',
-                directions: 'Head east on State St (US-89) into Pleasant Grove. Turn left onto 100 E, which becomes Canyon Rd. Continue up Canyon Rd toward the foothills until you reach the trailhead parking on your right.',
+                directions: `Head east on Main St toward Center St
+0.5 mi
+
+Continue onto State St
+1.2 mi
+
+Continue onto US-89 S/State St
+7.5 mi
+
+Turn left onto 100 E/Canyon Rd
+1.5 mi
+
+Continue straight to stay on Canyon Rd
+0.5 mi
+
+Destination will be on the right`,
             }
         ]
     },
@@ -150,13 +442,44 @@ const practiceRegions: Region[] = [
                 name: 'AF Canyon Summit Trailhead',
                 googleMapsUrl: 'https://maps.app.goo.gl/BxsmhmXosP5mUPtt5',
                 appleMapsUrl: 'https://maps.apple/p/CIJ6E~5CJUIKaI',
-                directions: 'Head east on Timpanogos Hwy (UT-92) into American Fork Canyon. Pass the fee station and continue up the Alpine Loop Rd until you reach the Summit Trailhead parking lot at the top.',
+                directions: `Head east on Main St toward Center St
+0.5 mi
+
+Continue onto State St
+1.2 mi
+
+Continue onto US-89 S/State St
+1.5 mi
+
+Turn left onto UT-92 E/Timpanogos Hwy
+9.5 mi
+
+Continue up American Fork Canyon (fee area)
+8.5 mi
+
+Arrive at Summit Trailhead parking lot`,
             },
             {
                 name: 'Round Valley Quinn\'s Trailhead (Park City)',
                 googleMapsUrl: 'https://maps.app.goo.gl/wruvfMmr4mxsGTo99',
                 appleMapsUrl: 'https://maps.apple/p/5XkLi.yuJMfdvV',
-                directions: 'Head east on US-189 (Provo Canyon Rd) through Provo Canyon to Heber City. Turn left onto US-40 W towards Park City. Take the UT-248 exit, turn left towards Park City, then turn right onto Round Valley Way to reach the trailhead. Avoids I-15 and I-80.',
+                directions: `Head east on Main St
+0.5 mi
+
+Take US-89 S and US-189/Provo Canyon Rd to US-40 W in Wasatch County
+45 min (36.5 mi)
+
+Follow US-40 W to UT-248 W in Summit County. Take exit 4 from US-40 W
+15 min (14.2 mi)
+
+Take Round Valley Way to your destination
+2 min (0.5 mi)
+
+Turn left onto UT-248 W
+0.2 mi
+
+Turn right onto Round Valley Way
+0.3 mi`,
             }
         ]
     }
@@ -204,7 +527,7 @@ export default function PracticeLocations() {
 
                                         <div style={{ marginBottom: '1.5rem', flexGrow: 1 }}>
                                             <p style={{ fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'rgb(var(--text-muted))', marginBottom: '0.25rem' }}>Directions from LHS</p>
-                                            <p className="text-muted" style={{ fontSize: '0.95rem', lineHeight: 1.6 }}>
+                                            <p className="text-muted" style={{ fontSize: '0.95rem', lineHeight: 1.6, whiteSpace: 'pre-wrap' }}>
                                                 {loc.directions}
                                             </p>
                                         </div>
