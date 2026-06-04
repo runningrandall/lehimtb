@@ -169,28 +169,28 @@ const bikeRoutes: RouteDay[] = [
     {
         day: 'Day 1: Klonzo',
         routes: [
-            { name: 'Mild Route', difficulty: 'Mild', url: 'https://www.trailforks.com/ridelog/planner/view/697607/' },
-            { name: 'Medium Route', difficulty: 'Medium', url: 'https://www.trailforks.com/ridelog/planner/view/697631/' },
-            { name: 'Spicy Route', difficulty: 'Spicy', url: 'https://www.trailforks.com/ridelog/planner/view/697615/' },
-            { name: 'Klonzo North Loop', difficulty: 'Alternate', url: 'https://www.trailforks.com/route/klonzo-north-loop/' },
+            { name: 'Klonzo: Mild Route', difficulty: 'Mild', url: 'https://www.trailforks.com/ridelog/planner/view/697607/' },
+            { name: 'Klonzo: Medium Route', difficulty: 'Medium', url: 'https://www.trailforks.com/ridelog/planner/view/697631/' },
+            { name: 'Klonzo: Spicy Route', difficulty: 'Spicy', url: 'https://www.trailforks.com/ridelog/planner/view/697615/' },
+            { name: 'Klonzo: Medium North Loop', difficulty: 'Medium', url: 'https://www.trailforks.com/route/klonzo-north-loop/' },
         ]
     },
     {
-        day: 'Day 2: Navajo / Mag 7 / Dead Horse / Horsethief',
+        day: 'Day 2: Navajo / Mag 7 / Dead Horse / Horsethief / Raptor / Porcupine',
         routes: [
-            { name: 'Spicy: Moab Rocks Stage 3 Short', difficulty: 'Spicy', url: 'https://www.trailforks.com/route/moab-rocks-stage-3-short/' },
+            { name: 'Spicy: Moab Rocks Stage 3', difficulty: 'Spicy', url: 'https://www.trailforks.com/route/moab-rocks-stage-3-short/' },
             { name: 'Medium: Horsethief Navrocks Shuttle', difficulty: 'Medium', url: 'https://www.trailforks.com/route/horsethief-navrocks-shuttle/', note: 'Requires Shuttle' },
-            { name: 'Mild: Dead Horse Route', difficulty: 'Mild', url: 'https://www.trailforks.com/route/dead-horse-route/' },
-            { name: 'Mild: Alternate Planner', difficulty: 'Mild', url: 'https://www.trailforks.com/ridelog/planner/view/697640/' },
-            { name: 'Alternate: Raptor Route Shuttle Drop', difficulty: 'Alternate', url: 'https://www.trailforks.com/route/raptor-route-shuttle-drop-eagle-eye-hawks-glide-falcon-flow/' },
-            { name: 'Alternate: Porcupine Rim (Moab Rocks Stg 1)', difficulty: 'Alternate', url: 'https://www.trailforks.com/route/moab-rocks-2025-stage-1-porcupine-rim/' },
+            { name: 'Medium: Dead Horse: Medium Route', difficulty: 'Mild', url: 'https://www.trailforks.com/route/dead-horse-route/' },
+            { name: 'Mild: Dead Horse: Mild Route', difficulty: 'Mild', url: 'https://www.trailforks.com/ridelog/planner/view/697640/' },
+            { name: 'Medium: Raptor Route Shuttle Drop', difficulty: 'Medium', url: 'https://www.trailforks.com/route/raptor-route-shuttle-drop-eagle-eye-hawks-glide-falcon-flow/' },
+            { name: 'Spicy: Porcupine Rim (Moab Rocks Stg 1)', difficulty: 'Spicy', url: 'https://www.trailforks.com/route/moab-rocks-2025-stage-1-porcupine-rim/' },
         ]
     },
     {
-        day: 'Other Options',
+        day: 'Alternate: Mud Springs',
         description: 'Great for night rides or extra laps.',
         routes: [
-            { name: 'Night Ride / Alternate', difficulty: 'Alternate', url: 'https://www.trailforks.com/ridelog/planner/view/697695' }
+            { name: 'Night Ride / Easy Fun Ride: Mud Springs', difficulty: 'Mild', url: 'https://www.trailforks.com/ridelog/planner/view/697695' }
         ]
     }
 ];
@@ -307,7 +307,7 @@ export default function FamilyCamp2026() {
                     </div>
                 </section>
 
-                
+
                 {/* Bike Routes */}
                 <section id="routes" style={{ marginBottom: 'var(--spacing-xl)', scrollMarginTop: '5rem' }}>
                     <h2 style={{ marginBottom: 'var(--spacing-md)', paddingBottom: '0.5rem', borderBottom: '1px solid var(--border-color)' }}>Bike Routes</h2>
