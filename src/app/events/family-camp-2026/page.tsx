@@ -151,6 +151,57 @@ const packingList: { heading: string; items: string[] }[] = [
     },
 ];
 
+
+const routesCollectionUrl = 'https://www.trailforks.com/collections/28076/';
+
+type RouteDay = {
+    day: string;
+    description?: string;
+    routes: {
+        name: string;
+        difficulty: 'Mild' | 'Medium' | 'Spicy' | 'Alternate';
+        url: string;
+        note?: string;
+    }[];
+};
+
+const bikeRoutes: RouteDay[] = [
+    {
+        day: 'Day 1: Klonzo',
+        routes: [
+            { name: 'Mild Route', difficulty: 'Mild', url: 'https://www.trailforks.com/ridelog/planner/view/697607/' },
+            { name: 'Medium Route', difficulty: 'Medium', url: 'https://www.trailforks.com/ridelog/planner/view/697631/' },
+            { name: 'Spicy Route', difficulty: 'Spicy', url: 'https://www.trailforks.com/ridelog/planner/view/697615/' },
+            { name: 'Klonzo North Loop', difficulty: 'Alternate', url: 'https://www.trailforks.com/route/klonzo-north-loop/' },
+        ]
+    },
+    {
+        day: 'Day 2: Navajo / Mag 7 / Dead Horse / Horsethief',
+        routes: [
+            { name: 'Spicy: Moab Rocks Stage 3 Short', difficulty: 'Spicy', url: 'https://www.trailforks.com/route/moab-rocks-stage-3-short/' },
+            { name: 'Medium: Horsethief Navrocks Shuttle', difficulty: 'Medium', url: 'https://www.trailforks.com/route/horsethief-navrocks-shuttle/', note: 'Requires Shuttle' },
+            { name: 'Mild: Dead Horse Route', difficulty: 'Mild', url: 'https://www.trailforks.com/route/dead-horse-route/' },
+            { name: 'Mild: Alternate Planner', difficulty: 'Mild', url: 'https://www.trailforks.com/ridelog/planner/view/697640/' },
+            { name: 'Alternate: Raptor Route Shuttle Drop', difficulty: 'Alternate', url: 'https://www.trailforks.com/route/raptor-route-shuttle-drop-eagle-eye-hawks-glide-falcon-flow/' },
+            { name: 'Alternate: Porcupine Rim (Moab Rocks Stg 1)', difficulty: 'Alternate', url: 'https://www.trailforks.com/route/moab-rocks-2025-stage-1-porcupine-rim/' },
+        ]
+    },
+    {
+        day: 'Other Options',
+        description: 'Great for night rides or extra laps.',
+        routes: [
+            { name: 'Night Ride / Alternate', difficulty: 'Alternate', url: 'https://www.trailforks.com/ridelog/planner/view/697695' }
+        ]
+    }
+];
+
+const difficultyColors: Record<RouteDay['routes'][0]['difficulty'], string> = {
+    Mild: 'rgb(28, 120, 65)',       // Green
+    Medium: 'rgb(45, 90, 170)',     // Blue
+    Spicy: 'rgb(200, 50, 50)',      // Red
+    Alternate: 'rgb(var(--color-primary))', // Purple
+};
+
 function ScheduleColumn({ day, items }: { day: string; items: ScheduleItem[] }) {
     return (
         <div className="glass-panel" style={{ padding: 'var(--spacing-lg)' }}>
@@ -211,6 +262,7 @@ export default function FamilyCamp2026() {
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginBottom: 'var(--spacing-xl)' }}>
                     <a href="#schedule" className="btn-silver" style={{ fontSize: '0.875rem' }}>Schedule</a>
                     <a href="#activities" className="btn-silver" style={{ fontSize: '0.875rem' }}>Activities</a>
+                    <a href="#routes" className="btn-silver" style={{ fontSize: '0.875rem' }}>Bike Routes</a>
                     <a href="#camp-details" className="btn-silver" style={{ fontSize: '0.875rem' }}>Camp Details</a>
                     <a href="#what-to-bring" className="btn-silver" style={{ fontSize: '0.875rem' }}>What to Bring</a>
                 </div>
@@ -250,6 +302,38 @@ export default function FamilyCamp2026() {
                             <div key={a.title} className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderLeft: '4px solid rgb(var(--color-primary-light))' }}>
                                 <h4 style={{ marginBottom: '0.5rem', fontSize: '1.05rem' }}>{a.title}</h4>
                                 <p className="text-muted" style={{ fontSize: '0.9rem', lineHeight: 1.55, margin: 0 }}>{a.detail}</p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                
+                {/* Bike Routes */}
+                <section id="routes" style={{ marginBottom: 'var(--spacing-xl)', scrollMarginTop: '5rem' }}>
+                    <h2 style={{ marginBottom: 'var(--spacing-md)', paddingBottom: '0.5rem', borderBottom: '1px solid var(--border-color)' }}>Bike Routes</h2>
+                    <p className="text-muted" style={{ fontSize: '1.05rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+                        We've curated a list of recommended routes for each day on Trailforks. Check out the <Link href={routesCollectionUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', textDecoration: 'underline', fontWeight: 600 }}>full Trailforks collection</Link> to save them to your device.
+                    </p>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)' }}>
+                        {bikeRoutes.map((dayPlan) => (
+                            <div key={dayPlan.day} className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderLeft: '4px solid rgb(var(--color-secondary))' }}>
+                                <h3 style={{ marginBottom: '0.5rem', color: 'rgb(var(--text-color))', fontSize: '1.3rem' }}>{dayPlan.day}</h3>
+                                {dayPlan.description && <p className="text-muted" style={{ fontSize: '0.95rem', marginBottom: '1rem' }}>{dayPlan.description}</p>}
+                                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--spacing-sm)' }}>
+                                    {dayPlan.routes.map((route, i) => (
+                                        <Link key={i} href={route.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'block' }}>
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.75rem', borderRadius: 'var(--radius-md)', background: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)', transition: 'transform 0.2s, borderColor 0.2s' }} className="hover-lift">
+                                                <div style={{ padding: '0.25rem 0.5rem', borderRadius: 'var(--radius-sm)', background: `${difficultyColors[route.difficulty]}`, color: 'white', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                                                    {route.difficulty}
+                                                </div>
+                                                <div style={{ flex: 1, minWidth: 0 }}>
+                                                    <p style={{ margin: 0, fontSize: '0.95rem', fontWeight: 600, color: 'rgb(var(--text-color))', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{route.name}</p>
+                                                    {route.note && <p style={{ margin: 0, fontSize: '0.8rem', color: 'rgb(200, 50, 50)', fontWeight: 600 }}>{route.note}</p>}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    ))}
+                                </div>
                             </div>
                         ))}
                     </div>
