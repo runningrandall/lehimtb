@@ -222,7 +222,7 @@ export default function WaveScheduleTabs() {
                         boxShadow: activeTab === 'race4' ? '0 4px 12px rgba(59, 130, 246, 0.3)' : 'none'
                     }}
                 >
-                    🏆 Race 4: Regional Championship (Herriman)
+                    🏆 Race 4: Regional Championship (Herriman - HS ONLY)
                 </button>
 
                 <button
@@ -240,7 +240,7 @@ export default function WaveScheduleTabs() {
                         boxShadow: activeTab === 'postseason' ? '0 4px 12px rgba(236, 72, 153, 0.3)' : 'none'
                     }}
                 >
-                    ⭐ State &amp; Western Regionals (TBD)
+                    ⭐ State &amp; Western Regionals (HS ONLY - TBD)
                 </button>
             </div>
 
@@ -431,9 +431,29 @@ export default function WaveScheduleTabs() {
             {activeTab === 'race4' && (
                 <div className="animate-fade-in">
                     <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-md)' }}>
-                        <span style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#2563eb' }}>Official Schedule</span>
+                        <span style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#dc2626', background: 'rgba(239,68,68,0.1)', padding: '0.2rem 0.6rem', borderRadius: '4px', display: 'inline-block', marginBottom: '0.4rem' }}>HIGH SCHOOL ONLY (GRADES 9–12)</span>
                         <h2 style={{ fontSize: '1.75rem' }}>Herriman – Region 5 Race 4 (Regional Championship)</h2>
                         <p className="text-muted">October 10, 2026 · Herriman Trails, UT</p>
+                    </div>
+
+                    {/* Important HS ONLY Notice Banner */}
+                    <div style={{
+                        background: 'rgba(239, 68, 68, 0.1)',
+                        border: '2px solid #ef4444',
+                        borderRadius: 'var(--radius-md)',
+                        padding: '1rem 1.25rem',
+                        marginBottom: 'var(--spacing-lg)',
+                        display: 'flex',
+                        gap: '0.75rem',
+                        alignItems: 'center'
+                    }}>
+                        <span style={{ fontSize: '1.75rem' }}>🛑</span>
+                        <div>
+                            <span style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#dc2626', display: 'block' }}>High School Only Event (Grades 9–12)</span>
+                            <p style={{ margin: '0.1rem 0 0 0', fontSize: '0.925rem', color: 'rgb(var(--text-main))', lineHeight: 1.5 }}>
+                                <strong>Herriman (Race 4), the Utah State Championship, and NICA Western Regionals are HIGH SCHOOL ONLY events.</strong> Junior Development (JD - Grades 7–8) finishes their race season at Race 3 (Panguitch) and does <strong>NOT</strong> race at Herriman, State, or Western Regionals.
+                            </p>
+                        </div>
                     </div>
 
                     {/* Key Venue Event Times Banner */}
@@ -464,23 +484,6 @@ export default function WaveScheduleTabs() {
                             <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', color: '#059669', display: 'block' }}>HS Podiums</span>
                             <span style={{ fontWeight: 800, fontSize: '1.05rem', color: '#047857' }}>4:00 – 4:30 PM</span>
                         </div>
-                    </div>
-
-                    {/* Important JD Notice Banner */}
-                    <div style={{
-                        background: 'rgba(239, 68, 68, 0.08)',
-                        border: '1.5px solid rgba(239, 68, 68, 0.3)',
-                        borderRadius: 'var(--radius-md)',
-                        padding: '1rem 1.25rem',
-                        marginBottom: 'var(--spacing-lg)',
-                        display: 'flex',
-                        gap: '0.75rem',
-                        alignItems: 'center'
-                    }}>
-                        <span style={{ fontSize: '1.5rem' }}>ℹ️</span>
-                        <p style={{ margin: 0, fontSize: '0.9rem', color: 'rgb(var(--text-main))', lineHeight: 1.5 }}>
-                            <strong>Junior Development Notice:</strong> Junior Development (JD) athletes (7th &amp; 8th grade) race in <strong>Races 1–3 only</strong>. Junior Development does <strong>NOT</strong> race at Race 4 (Regional Championship), State Championship, or Western Regionals.
-                        </p>
                     </div>
 
                     {/* Race 4 Schedule Table */}
@@ -553,10 +556,30 @@ export default function WaveScheduleTabs() {
             {/* TAB 3: STATE CHAMPIONSHIPS & WESTERN REGIONALS (TBD) */}
             {activeTab === 'postseason' && (
                 <div className="animate-fade-in">
-                    <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
-                        <span style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#db2777' }}>Post-Season Events</span>
+                    <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-md)' }}>
+                        <span style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#dc2626', background: 'rgba(239,68,68,0.1)', padding: '0.2rem 0.6rem', borderRadius: '4px', display: 'inline-block', marginBottom: '0.4rem' }}>HIGH SCHOOL ONLY (GRADES 9–12)</span>
                         <h2 style={{ fontSize: '1.75rem' }}>State Championship &amp; NICA Western Regionals</h2>
                         <p className="text-muted">State Championship wave schedules and post-season championship details.</p>
+                    </div>
+
+                    {/* Post-Season HS ONLY Notice Banner */}
+                    <div style={{
+                        background: 'rgba(239, 68, 68, 0.1)',
+                        border: '2px solid #ef4444',
+                        borderRadius: 'var(--radius-md)',
+                        padding: '1rem 1.25rem',
+                        marginBottom: 'var(--spacing-lg)',
+                        display: 'flex',
+                        gap: '0.75rem',
+                        alignItems: 'center'
+                    }}>
+                        <span style={{ fontSize: '1.75rem' }}>🎓</span>
+                        <div>
+                            <span style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#dc2626', display: 'block' }}>High School Only Post-Season (Grades 9–12)</span>
+                            <p style={{ margin: '0.1rem 0 0 0', fontSize: '0.925rem', color: 'rgb(var(--text-main))', lineHeight: 1.5 }}>
+                                Both the <strong>Utah State Championship</strong> and <strong>NICA Western Regional Championship</strong> are <strong>High School Only</strong> events. Junior Development (JD) does not participate in post-season championship races.
+                            </p>
+                        </div>
                     </div>
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'var(--spacing-lg)' }}>
