@@ -118,9 +118,13 @@ const jdWaves = [
 ];
 
 const helpfulLinks = [
-    { name: 'What Category Am I In? (CPT Table / Category Placements)', url: 'https://my.raceresult.com/411620/' },
-    { name: 'Region 5 Event Details & Venue Maps', url: 'https://utahmtb.org/event-category/region-5-races/' },
-    { name: 'Utah League Official Handbook & Rules', url: 'https://utahmtb.org/' },
+    { name: 'What Category Am I In? (CPT Table)', url: 'https://my.raceresult.com/411620/' },
+    { name: 'Race 1: Beaver Mountain Details', url: 'https://utahmtb.org/events/region-5-race-1/' },
+    { name: 'Race 2: Richfield Details', url: 'https://utahmtb.org/events/region-5-race-2/' },
+    { name: 'Race 3: Panguitch Details', url: 'https://utahmtb.org/events/region-5-race-3/' },
+    { name: 'Race 4: Region 5 Championship (Herriman)', url: 'https://utahmtb.org/events/region-5-race-4/' },
+    { name: 'State Championship Details (St. George)', url: 'https://utahmtb.org/events/state-championships/' },
+    { name: 'NICA Western Regional Championship', url: 'https://events.nationalmtb.org/regionals/western' },
     { name: 'PitZone Registration & Results', url: 'https://pitzone.nationalmtb.org/' },
 ];
 

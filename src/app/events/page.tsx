@@ -12,7 +12,7 @@ const races = [
         date: 'Aug 22, 2026',
         location: 'Beaver Mountain Ski Area · Logan Canyon, UT',
         desc: 'Kicking off the 2026 Region 5 season in high-elevation pine trails at Beaver Mountain!',
-        link: 'https://utahmtb.org/event-category/region-5-races/',
+        link: 'https://utahmtb.org/events/region-5-race-1/',
         badge: 'Race 1',
     },
     {
@@ -20,7 +20,7 @@ const races = [
         date: 'Sept 5, 2026',
         location: 'Richfield Trails · Richfield, UT',
         desc: 'Fast, flowing singletrack loop competition with scenic red rock vistas.',
-        link: 'https://utahmtb.org/event-category/region-5-races/',
+        link: 'https://utahmtb.org/events/region-5-race-2/',
         badge: 'Race 2',
     },
     {
@@ -28,7 +28,7 @@ const races = [
         date: 'Sept 26, 2026',
         location: 'Panguitch Trails · Panguitch, UT',
         desc: 'Beautiful, high-desert course that tests endurance, pacing, and technical bike handling.',
-        link: 'https://utahmtb.org/event-category/region-5-races/',
+        link: 'https://utahmtb.org/events/region-5-race-3/',
         badge: 'Race 3',
     },
     {
@@ -36,7 +36,7 @@ const races = [
         date: 'Oct 10, 2026',
         location: 'Herriman Trails · Herriman, UT',
         desc: 'The Region 5 Regional Championship! Close to home — cornering, speed, and overall regional standings on the line.',
-        link: 'https://utahmtb.org/event-category/region-5-races/',
+        link: 'https://utahmtb.org/events/region-5-race-4/',
         badge: 'Regional Championship',
     },
     {
@@ -44,8 +44,16 @@ const races = [
         date: 'Oct 23–24, 2026',
         location: 'St. George, UT',
         desc: 'The season finale state championship bringing together qualified High School racers from across Utah for two days of epic red-rock racing in St. George.',
-        link: 'https://utahmtb.org/',
+        link: 'https://utahmtb.org/events/state-championships/',
         badge: 'State Championship',
+    },
+    {
+        name: 'NICA Western Regional Championship',
+        date: 'Post-Season 2026',
+        location: 'Western Region Venue',
+        desc: 'The NICA Western Regional Championship featuring top high school mountain bike athletes from across the Western United States.',
+        link: 'https://events.nationalmtb.org/regionals/western',
+        badge: 'NICA Regionals',
     },
 ];
 
@@ -56,14 +64,19 @@ const resources = [
         link: 'https://my.raceresult.com/411620/',
     },
     {
-        title: 'Utah League Event Hub',
+        title: 'Region 5 Events & Schedule',
         desc: 'Official Region 5 race schedules, course maps, venue parking, and camping info.',
         link: 'https://utahmtb.org/event-category/region-5-races/',
     },
     {
-        title: 'NICA & Utah League Rulebook',
-        desc: 'Official student-athlete handbook, staging rules, feed zone policies, and code of conduct.',
-        link: 'https://utahmtb.org/',
+        title: 'State Championship Details',
+        desc: 'State Championship schedules, course maps, and spectator guidelines for St. George.',
+        link: 'https://utahmtb.org/events/state-championships/',
+    },
+    {
+        title: 'NICA Western Regionals',
+        desc: 'Western Regional Championship details, event schedules, and qualification info.',
+        link: 'https://events.nationalmtb.org/regionals/western',
     },
     {
         title: 'PitZone Registration & Results',
