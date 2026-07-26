@@ -51,6 +51,11 @@ const races = [
 
 const resources = [
     {
+        title: 'What Category Am I In? (CPT Table)',
+        desc: 'Check the official Utah League Category Placement Table (CPT) to look up your category assignment.',
+        link: 'https://my.raceresult.com/411620/',
+    },
+    {
         title: 'Utah League Event Hub',
         desc: 'Official Region 5 race schedules, course maps, venue parking, and camping info.',
         link: 'https://utahmtb.org/event-category/region-5-races/',
@@ -89,15 +94,20 @@ export default function Events() {
                 gap: '1rem'
             }}>
                 <div>
-                    <span style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgb(var(--color-primary))' }}>Race Day Prep &amp; Schedules</span>
-                    <h2 style={{ fontSize: '1.75rem', margin: '0.25rem 0' }}>Race Day Central &amp; 2026 Wave Schedule</h2>
+                    <span style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgb(var(--color-primary))' }}>2026 Wave Schedule Available</span>
+                    <h2 style={{ fontSize: '1.75rem', margin: '0.25rem 0' }}>Race Day Guide &amp; Wave Schedules</h2>
                     <p className="text-muted" style={{ margin: 0, fontSize: '0.95rem' }}>
-                        View exact wave meeting times (1hr prior), arrival guidelines, bike prep rules, and pit zone etiquette.
+                        View full start times for High School &amp; Jr Devo waves, staging instructions, and race weekend advice.
                     </p>
                 </div>
-                <Link href="/race-day" className="btn-primary" style={{ whiteSpace: 'nowrap' }}>
-                    Race Day Guide →
-                </Link>
+                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                    <a href="https://my.raceresult.com/411620/" target="_blank" rel="noopener noreferrer" className="btn-accent" style={{ whiteSpace: 'nowrap', fontSize: '0.875rem' }}>
+                        What Category Am I In? (CPT) ↗
+                    </a>
+                    <Link href="/race-day" className="btn-primary" style={{ whiteSpace: 'nowrap', fontSize: '0.875rem' }}>
+                        Race Day Guide →
+                    </Link>
+                </div>
             </div>
 
             <h1 style={{ marginBottom: 'var(--spacing-sm)' }}>2026 Season Schedule &amp; Events</h1>

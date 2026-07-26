@@ -118,6 +118,7 @@ const jdWaves = [
 ];
 
 const helpfulLinks = [
+    { name: 'What Category Am I In? (CPT Table / Category Placements)', url: 'https://my.raceresult.com/411620/' },
     { name: 'Region 5 Event Details & Venue Maps', url: 'https://utahmtb.org/event-category/region-5-races/' },
     { name: 'Utah League Official Handbook & Rules', url: 'https://utahmtb.org/' },
     { name: 'PitZone Registration & Results', url: 'https://pitzone.nationalmtb.org/' },
@@ -142,9 +143,20 @@ export default function RaceDayCentral() {
                 <p style={{ fontSize: '1.2rem', opacity: 0.95, maxWidth: '750px', margin: '0 auto', lineHeight: 1.6 }}>
                     Everything you need for race weekend: 2026 Wave Schedules, arrival times, wave meeting times, stage times, bike prep rules, pit zone etiquette, and Utah MTB resources.
                 </p>
-                <p style={{ marginTop: '1rem', fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', background: 'rgba(255,255,255,0.2)', display: 'inline-block', padding: '0.4rem 1rem', borderRadius: '999px' }}>
-                    2026 Region 5 Wave Schedule · Subject to Change
-                </p>
+                <div style={{ marginTop: '1.25rem', display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                    <a
+                        href="https://my.raceresult.com/411620/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-accent"
+                        style={{ fontSize: '0.9rem', padding: '0.65rem 1.25rem' }}
+                    >
+                        What Category Am I In? (CPT Table) ↗
+                    </a>
+                    <span style={{ fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', background: 'rgba(255,255,255,0.2)', padding: '0.65rem 1.25rem', borderRadius: 'var(--radius-sm)' }}>
+                        2026 Region 5 Wave Schedule
+                    </span>
+                </div>
             </div>
 
             {/* Timing Sequence Summary Callout */}
