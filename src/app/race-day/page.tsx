@@ -20,7 +20,7 @@ const hsWaves = [
     },
     {
         wave: 'Wave 2 - HS',
-        arrivalTime: '6:25 – 6:55 AM',
+        arrivalTime: '6:00 – 7:00 AM',
         meetingTime: '7:55 AM',
         stageTime: '8:40 AM',
         startTime: '8:55 AM',
