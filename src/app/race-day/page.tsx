@@ -208,6 +208,29 @@ export default function RaceDayCentral() {
                     <p className="text-muted">High School &amp; Junior Development timing: Arrival Time → Wave Meeting → Stage Time → Start Time.</p>
                 </div>
 
+                {/* Highly Noticeable Arrival & Cheering Notice */}
+                <div style={{
+                    background: 'linear-gradient(135deg, rgba(87,43,158,0.12), rgba(250,255,56,0.15))',
+                    border: '2px solid rgb(var(--color-primary))',
+                    borderRadius: 'var(--radius-md)',
+                    padding: '1.25rem 1.5rem',
+                    marginBottom: 'var(--spacing-lg)',
+                    boxShadow: 'var(--shadow-md)',
+                    display: 'flex',
+                    gap: '1rem',
+                    alignItems: 'flex-start'
+                }}>
+                    <span style={{ fontSize: '2rem', lineHeight: 1 }}>📢</span>
+                    <div>
+                        <h3 style={{ fontSize: '1.15rem', color: 'rgb(var(--color-primary))', marginBottom: '0.4rem', fontWeight: 800 }}>
+                            Important Notice: Arrival Times &amp; Full-Day Team Support
+                        </h3>
+                        <p style={{ fontSize: '0.95rem', lineHeight: 1.6, color: 'rgb(var(--text-main))', margin: 0 }}>
+                            <strong>Arrival Time is a MINIMUM arrival requirement.</strong> We expect all riders and families to arrive on time and stay at the venue to cheer on their teammates across every wave. There is no bench on our team — having a loud Lehi cheer squad out on course for every wave makes an incredible difference!
+                        </p>
+                    </div>
+                </div>
+
                 {/* High School Waves Table */}
                 <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', marginBottom: 'var(--spacing-lg)', borderTop: '4px solid rgb(var(--color-primary))' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
@@ -226,7 +249,7 @@ export default function RaceDayCentral() {
                                 <tr style={{ borderBottom: '2px solid var(--border-color)', color: 'rgb(var(--color-primary))' }}>
                                     <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave</th>
                                     <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Category</th>
-                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Arrival Time</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Min. Arrival Time</th>
                                     <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave Meeting</th>
                                     <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Stage Time</th>
                                     <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Start Time</th>
@@ -301,7 +324,7 @@ export default function RaceDayCentral() {
                                 <tr style={{ borderBottom: '2px solid var(--border-color)', color: 'rgb(140, 120, 0)' }}>
                                     <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave</th>
                                     <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Category</th>
-                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Arrival Time</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Min. Arrival Time</th>
                                     <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave Meeting</th>
                                     <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Stage Time</th>
                                     <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Start Time</th>
