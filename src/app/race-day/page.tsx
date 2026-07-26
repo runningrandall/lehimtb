@@ -173,35 +173,43 @@ export default function RaceDayCentral() {
                 <h2 style={{ fontSize: '1.4rem', color: 'rgb(var(--color-primary))', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span>⏰</span> Race Day Schedule Timeline Sequence
                 </h2>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '0.75rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '0.875rem', marginTop: '0.75rem' }}>
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87, 43, 158, 0.08)', border: '1px solid rgba(87, 43, 158, 0.15)' }}>
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(var(--color-primary))' }}>Step 1</span>
-                        <p style={{ fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0' }}>Arrival Time</p>
-                        <p className="text-muted" style={{ fontSize: '0.85rem', margin: 0, lineHeight: 1.4 }}>
-                            Arrive at venue <strong>1 to 1.5 hrs before</strong> your Wave Meeting (e.g. 6:30 AM for Wave 1) to park, walk to pit zone &amp; prep.
+                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0' }}>Arrival Time</p>
+                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
+                            Arrive at venue <strong>1 to 1.5 hrs before</strong> your Wave Meeting to park &amp; head up.
+                        </p>
+                    </div>
+
+                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(236, 72, 153, 0.1)', border: '1px solid rgba(236, 72, 153, 0.25)' }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#db2777' }}>Step 2</span>
+                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#be185d' }}>Pit Zone Check-In</p>
+                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
+                            <strong>Check in with coaches</strong> at the Lehi MTB Pit Zone immediately upon arrival.
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(180, 83, 9, 0.1)', border: '1px solid rgba(180, 83, 9, 0.25)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#b45309' }}>Step 2</span>
-                        <p style={{ fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0', color: '#b45309' }}>Wave Meeting</p>
-                        <p className="text-muted" style={{ fontSize: '0.85rem', margin: 0, lineHeight: 1.4 }}>
-                            Mandatory team check-in <strong>1 hour before</strong> start time at the Lehi MTB Pit Zone.
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#b45309' }}>Step 3</span>
+                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#b45309' }}>Wave Meeting</p>
+                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
+                            Mandatory team strategy briefing <strong>1 hour before</strong> start time at Pit Zone.
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.2)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#2563eb' }}>Step 3</span>
-                        <p style={{ fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0', color: '#1d4ed8' }}>Stage Time</p>
-                        <p className="text-muted" style={{ fontSize: '0.85rem', margin: 0, lineHeight: 1.4 }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#2563eb' }}>Step 4</span>
+                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#1d4ed8' }}>Stage Time</p>
+                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
                             Report to staging <strong>15 minutes before</strong> start time for call-ups and line-up.
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.2)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#059669' }}>Step 4</span>
-                        <p style={{ fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0', color: '#047857' }}>Start Time</p>
-                        <p className="text-muted" style={{ fontSize: '0.85rem', margin: 0, lineHeight: 1.4 }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#059669' }}>Step 5</span>
+                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#047857' }}>Start Time</p>
+                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
                             Official gun time for your category wave! Race hard, stay safe, and have fun.
                         </p>
                     </div>
