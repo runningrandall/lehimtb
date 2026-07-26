@@ -390,9 +390,9 @@ export default function RaceDayCentral() {
                             <span>🚲</span> Bike Maintenance &amp; Equipment
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <li><strong>Team Floor Pump:</strong> The team will provide a floor pump at the pit zone for last-minute tire pressure topping.</li>
+                            <li><strong>Team Tools &amp; Pumps:</strong> The team will have tools and floor pumps available at the pit zone for last-minute adjustments, but riders should always have their own emergency repair kit (spare tube, tire levers, multi-tool, mini pump/CO2) ready on their bike or in their gear bag.</li>
                             <li><strong>Advance Maintenance Required:</strong> Riders and parents must ensure tubeless sealant is topped off, drivetrain is cleaned &amp; lubed, and brakes are in proper working order — <strong>ideally a week before race day</strong>, or at minimum the night before.</li>
-                            <li><em>Do not attempt to tune or repair a bike on race morning!</em></li>
+                            <li><em>Avoid attempting to repair or tune a bike on race day — get all mechanical service done well in advance!</em></li>
                             <li><strong>Race Plate:</strong> Securely zip-tie your number plate to handlebars. Do <em>not</em> bend, fold, or cut the barcode/timing chip.</li>
                         </ul>
                     </div>
