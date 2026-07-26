@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const hsWaves = [
     {
         wave: 'Wave 1 - HS',
-        arrivalTime: '5:30 – 6:00 AM',
+        arrivalTime: '6:30 AM',
         meetingTime: '7:00 AM',
         stageTime: '7:45 AM',
         startTime: '8:00 AM',
@@ -151,8 +151,8 @@ export default function RaceDayCentral() {
             <div className="glass-panel" style={{
                 padding: 'var(--spacing-lg)',
                 marginBottom: 'var(--spacing-xl)',
-                borderLeft: '5px solid rgb(var(--color-tertiary))',
-                backgroundColor: 'rgba(250, 255, 56, 0.08)'
+                borderLeft: '5px solid rgb(var(--color-primary))',
+                backgroundColor: 'rgba(87, 43, 158, 0.04)'
             }}>
                 <h2 style={{ fontSize: '1.4rem', color: 'rgb(var(--color-primary))', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span>⏰</span> Race Day Schedule Timeline Sequence
@@ -162,13 +162,13 @@ export default function RaceDayCentral() {
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(var(--color-primary))' }}>Step 1</span>
                         <p style={{ fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0' }}>Arrival Time</p>
                         <p className="text-muted" style={{ fontSize: '0.85rem', margin: 0, lineHeight: 1.4 }}>
-                            Arrive at venue <strong>1 to 1.5 hrs before</strong> your Wave Meeting to park, walk to pit zone &amp; prep.
+                            Arrive at venue <strong>1 to 1.5 hrs before</strong> your Wave Meeting (e.g. 6:30 AM for Wave 1) to park, walk to pit zone &amp; prep.
                         </p>
                     </div>
 
-                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250, 255, 56, 0.15)', border: '1px solid rgba(250, 255, 56, 0.3)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(140, 120, 0)' }}>Step 2</span>
-                        <p style={{ fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0', color: 'rgb(120, 100, 0)' }}>Wave Meeting</p>
+                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(180, 83, 9, 0.1)', border: '1px solid rgba(180, 83, 9, 0.25)' }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#b45309' }}>Step 2</span>
+                        <p style={{ fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0', color: '#b45309' }}>Wave Meeting</p>
                         <p className="text-muted" style={{ fontSize: '0.85rem', margin: 0, lineHeight: 1.4 }}>
                             Mandatory team check-in <strong>1 hour before</strong> start time at the Lehi MTB Pit Zone.
                         </p>
@@ -251,7 +251,7 @@ export default function RaceDayCentral() {
                                                     <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
                                                         {w.arrivalTime}
                                                     </td>
-                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: 'rgb(var(--color-tertiary))', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.9rem' }}>
                                                         {w.meetingTime}
                                                     </td>
                                                     <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
@@ -313,7 +313,7 @@ export default function RaceDayCentral() {
                                                     <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
                                                         {w.arrivalTime}
                                                     </td>
-                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: 'rgb(140, 120, 0)', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.9rem' }}>
                                                         {w.meetingTime}
                                                     </td>
                                                     <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
