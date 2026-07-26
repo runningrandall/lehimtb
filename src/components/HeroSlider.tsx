@@ -3,43 +3,12 @@
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { isKitRevealed } from '@/lib/kitReveal';
-
-const KIT_STORE = 'https://voltcyclewear.com/pages/lehi-high-school';
-
-const kitItems = [
-    {
-        name: 'Ion Jersey',
-        img: 'https://voltcyclewear.com/cdn/shop/files/2026_Lehi_HS_Jersey_Front.png?v=1772236515',
-        href: 'https://voltcyclewear.com/collections/lehi-high-school-2026/products/ion-jersey-lehi-high-school-2026?store=Lehi+High+School&page_handle=lehi-high-school',
-    },
-    {
-        name: 'Shop Shirt',
-        img: 'https://voltcyclewear.com/cdn/shop/files/Lehi26RLShopshirtfront.png?v=1772651558',
-        href: 'https://voltcyclewear.com/collections/lehi-high-school-2026/products/shop-shirt-ride-leader?store=Lehi+High+School&page_handle=lehi-high-school',
-    },
-    {
-        name: 'Force Vest',
-        img: 'https://voltcyclewear.com/cdn/shop/files/2026LehiHSVestFront.png?v=1772241888',
-        href: 'https://voltcyclewear.com/collections/lehi-high-school-2026/products/force-vest-26?store=Lehi+High+School&page_handle=lehi-high-school',
-    },
-    {
-        name: 'Zip Up Hoodie',
-        img: 'https://voltcyclewear.com/cdn/shop/files/2026_Lehi_HS_Hoodie_Zip_Front.png?v=1772236852',
-        href: 'https://voltcyclewear.com/collections/lehi-high-school-2026/products/zip-up-hoodie-lehi-high-school-2026?store=Lehi+High+School&page_handle=lehi-high-school',
-    },
-];
 
 export default function HeroSlider() {
     const [active, setActive] = useState(0);
     const [paused, setPaused] = useState(false);
-    const [kitRevealed, setKitRevealed] = useState(false);
 
-    useEffect(() => {
-        setKitRevealed(isKitRevealed());
-    }, []);
-
-    const slideCount = kitRevealed ? 3 : 2;
+    const slideCount = 2;
     const next = useCallback(() => setActive(a => (a + 1) % slideCount), [slideCount]);
 
     useEffect(() => {
@@ -62,14 +31,9 @@ export default function HeroSlider() {
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(12,8,24,0.92), rgba(87,43,158,0.35))' }} />
             </div>
 
-            {/* ── Slide 2 BG: Trail riding ── */}
-            <div style={{ position: 'absolute', inset: 0, opacity: active === 1 ? 1 : 0, transition: 'opacity 0.8s ease', zIndex: 0, background: 'rgba(12,8,24,0.7)' }}>
-                <Image src="/images/A9_05352.jpg" alt="Rider on trail" fill style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.45, mixBlendMode: 'luminosity' }} />
-            </div>
-
-            {/* ── Slide 3 BG ── */}
-            <div style={{ position: 'absolute', inset: 0, opacity: active === 2 ? 1 : 0, transition: 'opacity 0.8s ease', zIndex: 0, background: 'rgba(12,8,24,0.7)' }}>
-                <Image src="/images/state_tent_dinner.jpg" alt="" fill style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.45, mixBlendMode: 'luminosity' }} />
+            {/* ── Slide 2 shared dark BG ── */}
+            <div style={{ position: 'absolute', inset: 0, opacity: active === 1 ? 1 : 0, transition: 'opacity 0.8s ease', zIndex: 0, background: 'rgba(12,8,24,0.85)' }}>
+                <Image src="/images/state_tent_dinner.jpg" alt="Race Day Staging" fill style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.4, mixBlendMode: 'luminosity' }} />
             </div>
 
             {/* ── Content ── */}
@@ -92,53 +56,36 @@ export default function HeroSlider() {
                         ))}
                     </div>
                     <div style={{ display: 'flex', gap: 'var(--spacing-sm)', flexWrap: 'wrap' }}>
-                        <Link href="https://registration.teamsnap.com/form/47629" target="_blank" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Join the Team</Link>
+                        <Link href="/register" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Registration Info</Link>
                         <Link href="/join" className="btn-silver" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Parent Info &amp; FAQ</Link>
                     </div>
                 </div>
 
-                {/* Slide 2: Time Trial */}
+                {/* Slide 2: Upcoming Races & Race Day Central */}
                 <div style={{ opacity: active === 1 ? 1 : 0, transform: active === 1 ? 'translateY(0)' : 'translateY(12px)', transition: 'opacity 0.8s ease, transform 0.8s ease', position: active === 1 ? 'relative' : 'absolute', top: 0, left: 0, right: 0, pointerEvents: active === 1 ? 'auto' : 'none' }}>
-                    <p style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.14em', textTransform: 'uppercase', opacity: 0.7, marginBottom: '0.75rem' }}>June 1, 2026 · Eagle Mountain · 6:00 PM</p>
+                    <p style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.14em', textTransform: 'uppercase', opacity: 0.8, marginBottom: '0.75rem', color: '#faff38' }}>Upcoming Races · 2026 Season</p>
                     <h1 style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', marginBottom: '1rem', lineHeight: 1.1 }}>
-                        Test Your Limits<br />
-                        <span style={{ background: 'linear-gradient(90deg, #a855f7 0%, #faff38 60%, #c084fc 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Time Trial</span>
+                        Race Day Central —<br />
+                        <span style={{ background: 'linear-gradient(90deg, #a855f7 0%, #faff38 60%, #c084fc 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Wave Schedules &amp; Info</span>
                     </h1>
-                    <p style={{ fontSize: '1.15rem', maxWidth: '600px', marginBottom: '1.5rem', opacity: 0.9, lineHeight: 1.6 }}>
-                        Race against the clock on the Lehi High School Time Trial route. Push your pace, track your progress, and see how you stack up.
-                    </p>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.75rem' }}>
+                        {[
+                            { color: 'rgb(var(--color-primary))', text: 'Full Wave Schedule — HS & Jr Devo Categories' },
+                            { color: 'rgb(var(--color-tertiary))', text: 'What to Expect: Staging, Pit Zone & Feed Rules' },
+                            { color: 'rgba(255,255,255,0.7)', text: 'Arrival Times, Race Plate Setup & Spectator Info' },
+                        ].map(row => (
+                            <div key={row.text} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                                <span style={{ width: '4px', height: '1.2rem', borderRadius: '2px', background: row.color, flexShrink: 0 }} />
+                                <span style={{ fontSize: '1.1rem', opacity: 0.95, fontWeight: 500 }}>{row.text}</span>
+                            </div>
+                        ))}
+                    </div>
                     <div style={{ display: 'flex', gap: 'var(--spacing-sm)', flexWrap: 'wrap' }}>
-                        <a href="https://www.strava.com/routes/3353453041646790442" target="_blank" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>View Route on Strava</a>
-                        <Link href="/challenges" className="btn-silver" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>All Challenges</Link>
+                        <Link href="/race-day" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Race Day Guide →</Link>
+                        <Link href="/events" className="btn-silver" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Race Schedule</Link>
                     </div>
                 </div>
 
-                {/* Slide 3: Kit Reveal — only after reveal date */}
-                {kitRevealed && (
-                    <div style={{ opacity: active === 2 ? 1 : 0, transform: active === 2 ? 'translateY(0)' : 'translateY(12px)', transition: 'opacity 0.8s ease, transform 0.8s ease', position: active === 2 ? 'relative' : 'absolute', top: 0, left: 0, right: 0, pointerEvents: active === 2 ? 'auto' : 'none' }}>
-                        <p style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.14em', textTransform: 'uppercase', opacity: 0.7, marginBottom: '0.75rem' }}>2026 Season · Now Available</p>
-                        <h1 style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', marginBottom: '1.25rem', lineHeight: 1.1 }}>
-                            Kit Reveal —<br />
-                            <span style={{ background: 'linear-gradient(90deg, #a855f7 0%, #faff38 60%, #c084fc 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Shop Your Gear</span>
-                        </h1>
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.75rem', marginBottom: '1.5rem', maxWidth: '520px' }}>
-                            {kitItems.map(item => (
-                                <a key={item.name} href={item.href} target="_blank" style={{ textDecoration: 'none', display: 'block' }}>
-                                    <div style={{ background: 'white', borderRadius: '8px', overflow: 'hidden', aspectRatio: '1', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.2s ease' }}
-                                        onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.04)')}
-                                        onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}>
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img src={item.img} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '4px' }} />
-                                    </div>
-                                    <p style={{ fontSize: '0.7rem', fontWeight: 600, textAlign: 'center', marginTop: '0.3rem', opacity: 0.85, textDecoration: 'none' }}>{item.name}</p>
-                                </a>
-                            ))}
-                        </div>
-                        <div style={{ display: 'flex', gap: 'var(--spacing-sm)', flexWrap: 'wrap' }}>
-                            <a href={KIT_STORE} target="_blank" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Shop the Store</a>
-                        </div>
-                    </div>
-                )}
             </div>
 
             {/* ── Slide dots ── */}

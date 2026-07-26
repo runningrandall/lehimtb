@@ -110,7 +110,7 @@ export default function Kickoff() {
                 <p className="text-muted" style={{ marginBottom: 'var(--spacing-md)', fontSize: '1.125rem' }}>
                     Ready to get started? Registration is open now.
                 </p>
-                <Link href="https://registration.teamsnap.com/form/47629" target="_blank" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>
+                <Link href="/register" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>
                     Register for the 2026 Season
                 </Link>
             </div>

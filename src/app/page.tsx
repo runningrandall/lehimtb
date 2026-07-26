@@ -26,7 +26,7 @@ export default function Home() {
               <p style={{ fontWeight: 800, fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgb(var(--color-primary))', marginBottom: '0.75rem' }}>High School · 9th–12th Grade</p>
               <h3 style={{ marginBottom: 'var(--spacing-sm)' }}>Lehi High School MTB</h3>
               <p className="text-muted" style={{ marginBottom: '1rem' }}>The premier high school mountain biking team for Lehi students.</p>
-              <Link href="/join" className="btn-primary" style={{ fontSize: '0.875rem' }}>Join the Team</Link>
+              <Link href="/register" className="btn-primary" style={{ fontSize: '0.875rem' }}>Join the Team</Link>
             </div>
             <div className="glass-panel" style={{ padding: 'var(--spacing-md)', borderTop: '4px solid rgb(192, 150, 240)' }}>
               <p style={{ fontWeight: 800, fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgb(192, 150, 240)', marginBottom: '0.75rem' }}>Girls Riding Together · All Grades</p>

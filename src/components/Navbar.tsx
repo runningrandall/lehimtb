@@ -14,13 +14,14 @@ const navGroups = [
             { href: '/coaches', label: 'Coaches' },
             { href: '/kickoff', label: 'Kickoff Meeting' },
             { href: '/sponsors', label: 'Sponsors' },
-            { href: 'https://voltcyclewear.com/pages/lehi-high-school', label: 'Team Store', external: true },
+            { href: '/store', label: 'Team Store' },
         ]
     },
     {
         label: 'Events',
         links: [
             { href: '/events', label: 'Race Schedule' },
+            { href: '/race-day', label: 'Race Day Guide' },
             { href: '/events/family-camp-2026', label: 'Family Camp 2026' },
             { href: '/gallery', label: 'Gallery' },
             { href: 'https://lehimtb.substack.com/', label: 'Blog', external: true },
@@ -128,8 +129,7 @@ export default function Navbar() {
                         </li>
                         <li>
                             <Link
-                                href="https://registration.teamsnap.com/form/47629"
-                                target="_blank"
+                                href="/register"
                                 className="btn-primary"
                                 style={{ padding: '0.5rem 1rem', fontSize: '0.875rem' }}
                             >
@@ -197,8 +197,7 @@ export default function Navbar() {
                         </div>
                     ))}
                     <Link
-                        href="https://registration.teamsnap.com/form/47629"
-                        target="_blank"
+                        href="/register"
                         className="btn-primary"
                         style={{ width: '100%', justifyContent: 'center', marginTop: '0.5rem' }}
                         onClick={() => setMenuOpen(false)}

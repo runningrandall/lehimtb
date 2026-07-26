@@ -66,8 +66,8 @@ export default function JoinAndFAQ() {
                 <p className="text-muted" style={{ maxWidth: '600px', margin: '0 auto var(--spacing-sm) auto' }}>
                     Ready to ride? We welcome all skill levels living within the Lehi High School boundaries!
                 </p>
-                <Link href="https://registration.teamsnap.com/form/47629" target="_blank" className="btn-primary" style={{ padding: '0.75rem 2rem' }}>
-                    Register Now (TeamSnap)
+                <Link href="/register" className="btn-primary" style={{ padding: '0.75rem 2rem' }}>
+                    Register Now
                 </Link>
                 <Link href="https://pitzone.nationalmtb.org/" target="_blank" className="btn-silver" style={{ padding: '0.6rem 1.5rem', marginTop: '0.75rem', fontSize: '0.9rem' }}>
                     NICA PitZone Registration →
@@ -79,12 +79,12 @@ export default function JoinAndFAQ() {
                     <h3>Registration Checklist</h3>
                     <ol style={{ paddingLeft: '1.5rem', marginTop: 'var(--spacing-sm)', color: 'rgb(var(--text-muted))', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                         <li>Attend the kickoff meeting to get questions answered.</li>
-                        <li>Complete Team online registration by April 13 (<a href="https://registration.teamsnap.com/form/47629" target="_blank" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600 }}>TeamSnap</a>).</li>
+                        <li>Complete Team online registration by April 13 (<Link href="/register" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600 }}>Team Registration Info</Link>).</li>
                         <li><a href="https://pitzone.nationalmtb.org/" target="_blank" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600 }}>Register with the Utah NICA League PitZone</a> by April 13 and pay $400 league fee.</li>
                         <li>Accept TeamSnap invite and download the app.</li>
                         <li>Pay $350 Team Dues by April 13 via Venmo @lehimtb or check to Lehi MTB.</li>
                         <li>Get fitted for a team kit (jersey, shorts, etc.).</li>
-                        <li>Order kit through the <a href="https://voltcyclewear.com/pages/lehi-high-school" target="_blank" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600 }}>Team Store</a>.</li>
+                        <li>Order kit through the <Link href="/store" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600 }}>Team Store</Link>.</li>
                         <li>Sponsorship money &amp; logos due by April 15.</li>
                     </ol>
                 </div>
