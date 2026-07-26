@@ -234,35 +234,45 @@ export default function RaceDayCentral() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {hsWaves.map((w) => (
-                                    w.categories.map((cat, idx) => (
-                                        <tr key={cat.category} style={{ borderBottom: '1px solid var(--border-color)', backgroundColor: idx % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'transparent' }}>
-                                            {idx === 0 && (
-                                                <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', backgroundColor: 'rgba(87, 43, 158, 0.04)' }}>
-                                                    {w.wave}
+                                {hsWaves.map((w, waveIdx) => (
+                                    w.categories.map((cat, idx) => {
+                                        const isWaveEven = waveIdx % 2 === 0;
+                                        const isLastCategoryInWave = idx === w.categories.length - 1;
+                                        return (
+                                            <tr
+                                                key={cat.category}
+                                                style={{
+                                                    borderBottom: isLastCategoryInWave ? '2px solid rgba(87, 43, 158, 0.3)' : '1px dashed var(--border-color)',
+                                                    backgroundColor: isWaveEven ? 'rgba(87, 43, 158, 0.07)' : 'rgba(255, 255, 255, 0.015)'
+                                                }}
+                                            >
+                                                {idx === 0 && (
+                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', backgroundColor: isWaveEven ? 'rgba(87, 43, 158, 0.12)' : 'rgba(87, 43, 158, 0.05)' }}>
+                                                        {w.wave}
+                                                    </td>
+                                                )}
+                                                <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>
+                                                    {cat.category}
+                                                    {cat.note && <span style={{ display: 'block', fontSize: '0.75rem', color: 'rgb(var(--text-muted))', fontWeight: 400 }}>*{cat.note}</span>}
                                                 </td>
-                                            )}
-                                            <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>
-                                                {cat.category}
-                                                {cat.note && <span style={{ display: 'block', fontSize: '0.75rem', color: 'rgb(var(--text-muted))', fontWeight: 400 }}>*{cat.note}</span>}
-                                            </td>
-                                            {idx === 0 && (
-                                                <>
-                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
-                                                        {w.arrivalTime}
-                                                    </td>
-                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.9rem' }}>
-                                                        {w.meetingTime}
-                                                    </td>
-                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
-                                                        {w.stageTime}
-                                                    </td>
-                                                </>
-                                            )}
-                                            <td style={{ padding: '0.75rem 0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 700 }}>{cat.time}</td>
-                                            <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>{cat.laps} {cat.laps === '1' ? 'Lap' : 'Laps'}</td>
-                                        </tr>
-                                    ))
+                                                {idx === 0 && (
+                                                    <>
+                                                        <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                            {w.arrivalTime}
+                                                        </td>
+                                                        <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.9rem' }}>
+                                                            {w.meetingTime}
+                                                        </td>
+                                                        <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                            {w.stageTime}
+                                                        </td>
+                                                    </>
+                                                )}
+                                                <td style={{ padding: '0.75rem 0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 700 }}>{cat.time}</td>
+                                                <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>{cat.laps} {cat.laps === '1' ? 'Lap' : 'Laps'}</td>
+                                            </tr>
+                                        );
+                                    })
                                 ))}
                             </tbody>
                         </table>
@@ -299,32 +309,42 @@ export default function RaceDayCentral() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {jdWaves.map((w) => (
-                                    w.categories.map((cat, idx) => (
-                                        <tr key={cat.category} style={{ borderBottom: '1px solid var(--border-color)', backgroundColor: idx % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'transparent' }}>
-                                            {idx === 0 && (
-                                                <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', backgroundColor: 'rgba(250, 255, 56, 0.05)' }}>
-                                                    {w.wave}
-                                                </td>
-                                            )}
-                                            <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>{cat.category}</td>
-                                            {idx === 0 && (
-                                                <>
-                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
-                                                        {w.arrivalTime}
+                                {jdWaves.map((w, waveIdx) => (
+                                    w.categories.map((cat, idx) => {
+                                        const isWaveEven = waveIdx % 2 === 0;
+                                        const isLastCategoryInWave = idx === w.categories.length - 1;
+                                        return (
+                                            <tr
+                                                key={cat.category}
+                                                style={{
+                                                    borderBottom: isLastCategoryInWave ? '2px solid rgba(250, 255, 56, 0.4)' : '1px dashed var(--border-color)',
+                                                    backgroundColor: isWaveEven ? 'rgba(250, 255, 56, 0.07)' : 'rgba(255, 255, 255, 0.015)'
+                                                }}
+                                            >
+                                                {idx === 0 && (
+                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', backgroundColor: isWaveEven ? 'rgba(250, 255, 56, 0.14)' : 'rgba(250, 255, 56, 0.05)' }}>
+                                                        {w.wave}
                                                     </td>
-                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.9rem' }}>
-                                                        {w.meetingTime}
-                                                    </td>
-                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
-                                                        {w.stageTime}
-                                                    </td>
-                                                </>
-                                            )}
-                                            <td style={{ padding: '0.75rem 0.75rem', color: 'rgb(140, 120, 0)', fontWeight: 700 }}>{cat.time}</td>
-                                            <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>{cat.laps} Lap</td>
-                                        </tr>
-                                    ))
+                                                )}
+                                                <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>{cat.category}</td>
+                                                {idx === 0 && (
+                                                    <>
+                                                        <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                            {w.arrivalTime}
+                                                        </td>
+                                                        <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.9rem' }}>
+                                                            {w.meetingTime}
+                                                        </td>
+                                                        <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                            {w.stageTime}
+                                                        </td>
+                                                    </>
+                                                )}
+                                                <td style={{ padding: '0.75rem 0.75rem', color: 'rgb(140, 120, 0)', fontWeight: 700 }}>{cat.time}</td>
+                                                <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>{cat.laps} Lap</td>
+                                            </tr>
+                                        );
+                                    })
                                 ))}
                             </tbody>
                         </table>
