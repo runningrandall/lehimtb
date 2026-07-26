@@ -76,7 +76,7 @@ export default function RaceDayCentral() {
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#db2777' }}>Step 2</span>
                         <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#be185d' }}>Pit Zone Check-In</p>
                         <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
-                            <strong>Check in with coaches</strong> at the Lehi MTB Pit Zone immediately upon arrival.
+                            Check in at the <strong>registration table in the pit zone</strong> immediately upon arrival.
                         </p>
                     </div>
 
