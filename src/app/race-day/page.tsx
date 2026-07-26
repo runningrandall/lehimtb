@@ -3,13 +3,15 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: 'Race Day Central & Wave Schedule | Lehi MTB Hub',
-    description: 'Complete 2026 race day guide, wave schedule with wave meeting times, arrival guidelines, bike prep checklist, pit zone etiquette, and Utah MTB resources.',
+    description: 'Complete 2026 race day guide, wave schedule with arrival times, wave meeting times, stage times, start times, bike prep checklist, pit zone etiquette, and Utah MTB resources.',
 };
 
 const hsWaves = [
     {
         wave: 'Wave 1 - HS',
+        arrivalTime: '5:30 – 6:00 AM',
         meetingTime: '7:00 AM',
+        stageTime: '7:45 AM',
         startTime: '8:00 AM',
         categories: [
             { category: 'JVB Boys', time: '8:00 AM', laps: '2' },
@@ -18,7 +20,9 @@ const hsWaves = [
     },
     {
         wave: 'Wave 2 - HS',
+        arrivalTime: '6:25 – 6:55 AM',
         meetingTime: '7:55 AM',
+        stageTime: '8:40 AM',
         startTime: '8:55 AM',
         categories: [
             { category: 'JVA Boys', time: '8:55 AM', laps: '2 / 3' },
@@ -27,7 +31,9 @@ const hsWaves = [
     },
     {
         wave: 'Wave 3 - HS',
+        arrivalTime: '7:40 – 8:10 AM',
         meetingTime: '9:10 AM',
+        stageTime: '9:55 AM',
         startTime: '10:10 AM',
         categories: [
             { category: 'Varsity Boys', time: '10:10 AM', laps: '3 / 4' },
@@ -36,7 +42,9 @@ const hsWaves = [
     },
     {
         wave: 'Wave 4 - HS',
+        arrivalTime: '9:05 – 9:35 AM',
         meetingTime: '10:35 AM',
+        stageTime: '11:20 AM',
         startTime: '11:35 AM',
         categories: [
             { category: 'JVA Girls', time: '11:35 AM', laps: '2' },
@@ -46,7 +54,9 @@ const hsWaves = [
     },
     {
         wave: 'Wave 5 - HS',
+        arrivalTime: '10:10 – 10:40 AM',
         meetingTime: '11:40 AM',
+        stageTime: '12:25 PM',
         startTime: '12:40 PM',
         categories: [
             { category: 'Fresh B Boys', time: '12:40 PM', laps: '2' },
@@ -55,7 +65,9 @@ const hsWaves = [
     },
     {
         wave: 'Wave 6 - HS (Single Lap)',
+        arrivalTime: '11:05 – 11:35 AM',
         meetingTime: '12:35 PM',
+        stageTime: '1:20 PM',
         startTime: '1:35 PM',
         categories: [
             { category: 'JVE Boys', time: '1:35 PM', laps: '1' },
@@ -70,7 +82,9 @@ const hsWaves = [
 const jdWaves = [
     {
         wave: 'Wave 7 - JD',
+        arrivalTime: '12:00 – 12:30 PM',
         meetingTime: '1:30 PM',
+        stageTime: '2:15 PM',
         startTime: '2:30 PM',
         categories: [
             { category: 'Advanced Boys', time: '2:30 PM', laps: '1' },
@@ -80,7 +94,9 @@ const jdWaves = [
     },
     {
         wave: 'Wave 8 - JD',
+        arrivalTime: '12:40 – 1:10 PM',
         meetingTime: '2:10 PM',
+        stageTime: '2:55 PM',
         startTime: '3:10 PM',
         categories: [
             { category: 'Advanced Girls', time: '3:10 PM', laps: '1' },
@@ -90,7 +106,9 @@ const jdWaves = [
     },
     {
         wave: 'Wave 9 - JD',
+        arrivalTime: '1:20 – 1:50 PM',
         meetingTime: '2:50 PM',
+        stageTime: '3:35 PM',
         startTime: '3:50 PM',
         categories: [
             { category: 'Beginner Boys 8', time: '3:50 PM', laps: '1' },
@@ -122,47 +140,63 @@ export default function RaceDayCentral() {
                 <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🏆</div>
                 <h1 style={{ marginBottom: '0.75rem', fontSize: 'clamp(2.2rem, 5vw, 3.5rem)' }}>Race Day Central</h1>
                 <p style={{ fontSize: '1.2rem', opacity: 0.95, maxWidth: '750px', margin: '0 auto', lineHeight: 1.6 }}>
-                    Everything you need for race weekend: 2026 Wave Schedules, mandatory wave meeting times, arrival guidelines, bike prep rules, pit zone etiquette, and helpful league resources.
+                    Everything you need for race weekend: 2026 Wave Schedules, arrival times, wave meeting times, stage times, bike prep rules, pit zone etiquette, and Utah MTB resources.
                 </p>
                 <p style={{ marginTop: '1rem', fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', background: 'rgba(255,255,255,0.2)', display: 'inline-block', padding: '0.4rem 1rem', borderRadius: '999px' }}>
                     2026 Region 5 Wave Schedule · Subject to Change
                 </p>
             </div>
 
-            {/* Important Timing & Arrival Notice Callout */}
+            {/* Timing Sequence Summary Callout */}
             <div className="glass-panel" style={{
                 padding: 'var(--spacing-lg)',
                 marginBottom: 'var(--spacing-xl)',
                 borderLeft: '5px solid rgb(var(--color-tertiary))',
                 backgroundColor: 'rgba(250, 255, 56, 0.08)'
             }}>
-                <h2 style={{ fontSize: '1.4rem', color: 'rgb(var(--color-primary))', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <span>⏰</span> Crucial Timing &amp; Arrival Rules
+                <h2 style={{ fontSize: '1.4rem', color: 'rgb(var(--color-primary))', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <span>⏰</span> Race Day Schedule Timeline Sequence
                 </h2>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '0.75rem' }}>
-                    <div>
-                        <p style={{ fontWeight: 700, fontSize: '1.05rem', marginBottom: '0.25rem', color: 'rgb(var(--color-primary))' }}>
-                            1. Wave Meeting Time = 1 Hour Before Start
-                        </p>
-                        <p className="text-muted" style={{ fontSize: '0.9rem', lineHeight: 1.5, margin: 0 }}>
-                            Every wave has a mandatory <strong>Wave Meeting exactly 1 hour prior to race start time</strong> at the Lehi MTB Team Pit Zone. Coaches provide strategy, warm-up instructions, and last-minute details.
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '0.75rem' }}>
+                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87, 43, 158, 0.08)', border: '1px solid rgba(87, 43, 158, 0.15)' }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(var(--color-primary))' }}>Step 1</span>
+                        <p style={{ fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0' }}>Arrival Time</p>
+                        <p className="text-muted" style={{ fontSize: '0.85rem', margin: 0, lineHeight: 1.4 }}>
+                            Arrive at venue <strong>1 to 1.5 hrs before</strong> your Wave Meeting to park, walk to pit zone &amp; prep.
                         </p>
                     </div>
-                    <div>
-                        <p style={{ fontWeight: 700, fontSize: '1.05rem', marginBottom: '0.25rem', color: 'rgb(var(--color-primary))' }}>
-                            2. Arrive 1 to 1.5 Hours BEFORE Wave Meeting
+
+                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250, 255, 56, 0.15)', border: '1px solid rgba(250, 255, 56, 0.3)' }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(140, 120, 0)' }}>Step 2</span>
+                        <p style={{ fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0', color: 'rgb(120, 100, 0)' }}>Wave Meeting</p>
+                        <p className="text-muted" style={{ fontSize: '0.85rem', margin: 0, lineHeight: 1.4 }}>
+                            Mandatory team check-in <strong>1 hour before</strong> start time at the Lehi MTB Pit Zone.
                         </p>
-                        <p className="text-muted" style={{ fontSize: '0.9rem', lineHeight: 1.5, margin: 0 }}>
-                            Plan to arrive at the race venue <strong>1 to 1.5 hours before your Wave Meeting time</strong>. This accounts for heavy race day traffic, parking, walking to the pit zone, getting dressed, and tire pressure checks.
+                    </div>
+
+                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.2)' }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#2563eb' }}>Step 3</span>
+                        <p style={{ fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0', color: '#1d4ed8' }}>Stage Time</p>
+                        <p className="text-muted" style={{ fontSize: '0.85rem', margin: 0, lineHeight: 1.4 }}>
+                            Report to staging <strong>15 minutes before</strong> start time for call-ups and line-up.
+                        </p>
+                    </div>
+
+                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.2)' }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#059669' }}>Step 4</span>
+                        <p style={{ fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0', color: '#047857' }}>Start Time</p>
+                        <p className="text-muted" style={{ fontSize: '0.85rem', margin: 0, lineHeight: 1.4 }}>
+                            Official gun time for your category wave! Race hard, stay safe, and have fun.
                         </p>
                     </div>
                 </div>
+
                 <div style={{ marginTop: '1rem', padding: '0.75rem 1rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87, 43, 158, 0.1)', border: '1px solid rgba(87, 43, 158, 0.2)' }}>
                     <p style={{ fontWeight: 700, fontSize: '0.95rem', color: 'rgb(var(--color-primary))', margin: 0 }}>
-                        📣 Stay All Day &amp; Cheer On the Squad!
+                        📣 Stay All Day &amp; Cheer On Teammates!
                     </p>
                     <p className="text-muted" style={{ fontSize: '0.875rem', margin: '0.25rem 0 0 0', lineHeight: 1.5 }}>
-                        There is no bench on our team. We strongly encourage all families and riders to stay for the entire race day to cheer on teammates across every wave. Having a loud Lehi cheer squad on the course makes a massive difference!
+                        There is no bench on our team. We strongly encourage all families and riders to stay for the entire day and cheer on teammates across every wave!
                     </p>
                 </div>
             </div>
@@ -171,7 +205,7 @@ export default function RaceDayCentral() {
             <section style={{ marginBottom: 'var(--spacing-xl)' }}>
                 <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
                     <h2>2026 Official Wave Schedule</h2>
-                    <p className="text-muted">High School &amp; Junior Development wave start times, meeting times, and lap counts.</p>
+                    <p className="text-muted">High School &amp; Junior Development timing: Arrival Time → Wave Meeting → Stage Time → Start Time.</p>
                 </div>
 
                 {/* High School Waves Table */}
@@ -187,14 +221,16 @@ export default function RaceDayCentral() {
                     </div>
 
                     <div style={{ overflowX: 'auto' }}>
-                        <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '600px' }}>
+                        <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '720px' }}>
                             <thead>
                                 <tr style={{ borderBottom: '2px solid var(--border-color)', color: 'rgb(var(--color-primary))' }}>
-                                    <th style={{ padding: '0.75rem 1rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave</th>
-                                    <th style={{ padding: '0.75rem 1rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Category</th>
-                                    <th style={{ padding: '0.75rem 1rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave Meeting</th>
-                                    <th style={{ padding: '0.75rem 1rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Start Time</th>
-                                    <th style={{ padding: '0.75rem 1rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Laps</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Category</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Arrival Time</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave Meeting</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Stage Time</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Start Time</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Laps</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -202,21 +238,29 @@ export default function RaceDayCentral() {
                                     w.categories.map((cat, idx) => (
                                         <tr key={cat.category} style={{ borderBottom: '1px solid var(--border-color)', backgroundColor: idx % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'transparent' }}>
                                             {idx === 0 && (
-                                                <td rowSpan={w.categories.length} style={{ padding: '0.75rem 1rem', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', backgroundColor: 'rgba(87, 43, 158, 0.04)' }}>
+                                                <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', backgroundColor: 'rgba(87, 43, 158, 0.04)' }}>
                                                     {w.wave}
                                                 </td>
                                             )}
-                                            <td style={{ padding: '0.75rem 1rem', fontWeight: 600 }}>
+                                            <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>
                                                 {cat.category}
                                                 {cat.note && <span style={{ display: 'block', fontSize: '0.75rem', color: 'rgb(var(--text-muted))', fontWeight: 400 }}>*{cat.note}</span>}
                                             </td>
                                             {idx === 0 && (
-                                                <td rowSpan={w.categories.length} style={{ padding: '0.75rem 1rem', color: 'rgb(var(--color-tertiary))', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)' }}>
-                                                    {w.meetingTime}
-                                                </td>
+                                                <>
+                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                        {w.arrivalTime}
+                                                    </td>
+                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: 'rgb(var(--color-tertiary))', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                        {w.meetingTime}
+                                                    </td>
+                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                        {w.stageTime}
+                                                    </td>
+                                                </>
                                             )}
-                                            <td style={{ padding: '0.75rem 1rem', color: 'rgb(var(--color-primary))', fontWeight: 700 }}>{cat.time}</td>
-                                            <td style={{ padding: '0.75rem 1rem', fontWeight: 600 }}>{cat.laps} {cat.laps === '1' ? 'Lap' : 'Laps'}</td>
+                                            <td style={{ padding: '0.75rem 0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 700 }}>{cat.time}</td>
+                                            <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>{cat.laps} {cat.laps === '1' ? 'Lap' : 'Laps'}</td>
                                         </tr>
                                     ))
                                 ))}
@@ -242,14 +286,16 @@ export default function RaceDayCentral() {
                     </p>
 
                     <div style={{ overflowX: 'auto' }}>
-                        <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '600px' }}>
+                        <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '720px' }}>
                             <thead>
                                 <tr style={{ borderBottom: '2px solid var(--border-color)', color: 'rgb(140, 120, 0)' }}>
-                                    <th style={{ padding: '0.75rem 1rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave</th>
-                                    <th style={{ padding: '0.75rem 1rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Category</th>
-                                    <th style={{ padding: '0.75rem 1rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave Meeting</th>
-                                    <th style={{ padding: '0.75rem 1rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Start Time</th>
-                                    <th style={{ padding: '0.75rem 1rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Laps</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Category</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Arrival Time</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Wave Meeting</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Stage Time</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Start Time</th>
+                                    <th style={{ padding: '0.75rem 0.75rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Laps</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -257,18 +303,26 @@ export default function RaceDayCentral() {
                                     w.categories.map((cat, idx) => (
                                         <tr key={cat.category} style={{ borderBottom: '1px solid var(--border-color)', backgroundColor: idx % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'transparent' }}>
                                             {idx === 0 && (
-                                                <td rowSpan={w.categories.length} style={{ padding: '0.75rem 1rem', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', backgroundColor: 'rgba(250, 255, 56, 0.05)' }}>
+                                                <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', backgroundColor: 'rgba(250, 255, 56, 0.05)' }}>
                                                     {w.wave}
                                                 </td>
                                             )}
-                                            <td style={{ padding: '0.75rem 1rem', fontWeight: 600 }}>{cat.category}</td>
+                                            <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>{cat.category}</td>
                                             {idx === 0 && (
-                                                <td rowSpan={w.categories.length} style={{ padding: '0.75rem 1rem', color: 'rgb(140, 120, 0)', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)' }}>
-                                                    {w.meetingTime}
-                                                </td>
+                                                <>
+                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                        {w.arrivalTime}
+                                                    </td>
+                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: 'rgb(140, 120, 0)', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                        {w.meetingTime}
+                                                    </td>
+                                                    <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                        {w.stageTime}
+                                                    </td>
+                                                </>
                                             )}
-                                            <td style={{ padding: '0.75rem 1rem', color: 'rgb(140, 120, 0)', fontWeight: 700 }}>{cat.time}</td>
-                                            <td style={{ padding: '0.75rem 1rem', fontWeight: 600 }}>{cat.laps} Lap</td>
+                                            <td style={{ padding: '0.75rem 0.75rem', color: 'rgb(140, 120, 0)', fontWeight: 700 }}>{cat.time}</td>
+                                            <td style={{ padding: '0.75rem 0.75rem', fontWeight: 600 }}>{cat.laps} Lap</td>
                                         </tr>
                                     ))
                                 ))}
@@ -342,7 +396,7 @@ export default function RaceDayCentral() {
                             <span>🏁</span> Staging &amp; Call-Ups
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <li>Staging opens <strong>15 minutes prior</strong> to your wave start time.</li>
+                            <li><strong>Stage Time:</strong> Report to staging exactly <strong>15 minutes prior to your wave start time</strong>.</li>
                             <li>Call-ups are staged strictly by league points seeding and category call-up order.</li>
                             <li>Make sure your helmet is buckled and race plate is clean before entering staging.</li>
                         </ul>
