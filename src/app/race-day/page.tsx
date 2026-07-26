@@ -405,7 +405,8 @@ export default function RaceDayCentral() {
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                             <li><strong>When to Pre-Ride:</strong> Official pre-ride takes place the <strong>week before the race</strong> or during designated league hours on <strong>Friday evening before race day</strong>.</li>
                             <li><strong>NEVER Pre-Ride Race Morning:</strong> Course pre-riding is strictly prohibited on Saturday morning before the race.</li>
-                            <li>All riders pre-riding must wear a helmet, be registered with NICA, and have their official race plate attached.</li>
+                            <li><strong>Separate Pre-Ride Plate Required:</strong> Riders <strong>MUST wear a separate official pre-ride plate</strong> on their bike during all pre-ride laps.</li>
+                            <li>All riders must wear a helmet and be fully registered with NICA.</li>
                         </ul>
                     </div>
 
@@ -459,6 +460,53 @@ export default function RaceDayCentral() {
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            {/* Pro Tips Section: Making Race Day Easy & Stress-Free */}
+            <section style={{ marginBottom: 'var(--spacing-xl)' }}>
+                <div className="glass-panel" style={{ padding: 'var(--spacing-xl)', borderTop: '4px solid rgb(var(--color-tertiary))', backgroundColor: 'rgba(250, 255, 56, 0.04)' }}>
+                    <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
+                        <p style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgb(140, 120, 0)', marginBottom: '0.25rem' }}>Stress-Free Race Morning</p>
+                        <h2>Pro Tips to Make Race Day Easy</h2>
+                        <p className="text-muted" style={{ maxWidth: '650px', margin: '0 auto' }}>
+                            A smooth race day starts with simple preparation ahead of time. Here is our recommended checklist for athletes and parents:
+                        </p>
+                    </div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 'var(--spacing-md)' }}>
+                        <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🎒</div>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Get Ready the Night Before</h3>
+                            <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
+                                Pack your kit, bibs, helmet, shoes, socks, water bottles, snacks, camp chairs, and sunscreen into your car the evening before. Morning departures become effortless.
+                            </p>
+                        </div>
+
+                        <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🚲</div>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Bike 100% Ready to Roll</h3>
+                            <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
+                                Check sealant, inflate tires, clean &amp; lube drivetrain, check brakes, and zip-tie number plates the night before. Avoid race morning mechanical stress!
+                            </p>
+                        </div>
+
+                        <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>📄</div>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Printed Schedule &amp; Phone Alarms</h3>
+                            <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
+                                Keep a printed copy of the Wave Schedule in your gear bag or car, and set phone alarms for your <strong>Wave Meeting (1 hr prior)</strong> and <strong>Stage Time (15 min prior)</strong>.
+                            </p>
+                        </div>
+
+                        <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>📍</div>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Offline Maps &amp; Travel Time</h3>
+                            <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
+                                Cell coverage at mountain venues can be spotty. Download offline venue directions and maps ahead of time so navigation is smooth.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
