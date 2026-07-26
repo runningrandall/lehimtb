@@ -489,19 +489,16 @@ export default function WaveScheduleTabs() {
                     {/* Race 4 Schedule Table */}
                     <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #3b82f6' }}>
                         <div style={{ overflowX: 'auto' }}>
-                            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '850px' }}>
+                            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '720px' }}>
                                 <thead>
                                     <tr style={{ borderBottom: '2px solid var(--border-color)', color: '#1d4ed8' }}>
-                                        <th style={{ padding: '0.75rem 0.5rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave</th>
-                                        <th style={{ padding: '0.75rem 0.5rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Category</th>
-                                        <th style={{ padding: '0.75rem 0.5rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Min. Arrival</th>
-                                        <th style={{ padding: '0.75rem 0.5rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave Mtg</th>
-                                        <th style={{ padding: '0.75rem 0.5rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Staging</th>
-                                        <th style={{ padding: '0.75rem 0.5rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Start Time</th>
-                                        <th style={{ padding: '0.75rem 0.5rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Laps</th>
-                                        <th style={{ padding: '0.75rem 0.5rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Distance</th>
-                                        <th style={{ padding: '0.75rem 0.5rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Pull Time</th>
-                                        <th style={{ padding: '0.75rem 0.5rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Plates</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Wave</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Category</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Min. Arrival</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Wave Meeting</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Stage Time</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Start Time</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Laps</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -518,30 +515,27 @@ export default function WaveScheduleTabs() {
                                                     }}
                                                 >
                                                     {idx === 0 && (
-                                                        <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.5rem', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', backgroundColor: isWaveEven ? 'rgba(59, 130, 246, 0.12)' : 'rgba(59, 130, 246, 0.04)' }}>
+                                                        <td rowSpan={w.categories.length} style={{ padding: '0.75rem', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', backgroundColor: isWaveEven ? 'rgba(59, 130, 246, 0.12)' : 'rgba(59, 130, 246, 0.04)' }}>
                                                             {w.wave}
                                                         </td>
                                                     )}
-                                                    <td style={{ padding: '0.75rem 0.5rem', fontWeight: 600 }}>
+                                                    <td style={{ padding: '0.75rem', fontWeight: 600 }}>
                                                         {cat.category}
-                                                        {cat.note && <span style={{ display: 'block', fontSize: '0.7rem', color: 'rgb(var(--text-muted))' }}>*{cat.note}</span>}
+                                                        {cat.note && <span style={{ display: 'block', fontSize: '0.75rem', color: 'rgb(var(--text-muted))', fontWeight: 400 }}>*{cat.note}</span>}
                                                     </td>
                                                     {idx === 0 && (
                                                         <>
-                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.5rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.825rem' }}>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
                                                                 {w.arrivalTime}
                                                             </td>
-                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem 0.5rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.9rem' }}>
                                                                 {w.meetingTime}
                                                             </td>
                                                         </>
                                                     )}
-                                                    <td style={{ padding: '0.75rem 0.5rem', color: '#2563eb', fontWeight: 700 }}>{cat.staging}</td>
-                                                    <td style={{ padding: '0.75rem 0.5rem', color: 'rgb(var(--color-primary))', fontWeight: 800 }}>{cat.time}</td>
-                                                    <td style={{ padding: '0.75rem 0.5rem', fontWeight: 600 }}>{cat.laps}</td>
-                                                    <td style={{ padding: '0.75rem 0.5rem', fontSize: '0.825rem' }}>{cat.distance}</td>
-                                                    <td style={{ padding: '0.75rem 0.5rem', fontSize: '0.825rem', color: 'rgb(var(--text-muted))' }}>{cat.pullTime}</td>
-                                                    <td style={{ padding: '0.75rem 0.5rem', fontSize: '0.8rem', fontWeight: 600 }}>{cat.plates}</td>
+                                                    <td style={{ padding: '0.75rem', color: '#2563eb', fontWeight: 700 }}>{cat.staging}</td>
+                                                    <td style={{ padding: '0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800 }}>{cat.time}</td>
+                                                    <td style={{ padding: '0.75rem', fontWeight: 600 }}>{cat.laps} {cat.laps === '1' ? 'Lap' : 'Laps'}</td>
                                                 </tr>
                                             );
                                         })
