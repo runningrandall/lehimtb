@@ -252,36 +252,6 @@ export default function WaveScheduleTabs() {
                         <p className="text-muted">Applies to Beaver Mountain (Race 1), Richfield (Race 2), and Panguitch (Race 3).</p>
                     </div>
 
-                    {/* Key Venue Event Times Banner for Races 1-3 */}
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-                        gap: '0.75rem',
-                        marginBottom: 'var(--spacing-md)',
-                        textAlign: 'center'
-                    }}>
-                        <div style={{ padding: '0.65rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)' }}>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', color: '#2563eb', display: 'block' }}>Pitzone Opens</span>
-                            <span style={{ fontWeight: 800, fontSize: '1.05rem' }}>7:15 AM</span>
-                        </div>
-                        <div style={{ padding: '0.65rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250,255,56,0.15)', border: '1px solid rgba(250,255,56,0.4)' }}>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(120,100,0)', display: 'block' }}>Head Coach Meeting</span>
-                            <span style={{ fontWeight: 800, fontSize: '1.05rem', color: 'rgb(120,100,0)' }}>8:00 AM</span>
-                        </div>
-                        <div style={{ padding: '0.65rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.2)' }}>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', color: '#dc2626', display: 'block' }}>Course Closes</span>
-                            <span style={{ fontWeight: 800, fontSize: '1.05rem', color: '#dc2626' }}>8:30 AM</span>
-                        </div>
-                        <div style={{ padding: '0.65rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87,43,158,0.1)', border: '1px solid rgba(87,43,158,0.2)' }}>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(var(--color-primary))', display: 'block' }}>HS Podiums</span>
-                            <span style={{ fontWeight: 800, fontSize: '1.05rem' }}>2:45 – 3:00 PM</span>
-                        </div>
-                        <div style={{ padding: '0.65rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.2)' }}>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', color: '#059669', display: 'block' }}>JD Podiums</span>
-                            <span style={{ fontWeight: 800, fontSize: '1.05rem', color: '#047857' }}>5:00 – 5:30 PM</span>
-                        </div>
-                    </div>
-
                     {/* High School Waves Table */}
                     <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', marginBottom: 'var(--spacing-lg)', borderTop: '4px solid rgb(var(--color-primary))' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
@@ -289,8 +259,39 @@ export default function WaveScheduleTabs() {
                                 <span style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgb(var(--color-primary))' }}>Morning &amp; Afternoon</span>
                                 <h3 style={{ fontSize: '1.5rem', margin: 0 }}>High School Waves (Waves 1–6)</h3>
                             </div>
-                            <div style={{ background: 'rgba(87, 43, 158, 0.1)', padding: '0.5rem 1rem', borderRadius: 'var(--radius-sm)', border: '1px solid rgba(87, 43, 158, 0.2)' }}>
-                                <span style={{ fontWeight: 700, fontSize: '0.9rem', color: 'rgb(var(--color-primary))' }}>HS Podiums: 2:45 PM – 3:00 PM</span>
+                        </div>
+
+                        {/* HS Venue & Race Time Pills */}
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
+                            gap: '0.6rem',
+                            marginBottom: '1rem',
+                            textAlign: 'center'
+                        }}>
+                            <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)' }}>
+                                <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#2563eb', display: 'block' }}>Pitzone Opens</span>
+                                <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>7:15 AM</span>
+                            </div>
+                            <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250,255,56,0.15)', border: '1px solid rgba(250,255,56,0.4)' }}>
+                                <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(120,100,0)', display: 'block' }}>Head Coach Mtg</span>
+                                <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(120,100,0)' }}>8:00 AM</span>
+                            </div>
+                            <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.2)' }}>
+                                <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#dc2626', display: 'block' }}>Course Closes</span>
+                                <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#dc2626' }}>8:30 AM</span>
+                            </div>
+                            <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87,43,158,0.12)', border: '1px solid rgba(87,43,158,0.25)' }}>
+                                <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', color: 'rgb(var(--color-primary))', display: 'block' }}>HS Races Start</span>
+                                <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(var(--color-primary))' }}>8:00 AM</span>
+                            </div>
+                            <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87,43,158,0.12)', border: '1px solid rgba(87,43,158,0.25)' }}>
+                                <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', color: 'rgb(var(--color-primary))', display: 'block' }}>HS Races End</span>
+                                <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(var(--color-primary))' }}>2:15 PM</span>
+                            </div>
+                            <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.2)' }}>
+                                <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#059669', display: 'block' }}>HS Podiums</span>
+                                <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#047857' }}>2:45 – 3:00 PM</span>
                             </div>
                         </div>
 
@@ -360,8 +361,27 @@ export default function WaveScheduleTabs() {
                                 <span style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgb(140, 120, 0)' }}>Late Afternoon</span>
                                 <h3 style={{ fontSize: '1.5rem', margin: 0 }}>Junior Development Waves (Waves 7–9)</h3>
                             </div>
-                            <div style={{ background: 'rgba(250, 255, 56, 0.2)', padding: '0.5rem 1rem', borderRadius: 'var(--radius-sm)', border: '1px solid rgba(250, 255, 56, 0.4)' }}>
-                                <span style={{ fontWeight: 700, fontSize: '0.9rem', color: 'rgb(120, 100, 0)' }}>JD Podiums: 5:00 PM – 5:30 PM</span>
+                        </div>
+
+                        {/* JD Venue & Race Time Pills */}
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+                            gap: '0.6rem',
+                            marginBottom: '1rem',
+                            textAlign: 'center'
+                        }}>
+                            <div style={{ padding: '0.55rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250,255,56,0.15)', border: '1px solid rgba(250,255,56,0.4)' }}>
+                                <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', color: 'rgb(120,100,0)', display: 'block' }}>JD Races Start</span>
+                                <span style={{ fontWeight: 800, fontSize: '1rem', color: 'rgb(120,100,0)' }}>2:30 PM</span>
+                            </div>
+                            <div style={{ padding: '0.55rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250,255,56,0.15)', border: '1px solid rgba(250,255,56,0.4)' }}>
+                                <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', color: 'rgb(120,100,0)', display: 'block' }}>JD Races End</span>
+                                <span style={{ fontWeight: 800, fontSize: '1rem', color: 'rgb(120,100,0)' }}>4:15 PM</span>
+                            </div>
+                            <div style={{ padding: '0.55rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.2)' }}>
+                                <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#059669', display: 'block' }}>JD Podiums</span>
+                                <span style={{ fontWeight: 800, fontSize: '1rem', color: '#047857' }}>5:00 – 5:30 PM</span>
                             </div>
                         </div>
 
@@ -459,30 +479,38 @@ export default function WaveScheduleTabs() {
                     {/* Key Venue Event Times Banner */}
                     <div style={{
                         display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-                        gap: '0.75rem',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
+                        gap: '0.6rem',
                         marginBottom: 'var(--spacing-md)',
                         textAlign: 'center'
                     }}>
-                        <div style={{ padding: '0.65rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)' }}>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', color: '#2563eb', display: 'block' }}>Pitzone Opens</span>
-                            <span style={{ fontWeight: 800, fontSize: '1.05rem' }}>7:15 AM</span>
+                        <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)' }}>
+                            <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#2563eb', display: 'block' }}>Pitzone Opens</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>7:15 AM</span>
                         </div>
-                        <div style={{ padding: '0.65rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250,255,56,0.15)', border: '1px solid rgba(250,255,56,0.4)' }}>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(120,100,0)', display: 'block' }}>Head Coach Meeting</span>
-                            <span style={{ fontWeight: 800, fontSize: '1.05rem', color: 'rgb(120,100,0)' }}>8:00 AM</span>
+                        <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250,255,56,0.15)', border: '1px solid rgba(250,255,56,0.4)' }}>
+                            <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(120,100,0)', display: 'block' }}>Head Coach Mtg</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(120,100,0)' }}>8:00 AM</span>
                         </div>
-                        <div style={{ padding: '0.65rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.2)' }}>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', color: '#dc2626', display: 'block' }}>Course Closes</span>
-                            <span style={{ fontWeight: 800, fontSize: '1.05rem', color: '#dc2626' }}>8:30 AM</span>
+                        <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.2)' }}>
+                            <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#dc2626', display: 'block' }}>Course Closes</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#dc2626' }}>8:30 AM</span>
                         </div>
-                        <div style={{ padding: '0.65rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87,43,158,0.1)', border: '1px solid rgba(87,43,158,0.2)' }}>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(var(--color-primary))', display: 'block' }}>National Anthem</span>
-                            <span style={{ fontWeight: 800, fontSize: '1.05rem' }}>8:30 AM</span>
+                        <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87,43,158,0.1)', border: '1px solid rgba(87,43,158,0.2)' }}>
+                            <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(var(--color-primary))', display: 'block' }}>National Anthem</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>8:30 AM</span>
                         </div>
-                        <div style={{ padding: '0.65rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.2)' }}>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', color: '#059669', display: 'block' }}>HS Podiums</span>
-                            <span style={{ fontWeight: 800, fontSize: '1.05rem', color: '#047857' }}>4:00 – 4:30 PM</span>
+                        <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59,130,246,0.12)', border: '1px solid rgba(59,130,246,0.25)' }}>
+                            <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', color: '#2563eb', display: 'block' }}>HS Races Start</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#2563eb' }}>9:00 AM</span>
+                        </div>
+                        <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59,130,246,0.12)', border: '1px solid rgba(59,130,246,0.25)' }}>
+                            <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', color: '#2563eb', display: 'block' }}>HS Races End</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#2563eb' }}>3:15 PM</span>
+                        </div>
+                        <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.2)' }}>
+                            <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#059669', display: 'block' }}>HS Podiums</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#047857' }}>4:00 – 4:30 PM</span>
                         </div>
                     </div>
 
