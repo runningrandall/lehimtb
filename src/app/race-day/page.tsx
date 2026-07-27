@@ -241,14 +241,16 @@ export default function RaceDayCentral() {
             <section style={{ marginBottom: 'var(--spacing-xl)' }}>
                 <div className="glass-panel" style={{ padding: 'var(--spacing-xl)', borderTop: '4px solid rgb(var(--color-tertiary))', backgroundColor: 'rgba(250, 255, 56, 0.04)' }}>
                     <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
-                        <p style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgb(140, 120, 0)', marginBottom: '0.25rem' }}>Stress-Free Race Morning</p>
-                        <h2>Pro Tips to Make Race Day Easy</h2>
-                        <p className="text-muted" style={{ maxWidth: '650px', margin: '0 auto' }}>
-                            A smooth race day starts with simple preparation ahead of time. Here is our recommended checklist for athletes and parents:
+                        <p style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgb(140, 120, 0)', marginBottom: '0.25rem' }}>Parents &amp; Athletes Guide</p>
+                        <h2>Pro Tips to Make Race Day Easy &amp; Fun</h2>
+                        <p className="text-muted" style={{ maxWidth: '680px', margin: '0 auto' }}>
+                            A smooth race day starts with simple preparation ahead of time. Here is our insider guide for riders, parents, and spectating families:
                         </p>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 'var(--spacing-md)' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--spacing-md)' }}>
+                        
+                        {/* Night Before Prep */}
                         <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🎒</div>
                             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Get Ready the Night Before</h3>
@@ -257,6 +259,7 @@ export default function RaceDayCentral() {
                             </p>
                         </div>
 
+                        {/* Bike Ready */}
                         <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🚲</div>
                             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Bike 100% Ready to Roll</h3>
@@ -265,21 +268,60 @@ export default function RaceDayCentral() {
                             </p>
                         </div>
 
+                        {/* Sunscreen, Shade & Weather */}
+                        <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🧴</div>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Sunscreen, Shade &amp; Weather</h3>
+                            <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
+                                Utah venues (Beaver, Richfield, Panguitch, Herriman) feature intense high-desert sun. Apply SPF 30+ early at home, bring pop-up canopies or shade umbrellas, lip balm with SPF, sunglasses, and cooling towels. Morning temps can be chilly — bring layers!
+                            </p>
+                        </div>
+
+                        {/* Food, Snacks & Hydration */}
+                        <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🍎</div>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Food, Snacks &amp; Cooler Setup</h3>
+                            <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
+                                Pack a cooler with iced water, electrolyte drink mixes, bananas, stroopwafels, energy chews, and high-protein post-race snacks (chocolate milk, turkey wraps). Bring plenty of food for spectating family members too!
+                            </p>
+                        </div>
+
+                        {/* Spectator Spots & Cheering */}
+                        <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🔔</div>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Finding Great Viewing Spots</h3>
+                            <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
+                                Scope out course maps for high-elevation switchbacks, technical climbs, or serpentine turns where you can watch racers multiple times per lap. Bring cowbells, wear purple/gold, and <strong>never cross active race lines</strong>!
+                            </p>
+                        </div>
+
+                        {/* Post-Race Pickup & Pit Zone Meetup */}
+                        <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🏁</div>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Post-Race Racer Pickup Point</h3>
+                            <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
+                                Set a clear rule: after crossing the finish line, riders head straight to the <strong>Team Pit Zone recovery tent</strong> for drinks, cool-down, and checking in with coaches before meeting up with parents.
+                            </p>
+                        </div>
+
+                        {/* Schedule & Phone Alarms */}
                         <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>📄</div>
                             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Printed Schedule &amp; Phone Alarms</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Keep a printed copy of the Wave Schedule in your gear bag or car, and set phone alarms for your <strong>Wave Meeting (1 hr prior)</strong> and <strong>Stage Time (15 min prior)</strong>.
+                                Keep a printed copy of the Wave Schedule in your car, and set phone alarms for your <strong>Wave Meeting (1 hr prior)</strong> and <strong>Stage Time (15 min prior)</strong> so timing is effortless.
                             </p>
                         </div>
 
+                        {/* Battery, Offline Maps & Trail Comfort */}
                         <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
-                            <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>📍</div>
-                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Offline Maps &amp; Travel Time</h3>
+                            <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🔋</div>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Battery Banks &amp; Trail Comfort</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Cell coverage at mountain venues can be spotty. Download offline venue directions and maps ahead of time so navigation is smooth.
+                                Cell signal search at mountain venues drains phone batteries fast — bring portable power banks. Wear sturdy trail shoes for hiking up hillsides, bring dust buffs/masks, wet wipes, and trash bags to leave no trace.
                             </p>
                         </div>
+
                     </div>
                 </div>
             </section>
