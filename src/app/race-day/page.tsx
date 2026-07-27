@@ -82,23 +82,31 @@ export default function RaceDayCentral() {
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(180, 83, 9, 0.1)', border: '1px solid rgba(180, 83, 9, 0.25)' }}>
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#b45309' }}>Step 3</span>
-                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#b45309' }}>Wave Meeting</p>
+                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#b45309' }}>Wave Meeting (10 min)</p>
                         <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
-                            Mandatory team strategy briefing <strong>1 hour before</strong> start time at Pit Zone.
+                            Mandatory team strategy briefing at Pit Zone <strong>1 hour before</strong> start time (lasts 10 mins).
+                        </p>
+                    </div>
+
+                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.25)' }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#059669' }}>Step 4</span>
+                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#047857' }}>Warm-Up (30 min)</p>
+                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
+                            Structured <strong>30-minute warm-up ride</strong> to elevate heart rate and get legs ready.
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.2)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#2563eb' }}>Step 4</span>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#2563eb' }}>Step 5</span>
                         <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#1d4ed8' }}>Stage Time</p>
                         <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
                             Report to staging <strong>15 minutes before</strong> start time for call-ups and line-up.
                         </p>
                     </div>
 
-                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.2)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#059669' }}>Step 5</span>
-                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#047857' }}>Start Time</p>
+                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87, 43, 158, 0.1)', border: '1px solid rgba(87, 43, 158, 0.2)' }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(var(--color-primary))' }}>Step 6</span>
+                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: 'rgb(var(--color-primary))' }}>Start Time</p>
                         <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
                             Official gun time for your category wave! Race hard, stay safe, and have fun.
                         </p>

@@ -7,7 +7,8 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 1 - HS',
         arrivalTime: '6:30 AM',
-        meetingTime: '7:00 AM',
+        meetingTime: '7:00 – 7:10 AM',
+        warmupTime: '7:10 – 7:40 AM',
         stageTime: '7:45 AM',
         startTime: '8:00 AM',
         categories: [
@@ -18,7 +19,8 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 2 - HS',
         arrivalTime: '6:00 – 7:00 AM',
-        meetingTime: '7:55 AM',
+        meetingTime: '7:55 – 8:05 AM',
+        warmupTime: '8:05 – 8:35 AM',
         stageTime: '8:40 AM',
         startTime: '8:55 AM',
         categories: [
@@ -29,7 +31,8 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 3 - HS',
         arrivalTime: '7:40 – 8:10 AM',
-        meetingTime: '9:10 AM',
+        meetingTime: '9:10 – 9:20 AM',
+        warmupTime: '9:20 – 9:50 AM',
         stageTime: '9:55 AM',
         startTime: '10:10 AM',
         categories: [
@@ -40,7 +43,8 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 4 - HS',
         arrivalTime: '9:05 – 9:35 AM',
-        meetingTime: '10:35 AM',
+        meetingTime: '10:35 – 10:45 AM',
+        warmupTime: '10:45 – 11:15 AM',
         stageTime: '11:20 AM',
         startTime: '11:35 AM',
         categories: [
@@ -52,7 +56,8 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 5 - HS',
         arrivalTime: '10:10 – 10:40 AM',
-        meetingTime: '11:40 AM',
+        meetingTime: '11:40 – 11:50 AM',
+        warmupTime: '11:50 AM – 12:20 PM',
         stageTime: '12:25 PM',
         startTime: '12:40 PM',
         categories: [
@@ -63,7 +68,8 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 6 - HS (Single Lap)',
         arrivalTime: '11:05 – 11:35 AM',
-        meetingTime: '12:35 PM',
+        meetingTime: '12:35 – 12:45 PM',
+        warmupTime: '12:45 – 1:15 PM',
         stageTime: '1:20 PM',
         startTime: '1:35 PM',
         categories: [
@@ -80,7 +86,8 @@ const races1To3JdWaves = [
     {
         wave: 'Wave 7 - JD',
         arrivalTime: '12:00 – 12:30 PM',
-        meetingTime: '1:30 PM',
+        meetingTime: '1:30 – 1:40 PM',
+        warmupTime: '1:40 – 2:10 PM',
         stageTime: '2:15 PM',
         startTime: '2:30 PM',
         categories: [
@@ -92,7 +99,8 @@ const races1To3JdWaves = [
     {
         wave: 'Wave 8 - JD',
         arrivalTime: '12:40 – 1:10 PM',
-        meetingTime: '2:10 PM',
+        meetingTime: '2:10 – 2:20 PM',
+        warmupTime: '2:20 – 2:50 PM',
         stageTime: '2:55 PM',
         startTime: '3:10 PM',
         categories: [
@@ -104,7 +112,8 @@ const races1To3JdWaves = [
     {
         wave: 'Wave 9 - JD',
         arrivalTime: '1:20 – 1:50 PM',
-        meetingTime: '2:50 PM',
+        meetingTime: '2:50 – 3:00 PM',
+        warmupTime: '3:00 – 3:30 PM',
         stageTime: '3:35 PM',
         startTime: '3:50 PM',
         categories: [
@@ -119,7 +128,10 @@ const race4HsWaves = [
     {
         wave: 'Wave 1 - HS',
         arrivalTime: '6:30 – 7:00 AM',
-        meetingTime: '8:00 AM',
+        meetingTime: '8:00 – 8:10 AM',
+        warmupTime: '8:10 – 8:40 AM',
+        stageTime: '8:45 AM',
+        startTime: '9:00 AM',
         categories: [
             { category: 'JVB Boys', time: '9:00 AM', laps: '2', distance: '11.8 mi', staging: '8:45 AM', pullTime: '9:45 AM', plates: '2600–2749', maxPull: '45 min' },
             { category: 'JVC Boys', time: '9:05 AM', laps: '2', distance: '11.8 mi', staging: '8:55 AM', pullTime: '9:50 AM', plates: '6150–6299', maxPull: '45 min' },
@@ -128,7 +140,10 @@ const race4HsWaves = [
     {
         wave: 'Wave 2 - HS',
         arrivalTime: '7:00 – 7:55 AM',
-        meetingTime: '8:55 AM',
+        meetingTime: '8:55 – 9:05 AM',
+        warmupTime: '9:05 – 9:35 AM',
+        stageTime: '9:40 AM',
+        startTime: '9:55 AM',
         categories: [
             { category: 'JVA Boys', time: '9:55 AM', laps: '2', distance: '11.8 mi', staging: '9:40 AM', pullTime: '10:40 AM', plates: '5400–5499', maxPull: '45 min' },
             { category: 'Fresh A Boys', time: '10:00 AM', laps: '2', distance: '11.8 mi', staging: '9:45 AM', pullTime: '10:45 AM', plates: '3600–3749', maxPull: '45 min' },
@@ -137,7 +152,10 @@ const race4HsWaves = [
     {
         wave: 'Wave 3 - HS',
         arrivalTime: '8:40 – 9:10 AM',
-        meetingTime: '10:10 AM',
+        meetingTime: '10:10 – 10:20 AM',
+        warmupTime: '10:20 – 10:50 AM',
+        stageTime: '10:55 AM',
+        startTime: '11:10 AM',
         categories: [
             { category: 'Varsity Boys', time: '11:10 AM', laps: '3', distance: '17.7 mi', staging: '10:55 AM', pullTime: '12:20 PM', plates: '730–774', maxPull: '70 min' },
             { category: 'Varsity Girls', time: '11:15 AM', laps: '2', distance: '11.8 mi', staging: '11:00 AM', pullTime: '12:00 PM', plates: '180–224', maxPull: '45 min' },
@@ -146,7 +164,10 @@ const race4HsWaves = [
     {
         wave: 'Wave 4 - HS',
         arrivalTime: '10:05 – 10:35 AM',
-        meetingTime: '11:35 AM',
+        meetingTime: '11:35 – 11:45 AM',
+        warmupTime: '11:45 AM – 12:15 PM',
+        stageTime: '12:20 PM',
+        startTime: '12:35 PM',
         categories: [
             { category: 'JVA Girls', time: '12:35 PM', laps: '2', distance: '11.8 mi', staging: '12:20 PM', pullTime: '1:20 PM', plates: '450–494', maxPull: '45 min' },
             { category: 'JVB Girls', time: '12:40 PM', laps: '2', distance: '11.8 mi', staging: '12:25 PM', pullTime: '1:25 PM', plates: '1400–1499', maxPull: '45 min' },
@@ -156,7 +177,10 @@ const race4HsWaves = [
     {
         wave: 'Wave 5 - HS',
         arrivalTime: '11:10 – 11:40 AM',
-        meetingTime: '12:40 PM',
+        meetingTime: '12:40 – 12:50 PM',
+        warmupTime: '12:50 – 1:20 PM',
+        stageTime: '1:25 PM',
+        startTime: '1:40 PM',
         categories: [
             { category: 'Fresh B Boys', time: '1:40 PM', laps: '2', distance: '11.8 mi', staging: '1:25 PM', pullTime: '2:25 PM', plates: '7600–7749', maxPull: '45 min' },
             { category: 'JV D Boys', time: '1:45 PM', laps: '2', distance: '11.8 mi', staging: '1:30 PM', pullTime: '2:30 PM', plates: '8800–8999', maxPull: '45 min' },
@@ -165,7 +189,10 @@ const race4HsWaves = [
     {
         wave: 'Wave 6 - HS (Single Lap)',
         arrivalTime: '12:05 – 12:35 PM',
-        meetingTime: '1:35 PM',
+        meetingTime: '1:35 – 1:45 PM',
+        warmupTime: '1:45 – 2:15 PM',
+        stageTime: '2:20 PM',
+        startTime: '2:35 PM',
         categories: [
             { category: 'JVE Boys', time: '2:35 PM', laps: '1', distance: '5.9 mi', staging: '2:20 PM', pullTime: 'N/A', plates: '10600–10749', maxPull: 'N/A' },
             { category: 'Fresh C Boys', time: '2:38 PM', laps: '1', distance: '5.9 mi', staging: '2:23 PM', pullTime: 'N/A', plates: '30400–30499', maxPull: 'N/A' },
@@ -296,16 +323,17 @@ export default function WaveScheduleTabs() {
                         </div>
 
                         <div style={{ overflowX: 'auto' }}>
-                            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '720px' }}>
+                            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '820px' }}>
                                 <thead>
                                     <tr style={{ borderBottom: '2px solid var(--border-color)', color: 'rgb(var(--color-primary))' }}>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Wave</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Category</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Min. Arrival</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Wave Meeting</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Stage Time</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Start Time</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Laps</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Category</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Min. Arrival</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave Mtg (10m)</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Warm-Up (30m)</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Stage Time</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Start Time</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Laps</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -332,13 +360,16 @@ export default function WaveScheduleTabs() {
                                                     </td>
                                                     {idx === 0 && (
                                                         <>
-                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.825rem' }}>
                                                                 {w.arrivalTime}
                                                             </td>
-                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.9rem' }}>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
                                                                 {w.meetingTime}
                                                             </td>
-                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: '#059669', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
+                                                                {w.warmupTime}
+                                                            </td>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
                                                                 {w.stageTime}
                                                             </td>
                                                         </>
@@ -390,16 +421,17 @@ export default function WaveScheduleTabs() {
                         </p>
 
                         <div style={{ overflowX: 'auto' }}>
-                            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '720px' }}>
+                            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '820px' }}>
                                 <thead>
                                     <tr style={{ borderBottom: '2px solid var(--border-color)', color: 'rgb(140, 120, 0)' }}>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Wave</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Category</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Min. Arrival</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Wave Meeting</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Stage Time</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Start Time</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Laps</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Category</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Min. Arrival</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave Mtg (10m)</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Warm-Up (30m)</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Stage Time</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Start Time</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Laps</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -423,13 +455,16 @@ export default function WaveScheduleTabs() {
                                                     <td style={{ padding: '0.75rem', fontWeight: 600 }}>{cat.category}</td>
                                                     {idx === 0 && (
                                                         <>
-                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.825rem' }}>
                                                                 {w.arrivalTime}
                                                             </td>
-                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.9rem' }}>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
                                                                 {w.meetingTime}
                                                             </td>
-                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: '#059669', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
+                                                                {w.warmupTime}
+                                                            </td>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: '#2563eb', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
                                                                 {w.stageTime}
                                                             </td>
                                                         </>
@@ -517,16 +552,17 @@ export default function WaveScheduleTabs() {
                     {/* Race 4 Schedule Table */}
                     <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #3b82f6' }}>
                         <div style={{ overflowX: 'auto' }}>
-                            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '720px' }}>
+                            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '820px' }}>
                                 <thead>
                                     <tr style={{ borderBottom: '2px solid var(--border-color)', color: '#1d4ed8' }}>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Wave</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Category</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Min. Arrival</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Wave Meeting</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Stage Time</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Start Time</th>
-                                        <th style={{ padding: '0.75rem', fontSize: '0.8rem', textTransform: 'uppercase' }}>Laps</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Category</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Min. Arrival</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave Mtg (10m)</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Warm-Up (30m)</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Stage Time</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Start Time</th>
+                                        <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Laps</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -553,11 +589,14 @@ export default function WaveScheduleTabs() {
                                                     </td>
                                                     {idx === 0 && (
                                                         <>
-                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.875rem' }}>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.825rem' }}>
                                                                 {w.arrivalTime}
                                                             </td>
-                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.9rem' }}>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
                                                                 {w.meetingTime}
+                                                            </td>
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: '#059669', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
+                                                                {w.warmupTime}
                                                             </td>
                                                         </>
                                                     )}
