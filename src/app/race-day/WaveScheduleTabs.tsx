@@ -277,10 +277,6 @@ export default function WaveScheduleTabs() {
                                 <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(120,100,0)', display: 'block' }}>Head Coach Mtg</span>
                                 <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(120,100,0)' }}>8:00 AM</span>
                             </div>
-                            <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.2)' }}>
-                                <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#dc2626', display: 'block' }}>Course Closes</span>
-                                <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#dc2626' }}>8:30 AM</span>
-                            </div>
                             <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87,43,158,0.12)', border: '1px solid rgba(87,43,158,0.25)' }}>
                                 <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', color: 'rgb(var(--color-primary))', display: 'block' }}>HS Races Start</span>
                                 <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(var(--color-primary))' }}>8:00 AM</span>
@@ -491,10 +487,6 @@ export default function WaveScheduleTabs() {
                         <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250,255,56,0.15)', border: '1px solid rgba(250,255,56,0.4)' }}>
                             <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(120,100,0)', display: 'block' }}>Head Coach Mtg</span>
                             <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(120,100,0)' }}>8:00 AM</span>
-                        </div>
-                        <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.2)' }}>
-                            <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#dc2626', display: 'block' }}>Course Closes</span>
-                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#dc2626' }}>8:30 AM</span>
                         </div>
                         <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87,43,158,0.1)', border: '1px solid rgba(87,43,158,0.2)' }}>
                             <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(var(--color-primary))', display: 'block' }}>National Anthem</span>
