@@ -73,7 +73,7 @@ export default function RaceDayCentral() {
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#db2777' }}>Step 2</span>
                         <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#be185d' }}>Pit Zone Check-In</p>
                         <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
-                            Check in at the <strong>Lehi check-in table in pit zone</strong> upon arrival &amp; get arm number.
+                            Check in at the <strong>Lehi check-in table in pit zone</strong> upon arrival and get staging number printed on your arm.
                         </p>
                     </div>
 
@@ -175,9 +175,10 @@ export default function RaceDayCentral() {
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                             <li><strong>Expect Venue Delays:</strong> With thousands of participants, traffic and parking delays take 30+ minutes. Plan extra time to park, unload bikes, and walk up to the Pit Zone.</li>
                             <li><strong>Check In Immediately:</strong> Report directly to the Lehi tent check-in table upon arrival so coaches know your rider is on site.</li>
-                            <li><strong>Arm Numbering:</strong> Every rider will get their race number written on their arm at check-in (required for staging call-ups).</li>
+                            <li><strong>Staging Numbering:</strong> Every rider will get their staging number printed on their arm at check-in (required for staging call-ups).</li>
                             <li><strong>Race Plates &amp; Bibs:</strong> Pick up your race plate and jersey bib at Beaver Mountain (first race) at the check-in table. Keep them in your car for the rest of the season! $10 replacement fee if lost.</li>
                             <li><strong>Bib Pinning:</strong> Bibs are pinned to a specific side of the jersey (announced the morning of the race).</li>
+                            <li><strong>MANDATORY HELMET RULE:</strong> Riders <strong>MUST ALWAYS WEAR a helmet</strong> whenever they are on a bike — otherwise the team faces severe penalties!</li>
                         </ul>
                     </div>
 
@@ -201,6 +202,7 @@ export default function RaceDayCentral() {
                             <span>🗺️</span> Pre-Ride Rules, Camping &amp; Carpooling
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                            <li><strong>Check TeamSnap for All Events:</strong> All pre-rides, camps, practice schedules, and team events are posted on TeamSnap. Always check TeamSnap for exact dates, times, locations, and updates!</li>
                             <li><strong>Weekend Pre-Ride:</strong> Official pre-rides take place the weekend before the race (or 2 weeks prior for Panguitch due to the Soldier Hollow UCI race).</li>
                             <li><strong>Friday Camping &amp; Night Ride:</strong> Families often camp out on Friday night before pre-ride weekend and do a fun night ride. <em>Must bring your own bike light!</em></li>
                             <li><strong>Saturday Carpooling:</strong> Riders can catch carpools Saturday morning departing from Lehi High School.</li>
@@ -228,10 +230,10 @@ export default function RaceDayCentral() {
                             <span>🏁</span> Staging, Warm-Up &amp; Finish Line Volunteers
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <li><strong>Wave Strategy Meeting:</strong> Coaches Jared &amp; Trevor conduct a wave meeting 1 hour before start time to cover course strategy and key tips.</li>
+                            <li><strong>Wave Strategy Meeting:</strong> Coaches will conduct a wave meeting 1 hour before start time to cover course strategy and key tips.</li>
                             <li><strong>Warm-Up:</strong> Ride leaders guide groups through warm-up efforts outside the Pit Zone.</li>
                             <li><strong>Staging &amp; Call-Ups:</strong> Line up 15 minutes prior. Top 10 called by name, followed by arm numbers. Must have handlebar race plate to enter chute.</li>
-                            <li><strong>Finish Line Area:</strong> The area past the finish line is strictly managed for racer safety.</li>
+                            <li><strong>Finish Line Volunteer Zone:</strong> The area past the finish line is strictly managed by finish line volunteers and coaches for racer safety.</li>
                             <li><strong>Finish Line Volunteers:</strong> A Finish Line Volunteer will "catch" each rider as they cross the finish line, check their condition, provide cold water and seating, and walk them out to parents.</li>
                         </ul>
                     </div>
@@ -266,12 +268,12 @@ export default function RaceDayCentral() {
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--spacing-md)' }}>
                         
-                        {/* Night Before Prep */}
+                        {/* Day Before Prep */}
                         <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🎒</div>
-                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Get Ready the Night Before</h3>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Get Ready the Day Before</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Pack your kit, bibs, helmet, shoes, socks, water bottles, snacks, camp chairs, and sunscreen into your car the evening before. Morning departures become effortless.
+                                Pack your kit, bibs, helmet, shoes, socks, water bottles, snacks, camp chairs, and sunscreen into your car the day before. Morning departures become effortless.
                             </p>
                         </div>
 
@@ -280,7 +282,7 @@ export default function RaceDayCentral() {
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🚲</div>
                             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Bike 100% Ready to Roll</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Check sealant, inflate tires, clean &amp; lube drivetrain, check brakes, and zip-tie number plates the night before. Avoid race morning mechanical stress!
+                                Check sealant, inflate tires, clean &amp; lube drivetrain, check brakes, and zip-tie number plates the day before. Avoid race morning mechanical stress!
                             </p>
                         </div>
 
@@ -298,7 +300,7 @@ export default function RaceDayCentral() {
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🍎</div>
                             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Food, Snacks &amp; Cooler Setup</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Pack a cooler with iced water, electrolyte drink mixes, bananas, stroopwafels, energy chews, and high-protein post-race snacks (chocolate milk, turkey wraps). Bring plenty of food for spectating family members too!
+                                Pack a cooler with drinks, food, and plenty of snacks. Bring plenty of food for spectating family members too!
                             </p>
                         </div>
 
@@ -307,7 +309,7 @@ export default function RaceDayCentral() {
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🔔</div>
                             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Finding Great Viewing Spots</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Scope out course maps for high-elevation switchbacks, technical climbs, or serpentine turns where you can watch racers multiple times per lap. Bring cowbells, wear purple/gold, and <strong>never cross active race lines</strong>!
+                                Scope out course maps for high-elevation switchbacks, technical climbs, or serpentine turns where you can watch racers multiple times per lap. Bring cowbells, wear purple or Lehi team gear, and <strong>never cross active race lines</strong>!
                             </p>
                         </div>
 

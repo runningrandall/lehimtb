@@ -271,11 +271,11 @@ export default function WaveScheduleTabs() {
                         }}>
                             <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)' }}>
                                 <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#2563eb', display: 'block' }}>Pitzone Opens</span>
-                                <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>7:15 AM</span>
+                                <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>6:30 AM</span>
                             </div>
                             <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250,255,56,0.15)', border: '1px solid rgba(250,255,56,0.4)' }}>
                                 <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(120,100,0)', display: 'block' }}>Head Coach Mtg</span>
-                                <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(120,100,0)' }}>8:00 AM</span>
+                                <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(120,100,0)' }}>7:00 AM</span>
                             </div>
                             <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87,43,158,0.12)', border: '1px solid rgba(87,43,158,0.25)' }}>
                                 <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', color: 'rgb(var(--color-primary))', display: 'block' }}>HS Races Start</span>
@@ -465,9 +465,9 @@ export default function WaveScheduleTabs() {
                     }}>
                         <span style={{ fontSize: '1.75rem' }}>🛑</span>
                         <div>
-                            <span style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#dc2626', display: 'block' }}>High School Only Event (Grades 9–12)</span>
+                            <span style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#dc2626', display: 'block' }}>High School Event &amp; Potential JD Makeup Race</span>
                             <p style={{ margin: '0.1rem 0 0 0', fontSize: '0.925rem', color: 'rgb(var(--text-main))', lineHeight: 1.5 }}>
-                                <strong>Herriman (Race 4), the Utah State Championship, and NICA Western Regionals are HIGH SCHOOL ONLY events.</strong> Junior Development (JD - Grades 7–8) finishes their race season at Race 3 (Panguitch) and does <strong>NOT</strong> race at Herriman, State, or Western Regionals.
+                                <strong>Herriman (Race 4) is a Regional Championship for High School (Grades 9–12).</strong> Junior Development (JD - Grades 7–8) typically finishes their regular season at Race 3 (Panguitch), but Race 4 may be used as a reserve/makeup race for JD if needed.
                             </p>
                         </div>
                     </div>
@@ -482,11 +482,11 @@ export default function WaveScheduleTabs() {
                     }}>
                         <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)' }}>
                             <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#2563eb', display: 'block' }}>Pitzone Opens</span>
-                            <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>7:15 AM</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>6:30 AM</span>
                         </div>
                         <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250,255,56,0.15)', border: '1px solid rgba(250,255,56,0.4)' }}>
                             <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(120,100,0)', display: 'block' }}>Head Coach Mtg</span>
-                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(120,100,0)' }}>8:00 AM</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(120,100,0)' }}>7:00 AM</span>
                         </div>
                         <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87,43,158,0.1)', border: '1px solid rgba(87,43,158,0.2)' }}>
                             <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(var(--color-primary))', display: 'block' }}>National Anthem</span>
