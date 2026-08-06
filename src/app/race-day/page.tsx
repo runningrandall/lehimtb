@@ -222,17 +222,17 @@ export default function RaceDayCentral() {
                         </ul>
                     </div>
 
-                    {/* Staging, Warm-Up & Finish Line Catchers */}
+                    {/* Staging, Warm-Up & Finish Line Volunteers */}
                     <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #10b981' }}>
                         <h3 style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                            <span>🏁</span> Staging, Warm-Up &amp; Coach Catchers
+                            <span>🏁</span> Staging, Warm-Up &amp; Finish Line Volunteers
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                             <li><strong>Wave Strategy Meeting:</strong> Coaches Jared &amp; Trevor conduct a wave meeting 1 hour before start time to cover course strategy and key tips.</li>
                             <li><strong>Warm-Up:</strong> Ride leaders guide groups through warm-up efforts outside the Pit Zone.</li>
                             <li><strong>Staging &amp; Call-Ups:</strong> Line up 15 minutes prior. Top 10 called by name, followed by arm numbers. Must have handlebar race plate to enter chute.</li>
-                            <li><strong>Finish Line Coach Zone:</strong> The area past the finish line is strictly reserved for coaches for safety reasons.</li>
-                            <li><strong>JD Coach Catchers:</strong> A JD coach will "catch" each rider as they cross the finish line, check their condition, provide cold water and seating, and walk them out to parents.</li>
+                            <li><strong>Finish Line Area:</strong> The area past the finish line is strictly managed for racer safety.</li>
+                            <li><strong>Finish Line Volunteers:</strong> A Finish Line Volunteer will "catch" each rider as they cross the finish line, check their condition, provide cold water and seating, and walk them out to parents.</li>
                         </ul>
                     </div>
 
