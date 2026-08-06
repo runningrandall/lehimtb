@@ -137,7 +137,7 @@ export default function RaceDayCentral() {
                             Important Notice: Arrival Times &amp; Full-Day Team Support
                         </h3>
                         <p style={{ fontSize: '0.95rem', lineHeight: 1.6, color: 'rgb(var(--text-main))', margin: 0 }}>
-                            <strong>Arrival Time is a MINIMUM arrival requirement based on your specific wave schedule.</strong> (For Junior Development afternoon waves, check-in starts at 12:00 PM and riders must be fully checked in and prepped by 1:00 PM). We expect all riders and families to arrive on time and stay at the venue to cheer on their teammates across every wave. There is no bench on our team — having a loud Lehi cheer squad out on course for every wave makes an incredible difference!
+                            <strong>Arrival Time is a MINIMUM arrival requirement based on your specific wave schedule.</strong> We expect all riders and families to arrive on time and stay at the venue to cheer on their teammates across every wave. There is no bench on our team — having a loud Lehi cheer squad out on course for every wave makes an incredible difference!
                         </p>
                     </div>
                 </div>

@@ -17,7 +17,7 @@ const races1To3HsWaves = [
     },
     {
         wave: 'Wave 2 - HS',
-        arrivalTime: '6:00 – 7:00 AM',
+        arrivalTime: '6:30 – 7:00 AM',
         meetingTime: '7:55 AM',
         stageTime: '8:40 AM',
         startTime: '8:55 AM',
@@ -382,7 +382,7 @@ export default function WaveScheduleTabs() {
                         </div>
 
                         <p className="text-muted" style={{ fontSize: '0.85rem', marginBottom: '1rem', fontStyle: 'italic' }}>
-                            *Note: No 1/2 laps for Advanced Jr Devos. All JD categories ride 1 full lap. JD athletes race in Races 1–3 only.
+                            *Note: No 1/2 laps for Advanced Jr Devos. All JD categories ride 1 full lap. JD athletes race in Races 1–3 only unless Race 4 is needed for a makeup race.
                         </p>
 
                         <div style={{ overflowX: 'auto' }}>
