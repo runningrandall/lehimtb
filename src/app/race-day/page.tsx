@@ -352,6 +352,7 @@ export default function RaceDayCentral() {
                             <h3 style={{ margin: 0, fontSize: '1.25rem' }}>Rider Checklist</h3>
                         </div>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem' }}>
+                            <li>🏷️ <strong>Label All Gear (Put Names on Everything!):</strong> Use a permanent marker on helmet, shoes, gloves, sunglasses, water bottles, tools, and jackets!</li>
                             <li>✅ <strong>Team Kit:</strong> Lehi Jersey &amp; Bibs/Shorts</li>
                             <li>✅ <strong>Bike &amp; Gear:</strong> Tuned bike, helmet (mandatory), shoes, gloves, eyewear</li>
                             <li>✅ <strong>Hydration &amp; Sun:</strong> Water bottles, electrolyte mix &amp; sunscreen</li>
@@ -469,7 +470,7 @@ export default function RaceDayCentral() {
                             <li><strong>Schedule Shop Service Early:</strong> Have your bike tuned up by a local bike shop (Trek, Ari, or Utah Mountain Biking) <strong>a week before race day</strong>. Never perform major repairs or adjustments on race morning!</li>
                             <li><strong>Pre-Ride Safety Check:</strong> Check tire pressure, lube drivetrain, top off tubeless sealant, and inspect brake pads before leaving home.</li>
                             <li><strong>Emergency Repair Kit:</strong> Riders should carry spare tubes, tire levers, multi-tool, and mini pump/CO2 injector.</li>
-                            <li><strong>Label All Gear:</strong> Write your name on your helmet, sunglasses, gloves, shoes, water bottles, and jackets!</li>
+                            <li><strong>LABEL ALL GEAR (PUT NAMES ON IT!):</strong> Put your athlete's first and last name in permanent marker on helmets, sunglasses, gloves, shoes, water bottles, tire pumps, and jackets! In a busy pit zone with hundreds of athletes and identical team kits, labeled gear always finds its way home.</li>
                             <li><strong>Cold Weather Layers:</strong> Mountain venues can be chilly in the morning — bring warm coats and layers, but don't race in bulky heavy coats.</li>
                         </ul>
                     </div>
@@ -549,9 +550,9 @@ export default function RaceDayCentral() {
                         {/* Day Before Prep */}
                         <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🎒</div>
-                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Get Ready the Day Before</h3>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Get Ready &amp; Put Names on Gear!</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Pack your kit, bibs, helmet, shoes, socks, water bottles, snacks, camp chairs, and sunscreen into your car the day before. Morning departures become effortless.
+                                Pack your kit, bibs, helmet, shoes, socks, water bottles, snacks, camp chairs, and sunscreen the day before. <strong>Make sure your rider's name is written clearly on every piece of gear</strong> so nothing gets lost in the pit zone!
                             </p>
                         </div>
 
