@@ -4,12 +4,14 @@ import WaveScheduleTabs from './WaveScheduleTabs';
 
 export const metadata: Metadata = {
     title: 'Race Day Central & Wave Schedule | Lehi MTB Hub',
-    description: 'Complete 2026 race day guide, wave schedule with arrival times, wave meeting times, stage times, start times, bike prep checklist, pit zone etiquette, and Utah MTB resources.',
+    description: 'Complete 2026 race day guide, wave schedules, Beaver Mountain race details, rider rosters, arrival times, food & volunteering info, packing checklists, and Utah MTB resources.',
 };
 
 const helpfulLinks = [
     { name: 'What Category Am I In? (CPT Table)', url: 'https://my.raceresult.com/411620/' },
+    { name: 'League Race Day Flyer (Canva)', url: 'https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1' },
     { name: 'Race 1: Beaver Mountain Details', url: 'https://utahmtb.org/events/region-5-race-1/' },
+    { name: 'Beaver Mountain Ski Resort Map', url: 'https://maps.app.goo.gl/LKMnbNCQzTJquKsi8' },
     { name: 'Race 2: Richfield Details', url: 'https://utahmtb.org/events/region-5-race-2/' },
     { name: 'Race 3: Panguitch Details', url: 'https://utahmtb.org/events/region-5-race-3/' },
     { name: 'Race 4: Region 5 Championship (Herriman)', url: 'https://utahmtb.org/events/region-5-race-4/' },
@@ -35,7 +37,7 @@ export default function RaceDayCentral() {
                 <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🏆</div>
                 <h1 style={{ marginBottom: '0.75rem', fontSize: 'clamp(2.2rem, 5vw, 3.5rem)' }}>Race Day Central</h1>
                 <p style={{ fontSize: '1.2rem', opacity: 0.95, maxWidth: '750px', margin: '0 auto', lineHeight: 1.6 }}>
-                    Everything you need for race weekend: 2026 Wave Schedules, arrival times, wave meeting times, stage times, bike prep rules, pit zone etiquette, and Utah MTB resources.
+                    Everything you need for race weekend: 2026 Wave Schedules, arrival times, wave meeting times, bike prep rules, food &amp; volunteering, packing checklists, and venue guides.
                 </p>
                 <div style={{ marginTop: '1.25rem', display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                     <a
@@ -47,9 +49,133 @@ export default function RaceDayCentral() {
                     >
                         What Category Am I In? (CPT Table) ↗
                     </a>
-                    <span style={{ fontSize: '0.875rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', background: 'rgba(255,255,255,0.2)', padding: '0.65rem 1.25rem', borderRadius: 'var(--radius-sm)' }}>
-                        2026 Region 5 Wave Schedule
-                    </span>
+                    <a
+                        href="https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            fontSize: '0.875rem',
+                            fontWeight: 700,
+                            background: 'rgba(255,255,255,0.2)',
+                            color: 'white',
+                            padding: '0.65rem 1.25rem',
+                            borderRadius: 'var(--radius-sm)',
+                            textDecoration: 'none',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.4rem'
+                        }}
+                    >
+                        📄 League Race Day Flyer ↗
+                    </a>
+                </div>
+            </div>
+
+            {/* Featured Next Race Banner (Beaver Mountain) */}
+            <div className="glass-panel" style={{
+                padding: 'var(--spacing-lg)',
+                marginBottom: 'var(--spacing-xl)',
+                borderTop: '5px solid #2563eb',
+                background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(87, 43, 158, 0.05))'
+            }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', marginBottom: '0.75rem' }}>
+                    <div>
+                        <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#2563eb', background: 'rgba(37,99,235,0.1)', padding: '0.2rem 0.6rem', borderRadius: '4px' }}>
+                            REGION 5 · RACE 1
+                        </span>
+                        <h2 style={{ fontSize: '1.6rem', margin: '0.4rem 0 0.2rem 0' }}>Saturday, August 22, 2026 · Beaver Mountain Ski Resort</h2>
+                        <p style={{ margin: 0, fontWeight: 700, color: '#dc2626', fontSize: '0.95rem' }}>
+                            📍 Location Notice: Beaver Mountain is near Logan in Logan Canyon close to Bear Lake — (Note: NOT Beaver City in southern Utah!).
+                        </p>
+                    </div>
+                    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                        <a
+                            href="https://maps.app.goo.gl/LKMnbNCQzTJquKsi8"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-silver"
+                            style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
+                        >
+                            🗺️ Google Maps Directions ↗
+                        </a>
+                        <a
+                            href="https://utahmtb.org/events/region-5-race-1/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-silver"
+                            style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
+                        >
+                            🌐 Utah MTB Event Page ↗
+                        </a>
+                    </div>
+                </div>
+                <p style={{ fontSize: '0.95rem', lineHeight: 1.6, color: 'rgb(var(--text-muted))', margin: 0 }}>
+                    Welcome to a true alpine race course! Prepare to hike around a beautiful ski resort venue. Families are invited, and High School riders are highly encouraged to stay and cheer for their teammates all day long.
+                </p>
+            </div>
+
+            {/* Critical Race Rules Banner */}
+            <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                gap: '1rem',
+                marginBottom: 'var(--spacing-xl)'
+            }}>
+                <div style={{
+                    padding: '1rem 1.25rem',
+                    borderRadius: 'var(--radius-md)',
+                    backgroundColor: 'rgba(239, 68, 68, 0.08)',
+                    border: '2px solid #ef4444',
+                    display: 'flex',
+                    gap: '0.75rem',
+                    alignItems: 'center'
+                }}>
+                    <span style={{ fontSize: '1.75rem' }}>🚫</span>
+                    <div>
+                        <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#dc2626', display: 'block' }}>Strict League Rule</span>
+                        <strong style={{ fontSize: '1rem', color: '#dc2626' }}>NO DOGS Allowed at Any Races</strong>
+                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: '0.15rem 0 0 0', lineHeight: 1.4 }}>
+                            Per Utah League policy, dogs are strictly prohibited at all race venues and pit zones for rider safety.
+                        </p>
+                    </div>
+                </div>
+
+                <div style={{
+                    padding: '1rem 1.25rem',
+                    borderRadius: 'var(--radius-md)',
+                    backgroundColor: 'rgba(245, 158, 11, 0.08)',
+                    border: '2px solid #f59e0b',
+                    display: 'flex',
+                    gap: '0.75rem',
+                    alignItems: 'center'
+                }}>
+                    <span style={{ fontSize: '1.75rem' }}>⏱️</span>
+                    <div>
+                        <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#b45309', display: 'block' }}>Safety Cut-Off</span>
+                        <strong style={{ fontSize: '1rem', color: '#b45309' }}>45-Minute Lap 1 Cut-Off</strong>
+                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: '0.15rem 0 0 0', lineHeight: 1.4 }}>
+                            Riders must finish Lap 1 in under 45 minutes, or they will be pulled from course for rider safety.
+                        </p>
+                    </div>
+                </div>
+
+                <div style={{
+                    padding: '1rem 1.25rem',
+                    borderRadius: 'var(--radius-md)',
+                    backgroundColor: 'rgba(59, 130, 246, 0.08)',
+                    border: '2px solid #3b82f6',
+                    display: 'flex',
+                    gap: '0.75rem',
+                    alignItems: 'center'
+                }}>
+                    <span style={{ fontSize: '1.75rem' }}>⚡</span>
+                    <div>
+                        <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#2563eb', display: 'block' }}>New for 2026</span>
+                        <strong style={{ fontSize: '1rem', color: '#1d4ed8' }}>Morning Start (8:00 AM)</strong>
+                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: '0.15rem 0 0 0', lineHeight: 1.4 }}>
+                            Races now start at 8:00 AM. HS races may start earlier or condense if afternoon weather rolls in!
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -63,51 +189,51 @@ export default function RaceDayCentral() {
                 <h2 style={{ fontSize: '1.4rem', color: 'rgb(var(--color-primary))', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span>⏰</span> Race Day Schedule Timeline Sequence
                 </h2>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '0.875rem', marginTop: '0.75rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '0.75rem', marginTop: '0.75rem' }}>
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87, 43, 158, 0.08)', border: '1px solid rgba(87, 43, 158, 0.15)' }}>
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(var(--color-primary))' }}>Step 1</span>
-                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0' }}>Arrival Time</p>
-                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
-                            Arrive at venue <strong>1 to 1.5 hrs before</strong> your Wave Meeting to park &amp; head up.
+                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0' }}>Arrival Time</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
+                            Wave 1 by <strong>6:45 AM</strong>, Wave 2 by <strong>7:30 AM</strong>, Waves 3–6 by <strong>7:45 AM</strong>.
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(236, 72, 153, 0.1)', border: '1px solid rgba(236, 72, 153, 0.25)' }}>
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#db2777' }}>Step 2</span>
-                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#be185d' }}>Pit Zone Check-In</p>
-                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
+                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0', color: '#be185d' }}>Pit Zone Check-In</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
                             Check in at the <strong>registration table in the pit zone</strong> immediately upon arrival.
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(180, 83, 9, 0.1)', border: '1px solid rgba(180, 83, 9, 0.25)' }}>
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#b45309' }}>Step 3</span>
-                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#b45309' }}>Wave Meeting (10 min)</p>
-                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
-                            Mandatory team strategy briefing at Pit Zone <strong>1 hour before</strong> start time (lasts 10 mins).
+                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0', color: '#b45309' }}>Wave Meeting (10m)</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
+                            Mandatory team briefing at Pit Zone <strong>1 hour before</strong> start time (lasts 10 mins).
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.25)' }}>
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#059669' }}>Step 4</span>
-                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#047857' }}>Warm-Up (30 min)</p>
-                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
+                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0', color: '#047857' }}>Warm-Up (30m)</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
                             Structured <strong>30-minute warm-up ride</strong> to elevate heart rate and get legs ready.
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.2)' }}>
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#2563eb' }}>Step 5</span>
-                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: '#1d4ed8' }}>Stage Time</p>
-                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
+                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0', color: '#1d4ed8' }}>Stage Time</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
                             Report to staging <strong>15 minutes before</strong> start time for call-ups and line-up.
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87, 43, 158, 0.1)', border: '1px solid rgba(87, 43, 158, 0.2)' }}>
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(var(--color-primary))' }}>Step 6</span>
-                        <p style={{ fontWeight: 700, fontSize: '1rem', margin: '0.2rem 0', color: 'rgb(var(--color-primary))' }}>Start Time</p>
-                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: 0, lineHeight: 1.4 }}>
+                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0', color: 'rgb(var(--color-primary))' }}>Start Time</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
                             Official gun time for your category wave! Race hard, stay safe, and have fun.
                         </p>
                     </div>
@@ -126,7 +252,7 @@ export default function RaceDayCentral() {
             {/* Wave Schedule Section */}
             <section style={{ marginBottom: 'var(--spacing-xl)' }}>
                 <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
-                    <h2>2026 Official Wave Schedule</h2>
+                    <h2>2026 Official Wave Schedule &amp; Rosters</h2>
                     <p className="text-muted">High School &amp; Junior Development timing: Arrival Time → Wave Meeting → Stage Time → Start Time.</p>
                 </div>
 
@@ -157,10 +283,151 @@ export default function RaceDayCentral() {
                 <WaveScheduleTabs />
             </section>
 
-            {/* What to Expect & Preparation Guide */}
+            {/* Food, Hospitality & Volunteer Section */}
             <section style={{ marginBottom: 'var(--spacing-xl)' }}>
                 <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
-                    <h2>Essential Race Preparation &amp; Rules</h2>
+                    <h2>Food, Hospitality &amp; Volunteering</h2>
+                    <p className="text-muted">How we fuel our riders, support the team, and make race day run smoothly.</p>
+                </div>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'var(--spacing-lg)' }}>
+
+                    {/* Food & Hospitality Panel */}
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #10b981' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                            <span style={{ fontSize: '1.5rem' }}>🍎</span>
+                            <h3 style={{ margin: 0, fontSize: '1.25rem' }}>Team Food &amp; Snacks (New for 2026)</h3>
+                        </div>
+                        <p style={{ fontSize: '0.9rem', color: 'rgb(var(--color-primary))', fontWeight: 700, margin: '0 0 0.75rem 0' }}>
+                            ✨ New for 2026: The team is purchasing all food and snacks so parents are free to volunteer and cheer!
+                        </p>
+                        <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                            <li><strong>Riders &amp; Volunteers:</strong> Snacks are available all day. Lunch is served from <strong>10:00 AM – 2:00 PM</strong> at the team tent.</li>
+                            <li><strong>Families &amp; Spectators:</strong> Please bring your own food, drinks, and snacks, as race days are long!</li>
+                            <li><strong>Leftovers Policy:</strong> After <strong>2:00 PM</strong>, once all riders have eaten, anyone (families/siblings) is welcome to grab leftover lunch — just check with a volunteer first!</li>
+                        </ul>
+                    </div>
+
+                    {/* Volunteering Panel */}
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid rgb(var(--color-primary))' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                            <span style={{ fontSize: '1.5rem' }}>🤝</span>
+                            <h3 style={{ margin: 0, fontSize: '1.25rem' }}>Volunteer Opportunities</h3>
+                        </div>
+                        <p style={{ fontSize: '0.9rem', color: 'rgb(var(--text-muted))', margin: '0 0 0.75rem 0' }}>
+                            We need your help to make race day happen! Anyone who volunteers for the day (League or Team) is welcome to eat lunch with the team.
+                        </p>
+                        <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                            <li>
+                                <strong>League Volunteers (Mandatory):</strong> Every family must volunteer with the League at least once per season, per rider. Lehi MTB must provide <strong>26 volunteers</strong> for each race. <a href="https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Sign up on the Flyer ↗</a>
+                            </li>
+                            <li>
+                                <strong>Team Volunteers:</strong> Feed Zone (hydration handoff), Tent/Food, Staging &amp; Pitzone. Look for the Sign-Up Genius link sent the week prior.
+                            </li>
+                            <li>
+                                <strong>Pitzone Setup:</strong> Friday, <strong>4:00 PM – 5:00 PM</strong> (High School Team).
+                            </li>
+                            <li>
+                                <strong>Pitzone Takedown:</strong> ~<strong>4:00 PM</strong> after all races start (Junior Development Team).
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            {/* What to Bring Checklist Section */}
+            <section style={{ marginBottom: 'var(--spacing-xl)' }}>
+                <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
+                    <h2>What to Bring: Race Day Packing Checklists</h2>
+                    <p className="text-muted">Double-check your gear bag and vehicle the night before.</p>
+                </div>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'var(--spacing-lg)' }}>
+
+                    {/* Rider Checklist */}
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid rgb(var(--color-primary))' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                            <span style={{ fontSize: '1.5rem' }}>🚴</span>
+                            <h3 style={{ margin: 0, fontSize: '1.25rem' }}>Rider Checklist</h3>
+                        </div>
+                        <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem' }}>
+                            <li>✅ <strong>Team Kit:</strong> Lehi Jersey &amp; Bibs/Shorts</li>
+                            <li>✅ <strong>Bike &amp; Gear:</strong> Tuned bike, helmet (mandatory), shoes, gloves, eyewear</li>
+                            <li>✅ <strong>Hydration &amp; Sun:</strong> Water bottles, electrolyte mix &amp; sunscreen</li>
+                            <li>✅ <strong>Repair Kit:</strong> Mounted kit with tube/bacon strips, CO2/mini-pump, multi-tool</li>
+                            <li>✅ <strong>Race Plates:</strong> Put on handlebars early! <em>($10 replacement fee for lost plates)</em></li>
+                            <li>✅ <strong>Post-Race Clothes:</strong> Warm change of weather-appropriate clothes &amp; socks</li>
+                            <li>✅ <strong>Camp Chair:</strong> For relaxing in pit zone between cheering sessions</li>
+                        </ul>
+                    </div>
+
+                    {/* Family Checklist */}
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #f59e0b' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                            <span style={{ fontSize: '1.5rem' }}>👨‍👩‍👧‍👦</span>
+                            <h3 style={{ margin: 0, fontSize: '1.25rem' }}>Family &amp; Spectator Checklist</h3>
+                        </div>
+                        <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem' }}>
+                            <li>✅ <strong>Shade &amp; Seating:</strong> Shade tent, pop-up canopy, or umbrellas + camp chairs</li>
+                            <li>✅ <strong>Food &amp; Drinks:</strong> Family cooler with water, electrolyte drinks, lunch, and snacks</li>
+                            <li>✅ <strong>Sun &amp; Dust Prep:</strong> SPF 30+ sunscreen, sunglasses, hats, dust buffs/masks</li>
+                            <li>✅ <strong>Walking Footwear:</strong> Sturdy trail walking shoes for hiking ski hill slopes</li>
+                            <li>✅ <strong>Layered Clothing:</strong> Warm jackets for morning chill; cool layers for midday</li>
+                            <li>✅ <strong>Viewing Tools:</strong> Cameras, phone battery power banks, binoculars</li>
+                            <li>✅ <strong>Cheer Gear:</strong> Cowbells, noisemakers, purple/gold gear, and loud cheering voices!</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            {/* Media, Results & Looking Ahead */}
+            <section style={{ marginBottom: 'var(--spacing-xl)' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--spacing-lg)' }}>
+
+                    {/* Media & Photos */}
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #8b5cf6' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                            <span style={{ fontSize: '1.5rem' }}>📸</span>
+                            <h3 style={{ margin: 0, fontSize: '1.2rem' }}>Race Photos &amp; Media</h3>
+                        </div>
+                        <p style={{ fontSize: '0.875rem', lineHeight: 1.6, color: 'rgb(var(--text-muted))', margin: 0 }}>
+                            Please upload your race photos to our shared Google album right after the race (link sent via TeamSnap). A huge thank you to our volunteer photographers, <strong>Ethan Adams</strong> and <strong>Wells Holmes</strong>!
+                        </p>
+                    </div>
+
+                    {/* Results & Podiums */}
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #10b981' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                            <span style={{ fontSize: '1.5rem' }}>🏅</span>
+                            <h3 style={{ margin: 0, fontSize: '1.2rem' }}>Results &amp; Podiums (2:45 PM)</h3>
+                        </div>
+                        <p style={{ fontSize: '0.875rem', lineHeight: 1.6, color: 'rgb(var(--text-muted))', margin: 0 }}>
+                            All results are posted live via a link on TeamSnap prior to the first race. Physical printouts will also be posted near the finish line. High School podiums take place at <strong>2:45 PM</strong>.
+                        </p>
+                    </div>
+
+                    {/* Looking Ahead */}
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #ec4899' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                            <span style={{ fontSize: '1.5rem' }}>🗓️</span>
+                            <h3 style={{ margin: 0, fontSize: '1.2rem' }}>Looking Ahead</h3>
+                        </div>
+                        <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.6, margin: 0, fontSize: '0.875rem', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                            <li><strong>State Championship:</strong> Oct 23–24 in St. George (2-day event). Details at <a href="http://www.utahmtb.org/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 600 }}>utahmtb.org ↗</a></li>
+                            <li><strong>Year-End Awards:</strong> Tentatively scheduled for <strong>November 3</strong>. Watch TeamSnap for updates!</li>
+                            <li><strong>Questions?</strong> Reach out directly to coaches Steve, Randall, Aaron, or Andre.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            {/* Essential Race Preparation & Rules */}
+            <section style={{ marginBottom: 'var(--spacing-xl)' }}>
+                <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
+                    <h2>Race Day Guidelines &amp; Pit Etiquette</h2>
                     <p className="text-muted">Guidance for riders, parents, bike maintenance, pit zone etiquette, and course pre-riding.</p>
                 </div>
 
@@ -172,8 +439,8 @@ export default function RaceDayCentral() {
                             <span>🚲</span> Bike Maintenance &amp; Equipment
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <li><strong>Team Tools &amp; Pumps:</strong> The team will have tools and floor pumps available at the pit zone for last-minute adjustments, but riders should always have their own emergency repair kit (spare tube, tire levers, multi-tool, mini pump/CO2) ready on their bike or in their gear bag.</li>
-                            <li><strong>Advance Maintenance Required:</strong> Riders and parents must ensure tubeless sealant is topped off, drivetrain is cleaned &amp; lubed, and brakes are in proper working order — <strong>ideally a week before race day</strong>, or at minimum the night before.</li>
+                            <li><strong>Team Tools &amp; Pumps:</strong> Tools and floor pumps are available at the pit zone for last-minute adjustments, but riders should always have their own emergency repair kit (spare tube, tire levers, multi-tool, mini pump/CO2) ready on their bike.</li>
+                            <li><strong>Advance Maintenance Required:</strong> Riders and parents must ensure tubeless sealant is topped off, drivetrain is cleaned &amp; lubed, and brakes are in proper working order — <strong>ideally a week before race day</strong>.</li>
                             <li><em>Avoid attempting to repair or tune a bike on race day — get all mechanical service done well in advance!</em></li>
                             <li><strong>Race Plate:</strong> Securely zip-tie your number plate to handlebars. Do <em>not</em> bend, fold, or cut the barcode/timing chip.</li>
                         </ul>
@@ -199,7 +466,7 @@ export default function RaceDayCentral() {
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                             <li><strong>Drop-Off &amp; Say Hello:</strong> Families are welcome to walk into the pit zone to drop off riders, say hello, and check in.</li>
-                            <li><strong>Keep Pit Zone Uncrowded:</strong> Please do not stay hanging out in the rider pit zone area for extended periods unless you are actively volunteering. This keeps the zone focused and uncrowded for athletes and coaches.</li>
+                            <li><strong>Keep Pit Zone Uncrowded:</strong> Please do not hang out in the rider pit zone for extended periods unless you are actively volunteering. This keeps the zone focused for athletes and coaches.</li>
                             <li><strong>Get Out on Course:</strong> Parents are strongly encouraged to head out onto the course with cowbells to cheer!</li>
                         </ul>
                     </div>
@@ -290,7 +557,7 @@ export default function RaceDayCentral() {
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🍎</div>
                             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Food, Snacks &amp; Cooler Setup</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Pack a cooler with iced water, electrolyte drink mixes, bananas, stroopwafels, energy chews, and high-protein post-race snacks (chocolate milk, turkey wraps). Bring plenty of food for spectating family members too!
+                                Pack a cooler with iced water, electrolyte drink mixes, bananas, stroopwafels, energy chews, and high-protein post-race snacks. Bring plenty of food for spectating family members too!
                             </p>
                         </div>
 
