@@ -252,7 +252,7 @@ export default function RaceDayCentral() {
             {/* Wave Schedule Section */}
             <section style={{ marginBottom: 'var(--spacing-xl)' }}>
                 <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
-                    <h2>2026 Official Wave Schedule &amp; Rosters</h2>
+                    <h2>2026 Official Wave Schedule</h2>
                     <p className="text-muted">High School &amp; Junior Development timing: Arrival Time → Wave Meeting → Stage Time → Start Time.</p>
                 </div>
 

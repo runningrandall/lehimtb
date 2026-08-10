@@ -13,18 +13,8 @@ const races1To3HsWaves = [
         stageTime: '7:45 AM',
         startTime: '8:00 AM',
         categories: [
-            {
-                category: 'JVB Boys',
-                time: '8:00 AM',
-                laps: '2',
-                riders: ['Beckam Zobrist', 'Cole Henke', 'Cooper Nelson', 'Evan Gallant', 'Heath Ellis', 'Jaxon Howes', 'Jordan Petrie', 'Kaesen Bunker', 'Keagan Peterson', 'Keaton Riggs', 'Kipton Pilling', 'Miles Carter', 'Porter Luce', 'Seth Holmes', 'Tanner Gammon', 'Tyson Derby', 'Wyatt Dawson']
-            },
-            {
-                category: 'JVC Boys',
-                time: '8:05 AM',
-                laps: '2',
-                riders: ['Bro Anderson', 'Ben Reeves', 'Boston Jones', 'Brennan Adams', 'Collin Slade', 'Cooper Hiles', 'Duke Meyer', 'Evan Dinsdale', 'Ezra Lowe', 'Gentry Mehew', 'Henry Meng', 'Jacob Jorgensen', 'Kye Macfarlane', 'Kyle Spencer', 'Landon Niemann', 'McCoy Maloy', 'Owen Heiner', 'Preston Bennett', 'William Howlett']
-            },
+            { category: 'JVB Boys', time: '8:00 AM', laps: '2' },
+            { category: 'JVC Boys', time: '8:05 AM', laps: '2' },
         ]
     },
     {
@@ -36,18 +26,8 @@ const races1To3HsWaves = [
         stageTime: '8:40 AM',
         startTime: '8:55 AM',
         categories: [
-            {
-                category: 'JVA Boys',
-                time: '8:55 AM',
-                laps: '3',
-                riders: ['Carson Pickett', 'Clark Boushka', 'Grant Mcrae', 'Grey Gardner', 'Henry Holmes', 'Jason Coates', 'Jenson Thomas', 'Joseph Presbury', 'Kyle Powell', 'Max Glade', 'Ty Dennison', 'William Stewart']
-            },
-            {
-                category: 'Fresh A Boys',
-                time: '9:00 AM',
-                laps: '2',
-                riders: ['Aiden Ellis', 'Calvin Kiefer', 'Grant Pace', 'Lincoln Lowe', 'Redick Harris', 'Remington Conelly', 'Wellington Airhart', 'William Liston', 'Winston Petrie', 'Xander Susov', 'Zane Carr']
-            },
+            { category: 'JVA Boys', time: '8:55 AM', laps: '3' },
+            { category: 'Fresh A Boys', time: '9:00 AM', laps: '2' },
         ]
     },
     {
@@ -59,18 +39,8 @@ const races1To3HsWaves = [
         stageTime: '9:55 AM',
         startTime: '10:10 AM',
         categories: [
-            {
-                category: 'Varsity Boys',
-                time: '10:10 AM',
-                laps: '4',
-                riders: ['Brendan Johnson', 'Liam Ellis', 'Paxton Scrivner', 'Van Wilkinson']
-            },
-            {
-                category: 'Varsity Girls',
-                time: '10:15 AM',
-                laps: '3',
-                riders: ['Ashlyn Adams', 'Brielle Adams', 'Carly Howell']
-            },
+            { category: 'Varsity Boys', time: '10:10 AM', laps: '4' },
+            { category: 'Varsity Girls', time: '10:15 AM', laps: '3' },
         ]
     },
     {
@@ -82,24 +52,9 @@ const races1To3HsWaves = [
         stageTime: '11:20 AM',
         startTime: '11:35 AM',
         categories: [
-            {
-                category: 'JVA Girls',
-                time: '11:35 AM',
-                laps: '2',
-                riders: ['Larissa Borba', 'Alaina Thurgood', 'Sabrina Borba']
-            },
-            {
-                category: 'JVB Girls',
-                time: '11:40 AM',
-                laps: '2',
-                riders: ['Amber Schiszler', 'CC Hammond', 'Chloe Stringham', 'Darcie Thurgood', 'Ellie Peterson', 'Emsley Scrivner', 'Izzy Wilkinson', 'Maelee Gallant', 'Mia Riggs', 'Rachel Howard', 'Savannah Gammon', 'Taya Ogden', 'Zoe Butterfield']
-            },
-            {
-                category: 'JVC Girls',
-                time: '11:45 AM',
-                laps: '2',
-                riders: ['Addy Bair', 'Amy Mortensen', 'Annalynn Stewart', 'Charlotte Reeves', 'Ellie Ford', 'Lanora Collette', 'Paige Butterfield', 'Paige Miller', 'Ruby Gunnell']
-            },
+            { category: 'JVA Girls', time: '11:35 AM', laps: '2' },
+            { category: 'JVB Girls', time: '11:40 AM', laps: '2' },
+            { category: 'JVC Girls', time: '11:45 AM', laps: '2' },
         ]
     },
     {
@@ -111,18 +66,8 @@ const races1To3HsWaves = [
         stageTime: '12:25 PM',
         startTime: '12:40 PM',
         categories: [
-            {
-                category: 'Fresh B Boys',
-                time: '12:40 PM',
-                laps: '2',
-                riders: ['Jack Young', 'Tatem Dennison', 'Teagen Masimer', 'Thomas Howlett']
-            },
-            {
-                category: 'JV D Boys',
-                time: '12:45 PM',
-                laps: '2',
-                riders: ['Beckam Daniels', 'Eli Kirkland', 'Jared Dalton', 'Jarrett Bishop', 'Jaxon Baxter', 'Logan Dyer', 'Ryan Hall', 'Steadman Franklin']
-            },
+            { category: 'Fresh B Boys', time: '12:40 PM', laps: '2' },
+            { category: 'JV D Boys', time: '12:45 PM', laps: '2' },
         ]
     },
     {
@@ -134,18 +79,8 @@ const races1To3HsWaves = [
         stageTime: '1:20 PM',
         startTime: '1:35 PM',
         categories: [
-            {
-                category: 'JVE Boys',
-                time: '1:35 PM',
-                laps: '1',
-                riders: ['Linkin Itri', 'Michael Frederickson', 'Samuel Palmer']
-            },
-            {
-                category: 'Fresh C Boys',
-                time: '1:38 PM',
-                laps: '1',
-                riders: ['Devan Knapp', 'Hawk Warner', 'Weston Seipert']
-            },
+            { category: 'JVE Boys', time: '1:35 PM', laps: '1' },
+            { category: 'Fresh C Boys', time: '1:38 PM', laps: '1' },
             { category: 'JVD Girls', time: '1:41 PM', laps: '1' },
             { category: 'Adventure*', time: '1:45 PM', laps: '1', note: 'Non-competitive' },
             { category: 'Adaptive', time: '1:45 PM', laps: '1' },
@@ -439,18 +374,8 @@ export default function WaveScheduleTabs() {
                                                         </td>
                                                     )}
                                                     <td style={{ padding: '0.75rem', fontWeight: 600 }}>
-                                                        <div>{cat.category}</div>
+                                                        {cat.category}
                                                         {cat.note && <span style={{ display: 'block', fontSize: '0.75rem', color: 'rgb(var(--text-muted))', fontWeight: 400 }}>*{cat.note}</span>}
-                                                        {cat.riders && cat.riders.length > 0 && (
-                                                            <details style={{ marginTop: '0.35rem', fontSize: '0.75rem', color: 'rgb(var(--text-muted))' }}>
-                                                                <summary style={{ cursor: 'pointer', fontWeight: 700, color: 'rgb(var(--color-primary))' }}>
-                                                                    👥 {cat.riders.length} Lehi Racers
-                                                                </summary>
-                                                                <div style={{ marginTop: '0.35rem', padding: '0.35rem 0.5rem', backgroundColor: 'rgba(87,43,158,0.06)', borderRadius: '4px', lineHeight: 1.45, color: 'rgb(var(--text-main))' }}>
-                                                                    {cat.riders.join(', ')}
-                                                                </div>
-                                                            </details>
-                                                        )}
                                                     </td>
                                                     {idx === 0 && (
                                                         <>
