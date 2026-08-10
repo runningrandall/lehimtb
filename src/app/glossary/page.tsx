@@ -40,9 +40,12 @@ const sections = [
         terms: [
             { term: 'Race Kit', def: 'The team uniform, typically including the team jersey, bibs (shorts with straps over your shoulders), and sometimes other apparel like socks or jackets. It\'s a cycling kit designed to be tight fitting. You do not normally wear underwear beneath the bibs. It can feel awkward at first, but once you\'re at practice and races you\'ll see everyone wearing them.' },
             { term: 'Kit Fit', def: 'You come try on the kit before ordering to make sure it fits correctly. Kits and sizing can be tricky, especially bibs — highly recommended to try before you buy.' },
+            { term: 'Race Plate', def: 'The barcoded number plate zip-tied to your handlebars containing the timing chip. Picked up at the first race check-in table and kept on your bike all season. Do not bend, fold, or cut. Lost plates cost $10 to replace.' },
+            { term: 'Race Bib', def: 'A paper number bib pinned with safety pins to a specific side of your jersey (announced the morning of the race by race organizers).' },
+            { term: 'Pre-Ride Plate', def: 'A special pre-ride plate distributed by coaches specifically for course pre-riding. Required along with a helmet and registered status to ride the course during official pre-ride hours.' },
             { term: 'Bikes', def: 'Riders need a mountain bike in good working condition suitable for the terrain. A "Walmart" type bike is generally not suitable for a full season of riding. See a local bike shop (Trek AF, Utah Mountain Biking, ARI, or others) or talk to a coach. Trek offers discounts to riders. You can also find good used deals on ksl.com — ask a coach for help identifying a good bike.' },
-            { term: 'Bike Accessories', def: 'Gloves, cycling shoes, eye protection, water bottles, hydration packs, repair kits, and pumps enhance the riding experience. HELMETS ARE MANDATORY AT ALL TIMES ON A BIKE — a good helmet with concussion prevention (MIPS, WaveCel, etc.) is ideal. Check Virginia Tech\'s helmet ratings for guidance.' },
-            { term: 'Bike Maintenance', def: 'Regular maintenance keeps bikes running smoothly and safely — cleaning, lubricating, adjusting components, and performing repairs. Coaches can point you in the right direction.' },
+            { term: 'Bike Accessories', def: 'Gloves, cycling shoes, eye protection, water bottles, hydration packs, repair kits, and pumps enhance the riding experience. HELMETS ARE MANDATORY AT ALL TIMES WHILE ON A BIKE — riders must always wear a helmet, otherwise the team faces severe penalties! A good helmet with concussion prevention (MIPS, WaveCel, etc.) is ideal. Check Virginia Tech\'s helmet ratings for guidance.' },
+            { term: 'Bike Maintenance', def: 'Regular maintenance keeps bikes running smoothly and safely — cleaning, lubricating, adjusting components, and performing repairs. Get major tune-ups done at a bike shop a week before race day.' },
         ],
     },
     {
@@ -54,7 +57,7 @@ const sections = [
             { term: 'Skills', def: 'The various techniques required for mountain biking — bike handling, positioning, cornering, climbing, descending, navigating obstacles, and maintaining balance. Coaches work with riders to develop these skills. We normally have at least a couple of dedicated skills practices at the beginning of the year.' },
             { term: 'Time Trials', def: 'A race format where individual riders compete against the clock, started at intervals and timed. We use time trials to assign appropriate practice groups based on ability. Everyone is WELCOME — no one is cut. It\'s about having fun and improving against yourself.' },
             { term: 'Adventure Rides', def: 'Less structured, often longer rides designed for riders to explore new trails, build camaraderie, and enjoy mountain biking. We often venture to places like Park City.' },
-            { term: 'Pre-Ride', def: 'When a rider rides an upcoming race course before the race to learn it and be faster on race day. The team often organizes pre-rides the week before an event.' },
+            { term: 'Pre-Ride', def: 'When a rider rides an upcoming race course before the race to learn key technical spots. Official pre-rides occur the weekend before (or 2 weeks prior for Panguitch) and Friday evening before race day. Pre-riding on race morning is strictly prohibited. Check TeamSnap for exact times and details.' },
             { term: 'Trail Work & Volunteer Hours', def: 'Our team requires riders to contribute a minimum of 3–4 volunteer hours to trail maintenance and construction each season. This helps preserve and improve the trails we use for practices and races.' },
         ],
     },
@@ -64,6 +67,7 @@ const sections = [
         terms: [
             { term: 'Ride Leaders', def: 'Parents, coaches, or designated volunteers who lead group rides during practices or events. They ensure group safety, set the pace, and navigate the trails. WE WELCOME RIDE LEADERS OF ALL ABILITIES. You do not need to be fast — just willing to learn and help kids stay safe. Requires about 60–75 minutes of online training and a $65 league registration.' },
             { term: 'Volunteers', def: 'Individuals who dedicate their time to support the team — coaching, event organization, race day activities, fundraising, equipment maintenance, trail work, or other tasks. Volunteers are crucial to our success. One parent per rider must volunteer once at a league race and once at a team event per season. The league cannot run a race without hundreds of volunteers.' },
+            { term: 'Pit Zone Setup & Take Down', def: 'Volunteer shifts where parents help set up the team base camp and tents on Friday afternoon before race weekend, and assist with tearing down tents on Saturday afternoon before/after podiums.' },
         ],
     },
     {
@@ -72,8 +76,12 @@ const sections = [
         terms: [
             { term: 'Races', def: 'Organized competitive events where riders race each other. NICA races typically follow a cross-country format with mass starts in waves based on ability. EVERYONE RACES — there is no bench. If racing makes your child nervous, talk to a coach. We won\'t force anyone, but we will encourage taking on the challenge.' },
             { term: 'Race Categories', def: 'Riders are divided into categories based on ability and gender for fair competition. Categories: Varsity (Boys & Girls), JVA–JVC (Boys & Girls), JVD–JVE (Boys only), Single Lap Rider/SLR (Boys & Girls), Freshman A/B/C (Boys only). Freshman Girls ride in Varsity–JVC categories due to fewer girls racing. Adaptive categories may also be available.' },
-            { term: 'Race Day', def: 'The day of a race event — includes warm up, staging, the race itself, and post-race activities like awards ceremonies. The team sets up a tent and provides food and support. More detailed race day info is available from coaches.' },
-            { term: 'State Race', def: 'The culminating race event, bringing together the top riders from across Utah in all regions to compete for championship titles in their categories. Riders must qualify to attend. Lehi has an outstanding state championship history.' },
+            { term: 'Race Day', def: 'The day of a race event — includes arrival, pit zone check-in, staging numbers printed on arms, wave strategy meetings, staging call-ups, the race itself, finish line volunteers, and podiums.' },
+            { term: 'Call-Ups', def: 'The staging process where riders enter the race chute as their name (top 10) or staging arm number is called. 7th graders are randomized for race 1; 8th graders and HS riders are seeded based on prior placement and league points.' },
+            { term: 'Staging Chute', def: 'The designated lined-up area where racers queue up 15 minutes before their wave start time. Only riders with handlebar race plates are permitted inside the chute.' },
+            { term: 'Finish Line Volunteers', def: 'Team volunteers stationed past the finish line who "catch" riders as they cross the finish line to evaluate their condition, provide cold water and seating, and walk them out to meet parents.' },
+            { term: 'Podium', def: 'The recognition ceremony following races where the top 5 finishers in each category are awarded. Athletes must wear their official Lehi team jersey on the podium.' },
+            { term: 'State Race', def: 'The culminating race event, bringing together top High School riders from across Utah to compete for state titles. Riders must qualify to attend.' },
             { term: 'End of Year Banquet', def: 'A celebratory event at the end of the season recognizing riders, coaches, and volunteers. Awards are presented and the season is celebrated. It\'s a highlight of the year for the whole team community.' },
         ],
     },

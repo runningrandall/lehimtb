@@ -202,7 +202,7 @@ export default function RaceDayCentral() {
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#db2777' }}>Step 2</span>
                         <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0', color: '#be185d' }}>Pit Zone Check-In</p>
                         <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
-                            Check in at the <strong>registration table in the pit zone</strong> immediately upon arrival.
+                            Check in at the <strong>Lehi check-in table in pit zone</strong> immediately upon arrival to get your staging number marked.
                         </p>
                     </div>
 
@@ -274,7 +274,7 @@ export default function RaceDayCentral() {
                             Important Notice: Arrival Times &amp; Full-Day Team Support
                         </h3>
                         <p style={{ fontSize: '0.95rem', lineHeight: 1.6, color: 'rgb(var(--text-main))', margin: 0 }}>
-                            <strong>Arrival Time is a MINIMUM arrival requirement.</strong> We expect all riders and families to arrive on time and stay at the venue to cheer on their teammates across every wave. There is no bench on our team — having a loud Lehi cheer squad out on course for every wave makes an incredible difference!
+                            <strong>Arrival Time is a MINIMUM arrival requirement based on your specific wave schedule.</strong> We expect all riders and families to arrive on time and stay at the venue to cheer on their teammates across every wave. There is no bench on our team — having a loud Lehi cheer squad out on course for every wave makes an incredible difference!
                         </p>
                     </div>
                 </div>
@@ -433,65 +433,86 @@ export default function RaceDayCentral() {
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--spacing-lg)' }}>
 
-                    {/* Bike Maintenance & Floor Pump */}
-                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid rgb(var(--color-primary))' }}>
-                        <h3 style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                            <span>🚲</span> Bike Maintenance &amp; Equipment
+                    {/* Pit Zone Friday Setup & Saturday Take-Down Volunteers */}
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #ec4899', backgroundColor: 'rgba(236, 72, 153, 0.04)' }}>
+                        <h3 style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#be185d' }}>
+                            <span>⛺</span> Pit Zone Friday Setup &amp; Saturday Take-Down
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <li><strong>Team Tools &amp; Pumps:</strong> Tools and floor pumps are available at the pit zone for last-minute adjustments, but riders should always have their own emergency repair kit (spare tube, tire levers, multi-tool, mini pump/CO2) ready on their bike.</li>
-                            <li><strong>Advance Maintenance Required:</strong> Riders and parents must ensure tubeless sealant is topped off, drivetrain is cleaned &amp; lubed, and brakes are in proper working order — <strong>ideally a week before race day</strong>.</li>
-                            <li><em>Avoid attempting to repair or tune a bike on race day — get all mechanical service done well in advance!</em></li>
-                            <li><strong>Race Plate:</strong> Securely zip-tie your number plate to handlebars. Do <em>not</em> bend, fold, or cut the barcode/timing chip.</li>
+                            <li><strong>Friday Pit Zone Setup:</strong> Parents and HS team members are needed on Friday afternoon (4:00 PM – 5:00 PM) to help set up team tents, tables, food prep stations, and team banners. Many hands make fast work!</li>
+                            <li><strong>Saturday Pit Zone Take Down:</strong> The Junior Development (JD) team and parent volunteers are assigned to take down the Pit Zone tent on Saturday afternoon around <strong>4:00 PM</strong> after all races start. Please stop by the tent to lend a hand!</li>
+                            <li><strong>Sign-Up Genius:</strong> A volunteer sign-up link is sent out via TeamSnap during race week. Parents who volunteer for team or league duties are invited to eat lunch with the team!</li>
                         </ul>
                     </div>
 
-                    {/* Pre-Ride Rules */}
-                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #8b5cf6' }}>
+                    {/* Arrival, Check-In & Race Plates */}
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #3b82f6' }}>
                         <h3 style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                            <span>🗺️</span> Pre-Ride Rules &amp; Schedule
+                            <span>📋</span> Arrival, Lehi Tent Check-In &amp; Number Plates
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <li><strong>When to Pre-Ride:</strong> Official pre-ride takes place the <strong>week before the race</strong> or during designated league hours on <strong>Friday evening before race day</strong>.</li>
-                            <li><strong>NEVER Pre-Ride Race Morning:</strong> Course pre-riding is strictly prohibited on Saturday morning before the race.</li>
-                            <li><strong>Separate Pre-Ride Plate Required:</strong> Riders <strong>MUST wear a separate official pre-ride plate</strong> on their bike during all pre-ride laps.</li>
-                            <li>All riders must wear a helmet and be fully registered with NICA.</li>
+                            <li><strong>Expect Venue Delays:</strong> With thousands of participants, traffic and parking delays take 30+ minutes. Plan extra time to park, unload bikes, and walk up to the Pit Zone.</li>
+                            <li><strong>Check In Immediately:</strong> Report directly to the Lehi tent check-in table upon arrival so coaches know your rider is on site.</li>
+                            <li><strong>Staging Numbering:</strong> Every rider will get their staging number printed on their arm at check-in (required for staging call-ups).</li>
+                            <li><strong>Race Plates &amp; Bibs:</strong> Pick up your race plate and jersey bib at Beaver Mountain (first race) at the check-in table. Keep them in your car for the rest of the season! $10 replacement fee if lost.</li>
+                            <li><strong>Bib Pinning:</strong> Bibs are pinned to a specific side of the jersey (announced the morning of the race).</li>
+                            <li><strong>MANDATORY HELMET RULE:</strong> Riders <strong>MUST ALWAYS WEAR a helmet</strong> whenever they are on a bike — otherwise the team faces severe penalties!</li>
+                        </ul>
+                    </div>
+
+                    {/* Bike Maintenance & Equipment */}
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid rgb(var(--color-primary))' }}>
+                        <h3 style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                            <span>🚲</span> Bike Tune-Up &amp; Equipment Checklist
+                        </h3>
+                        <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                            <li><strong>Schedule Shop Service Early:</strong> Have your bike tuned up by a local bike shop (Trek, Ari, or Utah Mountain Biking) <strong>a week before race day</strong>. Never perform major repairs or adjustments on race morning!</li>
+                            <li><strong>Pre-Ride Safety Check:</strong> Check tire pressure, lube drivetrain, top off tubeless sealant, and inspect brake pads before leaving home.</li>
+                            <li><strong>Emergency Repair Kit:</strong> Riders should carry spare tubes, tire levers, multi-tool, and mini pump/CO2 injector.</li>
+                            <li><strong>Label All Gear:</strong> Write your name on your helmet, sunglasses, gloves, shoes, water bottles, and jackets!</li>
+                            <li><strong>Cold Weather Layers:</strong> Mountain venues can be chilly in the morning — bring warm coats and layers, but don't race in bulky heavy coats.</li>
+                        </ul>
+                    </div>
+
+                    {/* Pre-Ride Rules, Camping & Carpooling */}
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #8b5cf6' }}>
+                        <h3 style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                            <span>🗺️</span> Pre-Ride Rules, Camping &amp; Carpooling
+                        </h3>
+                        <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                            <li><strong>Check TeamSnap for All Events:</strong> All pre-rides, camps, practice schedules, and team events are posted on TeamSnap. Always check TeamSnap for exact dates, times, locations, and updates!</li>
+                            <li><strong>Weekend Pre-Ride:</strong> Official pre-rides take place the weekend before the race (or 2 weeks prior for Panguitch due to the Soldier Hollow UCI race).</li>
+                            <li><strong>Friday Camping &amp; Night Ride:</strong> Families often camp out on Friday night before pre-ride weekend and do a fun night ride. <em>Must bring your own bike light!</em></li>
+                            <li><strong>Saturday Carpooling:</strong> Riders can catch carpools Saturday morning departing from Lehi High School.</li>
+                            <li><strong>Friday Pre-Ride Hours:</strong> The course is open Friday evening before race day (typically 3:00 PM – 7:00 PM).</li>
+                            <li><strong>STRICT RULE - Pre-Ride Plates Required:</strong> Riders <strong>MUST wear a separate official pre-ride plate</strong> provided by coaches during pre-rides. ONLY registered riders and ride leaders are permitted on course. Pre-riding on Saturday race morning is strictly prohibited.</li>
                         </ul>
                     </div>
 
                     {/* Parent & Family Pit Zone Etiquette */}
                     <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #f59e0b' }}>
                         <h3 style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                            <span>⛺</span> Parent &amp; Pit Zone Etiquette
+                            <span>🚫</span> Parent Checklist &amp; Pit Zone Etiquette
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <li><strong>Drop-Off &amp; Say Hello:</strong> Families are welcome to walk into the pit zone to drop off riders, say hello, and check in.</li>
-                            <li><strong>Keep Pit Zone Uncrowded:</strong> Please do not hang out in the rider pit zone for extended periods unless you are actively volunteering. This keeps the zone focused for athletes and coaches.</li>
-                            <li><strong>Get Out on Course:</strong> Parents are strongly encouraged to head out onto the course with cowbells to cheer!</li>
+                            <li><strong>STRICT RULE - NO RIDING BIKES IN PIT ZONE:</strong> Nobody (riders, parents, or siblings) may ride bikes inside the Pit Zone. Bikes MUST be walked. Violations result in team penalties!</li>
+                            <li><strong>Keep Rider Tent Area Clear:</strong> Due to space constraints, only riders and designated team volunteers (food committee &amp; staging) may hang out inside the tent. Parents can drop off, say hi, and take quick photos.</li>
+                            <li><strong>Establish Base Camp:</strong> Bring camp chairs, robust walking shoes, shade umbrellas/canopies, sunscreen, and plenty of water/snacks right off the track.</li>
+                            <li><strong>Cheer Across Every Wave:</strong> Cheer at staging, the start line, course switchbacks, and the finish line!</li>
                         </ul>
                     </div>
 
-                    {/* Post-Race Recovery & Hanging Out */}
+                    {/* Staging, Warm-Up & Finish Line Volunteers */}
                     <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #10b981' }}>
                         <h3 style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                            <span>🎉</span> Post-Race Recovery &amp; Support
+                            <span>🏁</span> Staging, Warm-Up &amp; Finish Line Volunteers
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <li>After finishing your race, head back over to the team pit zone at your own pace.</li>
-                            <li>Grab recovery drinks, fruit, and snacks, rehydrate, and celebrate with your coaches and teammates!</li>
-                            <li>Once recovered, grab your cowbell and head out to cheer on the remaining waves!</li>
-                        </ul>
-                    </div>
-
-                    {/* Staging Call-Ups */}
-                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid rgb(var(--color-primary))' }}>
-                        <h3 style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                            <span>🏁</span> Staging &amp; Call-Ups
-                        </h3>
-                        <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <li><strong>Stage Time:</strong> Report to staging exactly <strong>15 minutes prior to your wave start time</strong>.</li>
-                            <li>Call-ups are staged strictly by league points seeding and category call-up order.</li>
-                            <li>Make sure your helmet is buckled and race plate is clean before entering staging.</li>
+                            <li><strong>Wave Strategy Meeting:</strong> Coaches conduct a mandatory 10-minute wave meeting 1 hour before start time to cover course strategy and key tips.</li>
+                            <li><strong>Warm-Up (30m):</strong> Ride leaders guide groups through 30-minute warm-up efforts outside the Pit Zone.</li>
+                            <li><strong>Staging &amp; Call-Ups:</strong> Line up 15 minutes prior. Top 10 called by name, followed by arm numbers. Must have handlebar race plate to enter chute.</li>
+                            <li><strong>Finish Line Volunteer Zone:</strong> The area past the finish line is strictly managed by finish line volunteers and coaches for racer safety.</li>
+                            <li><strong>Finish Line Volunteers:</strong> A Finish Line Volunteer will "catch" each rider as they cross the finish line, check their condition, provide cold water and seating, and walk them out to parents.</li>
                         </ul>
                     </div>
 
@@ -525,12 +546,12 @@ export default function RaceDayCentral() {
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--spacing-md)' }}>
                         
-                        {/* Night Before Prep */}
+                        {/* Day Before Prep */}
                         <div style={{ padding: '1.25rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-color)' }}>
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🎒</div>
-                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Get Ready the Night Before</h3>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Get Ready the Day Before</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Pack your kit, bibs, helmet, shoes, socks, water bottles, snacks, camp chairs, and sunscreen into your car the evening before. Morning departures become effortless.
+                                Pack your kit, bibs, helmet, shoes, socks, water bottles, snacks, camp chairs, and sunscreen into your car the day before. Morning departures become effortless.
                             </p>
                         </div>
 
@@ -539,7 +560,7 @@ export default function RaceDayCentral() {
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🚲</div>
                             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Bike 100% Ready to Roll</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Check sealant, inflate tires, clean &amp; lube drivetrain, check brakes, and zip-tie number plates the night before. Avoid race morning mechanical stress!
+                                Check sealant, inflate tires, clean &amp; lube drivetrain, check brakes, and zip-tie number plates the day before. Avoid race morning mechanical stress!
                             </p>
                         </div>
 
@@ -566,7 +587,7 @@ export default function RaceDayCentral() {
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🔔</div>
                             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Finding Great Viewing Spots</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Scope out course maps for high-elevation switchbacks, technical climbs, or serpentine turns where you can watch racers multiple times per lap. Bring cowbells, wear purple/gold, and <strong>never cross active race lines</strong>!
+                                Scope out course maps for high-elevation switchbacks, technical climbs, or serpentine turns where you can watch racers multiple times per lap. Bring cowbells, wear purple or Lehi team gear, and <strong>never cross active race lines</strong>!
                             </p>
                         </div>
 
