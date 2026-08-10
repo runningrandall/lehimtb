@@ -194,7 +194,7 @@ export default function RaceDayCentral() {
                         <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(var(--color-primary))' }}>Step 1</span>
                         <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0' }}>Arrival Time</p>
                         <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
-                            Wave 1 by <strong>6:45 AM</strong>, Wave 2 by <strong>7:30 AM</strong>, Waves 3–6 by <strong>7:45 AM</strong>.
+                            Wave 1 by <strong>6:45 AM</strong>, Wave 2 by <strong>7:30 AM</strong>, Waves 3–6 by <strong>7:45 AM</strong> to cheer and support teammates.
                         </p>
                     </div>
 

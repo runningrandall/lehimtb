@@ -7,7 +7,6 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 1 - HS',
         arrivalTime: '6:45 AM',
-        arrivalNote: 'Pit Zone Arrival (Meeting & Warm-up)',
         meetingTime: '7:00 – 7:10 AM',
         warmupTime: '7:10 – 7:40 AM',
         stageTime: '7:45 AM',
@@ -20,7 +19,6 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 2 - HS',
         arrivalTime: '7:30 AM',
-        arrivalNote: 'Pit Zone Arrival (Meeting & Warm-up)',
         meetingTime: '7:55 – 8:05 AM',
         warmupTime: '8:05 – 8:35 AM',
         stageTime: '8:40 AM',
@@ -33,7 +31,6 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 3 - HS',
         arrivalTime: '7:45 AM',
-        arrivalNote: 'Cheer & Weather Alert (Meeting: 9:10 AM)',
         meetingTime: '9:10 – 9:20 AM',
         warmupTime: '9:20 – 9:50 AM',
         stageTime: '9:55 AM',
@@ -46,7 +43,6 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 4 - HS',
         arrivalTime: '7:45 AM',
-        arrivalNote: 'Cheer & Weather Alert (Meeting: 10:35 AM)',
         meetingTime: '10:35 – 10:45 AM',
         warmupTime: '10:45 – 11:15 AM',
         stageTime: '11:20 AM',
@@ -60,7 +56,6 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 5 - HS',
         arrivalTime: '7:45 AM',
-        arrivalNote: 'Cheer & Weather Alert (Meeting: 11:40 AM)',
         meetingTime: '11:40 – 11:50 AM',
         warmupTime: '11:50 AM – 12:20 PM',
         stageTime: '12:25 PM',
@@ -73,7 +68,6 @@ const races1To3HsWaves = [
     {
         wave: 'Wave 6 - HS (Single Lap)',
         arrivalTime: '7:45 AM',
-        arrivalNote: 'Cheer & Weather Alert (Meeting: 12:35 PM)',
         meetingTime: '12:35 – 12:45 PM',
         warmupTime: '12:45 – 1:15 PM',
         stageTime: '1:20 PM',
@@ -294,20 +288,20 @@ export default function WaveScheduleTabs() {
                             </div>
                         </div>
 
-                        {/* Weather / Schedule Alert */}
+                        {/* Teammate Support & Early Arrival Note */}
                         <div style={{
-                            background: 'rgba(245, 158, 11, 0.12)',
-                            border: '1px solid rgba(245, 158, 11, 0.35)',
+                            background: 'rgba(87, 43, 158, 0.08)',
+                            border: '1px solid rgba(87, 43, 158, 0.25)',
                             borderRadius: 'var(--radius-sm)',
-                            padding: '0.75rem 1rem',
+                            padding: '0.85rem 1.15rem',
                             marginBottom: '1rem',
                             display: 'flex',
-                            gap: '0.75rem',
+                            gap: '0.85rem',
                             alignItems: 'center'
                         }}>
-                            <span style={{ fontSize: '1.3rem' }}>⚠️</span>
-                            <p style={{ margin: 0, fontSize: '0.85rem', lineHeight: 1.4, color: 'rgb(var(--text-main))' }}>
-                                <strong>Weather &amp; Early Start Notice:</strong> All HS racers (after Wave 1) could start earlier if bad weather is expected in the afternoon. Races may also be condensed, so all HS racers are asked to arrive by <strong>7:45 AM</strong> and stay alert!
+                            <span style={{ fontSize: '1.4rem' }}>📣</span>
+                            <p style={{ margin: 0, fontSize: '0.875rem', lineHeight: 1.5, color: 'rgb(var(--text-main))' }}>
+                                <strong>Teammate Support &amp; Cheering:</strong> High School riders in later waves (Waves 3–6) arrive by <strong>7:45 AM</strong> to cheer on and support teammates racing in morning waves. There is no bench on our team—having a loud Lehi cheer squad out on course makes a huge difference! <em>(Arriving early also ensures racers are on site in case afternoon weather requires condensed start times).</em>
                             </p>
                         </div>
 
@@ -379,13 +373,8 @@ export default function WaveScheduleTabs() {
                                                     </td>
                                                     {idx === 0 && (
                                                         <>
-                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', fontWeight: 600, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.825rem' }}>
-                                                                <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'rgb(var(--text-main))' }}>{w.arrivalTime}</span>
-                                                                {w.arrivalNote && (
-                                                                    <span style={{ display: 'block', fontSize: '0.7rem', color: 'rgb(var(--text-muted))', marginTop: '0.15rem', lineHeight: 1.3 }}>
-                                                                        {w.arrivalNote}
-                                                                    </span>
-                                                                )}
+                                                            <td rowSpan={w.categories.length} style={{ padding: '0.75rem', fontWeight: 700, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.95rem', color: 'rgb(var(--text-main))' }}>
+                                                                {w.arrivalTime}
                                                             </td>
                                                             <td rowSpan={w.categories.length} style={{ padding: '0.75rem', color: 'rgb(var(--color-primary))', fontWeight: 800, verticalAlign: 'middle', borderRight: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
                                                                 {w.meetingTime}
