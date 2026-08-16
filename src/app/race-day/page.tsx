@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 };
 
 const helpfulLinks = [
+    { name: 'Volunteer Sign-Up (SignUpGenius - Beaver Mountain)', url: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/' },
     { name: 'What Category Am I In? (CPT Table)', url: 'https://my.raceresult.com/411620/' },
     { name: 'League Race Day Flyer (Canva)', url: 'https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1' },
     { name: 'Race 1: Beaver Mountain Details', url: 'https://utahmtb.org/events/region-5-race-1/' },
@@ -41,11 +42,30 @@ export default function RaceDayCentral() {
                 </p>
                 <div style={{ marginTop: '1.25rem', display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                     <a
-                        href="https://my.raceresult.com/411620/"
+                        href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-accent"
                         style={{ fontSize: '0.9rem', padding: '0.65rem 1.25rem' }}
+                    >
+                        🙋 Volunteer Sign-Up (SignUpGenius) ↗
+                    </a>
+                    <a
+                        href="https://my.raceresult.com/411620/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            fontSize: '0.875rem',
+                            fontWeight: 700,
+                            background: 'rgba(255,255,255,0.2)',
+                            color: 'white',
+                            padding: '0.65rem 1.25rem',
+                            borderRadius: 'var(--radius-sm)',
+                            textDecoration: 'none',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.4rem'
+                        }}
                     >
                         What Category Am I In? (CPT Table) ↗
                     </a>
@@ -89,6 +109,15 @@ export default function RaceDayCentral() {
                         </p>
                     </div>
                     <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                        <a
+                            href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-accent"
+                            style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
+                        >
+                            🙋 Volunteer Sign-Up ↗
+                        </a>
                         <a
                             href="https://maps.app.goo.gl/LKMnbNCQzTJquKsi8"
                             target="_blank"
@@ -322,7 +351,7 @@ export default function RaceDayCentral() {
                                 <strong>League Volunteers (Mandatory):</strong> Every family must volunteer with the League at least once per season, per rider. Lehi MTB must provide <strong>26 volunteers</strong> for each race. <a href="https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Sign up on the Flyer ↗</a>
                             </li>
                             <li>
-                                <strong>Team Volunteers:</strong> Feed Zone (hydration handoff), Tent/Food, Staging &amp; Pitzone. Look for the Sign-Up Genius link sent the week prior.
+                                <strong>Team Volunteers:</strong> Feed Zone (hydration handoff), Tent/Food, Staging &amp; Pitzone. <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Sign up on SignUpGenius ↗</a>
                             </li>
                             <li>
                                 <strong>Pitzone Setup:</strong> Friday, <strong>4:00 PM – 5:00 PM</strong> (High School Team).
@@ -331,6 +360,17 @@ export default function RaceDayCentral() {
                                 <strong>Pitzone Takedown:</strong> ~<strong>4:00 PM</strong> after all races start (Junior Development Team).
                             </li>
                         </ul>
+                        <div style={{ marginTop: '1.25rem' }}>
+                            <a
+                                href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn-accent"
+                                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.875rem', padding: '0.5rem 1.15rem' }}
+                            >
+                                🙋 Volunteer Sign-Up (SignUpGenius) ↗
+                            </a>
+                        </div>
                     </div>
 
                 </div>
@@ -442,7 +482,7 @@ export default function RaceDayCentral() {
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                             <li><strong>Friday Pit Zone Setup:</strong> Parents and HS team members are needed on Friday afternoon (4:00 PM – 5:00 PM) to help set up team tents, tables, food prep stations, and team banners. Many hands make fast work!</li>
                             <li><strong>Saturday Pit Zone Take Down:</strong> The Junior Development (JD) team and parent volunteers are assigned to take down the Pit Zone tent on Saturday afternoon around <strong>4:00 PM</strong> after all races start. Please stop by the tent to lend a hand!</li>
-                            <li><strong>Sign-Up Genius:</strong> A volunteer sign-up link is sent out via TeamSnap during race week. Parents who volunteer for team or league duties are invited to eat lunch with the team!</li>
+                            <li><strong>Sign-Up Genius:</strong> <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/" target="_blank" rel="noopener noreferrer" style={{ color: '#be185d', fontWeight: 700, textDecoration: 'underline' }}>Sign up on SignUpGenius ↗</a> for team volunteer slots (Feed Zone, tent setup/takedown, food). Parents who volunteer for team or league duties are invited to eat lunch with the team!</li>
                         </ul>
                     </div>
 

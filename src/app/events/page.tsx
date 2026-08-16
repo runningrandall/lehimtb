@@ -59,6 +59,11 @@ const races = [
 
 const resources = [
     {
+        title: 'Volunteer Sign-Up (SignUpGenius - Beaver Mountain)',
+        desc: 'Sign up for team volunteer shifts at Beaver Mountain (Feed Zone, tent setup & takedown, athlete hospitality).',
+        link: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/',
+    },
+    {
         title: 'What Category Am I In? (CPT Table)',
         desc: 'Check the official Utah League Category Placement Table (CPT) to look up your category assignment.',
         link: 'https://my.raceresult.com/411620/',
