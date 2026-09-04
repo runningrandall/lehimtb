@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 
 const helpfulLinks = [
     { name: 'Richfield Team Volunteer Sign Up (SignUpGenius)', url: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield' },
+    { name: 'Richfield Race Course Google Map Location', url: 'https://maps.app.goo.gl/sfrFYdcBnwt2G2339' },
     { name: 'What Category Am I In? (CPT Table)', url: 'https://my.raceresult.com/411620/' },
     { name: 'Region 5 Race 2: Richfield Event Page', url: 'https://utahmtb.org/events/region-5-race-2/' },
     { name: 'League Race Day Flyer (Canva)', url: 'https://www.canva.com/design/DAHPeEmLcYg/vnkLuehFzw14M0UisNgwXA/view?utm_content=DAHPeEmLcYg&utm_campaign=designshare&utm_medium=embeds&utm_source=link' },
@@ -48,6 +49,25 @@ export default function RaceDayCentral() {
                         style={{ fontSize: '0.9rem', padding: '0.65rem 1.25rem' }}
                     >
                         🤝 Richfield Volunteer Sign Up ↗
+                    </a>
+                    <a
+                        href="https://maps.app.goo.gl/sfrFYdcBnwt2G2339"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            fontSize: '0.875rem',
+                            fontWeight: 700,
+                            background: 'rgba(255,255,255,0.2)',
+                            color: 'white',
+                            padding: '0.65rem 1.25rem',
+                            borderRadius: 'var(--radius-sm)',
+                            textDecoration: 'none',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.4rem'
+                        }}
+                    >
+                        🗺️ Google Maps Location ↗
                     </a>
                     <a
                         href="https://my.raceresult.com/411620/"
@@ -102,12 +122,21 @@ export default function RaceDayCentral() {
                         <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#2563eb', background: 'rgba(37,99,235,0.1)', padding: '0.2rem 0.6rem', borderRadius: '4px' }}>
                             REGION 5 · RACE 2 (UPCOMING NEXT)
                         </span>
-                        <h2 style={{ fontSize: '1.6rem', margin: '0.4rem 0 0.2rem 0' }}>Saturday, September 5, 2026 · Richfield Trails</h2>
+                        <h2 style={{ fontSize: '1.6rem', margin: '0.4rem 0 0.2rem 0' }}>Saturday, September 5, 2026 · Richfield Race Course</h2>
                         <p style={{ margin: 0, fontWeight: 700, color: 'rgb(var(--color-primary))', fontSize: '0.95rem' }}>
-                            📍 Location: Richfield Trails in Sevier County, UT — Fast singletrack loops with scenic red rock vistas!
+                            📍 Location: Richfield Race Course in Sevier County, UT — Fast singletrack loops with scenic red rock vistas!
                         </p>
                     </div>
                     <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                        <a
+                            href="https://maps.app.goo.gl/sfrFYdcBnwt2G2339"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-silver"
+                            style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
+                        >
+                            🗺️ Google Maps Location ↗
+                        </a>
                         <a
                             href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield"
                             target="_blank"

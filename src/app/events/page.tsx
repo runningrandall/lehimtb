@@ -18,9 +18,10 @@ const races = [
     {
         name: 'Race 2: Richfield',
         date: 'Sept 5, 2026',
-        location: 'Richfield Trails · Richfield, UT',
+        location: 'Richfield Race Course · Richfield, UT',
         desc: 'Fast, flowing singletrack loop competition with scenic red rock vistas.',
         link: 'https://utahmtb.org/events/region-5-race-2/',
+        mapLink: 'https://maps.app.goo.gl/sfrFYdcBnwt2G2339',
         badge: 'Race 2',
     },
     {
@@ -155,9 +156,16 @@ export default function Events() {
                             </span>
                         </div>
                         <p className="text-muted" style={{ marginBottom: '1rem', lineHeight: 1.6 }}>{r.desc}</p>
-                        <a href={r.link} target="_blank" rel="noopener noreferrer" className="btn-silver" style={{ fontSize: '0.85rem', padding: '0.5rem 1rem', display: 'inline-block' }}>
-                            League Event Details &amp; Venue Map ↗
-                        </a>
+                        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                            <a href={r.link} target="_blank" rel="noopener noreferrer" className="btn-silver" style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}>
+                                League Event Details &amp; Venue Map ↗
+                            </a>
+                            {r.mapLink && (
+                                <a href={r.mapLink} target="_blank" rel="noopener noreferrer" className="btn-silver" style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}>
+                                    🗺️ Google Maps Location ↗
+                                </a>
+                            )}
+                        </div>
                     </div>
                 ))}
             </div>
