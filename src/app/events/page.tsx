@@ -89,9 +89,9 @@ const resources = [
         link: 'https://pitzone.nationalmtb.org/',
     },
     {
-        title: 'League Race Day Flyer (Canva)',
-        desc: 'Official Utah High School Cycling League race day schedule, map, and volunteer sign-up flyer.',
-        link: 'https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1',
+        title: 'League Race 2 Flyer (Richfield)',
+        desc: 'Official Utah High School Cycling League Richfield race day schedule, map, and volunteer sign-up flyer.',
+        link: 'https://utahmtb.org/events/region-5-race-2/',
     },
     {
         title: 'Lehi MTB Race Day Guide',

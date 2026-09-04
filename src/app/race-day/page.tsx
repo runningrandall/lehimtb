@@ -4,16 +4,16 @@ import WaveScheduleTabs from './WaveScheduleTabs';
 
 export const metadata: Metadata = {
     title: 'Race Day Central & Wave Schedule | Lehi MTB Hub',
-    description: 'Complete 2026 race day guide, wave schedules, Beaver Mountain race details, rider rosters, arrival times, food & volunteering info, packing checklists, and Utah MTB resources.',
+    description: 'Complete 2026 race day guide, wave schedules, Richfield race details, rider rosters, arrival times, food & volunteering info, packing checklists, and Utah MTB resources.',
 };
 
 const helpfulLinks = [
     { name: 'Volunteer Sign-Up (SignUpGenius - Beaver Mountain)', url: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/' },
     { name: 'What Category Am I In? (CPT Table)', url: 'https://my.raceresult.com/411620/' },
-    { name: 'League Race Day Flyer (Canva)', url: 'https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1' },
+    { name: 'Richfield Team Volunteer Sign Up (SignUpGenius)', url: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield' },
+    { name: 'Region 5 Race 2: Richfield Event Page', url: 'https://utahmtb.org/events/region-5-race-2/' },
+    { name: 'League Race Day Flyer (Canva)', url: 'https://www.canva.com/design/DAHPeEmLcYg/vnkLuehFzw14M0UisNgwXA/view?utm_content=DAHPeEmLcYg&utm_campaign=designshare&utm_medium=embeds&utm_source=link' },
     { name: 'Race 1: Beaver Mountain Details', url: 'https://utahmtb.org/events/region-5-race-1/' },
-    { name: 'Beaver Mountain Ski Resort Map', url: 'https://maps.app.goo.gl/LKMnbNCQzTJquKsi8' },
-    { name: 'Race 2: Richfield Details', url: 'https://utahmtb.org/events/region-5-race-2/' },
     { name: 'Race 3: Panguitch Details', url: 'https://utahmtb.org/events/region-5-race-3/' },
     { name: 'Race 4: Region 5 Championship (Herriman)', url: 'https://utahmtb.org/events/region-5-race-4/' },
     { name: 'State Championship Details (St. George)', url: 'https://utahmtb.org/events/state-championships/' },
@@ -70,7 +70,26 @@ export default function RaceDayCentral() {
                         What Category Am I In? (CPT Table) ↗
                     </a>
                     <a
-                        href="https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1"
+                        href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            fontSize: '0.875rem',
+                            fontWeight: 700,
+                            background: 'rgb(var(--color-accent))',
+                            color: 'black',
+                            padding: '0.65rem 1.25rem',
+                            borderRadius: 'var(--radius-sm)',
+                            textDecoration: 'none',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.4rem'
+                        }}
+                    >
+                        🤝 Richfield Volunteer Sign Up ↗
+                    </a>
+                    <a
+                        href="https://utahmtb.org/events/region-5-race-2/"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
@@ -91,7 +110,7 @@ export default function RaceDayCentral() {
                 </div>
             </div>
 
-            {/* Featured Next Race Banner (Beaver Mountain) */}
+            {/* Featured Next Race Banner (Richfield) */}
             <div className="glass-panel" style={{
                 padding: 'var(--spacing-lg)',
                 marginBottom: 'var(--spacing-xl)',
@@ -101,34 +120,25 @@ export default function RaceDayCentral() {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', marginBottom: '0.75rem' }}>
                     <div>
                         <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#2563eb', background: 'rgba(37,99,235,0.1)', padding: '0.2rem 0.6rem', borderRadius: '4px' }}>
-                            REGION 5 · RACE 1
+                            REGION 5 · RACE 2 (UPCOMING NEXT)
                         </span>
-                        <h2 style={{ fontSize: '1.6rem', margin: '0.4rem 0 0.2rem 0' }}>Saturday, August 22, 2026 · Beaver Mountain Ski Resort</h2>
-                        <p style={{ margin: 0, fontWeight: 700, color: '#dc2626', fontSize: '0.95rem' }}>
-                            📍 Location Notice: Beaver Mountain is near Logan in Logan Canyon close to Bear Lake — (Note: NOT Beaver City in southern Utah!).
+                        <h2 style={{ fontSize: '1.6rem', margin: '0.4rem 0 0.2rem 0' }}>Saturday, September 5, 2026 · Richfield Trails</h2>
+                        <p style={{ margin: 0, fontWeight: 700, color: 'rgb(var(--color-primary))', fontSize: '0.95rem' }}>
+                            📍 Location: Richfield Trails in Sevier County, UT — Fast singletrack loops with scenic red rock vistas!
                         </p>
                     </div>
                     <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                         <a
-                            href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/"
+                            href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-accent"
                             style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
                         >
-                            🙋 Volunteer Sign-Up ↗
+                            🤝 Team Volunteer Sign Up ↗
                         </a>
                         <a
-                            href="https://maps.app.goo.gl/LKMnbNCQzTJquKsi8"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn-silver"
-                            style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
-                        >
-                            🗺️ Google Maps Directions ↗
-                        </a>
-                        <a
-                            href="https://utahmtb.org/events/region-5-race-1/"
+                            href="https://utahmtb.org/events/region-5-race-2/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-silver"
@@ -136,10 +146,19 @@ export default function RaceDayCentral() {
                         >
                             🌐 Utah MTB Event Page ↗
                         </a>
+                        <a
+                            href="https://www.canva.com/design/DAHPeEmLcYg/vnkLuehFzw14M0UisNgwXA/view?utm_content=DAHPeEmLcYg&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-silver"
+                            style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
+                        >
+                            📄 Canva Race Flyer ↗
+                        </a>
                     </div>
                 </div>
                 <p style={{ fontSize: '0.95rem', lineHeight: 1.6, color: 'rgb(var(--text-muted))', margin: 0 }}>
-                    Welcome to a true alpine race course! Prepare to hike around a beautiful ski resort venue. Families are invited, and High School riders are highly encouraged to stay and cheer for their teammates all day long.
+                    Welcome to Race 2 at Richfield! Prepare for high-desert flowing singletrack in red rock country. High-desert sun can be warm and dusty — apply sunscreen early, bring shade, hydration, and cheering gear. Families are invited and encouraged to stay and cheer for teammates all day!
                 </p>
             </div>
 
@@ -348,10 +367,10 @@ export default function RaceDayCentral() {
                         </p>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
                             <li>
-                                <strong>League Volunteers (Mandatory):</strong> Every family must volunteer with the League at least once per season, per rider. Lehi MTB must provide <strong>26 volunteers</strong> for each race. <a href="https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Sign up on the Flyer ↗</a>
+                                <strong>League Volunteers (Mandatory):</strong> Every family must volunteer with the League at least once per season, per rider. Lehi MTB must provide <strong>26 volunteers</strong> for each race. <a href="https://utahmtb.org/events/region-5-race-2/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Sign up on League Race 2 Page ↗</a>
                             </li>
                             <li>
-                                <strong>Team Volunteers:</strong> Feed Zone (hydration handoff), Tent/Food, Staging &amp; Pitzone. <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Sign up on SignUpGenius ↗</a>
+                                <strong>Team Volunteers (Richfield):</strong> Feed Zone (hydration handoff), Tent/Food, Staging &amp; Pitzone. <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Richfield Team Volunteer Sign Up (SignUpGenius) ↗</a>
                             </li>
                             <li>
                                 <strong>Pitzone Setup:</strong> Friday, <strong>4:00 PM – 5:00 PM</strong> (High School Team).
@@ -362,13 +381,13 @@ export default function RaceDayCentral() {
                         </ul>
                         <div style={{ marginTop: '1.25rem' }}>
                             <a
-                                href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/"
+                                href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn-accent"
                                 style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.875rem', padding: '0.5rem 1.15rem' }}
                             >
-                                🙋 Volunteer Sign-Up (SignUpGenius) ↗
+                                🙋 Richfield Volunteer Sign-Up (SignUpGenius) ↗
                             </a>
                         </div>
                     </div>
@@ -481,8 +500,7 @@ export default function RaceDayCentral() {
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                             <li><strong>Friday Pit Zone Setup:</strong> Parents and HS team members are needed on Friday afternoon (4:00 PM – 5:00 PM) to help set up team tents, tables, food prep stations, and team banners. Many hands make fast work!</li>
-                            <li><strong>Saturday Pit Zone Take Down:</strong> The Junior Development (JD) team and parent volunteers are assigned to take down the Pit Zone tent on Saturday afternoon around <strong>4:00 PM</strong> after all races start. Please stop by the tent to lend a hand!</li>
-                            <li><strong>Sign-Up Genius:</strong> <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/" target="_blank" rel="noopener noreferrer" style={{ color: '#be185d', fontWeight: 700, textDecoration: 'underline' }}>Sign up on SignUpGenius ↗</a> for team volunteer slots (Feed Zone, tent setup/takedown, food). Parents who volunteer for team or league duties are invited to eat lunch with the team!</li>
+                            <li><strong>Sign-Up Genius:</strong> Sign up for team volunteer shifts on <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Richfield SignUpGenius ↗</a>. Parents who volunteer for team or league duties are invited to eat lunch with the team!</li>
                         </ul>
                     </div>
 
@@ -495,7 +513,7 @@ export default function RaceDayCentral() {
                             <li><strong>Expect Venue Delays:</strong> With thousands of participants, traffic and parking delays take 30+ minutes. Plan extra time to park, unload bikes, and walk up to the Pit Zone.</li>
                             <li><strong>Check In Immediately:</strong> Report directly to the Lehi tent check-in table upon arrival so coaches know your rider is on site.</li>
                             <li><strong>Staging Numbering:</strong> Every rider will get their staging number printed on their arm at check-in (required for staging call-ups).</li>
-                            <li><strong>Race Plates &amp; Bibs:</strong> Pick up your race plate and jersey bib at Beaver Mountain (first race) at the check-in table. Keep them in your car for the rest of the season! $10 replacement fee if lost.</li>
+                            <li><strong>Race Plates &amp; Bibs:</strong> If you haven&apos;t received your race plate and jersey bib yet, pick them up at the check-in table. Keep them in your car for the rest of the season! $10 replacement fee if lost.</li>
                             <li><strong>Bib Pinning:</strong> Bibs are pinned to a specific side of the jersey (announced the morning of the race).</li>
                             <li><strong>MANDATORY HELMET RULE:</strong> Riders <strong>MUST ALWAYS WEAR a helmet</strong> whenever they are on a bike — otherwise the team faces severe penalties!</li>
                         </ul>
@@ -510,8 +528,8 @@ export default function RaceDayCentral() {
                             <li><strong>Schedule Shop Service Early:</strong> Have your bike tuned up by a local bike shop (Trek, Ari, or Utah Mountain Biking) <strong>a week before race day</strong>. Never perform major repairs or adjustments on race morning!</li>
                             <li><strong>Pre-Ride Safety Check:</strong> Check tire pressure, lube drivetrain, top off tubeless sealant, and inspect brake pads before leaving home.</li>
                             <li><strong>Emergency Repair Kit:</strong> Riders should carry spare tubes, tire levers, multi-tool, and mini pump/CO2 injector.</li>
-                            <li><strong>LABEL ALL GEAR (PUT NAMES ON IT!):</strong> Put your athlete's first and last name in permanent marker on helmets, sunglasses, gloves, shoes, water bottles, tire pumps, and jackets! In a busy pit zone with hundreds of athletes and identical team kits, labeled gear always finds its way home.</li>
-                            <li><strong>Cold Weather Layers:</strong> Mountain venues can be chilly in the morning — bring warm coats and layers, but don't race in bulky heavy coats.</li>
+                            <li><strong>LABEL ALL GEAR (PUT NAMES ON IT!):</strong> Put your athlete&apos;s first and last name in permanent marker on helmets, sunglasses, gloves, shoes, water bottles, tire pumps, and jackets! In a busy pit zone with hundreds of athletes and identical team kits, labeled gear always finds its way home.</li>
+                            <li><strong>Cold Weather Layers:</strong> Mountain venues can be chilly in the morning — bring warm coats and layers, but don&apos;t race in bulky heavy coats.</li>
                         </ul>
                     </div>
 
@@ -592,7 +610,7 @@ export default function RaceDayCentral() {
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🎒</div>
                             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Get Ready &amp; Put Names on Gear!</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Pack your kit, bibs, helmet, shoes, socks, water bottles, snacks, camp chairs, and sunscreen the day before. <strong>Make sure your rider's name is written clearly on every piece of gear</strong> so nothing gets lost in the pit zone!
+                                Pack your kit, bibs, helmet, shoes, socks, water bottles, snacks, camp chairs, and sunscreen the day before. <strong>Make sure your rider&apos;s name is written clearly on every piece of gear</strong> so nothing gets lost in the pit zone!
                             </p>
                         </div>
 
