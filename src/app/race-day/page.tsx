@@ -8,9 +8,8 @@ export const metadata: Metadata = {
 };
 
 const helpfulLinks = [
-    { name: 'Volunteer Sign-Up (SignUpGenius - Beaver Mountain)', url: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/' },
-    { name: 'What Category Am I In? (CPT Table)', url: 'https://my.raceresult.com/411620/' },
     { name: 'Richfield Team Volunteer Sign Up (SignUpGenius)', url: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield' },
+    { name: 'What Category Am I In? (CPT Table)', url: 'https://my.raceresult.com/411620/' },
     { name: 'Region 5 Race 2: Richfield Event Page', url: 'https://utahmtb.org/events/region-5-race-2/' },
     { name: 'League Race Day Flyer (Canva)', url: 'https://www.canva.com/design/DAHPeEmLcYg/vnkLuehFzw14M0UisNgwXA/view?utm_content=DAHPeEmLcYg&utm_campaign=designshare&utm_medium=embeds&utm_source=link' },
     { name: 'Race 1: Beaver Mountain Details', url: 'https://utahmtb.org/events/region-5-race-1/' },
@@ -42,13 +41,13 @@ export default function RaceDayCentral() {
                 </p>
                 <div style={{ marginTop: '1.25rem', display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                     <a
-                        href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/"
+                        href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-accent"
                         style={{ fontSize: '0.9rem', padding: '0.65rem 1.25rem' }}
                     >
-                        🙋 Volunteer Sign-Up (SignUpGenius) ↗
+                        🤝 Richfield Volunteer Sign Up ↗
                     </a>
                     <a
                         href="https://my.raceresult.com/411620/"
@@ -68,25 +67,6 @@ export default function RaceDayCentral() {
                         }}
                     >
                         What Category Am I In? (CPT Table) ↗
-                    </a>
-                    <a
-                        href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                            fontSize: '0.875rem',
-                            fontWeight: 700,
-                            background: 'rgb(var(--color-accent))',
-                            color: 'black',
-                            padding: '0.65rem 1.25rem',
-                            borderRadius: 'var(--radius-sm)',
-                            textDecoration: 'none',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '0.4rem'
-                        }}
-                    >
-                        🤝 Richfield Volunteer Sign Up ↗
                     </a>
                     <a
                         href="https://utahmtb.org/events/region-5-race-2/"

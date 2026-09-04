@@ -59,9 +59,9 @@ const races = [
 
 const resources = [
     {
-        title: 'Volunteer Sign-Up (SignUpGenius - Beaver Mountain)',
-        desc: 'Sign up for team volunteer shifts at Beaver Mountain (Feed Zone, tent setup & takedown, athlete hospitality).',
-        link: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/',
+        title: 'Team Volunteer Sign-Up (SignUpGenius - Richfield)',
+        desc: 'Sign up for team volunteer shifts at Richfield (Feed Zone, tent setup & takedown, athlete hospitality).',
+        link: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield',
     },
     {
         title: 'What Category Am I In? (CPT Table)',
