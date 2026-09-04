@@ -382,7 +382,7 @@ export default function RaceDayCentral() {
                                 <strong>Team Volunteers (Richfield):</strong> Feed Zone (hydration handoff), Tent/Food, Staging &amp; Pitzone. <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Richfield Team Volunteer Sign Up (SignUpGenius) ↗</a>
                             </li>
                             <li>
-                                <strong>Pitzone Setup:</strong> Friday, <strong>4:00 PM – 5:00 PM</strong> (High School Team).
+                                <strong>Pitzone Setup:</strong> Friday at <strong>5:00 PM</strong> (High School Team).
                             </li>
                             <li>
                                 <strong>Pitzone Takedown:</strong> ~<strong>4:00 PM</strong> after all races start (Junior Development Team).
@@ -508,7 +508,7 @@ export default function RaceDayCentral() {
                             <span>⛺</span> Pit Zone Friday Setup &amp; Saturday Take-Down
                         </h3>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <li><strong>Friday Pit Zone Setup:</strong> Parents and HS team members are needed on Friday afternoon (4:00 PM – 5:00 PM) to help set up team tents, tables, food prep stations, and team banners. Many hands make fast work!</li>
+                            <li><strong>Friday Pit Zone Setup:</strong> Parents and HS team members are needed on Friday afternoon at <strong>5:00 PM</strong> to help set up team tents, tables, food prep stations, and team banners. Many hands make fast work!</li>
                             <li><strong>Sign-Up Genius:</strong> Sign up for team volunteer shifts on <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65429908-richfield" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Richfield SignUpGenius ↗</a>. Parents who volunteer for team or league duties are invited to eat lunch with the team!</li>
                         </ul>
                     </div>
