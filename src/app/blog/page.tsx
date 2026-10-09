@@ -19,7 +19,7 @@ export default function Blog() {
                 <article className="glass-panel" style={{ padding: 'var(--spacing-lg)' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
                         <h2 style={{ margin: 0, color: 'rgb(var(--color-primary))' }}>2026 Season Kickoff Meeting Announced</h2>
-                        <span className="text-muted" style={{ fontSize: '0.875rem', fontWeight: '500', backgroundColor: 'rgb(var(--surface-dark))', padding: '0.25rem 0.5rem', borderRadius: 'var(--radius-sm)' }}>March 1, 2026</span>
+                        <span style={{ fontSize: '0.875rem', fontWeight: '600', color: 'rgb(var(--color-primary))', backgroundColor: 'rgba(87, 43, 158, 0.08)', border: '1px solid rgba(87, 43, 158, 0.15)', padding: '0.25rem 0.6rem', borderRadius: 'var(--radius-sm)' }}>March 1, 2026</span>
                     </div>
                     <p className="text-muted" style={{ marginBottom: '1.5rem', lineHeight: '1.6' }}>
                         It's that time of year again! We are gearing up for the 2026 NICA season and couldn't be more excited.
@@ -33,7 +33,7 @@ export default function Blog() {
                 <article className="glass-panel" style={{ padding: 'var(--spacing-lg)' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
                         <h2 style={{ margin: 0 }}>Trail Maintenance Day Success</h2>
-                        <span className="text-muted" style={{ fontSize: '0.875rem', fontWeight: '500', backgroundColor: 'rgb(var(--surface-dark))', padding: '0.25rem 0.5rem', borderRadius: 'var(--radius-sm)' }}>October 15, 2025</span>
+                        <span style={{ fontSize: '0.875rem', fontWeight: '600', color: 'rgb(var(--color-primary))', backgroundColor: 'rgba(87, 43, 158, 0.08)', border: '1px solid rgba(87, 43, 158, 0.15)', padding: '0.25rem 0.6rem', borderRadius: 'var(--radius-sm)' }}>October 15, 2025</span>
                     </div>
                     <p className="text-muted" style={{ marginBottom: '1.5rem', lineHeight: '1.6' }}>
                         A huge thank you to all the student-athletes, parents, and coaches who came out to Eagle Mountain for our fall trail maintenance day.

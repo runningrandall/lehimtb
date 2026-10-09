@@ -69,7 +69,7 @@ const tiers = [
     {
         level: 'Purple Sponsor',
         amount: '$750',
-        color: 'rgb(192, 150, 240)',
+        color: 'rgb(var(--color-primary-light))',
         perks: [
             'Placement of company logo on team jersey',
             'Logo on sponsor banner, website',
@@ -79,8 +79,7 @@ const tiers = [
     {
         level: 'Pioneer Sponsor',
         amount: 'Below $750',
-        color: 'rgb(var(--color-silver))',
-        textDark: true,
+        color: '#64748b',
         perks: [
             'Logo on sponsor banner, website',
             'Team photo & Pool Party invitation',
@@ -194,7 +193,7 @@ export default function Sponsors() {
                                 <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', flex: 1 }}>
                                     {tier.perks.map((perk) => (
                                         <li key={perk} style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', fontSize: '0.9rem' }}>
-                                            <span style={{ color: tier.color === 'rgb(192, 150, 240)' ? 'rgb(var(--color-primary))' : tier.color === 'rgb(var(--color-silver))' ? 'rgb(var(--color-primary))' : tier.color, fontWeight: 700, marginTop: '2px', flexShrink: 0 }}>✓</span>
+                                            <span style={{ color: 'rgb(var(--color-primary))', fontWeight: 700, marginTop: '2px', flexShrink: 0 }}>✓</span>
                                             <span className="text-muted">{perk}</span>
                                         </li>
                                     ))}

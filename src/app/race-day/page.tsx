@@ -4,18 +4,18 @@ import WaveScheduleTabs from './WaveScheduleTabs';
 
 export const metadata: Metadata = {
     title: 'Race Day Central & Wave Schedule | Lehi MTB Hub',
-    description: 'Complete 2026 race day guide, wave schedules, Beaver Mountain race details, rider rosters, arrival times, food & volunteering info, packing checklists, and Utah MTB resources.',
+    description: 'Complete 2026 race day guide, wave schedules, Herriman Regional Championship race details, rider rosters, arrival times, food & volunteering info, packing checklists, and Utah MTB resources.',
 };
 
 const helpfulLinks = [
-    { name: 'Volunteer Sign-Up (SignUpGenius - Beaver Mountain)', url: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/' },
+    { name: 'Lehi Team Volunteer Sign-Up (SignUpGenius - Herriman)', url: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-66313453-herriman#/' },
+    { name: 'League Volunteer Sign-Up (Mandatory)', url: 'https://crew.mockletdesign.com/s/a8e5108f9b57a39060' },
+    { name: 'League Race Day Flyer (Canva)', url: 'https://www.canva.com/design/DAHPeOBLZl4/-7qkmSmlAh4ISmPomXNU2w/view?embed' },
     { name: 'What Category Am I In? (CPT Table)', url: 'https://my.raceresult.com/411620/' },
-    { name: 'League Race Day Flyer (Canva)', url: 'https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1' },
+    { name: 'Race 4: Region 5 Championship (Herriman)', url: 'https://utahmtb.org/events/region-5-race-4/' },
     { name: 'Race 1: Beaver Mountain Details', url: 'https://utahmtb.org/events/region-5-race-1/' },
-    { name: 'Beaver Mountain Ski Resort Map', url: 'https://maps.app.goo.gl/LKMnbNCQzTJquKsi8' },
     { name: 'Race 2: Richfield Details', url: 'https://utahmtb.org/events/region-5-race-2/' },
     { name: 'Race 3: Panguitch Details', url: 'https://utahmtb.org/events/region-5-race-3/' },
-    { name: 'Race 4: Region 5 Championship (Herriman)', url: 'https://utahmtb.org/events/region-5-race-4/' },
     { name: 'State Championship Details (St. George)', url: 'https://utahmtb.org/events/state-championships/' },
     { name: 'NICA Western Regional Championship', url: 'https://events.nationalmtb.org/regionals/western' },
     { name: 'PitZone Registration & Results', url: 'https://pitzone.nationalmtb.org/' },
@@ -38,17 +38,55 @@ export default function RaceDayCentral() {
                 <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🏆</div>
                 <h1 style={{ marginBottom: '0.75rem', fontSize: 'clamp(2.2rem, 5vw, 3.5rem)' }}>Race Day Central</h1>
                 <p style={{ fontSize: '1.2rem', opacity: 0.95, maxWidth: '750px', margin: '0 auto', lineHeight: 1.6 }}>
-                    Everything you need for race weekend: 2026 Wave Schedules, arrival times, wave meeting times, bike prep rules, food &amp; volunteering, packing checklists, and venue guides.
+                    Everything you need for race weekend: Updated Herriman Wave Schedule, arrival times, wave meeting times, bike prep rules, food &amp; volunteering, packing checklists, and venue guides.
                 </p>
                 <div style={{ marginTop: '1.25rem', display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                     <a
-                        href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/"
+                        href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-66313453-herriman#/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-accent"
                         style={{ fontSize: '0.9rem', padding: '0.65rem 1.25rem' }}
                     >
-                        🙋 Volunteer Sign-Up (SignUpGenius) ↗
+                        🙋 Lehi Team Volunteer Sign-Up ↗
+                    </a>
+                    <a
+                        href="https://crew.mockletdesign.com/s/a8e5108f9b57a39060"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            fontSize: '0.875rem',
+                            fontWeight: 700,
+                            background: 'rgba(255,255,255,0.25)',
+                            color: 'white',
+                            padding: '0.65rem 1.25rem',
+                            borderRadius: 'var(--radius-sm)',
+                            textDecoration: 'none',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.4rem'
+                        }}
+                    >
+                        🚴 League Volunteer Sign-Up (Mandatory) ↗
+                    </a>
+                    <a
+                        href="https://www.canva.com/design/DAHPeOBLZl4/-7qkmSmlAh4ISmPomXNU2w/view?embed"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            fontSize: '0.875rem',
+                            fontWeight: 700,
+                            background: 'rgba(255,255,255,0.2)',
+                            color: 'white',
+                            padding: '0.65rem 1.25rem',
+                            borderRadius: 'var(--radius-sm)',
+                            textDecoration: 'none',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.4rem'
+                        }}
+                    >
+                        📄 League Race Day Flyer (Canva) ↗
                     </a>
                     <a
                         href="https://my.raceresult.com/411620/"
@@ -69,29 +107,10 @@ export default function RaceDayCentral() {
                     >
                         What Category Am I In? (CPT Table) ↗
                     </a>
-                    <a
-                        href="https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                            fontSize: '0.875rem',
-                            fontWeight: 700,
-                            background: 'rgba(255,255,255,0.2)',
-                            color: 'white',
-                            padding: '0.65rem 1.25rem',
-                            borderRadius: 'var(--radius-sm)',
-                            textDecoration: 'none',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '0.4rem'
-                        }}
-                    >
-                        📄 League Race Day Flyer ↗
-                    </a>
                 </div>
             </div>
 
-            {/* Featured Next Race Banner (Beaver Mountain) */}
+            {/* Featured Next Race Banner (Herriman Region 5 Race 4) */}
             <div className="glass-panel" style={{
                 padding: 'var(--spacing-lg)',
                 marginBottom: 'var(--spacing-xl)',
@@ -101,34 +120,43 @@ export default function RaceDayCentral() {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', marginBottom: '0.75rem' }}>
                     <div>
                         <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#2563eb', background: 'rgba(37,99,235,0.1)', padding: '0.2rem 0.6rem', borderRadius: '4px' }}>
-                            REGION 5 · RACE 1
+                            REGION 5 · RACE 4 (REGIONAL CHAMPIONSHIP)
                         </span>
-                        <h2 style={{ fontSize: '1.6rem', margin: '0.4rem 0 0.2rem 0' }}>Saturday, August 22, 2026 · Beaver Mountain Ski Resort</h2>
-                        <p style={{ margin: 0, fontWeight: 700, color: '#dc2626', fontSize: '0.95rem' }}>
-                            📍 Location Notice: Beaver Mountain is near Logan in Logan Canyon close to Bear Lake — (Note: NOT Beaver City in southern Utah!).
+                        <h2 style={{ fontSize: '1.6rem', margin: '0.4rem 0 0.2rem 0' }}>Saturday, October 10, 2026 · Herriman Trails, Herriman UT</h2>
+                        <p style={{ margin: '0.4rem 0 0 0', fontWeight: 700, color: '#dc2626', fontSize: '0.95rem' }}>
+                            📍 Directions &amp; Access: Arrive to venue via Bacchus Highway (turn RIGHT into venue). Do NOT park on Herriman Main Street (officers patrolling). Carpooling strongly encouraged!
                         </p>
                     </div>
                     <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                         <a
-                            href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/"
+                            href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-66313453-herriman#/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-accent"
                             style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
                         >
-                            🙋 Volunteer Sign-Up ↗
+                            🙋 Team Volunteer Sign-Up ↗
                         </a>
                         <a
-                            href="https://maps.app.goo.gl/LKMnbNCQzTJquKsi8"
+                            href="https://crew.mockletdesign.com/s/a8e5108f9b57a39060"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-silver"
                             style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
                         >
-                            🗺️ Google Maps Directions ↗
+                            🚴 League Volunteer Sign-Up ↗
                         </a>
                         <a
-                            href="https://utahmtb.org/events/region-5-race-1/"
+                            href="https://www.canva.com/design/DAHPeOBLZl4/-7qkmSmlAh4ISmPomXNU2w/view?embed"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-silver"
+                            style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
+                        >
+                            📄 League Flyer ↗
+                        </a>
+                        <a
+                            href="https://utahmtb.org/events/region-5-race-4/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-silver"
@@ -138,8 +166,20 @@ export default function RaceDayCentral() {
                         </a>
                     </div>
                 </div>
+                <div style={{
+                    background: 'rgba(245, 158, 11, 0.12)',
+                    border: '1px solid #f59e0b',
+                    borderRadius: 'var(--radius-sm)',
+                    padding: '0.75rem 1rem',
+                    margin: '0.75rem 0'
+                }}>
+                    <strong style={{ color: '#b45309', fontSize: '0.925rem' }}>⚡ UPDATED SCHEDULE NOTICE (As of 10/7):</strong>
+                    <span style={{ color: 'rgb(var(--text-main))', fontSize: '0.9rem', marginLeft: '0.35rem' }}>
+                        All races have been moved up 1 hour! Pitzone opens at 6:15 AM, Head Coach Meeting at 7:00 AM, and Wave 1 starts at 8:00 AM!
+                    </span>
+                </div>
                 <p style={{ fontSize: '0.95rem', lineHeight: 1.6, color: 'rgb(var(--text-muted))', margin: 0 }}>
-                    Welcome to a true alpine race course! Prepare to hike around a beautiful ski resort venue. Families are invited, and High School riders are highly encouraged to stay and cheer for their teammates all day long.
+                    Our last region race of the season is the Region 5 Championship in Herriman! High School categories race on a 5.9-mile loop with 730 ft of climbing per lap. Lehi MTB Pit Zone is assigned to <strong>Pit #1 (70&apos; x 50&apos;)</strong>. Downrange Bike Works will serve as our Neutral Support sponsor.
                 </p>
             </div>
 
@@ -348,10 +388,10 @@ export default function RaceDayCentral() {
                         </p>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
                             <li>
-                                <strong>League Volunteers (Mandatory):</strong> Every family must volunteer with the League at least once per season, per rider. Lehi MTB must provide <strong>26 volunteers</strong> for each race. <a href="https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Sign up on the Flyer ↗</a>
+                                <strong>League Volunteers (Mandatory):</strong> Every family must volunteer with the League at least once per season, per rider. Lehi MTB must provide <strong>26 volunteers</strong> for each race. <a href="https://crew.mockletdesign.com/s/a8e5108f9b57a39060" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Sign up on the League Volunteer Portal ↗</a>
                             </li>
                             <li>
-                                <strong>Team Volunteers:</strong> Feed Zone (hydration handoff), Tent/Food, Staging &amp; Pitzone. <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Sign up on SignUpGenius ↗</a>
+                                <strong>Lehi Team Volunteers:</strong> Feed Zone (hydration handoff), Tent/Food, Staging &amp; Pitzone setup/takedown. <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-66313453-herriman#/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(var(--color-primary))', fontWeight: 700 }}>Sign up on Team SignUpGenius ↗</a>
                             </li>
                             <li>
                                 <strong>Pitzone Setup:</strong> Friday, <strong>4:00 PM – 5:00 PM</strong> (High School Team).
@@ -360,15 +400,33 @@ export default function RaceDayCentral() {
                                 <strong>Pitzone Takedown:</strong> ~<strong>4:00 PM</strong> after all races start (Junior Development Team).
                             </li>
                         </ul>
-                        <div style={{ marginTop: '1.25rem' }}>
+                        <div style={{ marginTop: '1.25rem', display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                             <a
-                                href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/"
+                                href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-66313453-herriman#/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn-accent"
                                 style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.875rem', padding: '0.5rem 1.15rem' }}
                             >
-                                🙋 Volunteer Sign-Up (SignUpGenius) ↗
+                                🙋 Lehi Team Volunteer Sign-Up (SignUpGenius) ↗
+                            </a>
+                            <a
+                                href="https://crew.mockletdesign.com/s/a8e5108f9b57a39060"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn-silver"
+                                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.875rem', padding: '0.5rem 1.15rem' }}
+                            >
+                                🚴 League Volunteer Sign-Up ↗
+                            </a>
+                            <a
+                                href="https://www.canva.com/design/DAHPeOBLZl4/-7qkmSmlAh4ISmPomXNU2w/view?embed"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn-silver"
+                                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.875rem', padding: '0.5rem 1.15rem' }}
+                            >
+                                📄 League Race Day Flyer ↗
                             </a>
                         </div>
                     </div>
@@ -482,7 +540,7 @@ export default function RaceDayCentral() {
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                             <li><strong>Friday Pit Zone Setup:</strong> Parents and HS team members are needed on Friday afternoon (4:00 PM – 5:00 PM) to help set up team tents, tables, food prep stations, and team banners. Many hands make fast work!</li>
                             <li><strong>Saturday Pit Zone Take Down:</strong> The Junior Development (JD) team and parent volunteers are assigned to take down the Pit Zone tent on Saturday afternoon around <strong>4:00 PM</strong> after all races start. Please stop by the tent to lend a hand!</li>
-                            <li><strong>Sign-Up Genius:</strong> <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/" target="_blank" rel="noopener noreferrer" style={{ color: '#be185d', fontWeight: 700, textDecoration: 'underline' }}>Sign up on SignUpGenius ↗</a> for team volunteer slots (Feed Zone, tent setup/takedown, food). Parents who volunteer for team or league duties are invited to eat lunch with the team!</li>
+                            <li><strong>Sign-Up Genius:</strong> <a href="https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-66313453-herriman#/" target="_blank" rel="noopener noreferrer" style={{ color: '#be185d', fontWeight: 700, textDecoration: 'underline' }}>Sign up on SignUpGenius ↗</a> for team volunteer slots (Feed Zone, tent setup/takedown, food). Parents who volunteer for team or league duties are invited to eat lunch with the team!</li>
                         </ul>
                     </div>
 
@@ -510,8 +568,8 @@ export default function RaceDayCentral() {
                             <li><strong>Schedule Shop Service Early:</strong> Have your bike tuned up by a local bike shop (Trek, Ari, or Utah Mountain Biking) <strong>a week before race day</strong>. Never perform major repairs or adjustments on race morning!</li>
                             <li><strong>Pre-Ride Safety Check:</strong> Check tire pressure, lube drivetrain, top off tubeless sealant, and inspect brake pads before leaving home.</li>
                             <li><strong>Emergency Repair Kit:</strong> Riders should carry spare tubes, tire levers, multi-tool, and mini pump/CO2 injector.</li>
-                            <li><strong>LABEL ALL GEAR (PUT NAMES ON IT!):</strong> Put your athlete's first and last name in permanent marker on helmets, sunglasses, gloves, shoes, water bottles, tire pumps, and jackets! In a busy pit zone with hundreds of athletes and identical team kits, labeled gear always finds its way home.</li>
-                            <li><strong>Cold Weather Layers:</strong> Mountain venues can be chilly in the morning — bring warm coats and layers, but don't race in bulky heavy coats.</li>
+                            <li><strong>LABEL ALL GEAR (PUT NAMES ON IT!):</strong> Put your athlete&apos;s first and last name in permanent marker on helmets, sunglasses, gloves, shoes, water bottles, tire pumps, and jackets! In a busy pit zone with hundreds of athletes and identical team kits, labeled gear always finds its way home.</li>
+                            <li><strong>Cold Weather Layers:</strong> Mountain venues can be chilly in the morning — bring warm coats and layers, but don&apos;t race in bulky heavy coats.</li>
                         </ul>
                     </div>
 
@@ -553,7 +611,7 @@ export default function RaceDayCentral() {
                             <li><strong>Warm-Up (30m):</strong> Ride leaders guide groups through 30-minute warm-up efforts outside the Pit Zone.</li>
                             <li><strong>Staging &amp; Call-Ups:</strong> Line up 15 minutes prior. Top 10 called by name, followed by arm numbers. Must have handlebar race plate to enter chute.</li>
                             <li><strong>Finish Line Volunteer Zone:</strong> The area past the finish line is strictly managed by finish line volunteers and coaches for racer safety.</li>
-                            <li><strong>Finish Line Volunteers:</strong> A Finish Line Volunteer will "catch" each rider as they cross the finish line, check their condition, provide cold water and seating, and walk them out to parents.</li>
+                            <li><strong>Finish Line Volunteers:</strong> A Finish Line Volunteer will &quot;catch&quot; each rider as they cross the finish line, check their condition, provide cold water and seating, and walk them out to parents.</li>
                         </ul>
                     </div>
 
@@ -592,7 +650,7 @@ export default function RaceDayCentral() {
                             <div style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>🎒</div>
                             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.4rem', color: 'rgb(var(--color-primary))' }}>Get Ready &amp; Put Names on Gear!</h3>
                             <p className="text-muted" style={{ fontSize: '0.875rem', lineHeight: 1.6, margin: 0 }}>
-                                Pack your kit, bibs, helmet, shoes, socks, water bottles, snacks, camp chairs, and sunscreen the day before. <strong>Make sure your rider's name is written clearly on every piece of gear</strong> so nothing gets lost in the pit zone!
+                                Pack your kit, bibs, helmet, shoes, socks, water bottles, snacks, camp chairs, and sunscreen the day before. <strong>Make sure your rider&apos;s name is written clearly on every piece of gear</strong> so nothing gets lost in the pit zone!
                             </p>
                         </div>
 

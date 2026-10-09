@@ -56,7 +56,7 @@ const coaches = [
         email: 'demmahowell99@gmail.com',
         photo: '/images/coaches/Devin_Howell.jpg',
         bio: 'Devin leads our GRiT program and is an absolute champion for girls in the sport. She creates a space where every girl feels welcome, capable, and excited to ride — whether it\'s your first time on a trail or you\'re racing varsity.',
-        accent: 'rgb(192, 150, 240)',
+        accent: '#9333ea',
     },
 ];
 
@@ -90,8 +90,8 @@ export default function Coaches() {
 
                 {/* GRiT info + Ride Leader CTA */}
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--spacing-lg)', marginBottom: 'var(--spacing-xl)' }}>
-                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid rgb(192, 150, 240)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                        <p style={{ fontWeight: 800, fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgb(192, 150, 240)', marginBottom: '0.75rem' }}>Girls Riding Together</p>
+                    <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #9333ea', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                        <p style={{ fontWeight: 800, fontSize: '0.7rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#9333ea', marginBottom: '0.75rem' }}>Girls Riding Together</p>
                         <h3 style={{ marginBottom: '0.75rem' }}>About GRiT</h3>
                         <p className="text-muted" style={{ marginBottom: '1.25rem', lineHeight: 1.7 }}>
                             GRiT is a NICA initiative aimed at increasing female participation in mountain biking. All skill levels welcome!

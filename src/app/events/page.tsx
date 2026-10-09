@@ -59,9 +59,14 @@ const races = [
 
 const resources = [
     {
-        title: 'Volunteer Sign-Up (SignUpGenius - Beaver Mountain)',
-        desc: 'Sign up for team volunteer shifts at Beaver Mountain (Feed Zone, tent setup & takedown, athlete hospitality).',
-        link: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-65063784-beaver#/',
+        title: 'Lehi Team Volunteer Sign-Up (SignUpGenius - Herriman)',
+        desc: 'Sign up for Lehi MTB team volunteer shifts at Herriman (Feed Zone, tent setup & takedown, athlete hospitality).',
+        link: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-66313453-herriman#/',
+    },
+    {
+        title: 'League Volunteer Sign-Up (Mandatory)',
+        desc: 'Sign up for mandatory Utah High School Cycling League volunteer shifts for Region 5 races.',
+        link: 'https://crew.mockletdesign.com/s/a8e5108f9b57a39060',
     },
     {
         title: 'What Category Am I In? (CPT Table)',
@@ -91,7 +96,7 @@ const resources = [
     {
         title: 'League Race Day Flyer (Canva)',
         desc: 'Official Utah High School Cycling League race day schedule, map, and volunteer sign-up flyer.',
-        link: 'https://www.canva.com/design/DAHPeBRJepA/S68VWdEL5Rt0yAu5qf31Qg/view?utm_content=DAHPeBRJepA&utm_campaign=designshare&utm_medium=embeds&utm_source=link#1',
+        link: 'https://www.canva.com/design/DAHPeOBLZl4/-7qkmSmlAh4ISmPomXNU2w/view?embed',
     },
     {
         title: 'Lehi MTB Race Day Guide',

@@ -24,10 +24,10 @@
   --color-tertiary-hover: 230, 235, 30;
 
   /* Silver/Neutral */
-  --color-silver: 192, 196, 210;
-  /* light silver */
-  --color-silver-dark: 140, 144, 162;
-  /* muted silver */
+  --color-silver: 80, 70, 105;
+  /* readable neutral slate/purple */
+  --color-silver-dark: 55, 45, 75;
+  /* muted dark silver */
 
   /* Backgrounds */
   --color-bg-light: 255, 253, 255;
@@ -40,7 +40,7 @@
   --color-text-light: 12, 8, 24;
   --color-text-dark: 245, 243, 252;
   /* off-white with purple tint */
-  --color-text-muted-light: 90, 75, 115;
+  --color-text-muted-light: 70, 60, 92;
   --color-text-muted-dark: 165, 155, 195;
 
   /* Surface */
@@ -231,20 +231,36 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0.75rem 1.5rem;
-  background-color: transparent;
-  color: rgb(var(--color-silver));
-  font-weight: 600;
+  background-color: rgba(87, 43, 158, 0.08);
+  color: rgb(var(--color-primary-dark));
+  font-weight: 700;
   border-radius: var(--radius-full);
-  border: 2px solid rgb(var(--color-silver));
+  border: 1.5px solid rgba(87, 43, 158, 0.3);
   transition: all var(--transition-fast);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn-silver:hover {
-  background-color: rgb(var(--color-silver));
-  color: rgb(var(--color-secondary));
+  background-color: rgb(var(--color-primary));
+  color: #ffffff;
+  border-color: rgb(var(--color-primary));
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+}
+
+/* In dark hero headers, keep btn-silver translucent white with crisp white text */
+.hero .btn-silver {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.hero .btn-silver:hover {
+  background-color: #ffffff;
+  color: rgb(var(--color-secondary));
+  border-color: #ffffff;
 }
 
 /* Typography styles */

@@ -594,7 +594,7 @@ const challenges: Challenge[] = [
 
 const tierConfig = {
     bronze: { label: 'Bronze', color: '#cd7f32', bg: 'rgba(205,127,50,0.1)', border: 'rgba(205,127,50,0.3)' },
-    silver: { label: 'Silver', color: '#a0a4b0', bg: 'rgba(160,164,176,0.1)', border: 'rgba(160,164,176,0.3)' },
+    silver: { label: 'Silver', color: '#475569', bg: 'rgba(71,85,105,0.09)', border: 'rgba(71,85,105,0.25)' },
     gold: { label: 'Gold', color: '#d4a017', bg: 'rgba(212,160,23,0.1)', border: 'rgba(212,160,23,0.3)' },
     legendary: { label: 'Legendary', color: 'rgb(var(--color-primary))', bg: 'rgba(87,43,158,0.1)', border: 'rgba(87,43,158,0.3)' },
 };

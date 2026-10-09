@@ -123,88 +123,88 @@ const races1To3JdWaves = [
     },
 ];
 
-// Race 4 Data (Herriman Regional Championship)
+// Race 4 Data (Herriman Regional Championship) - UPDATED SCHEDULE (ALL RACES MOVED UP 1 HOUR AS OF 10/7)
 const race4HsWaves = [
     {
         wave: 'Wave 1 - HS',
         arrivalTime: '6:30 – 7:00 AM',
-        meetingTime: '8:00 – 8:10 AM',
-        warmupTime: '8:10 – 8:40 AM',
-        stageTime: '8:45 AM',
-        startTime: '9:00 AM',
+        meetingTime: '7:00 – 7:10 AM',
+        warmupTime: '7:10 – 7:40 AM',
+        stageTime: '7:45 AM',
+        startTime: '8:00 AM',
         categories: [
-            { category: 'JVB Boys', time: '9:00 AM', laps: '2', distance: '11.8 mi', staging: '8:45 AM', pullTime: '9:45 AM', plates: '2600–2749', maxPull: '45 min' },
-            { category: 'JVC Boys', time: '9:05 AM', laps: '2', distance: '11.8 mi', staging: '8:55 AM', pullTime: '9:50 AM', plates: '6150–6299', maxPull: '45 min' },
+            { category: 'JVB Boys', time: '8:00 AM', laps: '2', distance: '11.8 mi', staging: '7:45 AM', pullTime: '8:45 AM', plates: '2600–2749', maxPull: '45 min' },
+            { category: 'JVC Boys', time: '8:05 AM', laps: '2', distance: '11.8 mi', staging: '7:55 AM', pullTime: '8:50 AM', plates: '6150–6299', maxPull: '45 min' },
         ]
     },
     {
         wave: 'Wave 2 - HS',
-        arrivalTime: '7:00 – 7:55 AM',
-        meetingTime: '8:55 – 9:05 AM',
-        warmupTime: '9:05 – 9:35 AM',
-        stageTime: '9:40 AM',
-        startTime: '9:55 AM',
+        arrivalTime: '7:00 – 7:45 AM',
+        meetingTime: '7:55 – 8:05 AM',
+        warmupTime: '8:05 – 8:35 AM',
+        stageTime: '8:40 AM',
+        startTime: '8:55 AM',
         categories: [
-            { category: 'JVA Boys', time: '9:55 AM', laps: '2', distance: '11.8 mi', staging: '9:40 AM', pullTime: '10:40 AM', plates: '5400–5499', maxPull: '45 min' },
-            { category: 'Fresh A Boys', time: '10:00 AM', laps: '2', distance: '11.8 mi', staging: '9:45 AM', pullTime: '10:45 AM', plates: '3600–3749', maxPull: '45 min' },
+            { category: 'JVA Boys', time: '8:55 AM', laps: '2', distance: '11.8 mi', staging: '8:40 AM', pullTime: '9:40 AM', plates: '5400–5499', maxPull: '45 min' },
+            { category: 'Fresh A Boys', time: '9:00 AM', laps: '2', distance: '11.8 mi', staging: '8:45 AM', pullTime: '9:45 AM', plates: '3600–3749', maxPull: '45 min' },
         ]
     },
     {
         wave: 'Wave 3 - HS',
-        arrivalTime: '8:40 – 9:10 AM',
-        meetingTime: '10:10 – 10:20 AM',
-        warmupTime: '10:20 – 10:50 AM',
-        stageTime: '10:55 AM',
-        startTime: '11:10 AM',
+        arrivalTime: '7:45 – 8:40 AM',
+        meetingTime: '9:10 – 9:20 AM',
+        warmupTime: '9:20 – 9:50 AM',
+        stageTime: '9:55 AM',
+        startTime: '10:10 AM',
         categories: [
-            { category: 'Varsity Boys', time: '11:10 AM', laps: '3', distance: '17.7 mi', staging: '10:55 AM', pullTime: '12:20 PM', plates: '730–774', maxPull: '70 min' },
-            { category: 'Varsity Girls', time: '11:15 AM', laps: '2', distance: '11.8 mi', staging: '11:00 AM', pullTime: '12:00 PM', plates: '180–224', maxPull: '45 min' },
+            { category: 'Varsity Boys', time: '10:10 AM', laps: '3', distance: '17.7 mi', staging: '9:55 AM', pullTime: '11:20 AM', plates: '730–774', maxPull: '70 min' },
+            { category: 'Varsity Girls', time: '10:15 AM', laps: '2', distance: '11.8 mi', staging: '10:00 AM', pullTime: '11:00 AM', plates: '180–224', maxPull: '45 min' },
         ]
     },
     {
         wave: 'Wave 4 - HS',
-        arrivalTime: '10:05 – 10:35 AM',
-        meetingTime: '11:35 – 11:45 AM',
-        warmupTime: '11:45 AM – 12:15 PM',
-        stageTime: '12:20 PM',
-        startTime: '12:35 PM',
+        arrivalTime: '9:35 – 10:05 AM',
+        meetingTime: '10:35 – 10:45 AM',
+        warmupTime: '10:45 – 11:15 AM',
+        stageTime: '11:20 AM',
+        startTime: '11:35 AM',
         categories: [
-            { category: 'JVA Girls', time: '12:35 PM', laps: '2', distance: '11.8 mi', staging: '12:20 PM', pullTime: '1:20 PM', plates: '450–494', maxPull: '45 min' },
-            { category: 'JVB Girls', time: '12:40 PM', laps: '2', distance: '11.8 mi', staging: '12:25 PM', pullTime: '1:25 PM', plates: '1400–1499', maxPull: '45 min' },
-            { category: 'JVC Girls', time: '12:45 PM', laps: '2', distance: '11.8 mi', staging: '12:30 PM', pullTime: '1:30 PM', plates: '4600–4749', maxPull: '45 min' },
+            { category: 'JVA Girls', time: '11:35 AM', laps: '2', distance: '11.8 mi', staging: '11:20 AM', pullTime: '12:20 PM', plates: '450–494', maxPull: '45 min' },
+            { category: 'JVB Girls', time: '11:40 AM', laps: '2', distance: '11.8 mi', staging: '11:25 AM', pullTime: '12:25 PM', plates: '1400–1499', maxPull: '45 min' },
+            { category: 'JVC Girls', time: '11:45 AM', laps: '2', distance: '11.8 mi', staging: '11:30 AM', pullTime: '12:30 PM', plates: '4600–4749', maxPull: '45 min' },
         ]
     },
     {
         wave: 'Wave 5 - HS',
-        arrivalTime: '11:10 – 11:40 AM',
-        meetingTime: '12:40 – 12:50 PM',
-        warmupTime: '12:50 – 1:20 PM',
-        stageTime: '1:25 PM',
-        startTime: '1:40 PM',
+        arrivalTime: '10:40 – 11:10 AM',
+        meetingTime: '11:40 – 11:50 AM',
+        warmupTime: '11:50 AM – 12:20 PM',
+        stageTime: '12:25 PM',
+        startTime: '12:40 PM',
         categories: [
-            { category: 'Fresh B Boys', time: '1:40 PM', laps: '2', distance: '11.8 mi', staging: '1:25 PM', pullTime: '2:25 PM', plates: '7600–7749', maxPull: '45 min' },
-            { category: 'JV D Boys', time: '1:45 PM', laps: '2', distance: '11.8 mi', staging: '1:30 PM', pullTime: '2:30 PM', plates: '8800–8999', maxPull: '45 min' },
+            { category: 'Fresh B Boys', time: '12:40 PM', laps: '2', distance: '11.8 mi', staging: '12:25 PM', pullTime: '1:25 PM', plates: '7600–7749', maxPull: '45 min' },
+            { category: 'JV D Boys', time: '12:45 PM', laps: '2', distance: '11.8 mi', staging: '12:30 PM', pullTime: '1:30 PM', plates: '8800–8999', maxPull: '45 min' },
         ]
     },
     {
         wave: 'Wave 6 - HS (Single Lap)',
-        arrivalTime: '12:05 – 12:35 PM',
-        meetingTime: '1:35 – 1:45 PM',
-        warmupTime: '1:45 – 2:15 PM',
-        stageTime: '2:20 PM',
-        startTime: '2:35 PM',
+        arrivalTime: '11:35 AM – 12:05 PM',
+        meetingTime: '12:35 – 12:45 PM',
+        warmupTime: '12:45 – 1:15 PM',
+        stageTime: '1:20 PM',
+        startTime: '1:35 PM',
         categories: [
-            { category: 'JVE Boys', time: '2:35 PM', laps: '1', distance: '5.9 mi', staging: '2:20 PM', pullTime: 'N/A', plates: '10600–10749', maxPull: 'N/A' },
-            { category: 'Fresh C Boys', time: '2:38 PM', laps: '1', distance: '5.9 mi', staging: '2:23 PM', pullTime: 'N/A', plates: '30400–30499', maxPull: 'N/A' },
-            { category: 'JVD Girls', time: '2:41 PM', laps: '1', distance: '5.9 mi', staging: '2:26 PM', pullTime: 'N/A', plates: '20400–20499', maxPull: 'N/A' },
-            { category: 'Adventure*', time: '2:45 PM', laps: '1', distance: '5.9 mi', staging: '2:30 PM', pullTime: 'N/A', plates: '90400–90499', maxPull: 'N/A', note: 'Non-competitive' },
-            { category: 'Adaptive', time: '2:45 PM', laps: '1', distance: '5.9 mi', staging: 'N/A', pullTime: 'N/A', plates: 'N/A', maxPull: 'N/A' },
+            { category: 'JVE Boys', time: '1:35 PM', laps: '1', distance: '5.9 mi', staging: '1:20 PM', pullTime: 'N/A', plates: '10600–10749', maxPull: 'N/A' },
+            { category: 'Fresh C Boys', time: '1:38 PM', laps: '1', distance: '5.9 mi', staging: '1:23 PM', pullTime: 'N/A', plates: '30400–30499', maxPull: 'N/A' },
+            { category: 'JVD Girls', time: '1:41 PM', laps: '1', distance: '5.9 mi', staging: '1:26 PM', pullTime: 'N/A', plates: '20400–20499', maxPull: 'N/A' },
+            { category: 'Adventure*', time: '1:45 PM', laps: '1', distance: '5.9 mi', staging: '1:29 PM', pullTime: 'N/A', plates: '90400–90499', maxPull: 'N/A', note: 'Non-competitive' },
+            { category: 'Adaptive', time: '1:45 PM', laps: '1', distance: '5.9 mi', staging: 'N/A', pullTime: 'N/A', plates: 'N/A', maxPull: 'N/A' },
         ]
     },
 ];
 
 export default function WaveScheduleTabs() {
-    const [activeTab, setActiveTab] = useState<'races13' | 'race4' | 'postseason'>('races13');
+    const [activeTab, setActiveTab] = useState<'races13' | 'race4' | 'postseason'>('race4');
 
     return (
         <div style={{ marginBottom: 'var(--spacing-xl)' }}>
@@ -526,6 +526,22 @@ export default function WaveScheduleTabs() {
 
                     {/* Key Venue Event Times Banner */}
                     <div style={{
+                        background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(239, 68, 68, 0.15))',
+                        border: '2px solid #f59e0b',
+                        borderRadius: 'var(--radius-md)',
+                        padding: '0.85rem 1.15rem',
+                        marginBottom: '1rem',
+                        display: 'flex',
+                        gap: '0.85rem',
+                        alignItems: 'center'
+                    }}>
+                        <span style={{ fontSize: '1.5rem' }}>⚠️</span>
+                        <p style={{ margin: 0, fontSize: '0.9rem', fontWeight: 700, color: '#b45309', lineHeight: 1.4 }}>
+                            *** UPDATED SCHEDULE AS OF 10/7 *** ALL RACES MOVED UP ONE HOUR! Pitzone opens at 6:15 AM, Head Coach Meeting at 7:00 AM, Course Closes &amp; National Anthem at 7:30 AM, and Wave 1 starts at 8:00 AM!
+                        </p>
+                    </div>
+
+                    <div style={{
                         display: 'grid',
                         gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
                         gap: '0.6rem',
@@ -534,7 +550,7 @@ export default function WaveScheduleTabs() {
                     }}>
                         <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)' }}>
                             <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#2563eb', display: 'block' }}>Pitzone Opens</span>
-                            <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>6:30 AM</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>6:15 AM</span>
                         </div>
                         <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(250,255,56,0.15)', border: '1px solid rgba(250,255,56,0.4)' }}>
                             <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(120,100,0)', display: 'block' }}>Head Coach Mtg</span>
@@ -542,19 +558,19 @@ export default function WaveScheduleTabs() {
                         </div>
                         <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87,43,158,0.1)', border: '1px solid rgba(87,43,158,0.2)' }}>
                             <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: 'rgb(var(--color-primary))', display: 'block' }}>National Anthem</span>
-                            <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>8:30 AM</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem' }}>7:30 AM</span>
                         </div>
                         <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59,130,246,0.12)', border: '1px solid rgba(59,130,246,0.25)' }}>
                             <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', color: '#2563eb', display: 'block' }}>HS Races Start</span>
-                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#2563eb' }}>9:00 AM</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#2563eb' }}>8:00 AM</span>
                         </div>
                         <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59,130,246,0.12)', border: '1px solid rgba(59,130,246,0.25)' }}>
                             <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', color: '#2563eb', display: 'block' }}>HS Races End</span>
-                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#2563eb' }}>3:15 PM</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#2563eb' }}>2:15 PM</span>
                         </div>
                         <div style={{ padding: '0.5rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.2)' }}>
                             <span style={{ fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', color: '#059669', display: 'block' }}>HS Podiums</span>
-                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#047857' }}>4:00 – 4:30 PM</span>
+                            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#047857' }}>3:00 – 3:30 PM</span>
                         </div>
                     </div>
 
