@@ -4,16 +4,14 @@ import WaveScheduleTabs from './WaveScheduleTabs';
 
 export const metadata: Metadata = {
     title: 'State Championship Central & Wave Schedule | Lehi MTB Hub',
-    description: 'Complete 2026 Utah State Championship race day guide, Friday & Saturday wave schedules, St. George venue logistics, rider call-ups, pre-ride times, camping rules, packing checklists, and cheer info.',
+    description: 'Complete 2026 Utah State Championship race day guide, Friday & Saturday wave schedules, St. George venue logistics, rider call-ups, pre-ride times, packing checklists, and cheer info.',
 };
 
 const helpfulLinks = [
     { name: 'Official State Championship Flyer (Canva)', url: 'https://www.canva.com/design/DAHT4TTKJ28/3WT2bsFaFP_mV5na50XTGw/view?embed' },
-    { name: 'League Volunteer Sign-Up (Mandatory)', url: 'https://crew.mockletdesign.com/s/a8e5108f9b57a39060' },
+    { name: 'League Volunteer Sign-Up (Mandatory)', url: 'https://crew.mockletdesign.com/s/0041bf25f7a1931da7' },
     { name: 'State Championship Details (St. George)', url: 'https://utahmtb.org/events/state-championships/' },
     { name: 'What Category Am I In? (CPT Table)', url: 'https://my.raceresult.com/411620/' },
-    { name: 'Race 4: Region 5 Championship (Herriman)', url: 'https://utahmtb.org/events/region-5-race-4/' },
-    { name: 'NICA Western Regional Championship', url: 'https://events.nationalmtb.org/regionals/western' },
     { name: 'PitZone Registration & Results', url: 'https://pitzone.nationalmtb.org/' },
 ];
 
@@ -34,7 +32,7 @@ export default function RaceDayCentral() {
                 <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🏆</div>
                 <h1 style={{ marginBottom: '0.75rem', fontSize: 'clamp(2.2rem, 5vw, 3.5rem)' }}>State Championship Central</h1>
                 <p style={{ fontSize: '1.2rem', opacity: 0.95, maxWidth: '750px', margin: '0 auto', lineHeight: 1.6 }}>
-                    Everything you need for the 2026 Utah State Championship weekend in St. George: Friday &amp; Saturday wave schedules, pre-ride times, camping &amp; fire regulations, vehicle access hours, and packing checklists.
+                    Everything you need for the 2026 Utah State Championship weekend in St. George: Friday &amp; Saturday wave schedules, pre-ride times, vehicle gate hours, and packing checklists.
                 </p>
                 <div style={{ marginTop: '1.25rem', display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                     <a
@@ -47,7 +45,7 @@ export default function RaceDayCentral() {
                         📄 Official State Race Flyer (Canva) ↗
                     </a>
                     <a
-                        href="https://crew.mockletdesign.com/s/a8e5108f9b57a39060"
+                        href="https://crew.mockletdesign.com/s/0041bf25f7a1931da7"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
@@ -134,7 +132,7 @@ export default function RaceDayCentral() {
                             📄 Canva State Flyer ↗
                         </a>
                         <a
-                            href="https://crew.mockletdesign.com/s/a8e5108f9b57a39060"
+                            href="https://crew.mockletdesign.com/s/0041bf25f7a1931da7"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-silver"
@@ -183,9 +181,9 @@ export default function RaceDayCentral() {
                     </div>
 
                     <div style={{ padding: '0.75rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)' }}>
-                        <strong style={{ color: '#dc2626', fontSize: '0.85rem', display: 'block' }}>🏕️ CAMPING &amp; FIRE RULES</strong>
+                        <strong style={{ color: '#dc2626', fontSize: '0.85rem', display: 'block' }}>🚫 NO VENUE CAMPING</strong>
                         <span style={{ fontSize: '0.85rem', color: 'rgb(var(--text-main))' }}>
-                            Dispersed camping across highway. Strictly NO wood fires, charcoal BBQs, or propane fire pits. Cookstoves OK.
+                            There is NO camping allowed at the state venue. Please arrange local hotel lodging in St. George.
                         </span>
                     </div>
                 </div>
@@ -198,7 +196,7 @@ export default function RaceDayCentral() {
             {/* Critical Race Rules Banner */}
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
                 gap: '1rem',
                 marginBottom: 'var(--spacing-xl)'
             }}>
@@ -217,6 +215,25 @@ export default function RaceDayCentral() {
                         <strong style={{ fontSize: '1rem', color: '#dc2626' }}>NO DOGS Allowed at Venue</strong>
                         <p className="text-muted" style={{ fontSize: '0.825rem', margin: '0.15rem 0 0 0', lineHeight: 1.4 }}>
                             Per Utah League policy, dogs are strictly prohibited at all race venues and pit zones for rider safety.
+                        </p>
+                    </div>
+                </div>
+
+                <div style={{
+                    padding: '1rem 1.25rem',
+                    borderRadius: 'var(--radius-md)',
+                    backgroundColor: 'rgba(239, 68, 68, 0.08)',
+                    border: '2px solid #ef4444',
+                    display: 'flex',
+                    gap: '0.75rem',
+                    alignItems: 'center'
+                }}>
+                    <span style={{ fontSize: '1.75rem' }}>🏕️</span>
+                    <div>
+                        <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#dc2626', display: 'block' }}>Venue Policy</span>
+                        <strong style={{ fontSize: '1rem', color: '#dc2626' }}>NO Camping at Venue</strong>
+                        <p className="text-muted" style={{ fontSize: '0.825rem', margin: '0.15rem 0 0 0', lineHeight: 1.4 }}>
+                            There is strictly NO camping permitted at the state venue. Plan on hotel lodging in St. George.
                         </p>
                     </div>
                 </div>
@@ -352,8 +369,8 @@ export default function RaceDayCentral() {
             {/* Wave Schedule Section */}
             <section style={{ marginBottom: 'var(--spacing-xl)' }}>
                 <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
-                    <h2>2026 Official Wave Schedules</h2>
-                    <p className="text-muted">Explore Friday and Saturday State Championship wave schedules, plus previous race records.</p>
+                    <h2>2026 Utah State Championship Wave Schedules</h2>
+                    <p className="text-muted">High School championship waves for Friday (Waves 1–6) and Saturday (Waves 7–12).</p>
                 </div>
 
                 {/* Interactive Wave Schedule Section */}
@@ -396,10 +413,10 @@ export default function RaceDayCentral() {
                         </p>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.7, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
                             <li>
-                                <strong>League Volunteers (Mandatory):</strong> State Championship requires volunteers across course marshaling, staging, feed zone, and venue management. <a href="https://crew.mockletdesign.com/s/a8e5108f9b57a39060" target="_blank" rel="noopener noreferrer" style={{ color: '#be185d', fontWeight: 700 }}>Sign up on the League Volunteer Portal ↗</a>
+                                <strong>League Volunteers (Mandatory):</strong> State Championship requires volunteers across course marshaling, staging, feed zone, and venue management. <a href="https://crew.mockletdesign.com/s/0041bf25f7a1931da7" target="_blank" rel="noopener noreferrer" style={{ color: '#be185d', fontWeight: 700 }}>Sign up on the League Volunteer Portal ↗</a>
                             </li>
                             <li>
-                                <strong>Lehi Team Volunteers:</strong> Feed Zone (hydration handoff), athlete support, and Pitzone hospitality.
+                                <strong>Lehi Team Volunteers (Coming Soon):</strong> The Lehi team volunteer schedule (Feed Zone hydration handoffs, tent support, and athlete hospitality) is currently being finalized. Check back soon for the sign-up link!
                             </li>
                             <li>
                                 <strong>Pit Zone Setup:</strong> Thursday afternoon (3:00 PM – 5:00 PM).
@@ -408,9 +425,9 @@ export default function RaceDayCentral() {
                                 <strong>Pit Zone Takedown:</strong> Saturday evening following the final wave and podium ceremonies.
                             </li>
                         </ul>
-                        <div style={{ marginTop: '1.25rem', display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                        <div style={{ marginTop: '1.25rem', display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center' }}>
                             <a
-                                href="https://crew.mockletdesign.com/s/a8e5108f9b57a39060"
+                                href="https://crew.mockletdesign.com/s/0041bf25f7a1931da7"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn-accent"
@@ -418,6 +435,20 @@ export default function RaceDayCentral() {
                             >
                                 🚴 League Volunteer Sign-Up ↗
                             </a>
+                            <span style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '0.4rem',
+                                fontSize: '0.875rem',
+                                padding: '0.5rem 1.15rem',
+                                borderRadius: 'var(--radius-sm)',
+                                backgroundColor: 'rgba(236,72,153,0.1)',
+                                border: '1px dashed #ec4899',
+                                color: '#be185d',
+                                fontWeight: 600
+                            }}>
+                                🙋 Lehi Team Sign-Up: Coming Soon
+                            </span>
                             <a
                                 href="https://www.canva.com/design/DAHT4TTKJ28/3WT2bsFaFP_mV5na50XTGw/view?embed"
                                 target="_blank"
@@ -436,7 +467,7 @@ export default function RaceDayCentral() {
             {/* What to Bring Checklist Section */}
             <section style={{ marginBottom: 'var(--spacing-xl)' }}>
                 <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
-                    <h2>What to Bring: Race Day Packing Checklists</h2>
+                    <h2>What to Bring: Race Weekend Checklists</h2>
                     <p className="text-muted">Double-check your gear bag and vehicle the night before traveling to St. George.</p>
                 </div>
 
@@ -469,8 +500,8 @@ export default function RaceDayCentral() {
                             <h3 style={{ margin: 0, fontSize: '1.25rem' }}>Family &amp; Spectator Checklist</h3>
                         </div>
                         <ul style={{ paddingLeft: '1.2rem', color: 'rgb(var(--text-muted))', lineHeight: 1.8, fontSize: '0.9rem' }}>
-                            <li>Pop-Up Canopy Tent or Shade Umbrellas</li>
-                            <li>Camp Chairs (plenty for family members)</li>
+                            <li>Pop-Up Canopy Tent or Shade Umbrellas for Venue</li>
+                            <li>Camp Chairs for Course Spectating</li>
                             <li>Sunscreen (SPF 30+) &amp; Lip Balm</li>
                             <li>Cowbells &amp; Noise Makers (Cheer loud for Lehi!)</li>
                             <li>Cooler with Extra Water, Drinks, and Lunch</li>

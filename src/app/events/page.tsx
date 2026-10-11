@@ -59,14 +59,14 @@ const races = [
 
 const resources = [
     {
-        title: 'Lehi Team Volunteer Sign-Up (SignUpGenius - Herriman)',
-        desc: 'Sign up for Lehi MTB team volunteer shifts at Herriman (Feed Zone, tent setup & takedown, athlete hospitality).',
-        link: 'https://www.signupgenius.com/go/10C044CAEAD2DA2FD0-66313453-herriman#/',
+        title: 'Lehi Team Volunteer Sign-Up (Coming Soon)',
+        desc: 'Team volunteer shifts for the State Championship will be published as soon as assignments are finalized.',
+        link: '/race-day',
     },
     {
         title: 'League Volunteer Sign-Up (Mandatory)',
-        desc: 'Sign up for mandatory Utah High School Cycling League volunteer shifts for Region 5 races.',
-        link: 'https://crew.mockletdesign.com/s/a8e5108f9b57a39060',
+        desc: 'Sign up for mandatory Utah High School Cycling League volunteer shifts for the State Championship in St. George.',
+        link: 'https://crew.mockletdesign.com/s/0041bf25f7a1931da7',
     },
     {
         title: 'What Category Am I In? (CPT Table)',
