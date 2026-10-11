@@ -94,9 +94,9 @@ const resources = [
         link: 'https://pitzone.nationalmtb.org/',
     },
     {
-        title: 'League Race Day Flyer (Canva)',
-        desc: 'Official Utah High School Cycling League race day schedule, map, and volunteer sign-up flyer.',
-        link: 'https://www.canva.com/design/DAHPeOBLZl4/-7qkmSmlAh4ISmPomXNU2w/view?embed',
+        title: 'State Championship Race Flyer (Canva)',
+        desc: 'Official Utah High School Cycling League State Championship 2-day wave schedule, venue rules, and dance party flyer.',
+        link: 'https://www.canva.com/design/DAHT4TTKJ28/3WT2bsFaFP_mV5na50XTGw/view?embed',
     },
     {
         title: 'Lehi MTB Race Day Guide',
