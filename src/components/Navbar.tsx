@@ -23,7 +23,7 @@ const navGroups = [
             { href: '/events', label: 'Race Schedule' },
             { href: '/race-day', label: 'Race Day Guide' },
             { href: '/events/family-camp-2026', label: 'Family Camp 2026' },
-            { href: '/gallery', label: 'Gallery' },
+            { href: '/gallery', label: 'Photos & Gallery' },
             { href: 'https://lehimtb.substack.com/', label: 'Blog', external: true },
         ]
     },
