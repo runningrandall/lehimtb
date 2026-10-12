@@ -3,7 +3,7 @@ import Link from 'next/link';
 import ClubsDirectory from './ClubsDirectory';
 
 export const metadata: Metadata = {
-    title: 'Utah Junior MTB Clubs & Development Teams | Lehi MTB Hub',
+    title: 'Utah MTB Clubs & Development Teams | Lehi MTB Hub',
     description: 'Comprehensive comparison matrix of youth and junior mountain bike club teams in Utah. Compare disciplines (XC, Enduro, DH), competition levels, tuition, and deadlines.',
 };
 
@@ -49,7 +49,7 @@ export default function ClubsPage() {
                         color: 'rgb(var(--color-primary))',
                         marginBottom: '1rem'
                     }}>
-                        Utah Junior MTB Clubs
+                        Utah MTB Clubs
                     </h1>
 
                     <p style={{
