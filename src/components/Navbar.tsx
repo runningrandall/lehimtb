@@ -32,6 +32,7 @@ const navGroups = [
         links: [
             { href: '/training', label: 'Training Plans' },
             { href: '/practices', label: 'Practices' },
+            { href: '/clubs', label: 'Junior MTB Clubs' },
             { href: '/join#faq', label: 'FAQs' },
             { href: '/challenges', label: 'Challenges' },
         ]
