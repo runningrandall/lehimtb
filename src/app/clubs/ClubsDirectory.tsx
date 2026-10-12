@@ -19,6 +19,7 @@ interface Program {
     costNote: string;
     lvl: 1 | 2 | 3 | 4 | 5;
     entry: string;
+    req?: string;
     train: string;
     race: string;
     url: string;
@@ -30,6 +31,9 @@ const DISC_LABEL: Record<Disc, string> = { xc: 'XC', grav: 'Gravity / DH', both:
 const VELO_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSc4Toh0mCqZMg53zPMvVJ0hTb4rIeFM7HLIVWmZ_BqFUSv8xQ/viewform';
 const FLYERS_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSfdWlQVLMHGxxa3ARksTK8Dyr5KpuG47HtnG4XCTnYIp1muug/viewform';
 
+const SOHO_FORM = 'https://forms.office.com/Pages/ResponsePage.aspx?id=2HCpuFsyg06lfN7ATNPhk5z-jQHYWT9AnQvbwPETLeRUQUZOUURMQUo0UUxCQkwxTDRIMzhYWDFVTC4u';
+const SOHO_URL = 'https://www.teamsoho.org/trainelite-747728.html';
+
 export const clubPrograms: Program[] = [
     { name: 'Accel Cycling', regLabel: 'Late application', reg: 'https://www.accelcycling.net/late-applications.html', club: 'Accel / Hart-Accel', disc: 'xc', loc: 'St. George; members also in Salt Lake', ages: '15–18, U23, Elite (13–14 case by case)', cost: 2800, costNote: '$2,200 if you use an approved outside coach', lvl: 5, entry: 'Application + race résumé; 2027 window closed', train: 'Personal coaching plan, online training library, nutrition plans, skills clinics and team camps', race: 'National XC calendar with race-day support. Kit, helmet, gloves, arm warmers included. Feeds the Hart-Accel pro team.', url: 'https://www.accelcycling.net/apply.html' },
     { name: 'Rouleur National', status: '2027 team uncertain', regLabel: 'Apply', reg: 'https://rouleurdevo.org/pages/team-application-race-national', club: 'Rouleur Devo', disc: 'xc', loc: 'Draper', ages: '15–18, U23, Pro', cost: 3900, costNote: '+ $300 camps, extra kit; $1,050 store credit included', lvl: 5, entry: 'Application; 2–3 yrs racing plus prior national/UCI starts', train: 'Spring team practices and impromptu rides; coach referral if needed; mentors Race and Devo riders', race: 'At least 4 national events; tech/feed zone, tent, mechanic support; possible international invites', url: 'https://rouleurdevo.org/pages/team-memberships' },
@@ -38,7 +42,10 @@ export const clubPrograms: Program[] = [
     { name: 'VeloLove Elite', regLabel: 'Interest form', reg: VELO_FORM, club: 'VeloLove', disc: 'xc', loc: 'North Utah County', ages: 'Grades 9–12', cost: 0, costNote: 'Usually no cost; confirm for 2027', lvl: 4, entry: 'Interest form, then registration; capped at 40', train: 'Professional coaching, in-person and at-home winter training, spring camp, 2 coached rides/week', race: 'Weekend endurance rides and races; highest volume tier', url: VELO_FORM },
     { name: 'VeloLove Comp', regLabel: 'Interest form', reg: VELO_FORM, club: 'VeloLove', disc: 'xc', loc: 'North Utah County', ages: 'Grades 8–12', cost: 0, costNote: 'Usually no cost; confirm for 2027', lvl: 3, entry: 'Interest form; capped at 20', train: 'Winter Zwift at home, spring outdoor training, 2 coached rides/week spring–summer', race: 'Bridge to Elite with lower intensity', url: VELO_FORM },
     { name: 'VeloLove Youth', regLabel: 'Interest form', reg: VELO_FORM, club: 'VeloLove', disc: 'xc', loc: 'North Utah County', ages: 'Grades K–7', cost: 0, costNote: 'Usually no cost; confirm for 2027', lvl: 1, entry: 'Open; no racing experience needed', train: '2 rides/week spring to fall, skills and games', race: 'Racing optional', url: VELO_FORM },
-    { name: 'Flyers XC Comp', regLabel: 'Interest form', reg: FLYERS_FORM, club: 'Flyers', mine: true, disc: 'xc', loc: 'Lehi / north Utah County', ages: '14–18 (JV A, Fr A, Varsity)', cost: 50, costNote: '+ required team jersey', lvl: 4, entry: 'Interest form; program confirmed before payment', train: 'Training plans, one weekday session from March, group Saturday rides', race: 'Race-day support outside NICA', url: FLYERS_FORM },
+    { name: 'SoHo Pro Dev', regLabel: 'Apply (invite)', reg: SOHO_FORM, club: 'Team SoHo', disc: 'xc', loc: 'Soldier Hollow (Midway)', ages: 'High school to age 20', cost: 2500, costNote: 'All Race Team benefits; extra kit; 2026 season fee', lvl: 5, entry: 'Invite only; application', req: 'TrainingPeaks account; heart rate monitor; smart trainer; power meter; road or gravel bike; Zwift ($20/mo)', train: 'Everything in Race Team plus additional camps and greater travel commitment; discounted team bikes', race: '5 UCI races incl. Nationals and SoHo; extra kit (skinsuit, jacket)', url: SOHO_URL },
+    { name: 'SoHo Race', regLabel: 'Apply', reg: SOHO_FORM, club: 'Team SoHo', disc: 'xc', loc: 'Soldier Hollow (Midway)', ages: 'Grades 9–12', cost: 1700, costNote: 'Includes SoHo ski access and season pass', lvl: 4, entry: 'Application; committed to racing and development', req: 'TrainingPeaks account; heart rate monitor; smart trainer (can rent); Zwift ($20/mo); power meter', train: '3–4 coach-led sessions/week (Tue, Wed, Thu, Sat); strength, XC skiing, long rides; Jan–May', race: 'Coaches at I-Cup and Utah Gravel Series races; supported camp and race trip; Whiskey 50 supported', url: SOHO_URL },
+    { name: 'SoHo Club', regLabel: 'Apply', reg: SOHO_FORM, club: 'Team SoHo', disc: 'xc', loc: 'Soldier Hollow (Midway)', ages: 'Jr. high, high school, adults', cost: 1000, costNote: 'Optional St. George camp $400', lvl: 2, entry: 'Open application; club team can apply later', req: 'Free TrainingPeaks account; bike computer (Wahoo/Garmin) that syncs; smart trainer (can rent); Zwift optional', train: 'TrainingPeaks plan, FTP test, Monday gym, Wednesday ski practice; Jan–May', race: 'Pit zone and race support; team kit included', url: SOHO_URL },
+    { name: 'Flyers XC Comp', regLabel: 'Interest form', reg: FLYERS_FORM, club: 'Flyers', mine: true, disc: 'xc', loc: 'Lehi / north Utah County', ages: '14–18 (JV A, Fr A, Varsity)', cost: 50, costNote: '+ required team jersey; Southern Utah winter camp is an additional expense', lvl: 4, entry: 'Interest form; program confirmed before payment', req: 'XC mountain bike; Zwift setup for winter training (subscription + smart trainer); free TrainingPeaks account; heart rate monitor; power meter optional but ideal', train: 'Custom training plans, one weekday session from March, group Saturday rides; one team winter camp planned in Southern Utah', race: 'Local Utah to major national events; endurance and skills focused. Coaching at I-Cup and SoHo races, possibly WRS as well.', url: FLYERS_FORM },
     { name: 'Flyers XC Sport', regLabel: 'Interest form', reg: FLYERS_FORM, club: 'Flyers', mine: true, disc: 'xc', loc: 'Lehi / north Utah County', ages: '12–18', cost: 50, costNote: 'Covers insurance and club t-shirt', lvl: 1, entry: 'Interest form; no racing experience needed', train: 'Saturday morning rides in program groups', race: 'Racing optional', url: FLYERS_FORM },
     { name: 'Flyers Enduro', regLabel: null, reg: 'Opens Dec 1', club: 'Flyers', mine: true, disc: 'grav', loc: 'Lehi / north Utah County', ages: '10–18', cost: 150, costNote: 'Flat fee', lvl: 3, entry: 'Open; no evaluation ride', train: 'Enduro-focused sister program to Flyers XC; schedule TBD', race: 'Targets Youth Enduro Series races', url: 'https://www.flyerscycling.com' },
     { name: 'KCA Elite Development', regLabel: 'Get started', reg: 'https://konecnycyclingacademy.com', club: 'Konecny Cycling Academy', disc: 'xc', loc: 'Not stated on site', ages: 'Juniors to elite', cost: 3600, costText: '$400/mo', costNote: '3, 6 or 9-month plans; $3,600 for 9 months', lvl: 4, entry: 'Sign up online; built for athletes chasing national titles and UCI points', train: 'All-inclusive, high-touch individual coaching; long-term race development', race: 'Founded by elite XCO racer Lasse Konecny; 3–4 performance camps a year with GOAT Collective (details to come)', url: 'https://konecnycyclingacademy.com/about' },
@@ -177,6 +184,7 @@ export default function ClubsDirectory() {
                             <th><button data-dir={dirOf('cost')} onClick={() => toggleSort('cost')}>Annual fee</button></th>
                             <th><button data-dir={dirOf('lvl')} onClick={() => toggleSort('lvl')}>Level</button></th>
                             <th>Entry</th>
+                            <th>Requirements</th>
                             <th>Training &amp; schedule</th>
                             <th>Racing &amp; extras</th>
                             <th>Register</th>
@@ -184,7 +192,7 @@ export default function ClubsDirectory() {
                     </thead>
                     <tbody>
                         {groups.total === 0 && (
-                            <tr><td colSpan={10} className="empty">No programs match these filters.</td></tr>
+                            <tr><td colSpan={11} className="empty">No programs match these filters.</td></tr>
                         )}
                         {groups.list.map(([club, ds]) => (
                             <GroupRows key={club} club={club} ds={ds} />
@@ -197,7 +205,7 @@ export default function ClubsDirectory() {
                 <h2>Reading the matrix</h2>
                 <p>Level runs 1 to 5: Recreational, Development, Competitive (local/regional racing, e.g. I-Cup or Utah Gravity Series), National (USA Cycling nationals, Pro XCT, Pro DH Series) and Elite (UCI juniors and World Cup pathway). It is a judgment based on each program&apos;s stated entry requirements and race calendar.</p>
                 <p>&quot;Not posted&quot; means the fee wasn&apos;t on a public page. Maybird&apos;s site was rate-limiting requests, Summit Bike Club&apos;s site is under construction, and Aspire and RaceKraft don&apos;t publish prices. Those need a direct email.</p>
-                <p>Deadlines: Accel&apos;s 2027 application window has closed (late applications page exists). Flyers Enduro registration opens December 1. Outlaw tuition is due December 31. VeloLove opens 2027 sign-ups this winter and is usually free. Rouleur may not field a team for 2027; its riders appear to be splitting off into other teams, so treat its fees and tiers as last season&apos;s.</p>
+                <p>Deadlines: Accel&apos;s 2027 application window has closed (late applications page exists). Flyers Enduro registration opens December 1. Outlaw tuition is due December 31. VeloLove opens 2027 sign-ups this winter and is usually free. Rouleur may not field a team for 2027; its riders appear to be splitting off into other teams, so treat its fees and tiers as last season&apos;s. Team SoHo&apos;s posted fees and dates are from its 2026 season page (applications ran Oct 1 to Nov 24 last cycle); confirm 2027 details with the team.</p>
             </section>
         </div>
     );
@@ -208,7 +216,7 @@ function GroupRows({ club, ds }: { club: string; ds: readonly Program[] }) {
         <>
             <tr className="grp">
                 <td className="prog">{club}</td>
-                <td colSpan={9}>
+                <td colSpan={10}>
                     {ds.length} program{ds.length > 1 ? 's' : ''} · {ds[0].loc}
                     {ds[0].status && (
                         <span className="warn inline">{ds[0].status}: posted fees are from 2026 and riders may be moving to other teams</span>
@@ -241,6 +249,7 @@ function GroupRows({ club, ds }: { club: string; ds: readonly Program[] }) {
                         </div>
                     </td>
                     <td className="wide">{d.entry}</td>
+                    <td className="wide">{d.req ?? <span className="tbd">Not listed</span>}</td>
                     <td className="wide">{d.train}</td>
                     <td className="wide">{d.race} <a href={d.url} target="_blank" rel="noopener">Source</a></td>
                     <td className="reg">
