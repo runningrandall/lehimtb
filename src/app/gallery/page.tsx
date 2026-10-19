@@ -21,7 +21,7 @@ const photoAlbums2026: PhotoAlbum[] = [
     {
         title: 'Team Photos 2026',
         race: 'Full Team · 2026',
-        url: 'https://photos.google.com/share/AF1QipNzMSBxivUszMIusazL1YRun9zX5VS7Yj6Ft9LQ___eSV646QC03lAhh_hYH5aGqw?key=TWxFLXpTRVRCaktLdlQwSnViX0UtTE1iMGlMS1hB',
+        url: 'https://photos.app.goo.gl/bp1bxFvERHorQzne6',
         emoji: '📸',
         image: '/images/team_photos_2026.jpg',
         description: 'Official 2026 team photos, rider portraits, plaque pictures, and group shots.',
