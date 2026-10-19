@@ -303,60 +303,121 @@ export default function RaceDayCentral() {
                 borderLeft: '5px solid #ec4899',
                 backgroundColor: 'rgba(236, 72, 153, 0.04)'
             }}>
-                <h2 style={{ fontSize: '1.4rem', color: '#be185d', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <span>⏰</span> Race Day Schedule Timeline Sequence
-                </h2>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '0.75rem', marginTop: '0.75rem' }}>
-                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87, 43, 158, 0.08)', border: '1px solid rgba(87, 43, 158, 0.15)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(var(--color-primary))' }}>Step 1</span>
-                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0' }}>Arrival Time</p>
-                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
-                            Morning waves arrive by <strong>6:45–7:30 AM</strong> (Pit Zone closes at 8:00 AM!). Afternoon waves arrive <strong>1.5 hrs</strong> prior.
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                    <h2 style={{ fontSize: '1.45rem', color: '#be185d', margin: 0, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <span>⏰</span> Race Day Schedule Timeline Sequence
+                    </h2>
+                    <div style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.4rem',
+                        backgroundColor: '#be185d',
+                        color: 'white',
+                        padding: '0.35rem 0.75rem',
+                        borderRadius: '6px',
+                        fontSize: '0.825rem',
+                        fontWeight: 800,
+                        letterSpacing: '0.04em',
+                        textTransform: 'uppercase'
+                    }}>
+                        <span>📢</span> Rule: Wave Meeting = Start − 1 Hour
+                    </div>
+                </div>
+
+                <p className="text-muted" style={{ fontSize: '0.925rem', margin: '0 0 1.25rem 0', lineHeight: 1.55 }}>
+                    Every racer's schedule works backward from their scheduled wave start time. Follow this timeline to ensure you arrive with plenty of time to park, check in at the Lehi table, attend your mandatory wave meeting, and complete a full warm-up.
+                </p>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '0.75rem', marginTop: '0.5rem' }}>
+                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87, 43, 158, 0.08)', border: '1px solid rgba(87, 43, 158, 0.18)' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(var(--color-primary))' }}>Step 1</span>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: 'rgb(var(--color-primary))' }}>Start − 90m</span>
+                        </div>
+                        <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0' }}>Arrival Time</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.45 }}>
+                            Arrive at least <strong>1.5 hours prior</strong> to start. Morning waves must arrive by <strong>6:45–7:15 AM</strong> (Pit Zone vehicle gates close strictly at 8:00 AM!).
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(236, 72, 153, 0.1)', border: '1px solid rgba(236, 72, 153, 0.25)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#db2777' }}>Step 2</span>
-                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0', color: '#be185d' }}>Pit Zone Check-In</p>
-                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
-                            Check in at the <strong>Lehi team check-in table in pit zone</strong> immediately upon arrival to get your staging number marked.
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#db2777' }}>Step 2</span>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#db2777' }}>Upon Arrival</span>
+                        </div>
+                        <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0', color: '#be185d' }}>Pit Zone Check-In</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.45 }}>
+                            Head straight to the <strong>Lehi team check-in table</strong> in Pit Zone. Verify plate/chip, check tire pressure, lube chain, and get your staging gate noted.
                         </p>
                     </div>
 
-                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(180, 83, 9, 0.1)', border: '1px solid rgba(180, 83, 9, 0.25)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#b45309' }}>Step 3</span>
-                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0', color: '#b45309' }}>Wave Meeting (10m)</p>
-                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
-                            Mandatory team briefing at Pit Zone <strong>1 hour before</strong> start time (lasts 10 mins).
+                    <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(180, 83, 9, 0.12)', border: '1px solid rgba(180, 83, 9, 0.3)' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#b45309' }}>Step 3</span>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#b45309' }}>Start − 60m</span>
+                        </div>
+                        <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0', color: '#b45309' }}>Wave Meeting (10m)</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.45 }}>
+                            <strong>Mandatory team meeting at Lehi tent exactly 1 hour before start time.</strong> Course strategy, weather, passing rules, and team chant!
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.25)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#059669' }}>Step 4</span>
-                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0', color: '#047857' }}>Warm-Up (30m)</p>
-                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
-                            Structured <strong>30-minute warm-up ride</strong> to elevate heart rate and get legs primed.
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#059669' }}>Step 4</span>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#059669' }}>Start − 50m</span>
+                        </div>
+                        <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0', color: '#047857' }}>Warm-Up (30m)</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.45 }}>
+                            Structured <strong>30-minute warm-up ride</strong> directly after the wave meeting. Spin on Pit Zone trainers or warm-up zone to prime your legs and elevate heart rate.
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.2)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#2563eb' }}>Step 5</span>
-                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0', color: '#1d4ed8' }}>Stage Time (15m)</p>
-                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
-                            Report to staging <strong>15 minutes before</strong> start time at your designated Gate (Gate 1, 2, or 3).
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#2563eb' }}>Step 5</span>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#2563eb' }}>Start − 15m</span>
+                        </div>
+                        <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0', color: '#1d4ed8' }}>Stage Time (15m)</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.45 }}>
+                            Report to staging <strong>15 minutes prior</strong> at your assigned Gate (1, 2, or 3). Call-up order is strictly enforced by officials. Don't be late!
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(236, 72, 153, 0.12)', border: '1px solid rgba(236, 72, 153, 0.3)' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#be185d' }}>Step 6</span>
-                        <p style={{ fontWeight: 700, fontSize: '0.95rem', margin: '0.2rem 0', color: '#be185d' }}>Start Time</p>
-                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.4 }}>
-                            Official gun time for your split wave! Race hard, stay safe, and represent Lehi!
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#be185d' }}>Step 6</span>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#be185d' }}>Start Time</span>
+                        </div>
+                        <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0', color: '#be185d' }}>Gun Start!</p>
+                        <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.45 }}>
+                            Official gun time for your split wave! Race hard, ride smooth, stay safe, and represent Lehi High School!
                         </p>
                     </div>
                 </div>
 
-                <div style={{ marginTop: '1rem', padding: '0.75rem 1rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(236, 72, 153, 0.1)', border: '1px solid rgba(236, 72, 153, 0.25)' }}>
+                {/* Example Walkthrough Box */}
+                <div style={{
+                    marginTop: '1rem',
+                    padding: '0.85rem 1.15rem',
+                    borderRadius: 'var(--radius-sm)',
+                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                    border: '1px solid var(--border-color)',
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    gap: '0.75rem'
+                }}>
+                    <div>
+                        <strong style={{ fontSize: '0.875rem', color: '#be185d' }}>💡 Example for an 8:30 AM Race Start (Wave 1 or Wave 7):</strong>
+                        <div style={{ fontSize: '0.825rem', color: 'rgb(var(--text-muted))', marginTop: '0.2rem', lineHeight: 1.5 }}>
+                            <strong>6:45–7:00 AM:</strong> Arrive &amp; park · <strong>7:00–7:25 AM:</strong> Check in, inspect bike &amp; gear · <strong>7:30 AM:</strong> Mandatory Wave Meeting (1 hr prior) · <strong>7:40–8:10 AM:</strong> Warm-up · <strong>8:15 AM:</strong> Staging · <strong>8:30 AM:</strong> Start
+                        </div>
+                    </div>
+                </div>
+
+                <div style={{ marginTop: '0.75rem', padding: '0.75rem 1rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(236, 72, 153, 0.1)', border: '1px solid rgba(236, 72, 153, 0.25)' }}>
                     <p style={{ fontWeight: 700, fontSize: '0.95rem', color: '#be185d', margin: 0 }}>
                         📣 Stay All Day &amp; Cheer On Teammates!
                     </p>

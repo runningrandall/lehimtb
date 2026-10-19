@@ -36,9 +36,9 @@ const stateFridayWaves: StateWaveGroup[] = [
         laps: '2',
         maxLapTime: '45 min',
         overallPullTime: '9:25 AM',
-        arrivalTime: '6:45 AM',
-        meetingTime: '7:15 – 7:25 AM',
-        warmupTime: '7:25 – 7:55 AM',
+        arrivalTime: '6:45 – 7:00 AM',
+        meetingTime: '7:30 – 7:40 AM',
+        warmupTime: '7:40 – 8:10 AM',
         splits: [
             { split: 'JV B Boys (Split 1)', riders: '72', callUps: '1–12', gate: '1', staging: '8:15 AM', start: '8:30 AM' },
             { split: 'JV B Boys (Split 2)', riders: '72', callUps: '13–24', gate: '2', staging: '8:20 AM', start: '8:35 AM' },
@@ -52,9 +52,9 @@ const stateFridayWaves: StateWaveGroup[] = [
         laps: '2',
         maxLapTime: '45 min',
         overallPullTime: '10:30 AM',
-        arrivalTime: '7:30 AM',
-        meetingTime: '8:25 – 8:35 AM',
-        warmupTime: '8:35 – 9:05 AM',
+        arrivalTime: '8:00 AM',
+        meetingTime: '8:40 – 8:50 AM',
+        warmupTime: '8:50 – 9:20 AM',
         splits: [
             { split: 'JV B Boys (Split 4)', riders: '72', callUps: '37–48', gate: '1', staging: '9:25 AM', start: '9:40 AM' },
             { split: 'JV B Boys (Split 5)', riders: '72', callUps: '49+', gate: '2', staging: '9:30 AM', start: '9:45 AM', pullTime: '10:30 AM' },
@@ -67,9 +67,9 @@ const stateFridayWaves: StateWaveGroup[] = [
         laps: '2',
         maxLapTime: '45 min',
         overallPullTime: '11:45 AM',
-        arrivalTime: '8:30 AM',
-        meetingTime: '9:35 – 9:45 AM',
-        warmupTime: '9:45 – 10:15 AM',
+        arrivalTime: '9:15 AM',
+        meetingTime: '9:50 – 10:00 AM',
+        warmupTime: '10:00 – 10:30 AM',
         splits: [
             { split: 'JV B Girls (Split 1)', riders: '80', callUps: '1–13', gate: '1', staging: '10:35 AM', start: '10:50 AM' },
             { split: 'JV B Girls (Split 2)', riders: '80', callUps: '14–26', gate: '2', staging: '10:40 AM', start: '10:55 AM' },
@@ -83,9 +83,9 @@ const stateFridayWaves: StateWaveGroup[] = [
         laps: '2',
         maxLapTime: '45 min',
         overallPullTime: '1:00 PM',
-        arrivalTime: '9:45 AM',
-        meetingTime: '10:50 – 11:00 AM',
-        warmupTime: '11:00 – 11:30 AM',
+        arrivalTime: '10:30 AM',
+        meetingTime: '11:05 – 11:15 AM',
+        warmupTime: '11:15 – 11:45 AM',
         splits: [
             { split: 'JV C Boys (Split 1)', riders: '80', callUps: '1–13', gate: '1', staging: '11:50 AM', start: '12:05 PM' },
             { split: 'JV C Boys (Split 2)', riders: '80', callUps: '14–26', gate: '2', staging: '11:55 AM', start: '12:10 PM' },
@@ -99,9 +99,9 @@ const stateFridayWaves: StateWaveGroup[] = [
         laps: '2',
         maxLapTime: '45 min',
         overallPullTime: '2:10 PM / 2:15 PM',
-        arrivalTime: '11:00 AM',
-        meetingTime: '12:05 – 12:15 PM',
-        warmupTime: '12:15 – 12:45 PM',
+        arrivalTime: '11:45 AM',
+        meetingTime: '12:20 – 12:30 PM',
+        warmupTime: '12:30 – 1:00 PM',
         splits: [
             { split: 'JV C Girls (Split 1)', riders: '90', callUps: '1–14', gate: '1', staging: '1:05 PM', start: '1:20 PM' },
             { split: 'JV C Girls (Split 2)', riders: '90', callUps: '15+', gate: '2', staging: '1:10 PM', start: '1:25 PM', pullTime: '2:10 PM' },
@@ -115,9 +115,9 @@ const stateFridayWaves: StateWaveGroup[] = [
         laps: '2',
         maxLapTime: '45 min',
         overallPullTime: '3:30 PM',
-        arrivalTime: '12:15 PM',
-        meetingTime: '1:20 – 1:30 PM',
-        warmupTime: '1:30 – 2:00 PM',
+        arrivalTime: '1:00 PM',
+        meetingTime: '1:35 – 1:45 PM',
+        warmupTime: '1:45 – 2:15 PM',
         splits: [
             { split: 'Senior Open Boys (Split 1)', riders: 'TBD', callUps: 'All', gate: '1', staging: '2:20 PM', start: '2:35 PM' },
             { split: 'Senior Open Boys (Split 2)', riders: 'TBD', callUps: 'All', gate: '2', staging: '2:25 PM', start: '2:40 PM' },
@@ -134,9 +134,9 @@ const stateSaturdayWaves: StateWaveGroup[] = [
         laps: '2',
         maxLapTime: '45 min',
         overallPullTime: '9:25 AM',
-        arrivalTime: '6:45 AM',
-        meetingTime: '7:15 – 7:25 AM',
-        warmupTime: '7:25 – 7:55 AM',
+        arrivalTime: '6:45 – 7:00 AM',
+        meetingTime: '7:30 – 7:40 AM',
+        warmupTime: '7:40 – 8:10 AM',
         splits: [
             { split: 'Freshman A Boys (Split 1)', riders: '80', callUps: '1–13', gate: '1', staging: '8:15 AM', start: '8:30 AM' },
             { split: 'Freshman A Boys (Split 2)', riders: '80', callUps: '14–26', gate: '2', staging: '8:20 AM', start: '8:35 AM' },
@@ -150,9 +150,9 @@ const stateSaturdayWaves: StateWaveGroup[] = [
         laps: '2',
         maxLapTime: '45 min',
         overallPullTime: '10:40 AM',
-        arrivalTime: '7:45 AM',
-        meetingTime: '8:30 – 8:40 AM',
-        warmupTime: '8:40 – 9:10 AM',
+        arrivalTime: '8:00 AM',
+        meetingTime: '8:45 – 8:55 AM',
+        warmupTime: '8:55 – 9:25 AM',
         splits: [
             { split: 'JV A Girls (Split 1)', riders: '60', callUps: '1–10', gate: '1', staging: '9:30 AM', start: '9:45 AM' },
             { split: 'JV A Girls (Split 2)', riders: '60', callUps: '11–20', gate: '2', staging: '9:35 AM', start: '9:50 AM' },
@@ -166,9 +166,9 @@ const stateSaturdayWaves: StateWaveGroup[] = [
         laps: '3',
         maxLapTime: '70 min',
         overallPullTime: '12:20 PM',
-        arrivalTime: '8:45 AM',
-        meetingTime: '9:45 – 9:55 AM',
-        warmupTime: '9:55 – 10:25 AM',
+        arrivalTime: '9:30 AM',
+        meetingTime: '10:00 – 10:10 AM',
+        warmupTime: '10:10 – 10:40 AM',
         splits: [
             { split: 'JV A Boys (Split 1)', riders: '72', callUps: '1–12', gate: '1', staging: '10:45 AM', start: '11:00 AM' },
             { split: 'JV A Boys (Split 2)', riders: '72', callUps: '13–24', gate: '2', staging: '10:50 AM', start: '11:05 AM' },
@@ -182,9 +182,9 @@ const stateSaturdayWaves: StateWaveGroup[] = [
         laps: '3',
         maxLapTime: '70 min',
         overallPullTime: '1:50 PM',
-        arrivalTime: '10:15 AM',
-        meetingTime: '11:15 – 11:25 AM',
-        warmupTime: '11:25 – 11:55 AM',
+        arrivalTime: '11:00 AM',
+        meetingTime: '11:30 – 11:40 AM',
+        warmupTime: '11:40 AM – 12:10 PM',
         splits: [
             { split: 'JV A Boys (Split 4)', riders: '72', callUps: '37–48', gate: '1', staging: '12:15 PM', start: '12:30 PM' },
             { split: 'JV A Boys (Split 5)', riders: '72', callUps: '49–60', gate: '2', staging: '12:20 PM', start: '12:35 PM' },
@@ -198,9 +198,9 @@ const stateSaturdayWaves: StateWaveGroup[] = [
         laps: '3',
         maxLapTime: '70 min',
         overallPullTime: '3:20 PM',
-        arrivalTime: '11:45 AM',
-        meetingTime: '12:50 – 1:00 PM',
-        warmupTime: '1:00 – 1:30 PM',
+        arrivalTime: '12:30 PM',
+        meetingTime: '1:05 – 1:15 PM',
+        warmupTime: '1:15 – 1:45 PM',
         splits: [
             { split: 'Varsity Girls (Split 1)', riders: '66', callUps: '1–10', gate: '1', staging: '1:50 PM', start: '2:05 PM' },
             { split: 'Varsity Girls (Split 2)', riders: '66', callUps: '11–31', gate: '2', staging: '1:55 PM', start: '2:10 PM', pullTime: '3:20 PM' },
@@ -213,9 +213,9 @@ const stateSaturdayWaves: StateWaveGroup[] = [
         laps: '4',
         maxLapTime: '80 min',
         overallPullTime: '5:05 PM',
-        arrivalTime: '1:15 PM',
-        meetingTime: '2:20 – 2:30 PM',
-        warmupTime: '2:30 – 3:00 PM',
+        arrivalTime: '2:00 PM',
+        meetingTime: '2:35 – 2:45 PM',
+        warmupTime: '2:45 – 3:15 PM',
         splits: [
             { split: 'Varsity Boys (Split 1)', riders: '72', callUps: '1–12', gate: '1', staging: '3:20 PM', start: '3:35 PM' },
             { split: 'Varsity Boys (Split 2)', riders: '72', callUps: '13–24', gate: '2', staging: '3:25 PM', start: '3:40 PM' },
@@ -363,7 +363,7 @@ export default function WaveScheduleTabs() {
                         border: '1px solid rgba(236,72,153,0.25)',
                         borderRadius: 'var(--radius-sm)',
                         padding: '0.85rem 1.15rem',
-                        marginBottom: '1rem',
+                        marginBottom: '0.75rem',
                         display: 'flex',
                         gap: '0.85rem',
                         alignItems: 'center'
@@ -374,12 +374,29 @@ export default function WaveScheduleTabs() {
                         </p>
                     </div>
 
+                    {/* Wave Meeting Rule Callout */}
+                    <div style={{
+                        backgroundColor: 'rgba(180, 83, 9, 0.08)',
+                        border: '1px solid rgba(180, 83, 9, 0.25)',
+                        borderRadius: 'var(--radius-sm)',
+                        padding: '0.75rem 1rem',
+                        marginBottom: '1rem',
+                        display: 'flex',
+                        gap: '0.75rem',
+                        alignItems: 'center'
+                    }}>
+                        <span style={{ fontSize: '1.35rem' }}>📢</span>
+                        <p style={{ margin: 0, fontSize: '0.875rem', lineHeight: 1.5, color: 'rgb(var(--text-main))' }}>
+                            <strong>Wave Schedule Rule of Thumb:</strong> Mandatory <strong>Wave Meetings start exactly 1 hour before race start</strong> at the Lehi Pit Zone tent. Arrive at least <strong>1.5 hours before start</strong> (or by 7:00 AM for morning waves before the 8:00 AM Pit Zone gate lockdown) to park, check in at the Lehi table, prep your bike, and gather with coaches.
+                        </p>
+                    </div>
+
                     {/* Friday Waves Table */}
                     <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #ec4899', overflowX: 'auto' }}>
                         <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '860px' }}>
                             <thead>
                                 <tr style={{ borderBottom: '2px solid var(--border-color)', color: '#be185d' }}>
-                                    <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave &amp; Category</th>
+                                    <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave &amp; Schedule</th>
                                     <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Split / Call-Up Range</th>
                                     <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Gate</th>
                                     <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Staging Time</th>
@@ -404,16 +421,35 @@ export default function WaveScheduleTabs() {
                                             >
                                                 {splitIdx === 0 && (
                                                     <td rowSpan={w.splits.length} style={{
-                                                        padding: '0.75rem',
+                                                        padding: '0.85rem 0.75rem',
                                                         fontWeight: 700,
                                                         verticalAlign: 'middle',
                                                         borderRight: '1px solid var(--border-color)',
-                                                        backgroundColor: isWaveEven ? 'rgba(236, 72, 153, 0.08)' : 'rgba(236, 72, 153, 0.02)'
+                                                        backgroundColor: isWaveEven ? 'rgba(236, 72, 153, 0.08)' : 'rgba(236, 72, 153, 0.02)',
+                                                        minWidth: '210px'
                                                     }}>
-                                                        <div style={{ color: '#be185d', fontWeight: 800, fontSize: '0.95rem' }}>{w.wave}</div>
-                                                        <div style={{ fontSize: '0.85rem', color: 'rgb(var(--text-main))' }}>{w.category}</div>
-                                                        <div style={{ fontSize: '0.72rem', color: 'rgb(var(--text-muted))', marginTop: '0.2rem' }}>
-                                                            Max Lap: {w.maxLapTime}
+                                                        <div style={{ color: '#be185d', fontWeight: 800, fontSize: '1rem' }}>{w.wave}</div>
+                                                        <div style={{ fontSize: '0.875rem', fontWeight: 700, color: 'rgb(var(--text-main))', marginBottom: '0.4rem' }}>{w.category}</div>
+
+                                                        <div style={{
+                                                            backgroundColor: 'rgba(180, 83, 9, 0.12)',
+                                                            border: '1px solid rgba(180, 83, 9, 0.3)',
+                                                            borderRadius: '5px',
+                                                            padding: '0.35rem 0.5rem',
+                                                            marginBottom: '0.4rem'
+                                                        }}>
+                                                            <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#b45309', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                                                                📢 Wave Mtg (1 hr before)
+                                                            </div>
+                                                            <div style={{ fontSize: '0.875rem', fontWeight: 800, color: '#92400e' }}>
+                                                                {w.meetingTime}
+                                                            </div>
+                                                        </div>
+
+                                                        <div style={{ fontSize: '0.74rem', color: 'rgb(var(--text-muted))', lineHeight: 1.4 }}>
+                                                            <div>🚗 <strong>Arrive:</strong> {w.arrivalTime}</div>
+                                                            <div>🚴 <strong>Warm-Up:</strong> {w.warmupTime}</div>
+                                                            <div style={{ marginTop: '0.15rem', opacity: 0.85 }}>⏱️ Max Lap: {w.maxLapTime}</div>
                                                         </div>
                                                     </td>
                                                 )}
@@ -522,7 +558,7 @@ export default function WaveScheduleTabs() {
                         border: '1px solid rgba(59,130,246,0.25)',
                         borderRadius: 'var(--radius-sm)',
                         padding: '0.85rem 1.15rem',
-                        marginBottom: '1rem',
+                        marginBottom: '0.75rem',
                         display: 'flex',
                         gap: '0.85rem',
                         alignItems: 'center'
@@ -533,12 +569,29 @@ export default function WaveScheduleTabs() {
                         </p>
                     </div>
 
+                    {/* Wave Meeting Rule Callout */}
+                    <div style={{
+                        backgroundColor: 'rgba(180, 83, 9, 0.08)',
+                        border: '1px solid rgba(180, 83, 9, 0.25)',
+                        borderRadius: 'var(--radius-sm)',
+                        padding: '0.75rem 1rem',
+                        marginBottom: '1rem',
+                        display: 'flex',
+                        gap: '0.75rem',
+                        alignItems: 'center'
+                    }}>
+                        <span style={{ fontSize: '1.35rem' }}>📢</span>
+                        <p style={{ margin: 0, fontSize: '0.875rem', lineHeight: 1.5, color: 'rgb(var(--text-main))' }}>
+                            <strong>Wave Schedule Rule of Thumb:</strong> Mandatory <strong>Wave Meetings start exactly 1 hour before race start</strong> at the Lehi Pit Zone tent. Arrive at least <strong>1.5 hours before start</strong> (or by 7:00 AM for morning waves before the 8:00 AM Pit Zone gate lockdown) to park, check in at the Lehi table, prep your bike, and gather with coaches.
+                        </p>
+                    </div>
+
                     {/* Saturday Waves Table */}
                     <div className="glass-panel" style={{ padding: 'var(--spacing-lg)', borderTop: '4px solid #3b82f6', overflowX: 'auto' }}>
                         <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '860px' }}>
                             <thead>
                                 <tr style={{ borderBottom: '2px solid var(--border-color)', color: '#1d4ed8' }}>
-                                    <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave &amp; Category</th>
+                                    <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Wave &amp; Schedule</th>
                                     <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Split / Call-Up Range</th>
                                     <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Gate</th>
                                     <th style={{ padding: '0.75rem', fontSize: '0.75rem', textTransform: 'uppercase' }}>Staging Time</th>
@@ -563,16 +616,35 @@ export default function WaveScheduleTabs() {
                                             >
                                                 {splitIdx === 0 && (
                                                     <td rowSpan={w.splits.length} style={{
-                                                        padding: '0.75rem',
+                                                        padding: '0.85rem 0.75rem',
                                                         fontWeight: 700,
                                                         verticalAlign: 'middle',
                                                         borderRight: '1px solid var(--border-color)',
-                                                        backgroundColor: isWaveEven ? 'rgba(59, 130, 246, 0.08)' : 'rgba(59, 130, 246, 0.02)'
+                                                        backgroundColor: isWaveEven ? 'rgba(59, 130, 246, 0.08)' : 'rgba(59, 130, 246, 0.02)',
+                                                        minWidth: '210px'
                                                     }}>
-                                                        <div style={{ color: '#1d4ed8', fontWeight: 800, fontSize: '0.95rem' }}>{w.wave}</div>
-                                                        <div style={{ fontSize: '0.85rem', color: 'rgb(var(--text-main))' }}>{w.category}</div>
-                                                        <div style={{ fontSize: '0.72rem', color: 'rgb(var(--text-muted))', marginTop: '0.2rem' }}>
-                                                            Max Lap: {w.maxLapTime}
+                                                        <div style={{ color: '#1d4ed8', fontWeight: 800, fontSize: '1rem' }}>{w.wave}</div>
+                                                        <div style={{ fontSize: '0.875rem', fontWeight: 700, color: 'rgb(var(--text-main))', marginBottom: '0.4rem' }}>{w.category}</div>
+
+                                                        <div style={{
+                                                            backgroundColor: 'rgba(180, 83, 9, 0.12)',
+                                                            border: '1px solid rgba(180, 83, 9, 0.3)',
+                                                            borderRadius: '5px',
+                                                            padding: '0.35rem 0.5rem',
+                                                            marginBottom: '0.4rem'
+                                                        }}>
+                                                            <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#b45309', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                                                                📢 Wave Mtg (1 hr before)
+                                                            </div>
+                                                            <div style={{ fontSize: '0.875rem', fontWeight: 800, color: '#92400e' }}>
+                                                                {w.meetingTime}
+                                                            </div>
+                                                        </div>
+
+                                                        <div style={{ fontSize: '0.74rem', color: 'rgb(var(--text-muted))', lineHeight: 1.4 }}>
+                                                            <div>🚗 <strong>Arrive:</strong> {w.arrivalTime}</div>
+                                                            <div>🚴 <strong>Warm-Up:</strong> {w.warmupTime}</div>
+                                                            <div style={{ marginTop: '0.15rem', opacity: 0.85 }}>⏱️ Max Lap: {w.maxLapTime}</div>
                                                         </div>
                                                     </td>
                                                 )}
