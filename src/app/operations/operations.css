@@ -1,0 +1,69 @@
+.ops-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 1rem 4rem;
+    color: #1f2a24;
+    line-height: 1.55;
+}
+.ops-nav {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+.ops-nav a { color: rgb(var(--color-primary)); font-weight: 600; text-decoration: none; }
+.ops-doc h1 {
+    font-family: var(--font-brand);
+    text-transform: uppercase;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.05;
+    color: rgb(var(--color-primary));
+    margin: 0 0 1rem;
+}
+.ops-doc h2 {
+    font-family: var(--font-brand);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin: 2.5rem 0 0.75rem;
+}
+.ops-doc h3 { font-size: 1.15rem; margin: 2rem 0 0.5rem; }
+.ops-doc a { color: rgb(var(--color-primary)); }
+.ops-doc hr { border: 0; border-top: 1px solid #d9ddd4; margin: 2rem 0; }
+.ops-doc blockquote {
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    background: #f6e3d6;
+    border-left: 4px solid #c4561b;
+    border-radius: 4px;
+}
+.ops-doc blockquote p { margin: 0; }
+.ops-doc code { background: #eef0ea; padding: 0.1em 0.35em; border-radius: 3px; font-size: 0.9em; }
+.ops-table-wrap { overflow-x: auto; margin: 1rem 0; border: 1px solid #d9ddd4; border-radius: 8px; }
+.ops-doc table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: 0.85rem; }
+.ops-doc th, .ops-doc td { text-align: left; vertical-align: top; padding: 0.55rem 0.7rem; border-bottom: 1px solid #d9ddd4; }
+.ops-doc thead th { background: #f5f6f2; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: #5d6b62; }
+.ops-doc tbody tr:last-child td { border-bottom: 0; }
+.ops-doc pre.mermaid {
+    background: #fff;
+    border: 1px solid #d9ddd4;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.25rem 0;
+    overflow-x: auto;
+    text-align: center;
+    white-space: pre;
+    font-size: 0.8rem;
+}
+.ops-doc pre.mermaid svg { max-width: 100%; height: auto; }
+.ops-index { display: grid; gap: 1rem; margin-top: 1.5rem; }
+.ops-card {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid #d9ddd4;
+    border-radius: 10px;
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+}
+.ops-card h2 { margin: 0 0 0.25rem; font-family: var(--font-brand); text-transform: uppercase; color: rgb(var(--color-primary)); }
+.ops-card p { margin: 0; color: #5d6b62; }
