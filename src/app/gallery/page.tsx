@@ -14,9 +14,19 @@ interface PhotoAlbum {
     emoji: string;
     description: string;
     badge?: string;
+    image?: string;
 }
 
 const photoAlbums2026: PhotoAlbum[] = [
+    {
+        title: 'Team Photos 2026',
+        race: 'Full Team · 2026',
+        url: 'https://photos.google.com/share/AF1QipNzMSBxivUszMIusazL1YRun9zX5VS7Yj6Ft9LQ___eSV646QC03lAhh_hYH5aGqw?key=TWxFLXpTRVRCaktLdlQwSnViX0UtTE1iMGlMS1hB',
+        emoji: '📸',
+        image: '/images/team_photos_2026.jpg',
+        description: 'Official 2026 team photos, rider portraits, plaque pictures, and group shots.',
+        badge: 'Team Photos',
+    },
     {
         title: 'Herriman Regional Championship',
         race: 'Race 4 · Oct 10, 2026',
@@ -199,7 +209,27 @@ export default function Gallery() {
                                             </span>
                                         </div>
 
-                                        <div style={{ fontSize: '2.75rem', marginBottom: '0.75rem' }}>{album.emoji}</div>
+                                        {album.image ? (
+                                            <div style={{
+                                                position: 'relative',
+                                                width: '100%',
+                                                aspectRatio: '3 / 2',
+                                                borderRadius: 'var(--radius-sm)',
+                                                overflow: 'hidden',
+                                                marginBottom: '0.75rem',
+                                                boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+                                            }}>
+                                                <Image
+                                                    src={album.image}
+                                                    alt={album.title}
+                                                    fill
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                    style={{ objectFit: 'cover' }}
+                                                />
+                                            </div>
+                                        ) : (
+                                            <div style={{ fontSize: '2.75rem', marginBottom: '0.75rem' }}>{album.emoji}</div>
+                                        )}
                                         <h3 style={{ marginBottom: '0.4rem', color: 'rgb(var(--color-primary))', fontSize: '1.25rem' }}>
                                             {album.title}
                                         </h3>
@@ -347,7 +377,26 @@ export default function Gallery() {
                                     justifyContent: 'space-between',
                                 }}>
                                     <div>
-                                        <div style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>{album.emoji}</div>
+                                        {album.image ? (
+                                            <div style={{
+                                                position: 'relative',
+                                                width: '100%',
+                                                aspectRatio: '3 / 2',
+                                                borderRadius: 'var(--radius-sm)',
+                                                overflow: 'hidden',
+                                                marginBottom: '0.75rem',
+                                            }}>
+                                                <Image
+                                                    src={album.image}
+                                                    alt={album.title}
+                                                    fill
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                    style={{ objectFit: 'cover' }}
+                                                />
+                                            </div>
+                                        ) : (
+                                            <div style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>{album.emoji}</div>
+                                        )}
                                         <h3 style={{ marginBottom: '0.5rem', color: '#2563eb' }}>{album.title}</h3>
                                         <p className="text-muted" style={{ fontSize: '0.875rem', marginBottom: '1rem' }}>{album.description}</p>
                                     </div>
