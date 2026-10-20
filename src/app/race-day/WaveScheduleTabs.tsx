@@ -37,7 +37,7 @@ const stateFridayWaves: StateWaveGroup[] = [
         maxLapTime: '45 min',
         overallPullTime: '9:25 AM',
         arrivalTime: '6:45 – 7:00 AM',
-        meetingTime: '7:30 – 7:40 AM',
+        meetingTime: '7:30 – 7:40 AM (All JV B Boys)',
         warmupTime: '7:40 – 8:10 AM',
         splits: [
             { split: 'JV B Boys (Split 1)', riders: '72', callUps: '1–12', gate: '1', staging: '8:15 AM', start: '8:30 AM' },
@@ -52,8 +52,8 @@ const stateFridayWaves: StateWaveGroup[] = [
         laps: '2',
         maxLapTime: '45 min',
         overallPullTime: '10:30 AM',
-        arrivalTime: '8:00 AM',
-        meetingTime: '8:40 – 8:50 AM',
+        arrivalTime: '6:45 – 7:00 AM (Gate locks 8:00 AM)',
+        meetingTime: '7:30 – 7:40 AM (Combined with Wave 1)',
         warmupTime: '8:50 – 9:20 AM',
         splits: [
             { split: 'JV B Boys (Split 4)', riders: '72', callUps: '37–48', gate: '1', staging: '9:25 AM', start: '9:40 AM' },
@@ -166,8 +166,8 @@ const stateSaturdayWaves: StateWaveGroup[] = [
         laps: '3',
         maxLapTime: '70 min',
         overallPullTime: '12:20 PM',
-        arrivalTime: '9:30 AM',
-        meetingTime: '10:00 – 10:10 AM',
+        arrivalTime: '9:15 – 9:30 AM',
+        meetingTime: '10:00 – 10:10 AM (All JV A Boys)',
         warmupTime: '10:10 – 10:40 AM',
         splits: [
             { split: 'JV A Boys (Split 1)', riders: '72', callUps: '1–12', gate: '1', staging: '10:45 AM', start: '11:00 AM' },
@@ -182,8 +182,8 @@ const stateSaturdayWaves: StateWaveGroup[] = [
         laps: '3',
         maxLapTime: '70 min',
         overallPullTime: '1:50 PM',
-        arrivalTime: '11:00 AM',
-        meetingTime: '11:30 – 11:40 AM',
+        arrivalTime: '9:15 – 9:30 AM (for 10:00 AM Mtg)',
+        meetingTime: '10:00 – 10:10 AM (Combined with Wave 9)',
         warmupTime: '11:40 AM – 12:10 PM',
         splits: [
             { split: 'JV A Boys (Split 4)', riders: '72', callUps: '37–48', gate: '1', staging: '12:15 PM', start: '12:30 PM' },
@@ -379,15 +379,15 @@ export default function WaveScheduleTabs() {
                         backgroundColor: 'rgba(180, 83, 9, 0.08)',
                         border: '1px solid rgba(180, 83, 9, 0.25)',
                         borderRadius: 'var(--radius-sm)',
-                        padding: '0.75rem 1rem',
+                        padding: '0.85rem 1.15rem',
                         marginBottom: '1rem',
                         display: 'flex',
-                        gap: '0.75rem',
+                        gap: '0.85rem',
                         alignItems: 'center'
                     }}>
-                        <span style={{ fontSize: '1.35rem' }}>📢</span>
-                        <p style={{ margin: 0, fontSize: '0.875rem', lineHeight: 1.5, color: 'rgb(var(--text-main))' }}>
-                            <strong>Wave Schedule Rule of Thumb:</strong> Mandatory <strong>Wave Meetings start exactly 1 hour before race start</strong> at the Lehi Pit Zone tent. Arrive at least <strong>1.5 hours before start</strong> (or by 7:00 AM for morning waves before the 8:00 AM Pit Zone gate lockdown) to park, check in at the Lehi table, prep your bike, and gather with coaches.
+                        <span style={{ fontSize: '1.4rem' }}>📢</span>
+                        <p style={{ margin: 0, fontSize: '0.875rem', lineHeight: 1.55, color: 'rgb(var(--text-main))' }}>
+                            <strong>1 Wave Meeting Per Category:</strong> We hold 1 combined wave meeting per category. The <strong>earliest start time dictates the category meeting time</strong> (1 hour prior at the Lehi Pit Zone tent). For example, <strong>all JV B Boys (Waves 1 &amp; 2) meet together at 7:30 AM</strong>, even though Wave 2 starts at 9:40 AM. <em>Warm-up and staging times remain timed to each rider's actual race start!</em>
                         </p>
                     </div>
 
@@ -439,9 +439,9 @@ export default function WaveScheduleTabs() {
                                                             marginBottom: '0.4rem'
                                                         }}>
                                                             <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#b45309', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                                                                📢 Wave Mtg (1 hr before)
+                                                                📢 Category Mtg (1 per cat)
                                                             </div>
-                                                            <div style={{ fontSize: '0.875rem', fontWeight: 800, color: '#92400e' }}>
+                                                            <div style={{ fontSize: '0.85rem', fontWeight: 800, color: '#92400e' }}>
                                                                 {w.meetingTime}
                                                             </div>
                                                         </div>
@@ -574,15 +574,15 @@ export default function WaveScheduleTabs() {
                         backgroundColor: 'rgba(180, 83, 9, 0.08)',
                         border: '1px solid rgba(180, 83, 9, 0.25)',
                         borderRadius: 'var(--radius-sm)',
-                        padding: '0.75rem 1rem',
+                        padding: '0.85rem 1.15rem',
                         marginBottom: '1rem',
                         display: 'flex',
-                        gap: '0.75rem',
+                        gap: '0.85rem',
                         alignItems: 'center'
                     }}>
-                        <span style={{ fontSize: '1.35rem' }}>📢</span>
-                        <p style={{ margin: 0, fontSize: '0.875rem', lineHeight: 1.5, color: 'rgb(var(--text-main))' }}>
-                            <strong>Wave Schedule Rule of Thumb:</strong> Mandatory <strong>Wave Meetings start exactly 1 hour before race start</strong> at the Lehi Pit Zone tent. Arrive at least <strong>1.5 hours before start</strong> (or by 7:00 AM for morning waves before the 8:00 AM Pit Zone gate lockdown) to park, check in at the Lehi table, prep your bike, and gather with coaches.
+                        <span style={{ fontSize: '1.4rem' }}>📢</span>
+                        <p style={{ margin: 0, fontSize: '0.875rem', lineHeight: 1.55, color: 'rgb(var(--text-main))' }}>
+                            <strong>1 Wave Meeting Per Category:</strong> We hold 1 combined wave meeting per category. The <strong>earliest start time dictates the category meeting time</strong> (1 hour prior at the Lehi Pit Zone tent). For example, <strong>all JV A Boys (Waves 9 &amp; 10) meet together at 10:00 AM</strong>, even though Wave 10 starts at 12:30 PM. <em>Warm-up and staging times remain timed to each rider's actual race start!</em>
                         </p>
                     </div>
 
@@ -634,9 +634,9 @@ export default function WaveScheduleTabs() {
                                                             marginBottom: '0.4rem'
                                                         }}>
                                                             <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#b45309', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                                                                📢 Wave Mtg (1 hr before)
+                                                                📢 Category Mtg (1 per cat)
                                                             </div>
-                                                            <div style={{ fontSize: '0.875rem', fontWeight: 800, color: '#92400e' }}>
+                                                            <div style={{ fontSize: '0.85rem', fontWeight: 800, color: '#92400e' }}>
                                                                 {w.meetingTime}
                                                             </div>
                                                         </div>

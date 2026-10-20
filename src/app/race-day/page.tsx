@@ -320,23 +320,23 @@ export default function RaceDayCentral() {
                         letterSpacing: '0.04em',
                         textTransform: 'uppercase'
                     }}>
-                        <span>📢</span> Rule: Wave Meeting = Start − 1 Hour
+                        <span>📢</span> Rule: 1 Meeting Per Category (Earliest Start − 1 Hr)
                     </div>
                 </div>
 
                 <p className="text-muted" style={{ fontSize: '0.925rem', margin: '0 0 1.25rem 0', lineHeight: 1.55 }}>
-                    Every racer's schedule works backward from their scheduled wave start time. Follow this timeline to ensure you arrive with plenty of time to park, check in at the Lehi table, attend your mandatory wave meeting, and complete a full warm-up.
+                    Every category gathers for <strong>one combined wave meeting</strong> timed 1 hour before the earliest split in that category. Warm-ups and staging remain timed to each rider's actual race start time.
                 </p>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '0.75rem', marginTop: '0.5rem' }}>
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(87, 43, 158, 0.08)', border: '1px solid rgba(87, 43, 158, 0.18)' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
                             <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgb(var(--color-primary))' }}>Step 1</span>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: 'rgb(var(--color-primary))' }}>Start − 90m</span>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: 'rgb(var(--color-primary))' }}>Earliest − 90m</span>
                         </div>
                         <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0' }}>Arrival Time</p>
                         <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.45 }}>
-                            Arrive at least <strong>1.5 hours prior</strong> to start. Morning waves must arrive by <strong>6:45–7:15 AM</strong> (Pit Zone vehicle gates close strictly at 8:00 AM!).
+                            Arrive at least <strong>1.5 hours prior</strong> to your category meeting. Morning waves must arrive by <strong>6:45–7:00 AM</strong> (Pit Zone vehicle gates close strictly at 8:00 AM!).
                         </p>
                     </div>
 
@@ -354,29 +354,29 @@ export default function RaceDayCentral() {
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(180, 83, 9, 0.12)', border: '1px solid rgba(180, 83, 9, 0.3)' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
                             <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#b45309' }}>Step 3</span>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#b45309' }}>Start − 60m</span>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#b45309' }}>Earliest − 60m</span>
                         </div>
-                        <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0', color: '#b45309' }}>Wave Meeting (10m)</p>
+                        <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0', color: '#b45309' }}>Category Meeting (10m)</p>
                         <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.45 }}>
-                            <strong>Mandatory team meeting at Lehi tent exactly 1 hour before start time.</strong> Course strategy, weather, passing rules, and team chant!
+                            <strong>1 meeting per category!</strong> All splits meet together 1 hour before earliest start (e.g., all JV B Boys meet at 7:30 AM; all JV A Boys at 10:00 AM).
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.25)' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
                             <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#059669' }}>Step 4</span>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#059669' }}>Start − 50m</span>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#059669' }}>Race − 50m</span>
                         </div>
                         <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0', color: '#047857' }}>Warm-Up (30m)</p>
                         <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.45 }}>
-                            Structured <strong>30-minute warm-up ride</strong> directly after the wave meeting. Spin on Pit Zone trainers or warm-up zone to prime your legs and elevate heart rate.
+                            Structured <strong>30-minute warm-up ride</strong> timed to your split's actual start. Later waves cheer on early teammates, then warm up at their dedicated time.
                         </p>
                     </div>
 
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.2)' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
                             <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#2563eb' }}>Step 5</span>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#2563eb' }}>Start − 15m</span>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#2563eb' }}>Race − 15m</span>
                         </div>
                         <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0', color: '#1d4ed8' }}>Stage Time (15m)</p>
                         <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.45 }}>
@@ -387,7 +387,7 @@ export default function RaceDayCentral() {
                     <div style={{ padding: '0.875rem', borderRadius: 'var(--radius-sm)', backgroundColor: 'rgba(236, 72, 153, 0.12)', border: '1px solid rgba(236, 72, 153, 0.3)' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
                             <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#be185d' }}>Step 6</span>
-                            <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#be185d' }}>Start Time</span>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#be185d' }}>Gun Start</span>
                         </div>
                         <p style={{ fontWeight: 800, fontSize: '0.95rem', margin: '0.1rem 0 0.35rem 0', color: '#be185d' }}>Gun Start!</p>
                         <p className="text-muted" style={{ fontSize: '0.8rem', margin: 0, lineHeight: 1.45 }}>
@@ -404,15 +404,18 @@ export default function RaceDayCentral() {
                     backgroundColor: 'rgba(255, 255, 255, 0.05)',
                     border: '1px solid var(--border-color)',
                     display: 'flex',
-                    flexWrap: 'wrap',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    gap: '0.75rem'
+                    flexDirection: 'column',
+                    gap: '0.6rem'
                 }}>
-                    <div>
-                        <strong style={{ fontSize: '0.875rem', color: '#be185d' }}>💡 Example for an 8:30 AM Race Start (Wave 1 or Wave 7):</strong>
-                        <div style={{ fontSize: '0.825rem', color: 'rgb(var(--text-muted))', marginTop: '0.2rem', lineHeight: 1.5 }}>
-                            <strong>6:45–7:00 AM:</strong> Arrive &amp; park · <strong>7:00–7:25 AM:</strong> Check in, inspect bike &amp; gear · <strong>7:30 AM:</strong> Mandatory Wave Meeting (1 hr prior) · <strong>7:40–8:10 AM:</strong> Warm-up · <strong>8:15 AM:</strong> Staging · <strong>8:30 AM:</strong> Start
+                    <strong style={{ fontSize: '0.875rem', color: '#be185d' }}>
+                        💡 Example of Combined Category Meetings (Multi-Wave Categories):
+                    </strong>
+                    <div style={{ fontSize: '0.825rem', color: 'rgb(var(--text-muted))', lineHeight: 1.6 }}>
+                        <div>
+                            <strong>Friday JV B Boys (Waves 1 &amp; 2):</strong> All JV B Boys arrive by <strong>6:45–7:00 AM</strong> and attend <strong>one combined meeting at 7:30 AM</strong> (1 hr before Wave 1's 8:30 AM start). Wave 1 warms up at 7:40 AM; Wave 2 cheers on Wave 1 and warms up at 8:50 AM for their 9:40 AM start.
+                        </div>
+                        <div style={{ marginTop: '0.35rem' }}>
+                            <strong>Saturday JV A Boys (Waves 9 &amp; 10):</strong> All JV A Boys arrive by <strong>9:15–9:30 AM</strong> and attend <strong>one combined meeting at 10:00 AM</strong> (1 hr before Wave 9's 11:00 AM start). Wave 9 warms up at 10:10 AM; Wave 10 cheers on Wave 9 and warms up at 11:40 AM for their 12:30 PM start.
                         </div>
                     </div>
                 </div>
