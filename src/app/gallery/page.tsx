@@ -23,7 +23,7 @@ const photoAlbums2026: PhotoAlbum[] = [
         race: 'Full Team · 2026',
         url: 'https://photos.app.goo.gl/bp1bxFvERHorQzne6',
         emoji: '📸',
-        image: '/images/team_photos_2026.jpg',
+        image: '/images/updated2026_team_photo.jpg',
         description: 'Official 2026 team photos, rider portraits, plaque pictures, and group shots.',
         badge: 'Team Photos',
     },

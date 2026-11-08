@@ -5,8 +5,10 @@ import Link from 'next/link';
 
 // We define the banner content and expiration date here
 const BANNER_CONFIG = {
-    text: "🗓️ Season Kickoff Meeting — March 25th at Lehi HS Auditorium (6:15pm Returning / 7:15pm New Riders)",
-    expirationDate: new Date('2026-03-26T00:00:00') // Disappears the day after the meeting
+    text: "🎉 Thanks for a great 2026 season! 2027 season info will be coming out soon.",
+    expirationDate: new Date('2027-04-01T00:00:00'), // Active through spring 2027
+    linkHref: '/register',
+    linkLabel: '2027 Updates →'
 };
 
 export default function AnnouncementBanner() {
@@ -35,12 +37,12 @@ export default function AnnouncementBanner() {
         }}>
             <div className="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
                 <span>{BANNER_CONFIG.text}</span>
-                <Link href="/kickoff" style={{
+                <Link href={BANNER_CONFIG.linkHref} style={{
                     color: 'rgba(12, 8, 24, 0.9)',
                     textDecoration: 'underline',
                     fontWeight: 800,
                     whiteSpace: 'nowrap'
-                }}>Full Details →</Link>
+                }}>{BANNER_CONFIG.linkLabel}</Link>
             </div>
         </div>
     );

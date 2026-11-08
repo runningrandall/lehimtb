@@ -22,9 +22,9 @@ export default function RegisterClosed() {
                 boxShadow: 'var(--shadow-purple)'
             }}>
                 <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🏁</div>
-                <h1 style={{ marginBottom: '0.75rem', fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>Registration is Closed</h1>
+                <h1 style={{ marginBottom: '0.75rem', fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>Thanks for a Great 2026 Season!</h1>
                 <p style={{ fontSize: '1.25rem', opacity: 0.95, maxWidth: '650px', margin: '0 auto', lineHeight: 1.6 }}>
-                    Registration for the 2026 Lehi MTB season has officially closed.
+                    The 2026 Lehi MTB season has concluded. Information and registration for the 2027 season will be coming out soon!
                 </p>
             </div>
 

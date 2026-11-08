@@ -27,7 +27,7 @@ export default function HeroSlider() {
         >
             {/* ── Slide 1 BG: Team photo ── */}
             <div style={{ position: 'absolute', inset: 0, opacity: active === 0 ? 1 : 0, transition: 'opacity 0.8s ease', zIndex: 0 }}>
-                <Image src="/images/LEHI MTB 2026 team-41.jpg" alt="Lehi MTB Team" fill style={{ objectFit: 'cover', objectPosition: 'center' }} priority />
+                <Image src="/images/updated2026_team_photo.jpg" alt="Lehi MTB Team" fill style={{ objectFit: 'cover', objectPosition: 'center' }} priority />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(12,8,24,0.92), rgba(87,43,158,0.35))' }} />
             </div>
 
@@ -56,23 +56,26 @@ export default function HeroSlider() {
                         ))}
                     </div>
                     <div style={{ display: 'flex', gap: 'var(--spacing-sm)', flexWrap: 'wrap' }}>
-                        <Link href="/register" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Registration Info</Link>
-                        <Link href="/join" className="btn-silver" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Parent Info &amp; FAQ</Link>
+                        <Link href="#team-photo" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>2026 Team Photo</Link>
+                        <Link href="/register" className="btn-silver" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>2027 Season Info</Link>
                     </div>
                 </div>
 
-                {/* Slide 2: Upcoming Races & Race Day Central */}
+                {/* Slide 2: Season Wrap-up & 2027 Preview */}
                 <div style={{ opacity: active === 1 ? 1 : 0, transform: active === 1 ? 'translateY(0)' : 'translateY(12px)', transition: 'opacity 0.8s ease, transform 0.8s ease', position: active === 1 ? 'relative' : 'absolute', top: 0, left: 0, right: 0, pointerEvents: active === 1 ? 'auto' : 'none' }}>
-                    <p style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.14em', textTransform: 'uppercase', opacity: 0.8, marginBottom: '0.75rem', color: '#faff38' }}>Upcoming Races · 2026 Season</p>
+                    <p style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.14em', textTransform: 'uppercase', opacity: 0.8, marginBottom: '0.75rem', color: '#faff38' }}>Season Wrap-Up · 2026</p>
                     <h1 style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', marginBottom: '1rem', lineHeight: 1.1 }}>
-                        Race Day Central —<br />
-                        <span style={{ background: 'linear-gradient(90deg, #a855f7 0%, #faff38 60%, #c084fc 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Wave Schedules &amp; Info</span>
+                        Thanks for a Great<br />
+                        <span style={{ background: 'linear-gradient(90deg, #a855f7 0%, #faff38 60%, #c084fc 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>2026 Season!</span>
                     </h1>
+                    <p style={{ fontSize: '1.25rem', maxWidth: '650px', marginBottom: '1.5rem', opacity: 0.9, lineHeight: 1.6 }}>
+                        Thank you to all riders, coaches, parents, and sponsors for an incredible season. Information for the upcoming 2027 season will be coming out soon.
+                    </p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.75rem' }}>
                         {[
-                            { color: 'rgb(var(--color-primary))', text: 'Full Wave Schedule — HS & Jr Devo Categories' },
-                            { color: 'rgb(var(--color-tertiary))', text: 'What to Expect: Staging, Pit Zone & Feed Rules' },
-                            { color: 'rgba(255,255,255,0.7)', text: 'Arrival Times, Race Plate Setup & Spectator Info' },
+                            { color: 'rgb(var(--color-primary))', text: 'Full 2026 race photo galleries and team pictures are live' },
+                            { color: 'rgb(var(--color-tertiary))', text: '2027 season info & registration details coming soon' },
+                            { color: 'rgba(255,255,255,0.7)', text: 'Winter prep & upcoming spring kickoff details to follow' },
                         ].map(row => (
                             <div key={row.text} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                                 <span style={{ width: '4px', height: '1.2rem', borderRadius: '2px', background: row.color, flexShrink: 0 }} />
@@ -81,8 +84,8 @@ export default function HeroSlider() {
                         ))}
                     </div>
                     <div style={{ display: 'flex', gap: 'var(--spacing-sm)', flexWrap: 'wrap' }}>
-                        <Link href="/race-day" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Race Day Guide →</Link>
-                        <Link href="/events" className="btn-silver" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>Race Schedule</Link>
+                        <Link href="/gallery" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>View Season Photos →</Link>
+                        <Link href="/register" className="btn-silver" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>2027 Registration Updates</Link>
                     </div>
                 </div>
 

@@ -13,6 +13,90 @@ export default function Home() {
       {/* Sticky In-Page Nav */}
       <HomePageNav />
 
+      {/* 2026 Season Wrap-Up & Team Photo Section */}
+      <section id="team-photo" style={{ padding: 'var(--spacing-xl) 0', backgroundColor: 'rgb(var(--surface-main))' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', maxWidth: '850px', margin: '0 auto var(--spacing-lg) auto' }}>
+            <span style={{
+              display: 'inline-block',
+              padding: '0.35rem 0.9rem',
+              borderRadius: '999px',
+              fontSize: '0.8rem',
+              fontWeight: 800,
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              backgroundColor: 'rgba(87, 43, 158, 0.1)',
+              color: 'rgb(var(--color-primary))',
+              marginBottom: '0.75rem'
+            }}>
+              2026 Season Wrap-Up
+            </span>
+            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.75rem)', marginBottom: '1rem' }}>
+              Thanks for a Great 2026 Season!
+            </h2>
+            <p style={{ fontSize: '1.15rem', lineHeight: 1.7, color: 'rgb(var(--text-muted))', marginBottom: '1.25rem' }}>
+              A heartfelt thank you to all our student-athletes, coaches, ride leaders, parents, and community sponsors for making the 2026 season so memorable. From early morning summer rides to thrilling state championship finishes, you brought dedication and camaraderie every single week.
+            </p>
+            <div style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.75rem',
+              backgroundColor: 'rgba(250, 255, 56, 0.15)',
+              border: '1px solid rgba(250, 255, 56, 0.4)',
+              padding: '0.85rem 1.35rem',
+              borderRadius: 'var(--radius-md)',
+              color: 'rgb(var(--text-main))',
+              fontWeight: 600,
+              fontSize: '0.975rem',
+              lineHeight: 1.5,
+              maxWidth: '720px'
+            }}>
+              <span>🚴 <strong>2027 Season Info Coming Soon:</strong> Details on registration, kickoff meetings, and off-season opportunities will be announced in early 2027!</span>
+            </div>
+          </div>
+
+          {/* High-res Team Photo Card */}
+          <div className="glass-panel" style={{
+            overflow: 'hidden',
+            padding: '0.75rem',
+            borderRadius: 'var(--radius-lg)',
+            boxShadow: 'var(--shadow-lg)'
+          }}>
+            <div style={{ position: 'relative', width: '100%', aspectRatio: '3/2', borderRadius: 'var(--radius-md)', overflow: 'hidden' }}>
+              <Image
+                src="/images/updated2026_team_photo.jpg"
+                alt="2026 Lehi High School Mountain Biking Team"
+                fill
+                sizes="(max-width: 1200px) 100vw, 1200px"
+                style={{ objectFit: 'cover' }}
+                priority
+              />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', padding: '1rem 0.5rem 0.5rem 0.5rem' }}>
+              <div>
+                <p style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '0.2rem' }}>2026 Lehi Mountain Biking Team</p>
+                <p className="text-muted" style={{ fontSize: '0.85rem' }}>Official team photo featuring High School &amp; Junior Development athletes and coaches.</p>
+              </div>
+              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                <Link href="/gallery" className="btn-primary" style={{ fontSize: '0.875rem', padding: '0.6rem 1.25rem' }}>
+                  View Full 2026 Gallery →
+                </Link>
+                <a
+                  href="/images/updated2026_team_photo.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-silver"
+                  style={{ fontSize: '0.875rem', padding: '0.6rem 1.25rem' }}
+                >
+                  Download Photo ⬇
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Programs Section */}
       <section id="programs" style={{ padding: 'var(--spacing-xl) 0' }}>
         <div className="container">

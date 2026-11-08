@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 const sections = [
     { href: '#why', label: 'Why Lehi MTB?' },
+    { href: '#team-photo', label: 'Team Photo' },
     { href: '#programs', label: 'Programs' },
     { href: '#benefits', label: 'Benefits' },
     { href: '#coaches', label: 'Coaches' },
